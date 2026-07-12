@@ -1,0 +1,17 @@
+{
+  "name": "Marka Jant Lastik",
+  "short_name": "Marka Jant",
+  "description": "Premium jant, lastik ve profesyonel servis çözümleri",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#1f4fff",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "assets/images/logo-white.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

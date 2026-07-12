@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samsun Canik'te premium jant, lastik ve profesyonel servis hizmetleri. Lastik değişimi, jant onarım, lastik oteli ve balans.">
+  <link rel="canonical" href="https://markajantlastik.com/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Marka Jant Lastik">
+  <meta property="og:title" content="Marka Jant Lastik | Premium Jant & Lastik Merkezi Samsun">
+  <meta property="og:description" content="Samsun Canik'te premium jant, lastik ve profesyonel servis hizmetleri. Lastik değişimi, jant onarım, lastik oteli ve balans.">
+  <meta property="og:url" content="https://markajantlastik.com/index.html">
+  <meta property="og:image" content="https://markajantlastik.com/assets/images/hero/hero-store.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marka Jant Lastik | Premium Jant & Lastik Merkezi Samsun">
+  <meta name="twitter:description" content="Samsun Canik'te premium jant, lastik ve profesyonel servis hizmetleri. Lastik değişimi, jant onarım, lastik oteli ve balans.">
+  <meta name="twitter:image" content="https://markajantlastik.com/assets/images/hero/hero-store.jpg">
+  <title>Marka Jant Lastik | Premium Jant &amp; Lastik Merkezi Samsun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" as="image" href="assets/images/hero/hero-store.jpg" fetchpriority="high">
+  <style>
+    .showcase {
+      padding: clamp(72px, 7vw, 92px) 0;
+    }
+
+    .showcase__container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 clamp(32px, 4.5vw, 64px);
+    }
+
+    .showcase__header {
+      margin-bottom: clamp(40px, 5vw, 56px);
+      text-align: center;
+    }
+
+    .showcase__header .jantlar__subtitle {
+      margin: 0 auto;
+    }
+
+    .showcase__grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(16px, 2vw, 24px);
+      margin-bottom: clamp(40px, 5vw, 56px);
+    }
+
+    .showcase__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .showcase__media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: #121218;
+      transition:
+        border-color 450ms ease,
+        box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .showcase__media:has(.jantlar__img.is-loaded) .jantlar__placeholder {
+      opacity: 0;
+    }
+
+    .showcase__card:hover .showcase__media {
+      border-color: rgba(31, 79, 255, 0.3);
+      box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.28),
+        0 0 36px rgba(31, 79, 255, 0.14);
+      transform: translateY(-4px);
+    }
+
+    .showcase__card:hover .jantlar__img.is-loaded {
+      transform: scale(1.05);
+    }
+
+    .showcase__label {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .showcase__cta {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 1024px) {
+      .showcase__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .showcase {
+        padding: clamp(64px, 10vw, 80px) 0;
+      }
+
+      .showcase__grid {
+        gap: 14px;
+      }
+
+      .showcase__media {
+        border-radius: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__container">
+      <a href="index.html" class="site-header__logo" aria-label="Ana sayfa">
+        <img
+          src="assets/images/logo-white.png"
+          alt="Marka Jant Lastik"
+          width="auto"
+          height="68"
+          decoding="async"
+        >
+      </a>
+
+      <nav class="site-header__nav" aria-label="Ana menü">
+        <ul class="site-header__menu">
+          <li><a href="index.html" class="site-header__link site-header__link--active">Ana Sayfa</a></li>
+          <li><a href="jantlar.html" class="site-header__link">Jantlar</a></li>
+          <li><a href="lastikler.html" class="site-header__link">Lastikler</a></li>
+          <li class="site-header__dropdown">
+            <a href="index.html#hizmetler" class="site-header__link site-header__link--dropdown" aria-haspopup="true" aria-expanded="false">
+              Hizmetlerimiz
+              <svg class="site-header__chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <ul class="site-header__dropdown-menu">
+              <li><a href="lastik-degisimi.html" class="site-header__dropdown-link">Lastik Değişimi &amp; Montaj</a></li>
+              <li><a href="jant-onarim.html" class="site-header__dropdown-link">Jant Onarım &amp; Düzeltme</a></li>
+              <li><a href="lastik-oteli.html" class="site-header__dropdown-link">Lastik Oteli</a></li>
+              <li><a href="balans.html" class="site-header__dropdown-link">Balans</a></li>
+            </ul>
+          </li>
+          <li><a href="sss.html" class="site-header__link">S.S.S.</a></li>
+          <li><a href="iletisim.html" class="site-header__link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <div class="site-header__social">
+          <a href="https://www.instagram.com/markajantlastik" class="site-header__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/marka.jant.lastik" class="site-header__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8.5V7.2c0-.66.53-1.2 1.2-1.2H17V3h-2.5C12.02 3 10 5.02 10 7.5V8.5H7v3.5h3V21h4v-9h3l.5-3.5H14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <a href="iletisim.html" class="site-header__btn">Bilgi Al</a>
+        <button
+          class="site-header__toggle"
+          type="button"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="site-header__toggle-line"></span>
+          <span class="site-header__toggle-line"></span>
+          <span class="site-header__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="site-header__mobile" id="mobileMenu" aria-hidden="true">
+      <div class="site-header__mobile-backdrop"></div>
+      <div class="site-header__mobile-panel">
+        <nav class="site-header__mobile-nav" aria-label="Mobil menü">
+          <ul class="site-header__mobile-menu">
+            <li><a href="index.html" class="site-header__mobile-link site-header__mobile-link--active">Ana Sayfa</a></li>
+            <li><a href="jantlar.html" class="site-header__mobile-link">Jantlar</a></li>
+            <li><a href="lastikler.html" class="site-header__mobile-link">Lastikler</a></li>
+            <li class="site-header__mobile-dropdown">
+              <button type="button" class="site-header__mobile-dropdown-btn" aria-expanded="false">
+                Hizmetlerimiz
+                <svg class="site-header__chevron" width="12" height="12" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                  <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <ul class="site-header__mobile-submenu">
+                <li><a href="lastik-degisimi.html" class="site-header__mobile-sublink">Lastik Değişimi &amp; Montaj</a></li>
+                <li><a href="jant-onarim.html" class="site-header__mobile-sublink">Jant Onarım &amp; Düzeltme</a></li>
+                <li><a href="lastik-oteli.html" class="site-header__mobile-sublink">Lastik Oteli</a></li>
+                <li><a href="balans.html" class="site-header__mobile-sublink">Balans</a></li>
+              </ul>
+            </li>
+            <li><a href="sss.html" class="site-header__mobile-link">S.S.S.</a></li>
+            <li><a href="iletisim.html" class="site-header__mobile-link">İletişim</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__mobile-footer">
+        <div class="site-header__social site-header__social--mobile">
+          <a href="https://www.instagram.com/markajantlastik" class="site-header__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/marka.jant.lastik" class="site-header__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8.5V7.2c0-.66.53-1.2 1.2-1.2H17V3h-2.5C12.02 3 10 5.02 10 7.5V8.5H7v3.5h3V21h4v-9h3l.5-3.5H14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+          <a href="iletisim.html" class="site-header__btn site-header__btn--mobile">Bilgi Al</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__decor" aria-hidden="true">
+      <svg class="hero__wheel-silhouette" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="190" stroke="currentColor" stroke-width="8"/>
+        <circle cx="200" cy="200" r="155" stroke="currentColor" stroke-width="4"/>
+        <circle cx="200" cy="200" r="60" stroke="currentColor" stroke-width="6"/>
+        <circle cx="200" cy="200" r="28" fill="currentColor"/>
+        <line x1="200" y1="10" x2="200" y2="390" stroke="currentColor" stroke-width="3"/>
+        <line x1="10" y1="200" x2="390" y2="200" stroke="currentColor" stroke-width="3"/>
+        <line x1="66" y1="66" x2="334" y2="334" stroke="currentColor" stroke-width="3"/>
+        <line x1="334" y1="66" x2="66" y2="334" stroke="currentColor" stroke-width="3"/>
+        <circle cx="200" cy="45" r="14" fill="currentColor"/>
+        <circle cx="200" cy="355" r="14" fill="currentColor"/>
+        <circle cx="45" cy="200" r="14" fill="currentColor"/>
+        <circle cx="355" cy="200" r="14" fill="currentColor"/>
+        <circle cx="90" cy="90" r="14" fill="currentColor"/>
+        <circle cx="310" cy="90" r="14" fill="currentColor"/>
+        <circle cx="90" cy="310" r="14" fill="currentColor"/>
+        <circle cx="310" cy="310" r="14" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <p class="hero__eyebrow hero__animate hero__animate--1">PREMIUM JANT &amp; LASTİK MERKEZİ</p>
+        <h1 class="hero__title hero__animate hero__animate--2">
+          Aracınıza Değer Katan<br>
+          <span class="hero__title-accent">Premium Jant &amp; Lastik</span> Çözümleri
+        </h1>
+        <p class="hero__desc hero__animate hero__animate--3">
+          Modern tasarımlı jantlar, kaliteli lastikler ve profesyonel uygulama hizmetleriyle aracınıza değer katıyoruz.
+        </p>
+        <div class="hero__actions hero__animate hero__animate--4">
+          <a href="jantlar.html" class="hero__btn hero__btn--primary">
+    Jantları İncele
+</a>
+          <a href="iletisim.html" class="hero__btn hero__btn--ghost">
+    Bize Ulaşın
+</a>
+        </div>
+      </div>
+
+      <div class="hero__cards hero__animate hero__animate--5">
+        <div class="hero__card">
+          <div class="hero__card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="hero__card-body">
+            <span class="hero__card-title">Premium Hizmet</span>
+            <span class="hero__card-desc">Üst düzey servis standartları</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="hero__card-body">
+            <span class="hero__card-title">Uzman Ekip</span>
+            <span class="hero__card-desc">Deneyimli profesyonel kadro</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l7 4v5c0 5-3.5 8.5-7 9-3.5-.5-7-4-7-9V7l7-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="hero__card-body">
+            <span class="hero__card-title">Garantili İşçilik</span>
+            <span class="hero__card-desc">Güvenilir ve kalıcı uygulama</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="hizmetler">
+    <div class="services__container">
+      <header class="services__header">
+        <h2 class="services__title">Hizmetlerimiz</h2>
+        <p class="services__subtitle">Aracınız için profesyonel jant ve lastik çözümleri.</p>
+      </header>
+
+      <div class="services__grid">
+        <a href="lastik-degisimi.html" class="services__card">
+          <div class="services__card-media">
+            <div class="services__card-placeholder" aria-hidden="true"></div>
+            <img
+              src="assets/images/services/service-lastik-degisimi.jpg"
+              alt="Lastik Değişimi &amp; Montaj"
+              class="services__card-img"
+              loading="lazy"
+              decoding="async"
+              width="640"
+              height="400"
+            >
+          </div>
+          <div class="services__card-body">
+            <h3 class="services__card-title">Lastik Değişimi &amp; Montaj</h3>
+            <p class="services__card-desc">Uzman ekip tarafından hızlı ve güvenli lastik montaj hizmeti.</p>
+            <span class="services__card-link">Detayları İncele <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a href="jant-onarim.html" class="services__card">
+          <div class="services__card-media">
+            <div class="services__card-placeholder" aria-hidden="true"></div>
+            <img
+              src="assets/images/services/service-jant-onarim.jpg"
+              alt="Jant Onarım &amp; Düzeltme"
+              class="services__card-img"
+              loading="lazy"
+              decoding="async"
+              width="640"
+              height="400"
+            >
+          </div>
+          <div class="services__card-body">
+            <h3 class="services__card-title">Jant Onarım &amp; Düzeltme</h3>
+            <p class="services__card-desc">Hasarlı jantlarınızı profesyonel ekipmanlarla ilk günkü formuna getiriyoruz.</p>
+            <span class="services__card-link">Detayları İncele <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a href="lastik-oteli.html" class="services__card">
+          <div class="services__card-media">
+            <div class="services__card-placeholder" aria-hidden="true"></div>
+            <img
+              src="assets/images/services/service-lastik-oteli.jpg"
+              alt="Lastik Oteli"
+              class="services__card-img"
+              loading="lazy"
+              decoding="async"
+              width="640"
+              height="400"
+            >
+          </div>
+          <div class="services__card-body">
+            <h3 class="services__card-title">Lastik Oteli</h3>
+            <p class="services__card-desc">Sezon dışı lastiklerinizi güvenli koşullarda muhafaza ediyoruz.</p>
+            <span class="services__card-link">Detayları İncele <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a href="balans.html" class="services__card">
+          <div class="services__card-media">
+            <div class="services__card-placeholder" aria-hidden="true"></div>
+            <img
+              src="assets/images/services/service-balans.jpg"
+              alt="Balans"
+              class="services__card-img"
+              loading="lazy"
+              decoding="async"
+              width="640"
+              height="400"
+            >
+          </div>
+          <div class="services__card-body">
+            <h3 class="services__card-title">Balans</h3>
+            <p class="services__card-desc">Titreşimi azaltan hassas balans ayarı ile konforlu sürüş.</p>
+            <span class="services__card-link">Detayları İncele <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="showroom-vitrin" aria-label="Mağaza vitrin görseli">
+    <div class="showroom-vitrin__frame">
+      <div class="showroom-vitrin__media">
+        <img
+          src="assets/images/hero/hero-store.jpg"
+          alt="Marka Jant Lastik mağaza görünümü"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+      <div class="showroom-vitrin__vignette" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="showcase showcase--jant" id="featured-jant">
+    <div class="showcase__container">
+      <header class="showcase__header">
+        <h2 class="jantlar__title">Premium Jant Koleksiyonumuz</h2>
+        <p class="jantlar__subtitle">Aracınıza değer katacak, estetik ve performansı bir araya getiren seçkin jant modellerimizi keşfedin.</p>
+      </header>
+
+      <div class="showcase__grid"></div>
+
+      <div class="showcase__cta">
+        <a href="jantlar.html" class="hero__btn hero__btn--primary">Jant Koleksiyonunu İncele <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section premium-section--alt applications" id="home-applications" data-reveal>
+    <div class="premium-section__container">
+      <header class="premium-section__header" data-reveal-child>
+        <h2 class="jantlar__title">Uygulamalarımız</h2>
+        <p class="jantlar__subtitle">Atölyemizde gerçekleştirdiğimiz jant ve lastik uygulamalarından seçilmiş gerçek kareler.</p>
+      </header>
+
+      <div
+        class="jantlar__grid"
+        data-gallery-folder="assets/images/uygulamalar/ana-sayfa/"
+        data-gallery-prefix="uygulama-"
+        data-gallery-per-page="8"
+        data-gallery-alt="Uygulama"
+        data-gallery-id="home-applications"
+        data-reveal-child
+      ></div>
+
+      <div class="premium-section__load-more" data-load-more-for="home-applications" data-reveal-child>
+        <button type="button" class="hero__btn hero__btn--ghost" data-load-more-btn>Daha Fazlasını Göster</button>
+      </div>
+
+      <div class="applications__cta" data-reveal-child>
+        <a href="jantlar.html#uygulamalar" class="hero__btn hero__btn--primary">Tüm Uygulamaları Gör <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="jantlar-lightbox" id="homeApplicationsLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Uygulamalar galerisi">
+      <div class="jantlar-lightbox__backdrop" data-lightbox-close></div>
+      <button type="button" class="jantlar-lightbox__close" aria-label="Kapat" data-lightbox-close>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button type="button" class="jantlar-lightbox__nav jantlar-lightbox__nav--prev" aria-label="Önceki görsel" data-lightbox-prev>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M14 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button type="button" class="jantlar-lightbox__nav jantlar-lightbox__nav--next" aria-label="Sonraki görsel" data-lightbox-next>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="jantlar-lightbox__stage">
+        <img src="" alt="Uygulama görseli" class="jantlar-lightbox__img" id="homeApplicationsLightboxImg">
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section premium-section--alt stats" id="stats" data-reveal>
+    <div class="premium-section__container">
+      <header class="stats__header" data-reveal-child>
+        <h2 class="stats__title">Rakamlarla Marka Jant Lastik</h2>
+        <p class="stats__subtitle">Yılların deneyimi ve binlerce mutlu müşterimizle aracınıza güvenilir jant ve lastik hizmeti sunuyoruz.</p>
+      </header>
+
+      <div class="stats__grid">
+        <article class="stats__card stats__card--01" data-reveal-child>
+          <div class="stats__card-content">
+            <span class="stats__value" data-count="5000" data-suffix="+">0</span>
+            <span class="stats__label">Jant Montajı</span>
+          </div>
+        </article>
+        <article class="stats__card stats__card--02" data-reveal-child>
+          <div class="stats__card-content">
+            <span class="stats__value" data-count="8500" data-suffix="+">0</span>
+            <span class="stats__label">Lastik Değişimi</span>
+          </div>
+        </article>
+        <article class="stats__card stats__card--03" data-reveal-child>
+          <div class="stats__card-content">
+            <span class="stats__value" data-count="10" data-suffix="+">0</span>
+            <span class="stats__label">Yıllık Deneyim</span>
+          </div>
+        </article>
+        <article class="stats__card stats__card--04" data-reveal-child>
+          <div class="stats__card-content">
+            <span class="stats__value" data-count="100" data-prefix="%">0</span>
+            <span class="stats__label">Müşteri Memnuniyeti</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section premium-cta" id="home-cta" data-reveal>
+    <div class="premium-section__container">
+      <div class="premium-cta__box" data-reveal-child>
+        <h2 class="premium-cta__title">Aracınız İçin Premium Jant &amp; Lastik Çözümleri</h2>
+        <p class="premium-cta__desc">Uzman ekibimiz aracınıza en uygun jant ve lastik seçiminde size yardımcı olur.</p>
+        <div class="premium-cta__actions">
+          <a href="https://wa.me/905449483197" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="tel:+905449483197" class="hero__btn hero__btn--ghost">Telefon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__glow" aria-hidden="true"></div>
+    <div class="site-footer__container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col site-footer__col--brand">
+          <a href="index.html" class="site-footer__logo" aria-label="Ana sayfa">
+            <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="auto" height="56" decoding="async">
+          </a>
+          <p class="site-footer__desc">Premium jant, lastik ve profesyonel servis çözümleriyle aracınıza değer katıyoruz.</p>
+          <div class="site-footer__social">
+            <a href="https://www.instagram.com/markajantlastik" class="site-footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+            </a>
+            <a href="https://www.facebook.com/marka.jant.lastik" class="site-footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8.5V7.2c0-.66.53-1.2 1.2-1.2H17V3h-2.5C12.02 3 10 5.02 10 7.5V8.5H7v3.5h3V21h4v-9h3l.5-3.5H14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Hızlı Menü</h3>
+          <ul class="site-footer__list">
+            <li><a href="index.html" class="site-footer__link">Ana Sayfa</a></li>
+            <li><a href="jantlar.html" class="site-footer__link">Jantlar</a></li>
+            <li><a href="lastikler.html" class="site-footer__link">Lastikler</a></li>
+            <li><a href="index.html#hizmetler" class="site-footer__link">Hizmetlerimiz</a></li>
+            <li><a href="sss.html" class="site-footer__link">S.S.S.</a></li>
+            <li><a href="iletisim.html" class="site-footer__link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Hizmetlerimiz</h3>
+          <ul class="site-footer__list">
+            <li><a href="lastik-degisimi.html" class="site-footer__link">Lastik Değişimi &amp; Montaj</a></li>
+            <li><a href="jant-onarim.html" class="site-footer__link">Jant Onarım &amp; Düzeltme</a></li>
+            <li><a href="lastik-oteli.html" class="site-footer__link">Lastik Oteli</a></li>
+            <li><a href="balans.html" class="site-footer__link">Balans</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">İletişim</h3>
+          <ul class="site-footer__contact">
+            <li>
+              <span class="site-footer__contact-label">Telefon</span>
+              <a href="tel:+905449483197" class="site-footer__contact-value">+90 (544) 948 31 97</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">WhatsApp</span>
+              <a href="https://wa.me/905449483197" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">E-Posta</span>
+              <a href="mailto:markajantlastikkurumsal@gmail.com" class="site-footer__contact-value">markajantlastikkurumsal@gmail.com</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">Adres</span>
+              <span class="site-footer__contact-value">Yenimahalle, 7. Sk. No:11, 55080 Canik/Samsun</span>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">Google Maps</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Yenimahalle+7.+Sk.+No%3A11+55080+Canik+Samsun" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">Haritada Görüntüle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">&copy; 2026 Marka Jant Lastik</p>
+        <p class="site-footer__credit">Designed &amp; Developed by Kanal Ajans</p>
+      </div>
+    </div>
+  </footer>
+
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

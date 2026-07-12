@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marka Jant Lastik ile iletişime geçin. Telefon, WhatsApp, e-posta ve adres bilgilerimiz.">
+  <link rel="canonical" href="https://markajantlastik.com/iletisim.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Marka Jant Lastik">
+  <meta property="og:title" content="İletişim | Marka Jant Lastik">
+  <meta property="og:description" content="Marka Jant Lastik ile iletişime geçin. Telefon, WhatsApp, e-posta ve adres bilgilerimiz.">
+  <meta property="og:url" content="https://markajantlastik.com/iletisim.html">
+  <meta property="og:image" content="https://markajantlastik.com/assets/images/hero/hero-store.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="İletişim | Marka Jant Lastik">
+  <meta name="twitter:description" content="Marka Jant Lastik ile iletişime geçin. Telefon, WhatsApp, e-posta ve adres bilgilerimiz.">
+  <meta name="twitter:image" content="https://markajantlastik.com/assets/images/hero/hero-store.jpg">
+  <title>İletişim | Marka Jant Lastik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-hero {
+      display: flex;
+      align-items: center;
+      min-height: 260px;
+      padding: calc(88px + 48px) clamp(32px, 4.5vw, 64px) 48px;
+      background-color: #090909;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .page-hero__container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .contact {
+      padding: clamp(64px, 8vw, 100px) 0;
+      background-color: #090909;
+    }
+
+    .contact__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      gap: clamp(40px, 5vw, 72px);
+    }
+
+    .contact__heading {
+      margin: 0 0 clamp(24px, 3vw, 32px);
+      color: #ffffff;
+      font-size: clamp(22px, 2.8vw, 28px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .contact__form-card {
+      padding: clamp(28px, 3vw, 36px);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+      );
+      backdrop-filter: blur(20px) saturate(1.3);
+      -webkit-backdrop-filter: blur(20px) saturate(1.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact__field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .contact__label {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .contact__input,
+    .contact__textarea {
+      width: 100%;
+      padding: 14px 16px;
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      outline: none;
+      transition:
+        border-color 300ms ease,
+        box-shadow 300ms ease,
+        background 300ms ease;
+    }
+
+    .contact__input::placeholder,
+    .contact__textarea::placeholder {
+      color: rgba(255, 255, 255, 0.32);
+    }
+
+    .contact__input:focus,
+    .contact__textarea:focus {
+      border-color: rgba(31, 79, 255, 0.45);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 0 3px rgba(31, 79, 255, 0.12);
+    }
+
+    .contact__textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .contact__submit {
+      align-self: flex-start;
+      margin-top: 4px;
+    }
+
+    .contact__info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 0 0 clamp(28px, 3vw, 36px);
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact__info-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 18px 20px;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+      );
+      backdrop-filter: blur(20px) saturate(1.3);
+      -webkit-backdrop-filter: blur(20px) saturate(1.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+      transition:
+        border-color 400ms ease,
+        box-shadow 400ms ease;
+    }
+
+    .contact__info-item:hover {
+      border-color: rgba(31, 79, 255, 0.22);
+      box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.18),
+        0 0 32px rgba(31, 79, 255, 0.06);
+    }
+
+    .contact__info-label {
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .contact__info-value {
+      color: #ffffff;
+      font-size: clamp(15px, 1.5vw, 16px);
+      font-weight: 500;
+      line-height: 1.5;
+      text-decoration: none;
+      transition: color 250ms ease;
+    }
+
+    a.contact__info-value:hover {
+      color: #3f6dff;
+    }
+
+    .contact__map {
+      position: relative;
+      aspect-ratio: 16 / 11;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow:
+        0 16px 48px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    }
+
+    .contact__map iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      border: 0;
+    }
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background:
+        linear-gradient(
+          160deg,
+          rgba(31, 79, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.03) 40%,
+          rgba(9, 9, 9, 0.5) 100%
+        ),
+        #121218;
+    }
+
+    .contact__map-placeholder::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 14px,
+        rgba(255, 255, 255, 0.012) 14px,
+        rgba(255, 255, 255, 0.012) 28px
+      );
+    }
+
+    .contact__map-icon {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(31, 79, 255, 0.15);
+      color: #1f4fff;
+    }
+
+    .contact__map-text {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 1024px) {
+      .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-hero {
+        min-height: 220px;
+        padding: calc(88px + 32px) clamp(20px, 5vw, 28px) 32px;
+      }
+
+      .contact__form-card {
+        padding: 24px 20px;
+      }
+
+      .contact__submit {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__container">
+      <a href="index.html" class="site-header__logo" aria-label="Ana sayfa">
+        <img
+          src="assets/images/logo-white.png"
+          alt="Marka Jant Lastik"
+          width="auto"
+          height="68"
+          decoding="async"
+        >
+      </a>
+
+      <nav class="site-header__nav" aria-label="Ana menü">
+        <ul class="site-header__menu">
+          <li><a href="index.html" class="site-header__link">Ana Sayfa</a></li>
+          <li><a href="jantlar.html" class="site-header__link">Jantlar</a></li>
+          <li><a href="lastikler.html" class="site-header__link">Lastikler</a></li>
+          <li class="site-header__dropdown">
+            <a href="index.html#hizmetler" class="site-header__link site-header__link--dropdown" aria-haspopup="true" aria-expanded="false">
+              Hizmetlerimiz
+              <svg class="site-header__chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <ul class="site-header__dropdown-menu">
+              <li><a href="lastik-degisimi.html" class="site-header__dropdown-link">Lastik Değişimi &amp; Montaj</a></li>
+              <li><a href="jant-onarim.html" class="site-header__dropdown-link">Jant Onarım &amp; Düzeltme</a></li>
+              <li><a href="lastik-oteli.html" class="site-header__dropdown-link">Lastik Oteli</a></li>
+              <li><a href="balans.html" class="site-header__dropdown-link">Balans</a></li>
+            </ul>
+          </li>
+          <li><a href="sss.html" class="site-header__link">S.S.S.</a></li>
+          <li><a href="iletisim.html" class="site-header__link site-header__link--active">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <div class="site-header__social">
+          <a href="https://www.instagram.com/markajantlastik" class="site-header__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/marka.jant.lastik" class="site-header__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8.5V7.2c0-.66.53-1.2 1.2-1.2H17V3h-2.5C12.02 3 10 5.02 10 7.5V8.5H7v3.5h3V21h4v-9h3l.5-3.5H14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <a href="iletisim.html" class="site-header__btn">Bilgi Al</a>
+        <button
+          class="site-header__toggle"
+          type="button"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="site-header__toggle-line"></span>
+          <span class="site-header__toggle-line"></span>
+          <span class="site-header__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="site-header__mobile" id="mobileMenu" aria-hidden="true">
+      <div class="site-header__mobile-backdrop"></div>
+      <div class="site-header__mobile-panel">
+        <nav class="site-header__mobile-nav" aria-label="Mobil menü">
+          <ul class="site-header__mobile-menu">
+            <li><a href="index.html" class="site-header__mobile-link">Ana Sayfa</a></li>
+            <li><a href="jantlar.html" class="site-header__mobile-link">Jantlar</a></li>
+            <li><a href="lastikler.html" class="site-header__mobile-link">Lastikler</a></li>
+            <li class="site-header__mobile-dropdown">
+              <button type="button" class="site-header__mobile-dropdown-btn" aria-expanded="false">
+                Hizmetlerimiz
+                <svg class="site-header__chevron" width="12" height="12" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                  <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <ul class="site-header__mobile-submenu">
+                <li><a href="lastik-degisimi.html" class="site-header__mobile-sublink">Lastik Değişimi &amp; Montaj</a></li>
+                <li><a href="jant-onarim.html" class="site-header__mobile-sublink">Jant Onarım &amp; Düzeltme</a></li>
+                <li><a href="lastik-oteli.html" class="site-header__mobile-sublink">Lastik Oteli</a></li>
+                <li><a href="balans.html" class="site-header__mobile-sublink">Balans</a></li>
+              </ul>
+            </li>
+            <li><a href="sss.html" class="site-header__mobile-link">S.S.S.</a></li>
+            <li><a href="iletisim.html" class="site-header__mobile-link site-header__mobile-link--active">İletişim</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__mobile-footer">
+        <div class="site-header__social site-header__social--mobile">
+          <a href="https://www.instagram.com/markajantlastik" class="site-header__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/marka.jant.lastik" class="site-header__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8.5V7.2c0-.66.53-1.2 1.2-1.2H17V3h-2.5C12.02 3 10 5.02 10 7.5V8.5H7v3.5h3V21h4v-9h3l.5-3.5H14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+          <a href="iletisim.html" class="site-header__btn site-header__btn--mobile">Bilgi Al</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__container">
+      <h1 class="jantlar__title">İletişim</h1>
+      <p class="jantlar__subtitle">Sorularınız ve bilgi talepleriniz için bizimle iletişime geçin.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="why__container">
+      <div class="contact__grid">
+
+        <div class="contact__form-wrap">
+          <h2 class="contact__heading">İletişim Formu</h2>
+          <div class="contact__form-card">
+            <form class="contact__form" action="#" method="post" novalidate>
+              <div class="contact__field">
+                <label class="contact__label" for="contactName">Ad Soyad</label>
+                <input type="text" id="contactName" name="name" class="contact__input" placeholder="Adınız ve soyadınız" autocomplete="name">
+              </div>
+              <div class="contact__field">
+                <label class="contact__label" for="contactPhone">Telefon</label>
+                <input type="tel" id="contactPhone" name="phone" class="contact__input" placeholder="+90 (544) 948 31 97" autocomplete="tel">
+              </div>
+              <div class="contact__field">
+                <label class="contact__label" for="contactEmail">E-Posta</label>
+                <input type="email" id="contactEmail" name="email" class="contact__input" placeholder="markajantlastikkurumsal@gmail.com" autocomplete="email">
+              </div>
+              <div class="contact__field">
+                <label class="contact__label" for="contactMessage">Mesaj</label>
+                <textarea id="contactMessage" name="message" class="contact__textarea" placeholder="Mesajınızı buraya yazın..."></textarea>
+              </div>
+              <button type="button" class="hero__btn hero__btn--primary contact__submit">Bilgi Al</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact__info-wrap">
+          <h2 class="contact__heading">İletişim Bilgileri</h2>
+          <ul class="contact__info-list">
+            <li class="contact__info-item">
+              <span class="contact__info-label">Telefon</span>
+              <a href="tel:+905449483197" class="contact__info-value">+90 (544) 948 31 97</a>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-label">WhatsApp</span>
+              <a href="https://wa.me/905449483197" class="contact__info-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-label">Mail</span>
+              <a href="mailto:markajantlastikkurumsal@gmail.com" class="contact__info-value">markajantlastikkurumsal@gmail.com</a>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-label">Adres</span>
+              <span class="contact__info-value">Yenimahalle, 7. Sk. No:11, 55080 Canik/Samsun</span>
+            </li>
+          </ul>
+          <div class="contact__map" aria-label="Google Maps">
+            <iframe
+              src="https://www.google.com/maps?q=Yenimahalle,+7.+Sk.+No:11,+55080+Canik/Samsun&hl=tr&z=16&output=embed"
+              title="Marka Jant Lastik konumu"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__glow" aria-hidden="true"></div>
+    <div class="site-footer__container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col site-footer__col--brand">
+          <a href="index.html" class="site-footer__logo" aria-label="Ana sayfa">
+            <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="auto" height="56" decoding="async">
+          </a>
+          <p class="site-footer__desc">Premium jant, lastik ve profesyonel servis çözümleriyle aracınıza değer katıyoruz.</p>
+          <div class="site-footer__social">
+            <a href="https://www.instagram.com/markajantlastik" class="site-footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+            </a>
+            <a href="https://www.facebook.com/marka.jant.lastik" class="site-footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8.5V7.2c0-.66.53-1.2 1.2-1.2H17V3h-2.5C12.02 3 10 5.02 10 7.5V8.5H7v3.5h3V21h4v-9h3l.5-3.5H14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Hızlı Menü</h3>
+          <ul class="site-footer__list">
+            <li><a href="index.html" class="site-footer__link">Ana Sayfa</a></li>
+            <li><a href="jantlar.html" class="site-footer__link">Jantlar</a></li>
+            <li><a href="lastikler.html" class="site-footer__link">Lastikler</a></li>
+            <li><a href="index.html#hizmetler" class="site-footer__link">Hizmetlerimiz</a></li>
+            <li><a href="sss.html" class="site-footer__link">S.S.S.</a></li>
+            <li><a href="iletisim.html" class="site-footer__link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Hizmetlerimiz</h3>
+          <ul class="site-footer__list">
+            <li><a href="lastik-degisimi.html" class="site-footer__link">Lastik Değişimi &amp; Montaj</a></li>
+            <li><a href="jant-onarim.html" class="site-footer__link">Jant Onarım &amp; Düzeltme</a></li>
+            <li><a href="lastik-oteli.html" class="site-footer__link">Lastik Oteli</a></li>
+            <li><a href="balans.html" class="site-footer__link">Balans</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">İletişim</h3>
+          <ul class="site-footer__contact">
+            <li>
+              <span class="site-footer__contact-label">Telefon</span>
+              <a href="tel:+905449483197" class="site-footer__contact-value">+90 (544) 948 31 97</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">WhatsApp</span>
+              <a href="https://wa.me/905449483197" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">E-Posta</span>
+              <a href="mailto:markajantlastikkurumsal@gmail.com" class="site-footer__contact-value">markajantlastikkurumsal@gmail.com</a>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">Adres</span>
+              <span class="site-footer__contact-value">Yenimahalle, 7. Sk. No:11, 55080 Canik/Samsun</span>
+            </li>
+            <li>
+              <span class="site-footer__contact-label">Google Maps</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Yenimahalle+7.+Sk.+No%3A11+55080+Canik+Samsun" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">Haritada Görüntüle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">&copy; 2026 Marka Jant Lastik</p>
+        <p class="site-footer__credit">Designed &amp; Developed by Kanal Ajans</p>
+      </div>
+    </div>
+  </footer>
+
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

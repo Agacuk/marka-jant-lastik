@@ -129,9 +129,15 @@ function buildSocialLinks(mobile = false) {
         </div>`;
 }
 
-function dropdownLink(href, label, service, mobile = false) {
-  let cls = mobile ? "site-header__mobile-sublink" : "site-header__dropdown-link";
-  if (service && href === service) cls += mobile ? " site-header__mobile-sublink--active" : " site-header__dropdown-link--active";
+function mobileSublink(href, label, service) {
+  let cls = "mobile-nav__sublink";
+  if (service && href === service) cls += " mobile-nav__sublink--active";
+  return `<li><a href="${href}" class="${cls}">${label}</a></li>`;
+}
+
+function dropdownLink(href, label, service) {
+  let cls = "site-header__dropdown-link";
+  if (service && href === service) cls += " site-header__dropdown-link--active";
   return `<li><a href="${href}" class="${cls}">${label}</a></li>`;
 }
 
@@ -143,8 +149,8 @@ function buildHeader(meta) {
       : "site-header__link site-header__link--dropdown";
   const mServicesBtn =
     active === "services"
-      ? "site-header__mobile-dropdown-btn site-header__mobile-link--active"
-      : "site-header__mobile-dropdown-btn";
+      ? "mobile-nav__accordion-btn mobile-nav__link--active"
+      : "mobile-nav__accordion-btn";
 
   return `  <header class="site-header" id="siteHeader">
     <div class="site-header__container">
@@ -199,38 +205,36 @@ ${buildSocialLinks(false)}
       </div>
     </div>
 
-    <div class="site-header__mobile" id="mobileMenu" aria-hidden="true">
-      <div class="site-header__mobile-backdrop"></div>
-      <div class="site-header__mobile-panel">
-        <nav class="site-header__mobile-nav" aria-label="Mobil menü">
-          <ul class="site-header__mobile-menu">
-            <li><a href="index.html" class="${linkClass("site-header__mobile-link", active, "home")}">Ana Sayfa</a></li>
-            <li><a href="jantlar.html" class="${linkClass("site-header__mobile-link", active, "jantlar")}">Jantlar</a></li>
-            <li><a href="lastikler.html" class="${linkClass("site-header__mobile-link", active, "lastikler")}">Lastikler</a></li>
-            <li class="site-header__mobile-dropdown">
-              <button type="button" class="${mServicesBtn}" aria-expanded="false">
-                Hizmetlerimiz
-                <svg class="site-header__chevron" width="12" height="12" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                  <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-              <ul class="site-header__mobile-submenu">
-                ${dropdownLink("lastik-degisimi.html", "Lastik Değişimi &amp; Montaj", service, true)}
-                ${dropdownLink("jant-onarim.html", "Jant Onarım &amp; Düzeltme", service, true)}
-                ${dropdownLink("lastik-oteli.html", "Lastik Oteli", service, true)}
-                ${dropdownLink("balans.html", "Balans", service, true)}
-              </ul>
-            </li>
-            <li><a href="sss.html" class="${linkClass("site-header__mobile-link", active, "sss")}">S.S.S.</a></li>
-            <li><a href="iletisim.html" class="${linkClass("site-header__mobile-link", active, "iletisim")}">İletişim</a></li>
-          </ul>
-        </nav>
-        <div class="site-header__mobile-footer">
-${buildSocialLinks(true)}
-          <a href="iletisim.html" class="site-header__btn site-header__btn--mobile">Bilgi Al</a>
-        </div>
+    <nav class="mobile-nav" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-nav__overlay" data-mobile-nav-close></div>
+      <div class="mobile-nav__panel">
+        <a href="index.html" class="mobile-nav__logo" aria-label="Ana sayfa">
+          <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="160" height="48" decoding="async">
+        </a>
+        <ul class="mobile-nav__menu">
+          <li><a href="index.html" class="${linkClass("mobile-nav__link", active, "home")}">Ana Sayfa</a></li>
+          <li><a href="jantlar.html" class="${linkClass("mobile-nav__link", active, "jantlar")}">Jantlar</a></li>
+          <li><a href="lastikler.html" class="${linkClass("mobile-nav__link", active, "lastikler")}">Lastikler</a></li>
+          <li class="mobile-nav__accordion">
+            <button type="button" class="${mServicesBtn}" aria-expanded="false" aria-controls="mobileNavServices">
+              <span>Hizmetler</span>
+              <svg class="mobile-nav__chevron" width="12" height="12" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="mobile-nav__accordion-panel" id="mobileNavServices">
+              ${mobileSublink("lastik-degisimi.html", "Lastik Değişimi", service)}
+              ${mobileSublink("jant-onarim.html", "Jant Onarımı", service)}
+              ${mobileSublink("lastik-oteli.html", "Lastik Oteli", service)}
+              ${mobileSublink("balans.html", "Balans", service)}
+            </ul>
+          </li>
+          <li><a href="sss.html" class="${linkClass("mobile-nav__link", active, "sss")}">SSS</a></li>
+          <li><a href="iletisim.html" class="${linkClass("mobile-nav__link", active, "iletisim")}">İletişim</a></li>
+          <li><a href="iletisim.html" class="mobile-nav__link mobile-nav__link--cta">Bilgi AI</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
   </header>`;
 }
 

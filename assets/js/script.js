@@ -6,6 +6,7 @@
   var mobileMenu = document.getElementById("mobileMenu");
   var scrollThreshold = 20;
   var isMenuOpen = false;
+  var savedScrollY = 0;
 
   function handleScroll() {
     if (!header) return;
@@ -17,6 +18,28 @@
     }
   }
 
+  function lockBodyScroll() {
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.classList.add("is-mobile-nav-open");
+    document.body.style.top = "-" + savedScrollY + "px";
+  }
+
+  function unlockBodyScroll() {
+    document.body.classList.remove("is-mobile-nav-open");
+    document.body.style.top = "";
+    window.scrollTo(0, savedScrollY);
+  }
+
+  function closeMobileAccordions() {
+    if (!mobileMenu) return;
+
+    mobileMenu.querySelectorAll(".mobile-nav__accordion.is-open").forEach(function (item) {
+      item.classList.remove("is-open");
+      var btn = item.querySelector(".mobile-nav__accordion-btn");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    });
+  }
+
   function openMenu() {
     if (!toggle || !mobileMenu) return;
 
@@ -26,7 +49,7 @@
     toggle.setAttribute("aria-label", "Menüyü kapat");
     mobileMenu.classList.add("is-open");
     mobileMenu.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
+    lockBodyScroll();
   }
 
   function closeMenu() {
@@ -38,14 +61,8 @@
     toggle.setAttribute("aria-label", "Menüyü aç");
     mobileMenu.classList.remove("is-open");
     mobileMenu.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-
-    var mobileDropdowns = mobileMenu.querySelectorAll(".site-header__mobile-dropdown.is-open");
-    mobileDropdowns.forEach(function (item) {
-      item.classList.remove("is-open");
-      var btn = item.querySelector(".site-header__mobile-dropdown-btn");
-      if (btn) btn.setAttribute("aria-expanded", "false");
-    });
+    unlockBodyScroll();
+    closeMobileAccordions();
   }
 
   function toggleMenu() {
@@ -104,17 +121,21 @@
     });
   }
 
-  function initMobileDropdowns() {
-    var mobileDropdownBtns = document.querySelectorAll(".site-header__mobile-dropdown-btn");
+  function initMobileAccordions() {
+    var accordionBtns = document.querySelectorAll(".mobile-nav__accordion-btn");
 
-    mobileDropdownBtns.forEach(function (btn) {
+    accordionBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var parent = btn.closest(".site-header__mobile-dropdown");
+        var parent = btn.closest(".mobile-nav__accordion");
         if (!parent) return;
 
         var isOpen = parent.classList.contains("is-open");
-        parent.classList.toggle("is-open");
-        btn.setAttribute("aria-expanded", isOpen ? "false" : "true");
+        closeMobileAccordions();
+
+        if (!isOpen) {
+          parent.classList.add("is-open");
+          btn.setAttribute("aria-expanded", "true");
+        }
       });
     });
   }
@@ -127,19 +148,31 @@
   if (toggle && mobileMenu) {
     toggle.addEventListener("click", toggleMenu);
 
-    var backdrop = mobileMenu.querySelector(".site-header__mobile-backdrop");
-    if (backdrop) {
-      backdrop.addEventListener("click", closeMenu);
+    var overlay = mobileMenu.querySelector("[data-mobile-nav-close]");
+    if (overlay) {
+      overlay.addEventListener("click", closeMenu);
     }
 
-    var mobileLinks = mobileMenu.querySelectorAll(".site-header__mobile-link, .site-header__mobile-sublink");
+    var mobileLinks = mobileMenu.querySelectorAll(".mobile-nav__link, .mobile-nav__sublink");
     mobileLinks.forEach(function (link) {
       link.addEventListener("click", closeMenu);
     });
   }
 
   initDesktopDropdowns();
-  initMobileDropdowns();
+  initMobileAccordions();
+
+  if (mobileMenu) {
+    var activeSublink = mobileMenu.querySelector(".mobile-nav__sublink--active");
+    if (activeSublink) {
+      var accordion = activeSublink.closest(".mobile-nav__accordion");
+      var accordionBtn = accordion && accordion.querySelector(".mobile-nav__accordion-btn");
+      if (accordion && accordionBtn) {
+        accordion.classList.add("is-open");
+        accordionBtn.setAttribute("aria-expanded", "true");
+      }
+    }
+  }
 
   document.addEventListener("keydown", handleKeydown);
   window.addEventListener("resize", handleResize);

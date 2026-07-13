@@ -189,293 +189,28 @@
   initImageFallback(".services__card-img");
   initImageFallback(".why__visual-img");
 
-  /* ========================================================================
-     Unified Gallery System
-     Yeni görsel eklemek için sadece ilgili klasöre dosya ekleyin.
-     Dosya adları: {prefix}001.webp, {prefix}002.webp, ... (sıralı, 3 haneli)
-     ======================================================================== */
-  const instagramUrl = "https://www.instagram.com/markajantlastik";
-  const GALLERY_PER_PAGE = 8;
-  const GALLERY_PROBE_MAX = 999;
-
-  var HOVER_ICON_SVG =
-    '<svg class="jantlar__hover-icon" width="28" height="28" viewBox="0 0 24 24" fill="none">' +
-    '<circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/>' +
-    '<path d="M16 16l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
-    '<path d="M11 8v6M8 11h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
-    "</svg>";
-
-  var galleryState = {};
-
-  function padImageNumber(num) {
-    var value = String(num);
-
-    while (value.length < 3) {
-      value = "0" + value;
-    }
-
-    return value;
-  }
-
-  function buildGalleryPath(folder, prefix, number) {
-    var normalizedFolder = folder.charAt(folder.length - 1) === "/" ? folder : folder + "/";
-    return normalizedFolder + prefix + padImageNumber(number) + ".webp";
-  }
-
-  function probeImageCount(folder, prefix) {
-    return new Promise(function (resolve) {
-      var count = 0;
-      var index = 1;
-
-      function tryNext() {
-        if (index > GALLERY_PROBE_MAX) {
-          resolve(count);
-          return;
-        }
-
-        var probe = new Image();
-
-        probe.onload = function () {
-          count = index;
-          index += 1;
-          tryNext();
-        };
-
-        probe.onerror = function () {
-          resolve(count);
-        };
-
-        probe.src = buildGalleryPath(folder, prefix, index);
-      }
-
-      tryNext();
-    });
-  }
-
-  function createGalleryImage(src, className) {
-    var img = document.createElement("img");
-    img.src = src;
-    img.alt = "";
-    img.className = className || "jantlar__img";
-    img.loading = "lazy";
-    img.decoding = "async";
-    img.width = 800;
-    img.height = 800;
-    return img;
-  }
-
-  function createGalleryPlaceholder() {
-    var placeholder = document.createElement("div");
-    placeholder.className = "jantlar__placeholder";
-    placeholder.setAttribute("aria-hidden", "true");
-    return placeholder;
-  }
-
-  function createGalleryCard(index, src, altPrefix) {
-    var button = document.createElement("button");
-    button.type = "button";
-    button.className = "jantlar__item";
-    button.setAttribute("data-index", String(index));
-    button.setAttribute("aria-label", altPrefix + " görseli " + (index + 1) + ", büyüt");
-
-    var media = document.createElement("div");
-    media.className = "jantlar__media";
-
-    var hover = document.createElement("span");
-    hover.className = "jantlar__hover";
-    hover.setAttribute("aria-hidden", "true");
-    hover.innerHTML = HOVER_ICON_SVG;
-
-    media.appendChild(createGalleryPlaceholder());
-    media.appendChild(createGalleryImage(src));
-    media.appendChild(hover);
-    button.appendChild(media);
-
-    return button;
-  }
-
-  function createInstagramCard(index, src, altPrefix) {
-    var button = document.createElement("button");
-    button.type = "button";
-    button.className = "jantlar__item instagram-card";
-    button.setAttribute("data-index", String(index));
-    button.setAttribute("aria-label", altPrefix + " görseli " + (index + 1) + ", büyüt");
-
-    var media = document.createElement("div");
-    media.className = "jantlar__media";
-
-    var overlay = document.createElement("div");
-    overlay.className = "instagram-card__overlay";
-    overlay.setAttribute("aria-hidden", "true");
-    overlay.innerHTML = '<i class="bi bi-instagram" aria-hidden="true"></i><span>Instagram\'da Gör</span>';
-
-    media.appendChild(createGalleryPlaceholder());
-    media.appendChild(createGalleryImage(src));
-    media.appendChild(overlay);
-    button.appendChild(media);
-
-    return button;
-  }
-
-  function createShowcaseCard(src, label) {
-    var card = document.createElement("article");
-    card.className = "showcase__card";
-
-    var media = document.createElement("div");
-    media.className = "showcase__media";
-
-    var labelEl = document.createElement("span");
-    labelEl.className = "showcase__label";
-    labelEl.textContent = label;
-
-    media.appendChild(createGalleryPlaceholder());
-    media.appendChild(createGalleryImage(src));
-    card.appendChild(media);
-    card.appendChild(labelEl);
-
-    return card;
-  }
-
-  function renderGalleryBatch(state, fromIndex, batchSize, append) {
-    var grid = state.grid;
-    var end = Math.min(fromIndex + batchSize, state.total);
-
-    if (!grid || fromIndex >= end) return;
-
-    var fragment = document.createDocumentFragment();
-    var i;
-    var createCard = state.variant === "instagram" ? createInstagramCard : createGalleryCard;
-
-    for (i = fromIndex; i < end; i++) {
-      var src = buildGalleryPath(state.folder, state.prefix, i + 1);
-      fragment.appendChild(createCard(i, src, state.altPrefix));
-    }
-
-    if (append) {
-      grid.appendChild(fragment);
-    } else {
-      grid.textContent = "";
-      grid.appendChild(fragment);
-    }
-
-    state.visible = end;
-    initImageFallback(".jantlar__img");
-    updateGalleryLoadMore(state.id);
-  }
-
-  function updateGalleryLoadMore(galleryId) {
-    var state = galleryState[galleryId];
-    var loadMoreWrap = document.querySelector('[data-load-more-for="' + galleryId + '"]');
-
-    if (!loadMoreWrap || !state) return;
-
-    if (state.visible >= state.total) {
-      loadMoreWrap.classList.add("is-hidden");
-    } else {
-      loadMoreWrap.classList.remove("is-hidden");
-    }
-  }
-
-  function createGallery(options) {
-    var grid = options.grid;
-    var id = options.id;
-
-    if (!grid || !id) {
-      return Promise.resolve();
-    }
-
-    return probeImageCount(options.folder, options.prefix).then(function (total) {
-      var loadMoreWrap = document.querySelector('[data-load-more-for="' + id + '"]');
-
-      if (!total) {
-        if (loadMoreWrap) loadMoreWrap.classList.add("is-hidden");
-        return;
-      }
-
-      galleryState[id] = {
-        id: id,
-        grid: grid,
-        folder: options.folder,
-        prefix: options.prefix,
-        altPrefix: options.altPrefix || "Görsel",
-        variant: options.variant || "gallery",
-        total: total,
-        visible: 0,
-        perPage: options.perPage || GALLERY_PER_PAGE
-      };
-
-      renderGalleryBatch(galleryState[id], 0, galleryState[id].perPage, false);
-    });
-  }
-
-  function initGalleryLoadMoreButtons() {
-    document.querySelectorAll("[data-load-more-btn]").forEach(function (btn) {
-      if (btn.dataset.loadMoreBound === "true") return;
-      btn.dataset.loadMoreBound = "true";
-
-      btn.addEventListener("click", function () {
-        var wrap = btn.closest("[data-load-more-for]");
-        if (!wrap) return;
-
-        var galleryId = wrap.getAttribute("data-load-more-for");
-        var state = galleryState[galleryId];
-
-        if (!state) return;
-
-        renderGalleryBatch(state, state.visible, state.perPage, true);
-      });
-    });
-  }
-
-  function initUnifiedGalleries() {
-    var grids = document.querySelectorAll("[data-gallery-folder]");
-    var tasks = [];
-
-    grids.forEach(function (grid) {
-      tasks.push(createGallery({
-        grid: grid,
-        id: grid.getAttribute("data-gallery-id"),
-        folder: grid.getAttribute("data-gallery-folder"),
-        prefix: grid.getAttribute("data-gallery-prefix"),
-        perPage: parseInt(grid.getAttribute("data-gallery-per-page"), 10) || GALLERY_PER_PAGE,
-        altPrefix: grid.getAttribute("data-gallery-alt") || "Görsel",
-        variant: grid.getAttribute("data-gallery-variant") || "gallery"
-      }));
-    });
-
-    return Promise.all(tasks).then(function () {
-      initGalleryLoadMoreButtons();
-      return initFeaturedShowcases();
-    });
-  }
-
-  function initFeaturedShowcases() {
-    var featuredJantGrid = document.querySelector("#featured-jant .showcase__grid");
-
-    if (!featuredJantGrid) {
-      return Promise.resolve();
-    }
-
-    return probeImageCount("assets/images/jantlar/", "jant-").then(function (jantTotal) {
-      if (!jantTotal) return;
-
-      var fragment = document.createDocumentFragment();
-      var count = Math.min(4, jantTotal);
-      var i;
-
-      for (i = 0; i < count; i++) {
-        fragment.appendChild(createShowcaseCard(buildGalleryPath("assets/images/jantlar/", "jant-", i + 1), "Jant"));
-      }
-
-      featuredJantGrid.textContent = "";
-      featuredJantGrid.appendChild(fragment);
-      initImageFallback(".jantlar__img");
-    });
-  }
-
-  initUnifiedGalleries();
-
   /* Gallery lightbox */
+  function getGallerySources(sectionId) {
+    if (window.MJLGallery) {
+      const map = window.MJLGallery.SECTION_GALLERY_MAP || {};
+      const galleryId = map[sectionId];
+      if (galleryId) {
+        const sources = window.MJLGallery.getSources(galleryId);
+        if (sources.length) return sources;
+      }
+    }
+
+    const section = document.getElementById(sectionId);
+    if (!section) return [];
+
+    const sources = [];
+    section.querySelectorAll(".jantlar__item .jantlar__img").forEach(function (img) {
+      const src = img.getAttribute("src");
+      if (src) sources.push(src);
+    });
+    return sources;
+  }
+
   function initGalleryLightbox(sectionId, lightboxId, lightboxImgId, altPrefix) {
     var section = document.getElementById(sectionId);
     var lightbox = document.getElementById(lightboxId);
@@ -488,11 +223,7 @@
     var lastFocused = null;
 
     function getSources() {
-      var sources = [];
-      section.querySelectorAll(".jantlar__item .jantlar__img").forEach(function (img) {
-        sources.push(img.getAttribute("src"));
-      });
-      return sources;
+      return getGallerySources(sectionId);
     }
 
     function showImage(index) {
@@ -647,6 +378,7 @@
   }
 
   function initInstagramLinks() {
+    const instagramUrl = "https://www.instagram.com/markajantlastik";
     document.querySelectorAll("[data-instagram-link]").forEach(function (link) {
       link.href = instagramUrl;
     });

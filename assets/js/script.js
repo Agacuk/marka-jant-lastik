@@ -189,146 +189,6 @@
   initImageFallback(".services__card-img");
   initImageFallback(".why__visual-img");
 
-  /* Gallery lightbox */
-  function getGallerySources(sectionId) {
-    if (window.MJLGallery) {
-      const map = window.MJLGallery.SECTION_GALLERY_MAP || {};
-      const galleryId = map[sectionId];
-      if (galleryId) {
-        const sources = window.MJLGallery.getSources(galleryId);
-        if (sources.length) return sources;
-      }
-    }
-
-    const section = document.getElementById(sectionId);
-    if (!section) return [];
-
-    const sources = [];
-    section.querySelectorAll(".jantlar__item .jantlar__img").forEach(function (img) {
-      const src = img.getAttribute("src");
-      if (src) sources.push(src);
-    });
-    return sources;
-  }
-
-  function initGalleryLightbox(sectionId, lightboxId, lightboxImgId, altPrefix) {
-    var section = document.getElementById(sectionId);
-    var lightbox = document.getElementById(lightboxId);
-    var lightboxImg = document.getElementById(lightboxImgId);
-
-    if (!section || !lightbox || !lightboxImg) return;
-
-    var currentIndex = 0;
-    var isOpen = false;
-    var lastFocused = null;
-
-    function getSources() {
-      return getGallerySources(sectionId);
-    }
-
-    function showImage(index) {
-      var sources = getSources();
-      if (!sources.length) return;
-
-      if (index < 0) index = sources.length - 1;
-      if (index >= sources.length) index = 0;
-
-      currentIndex = index;
-      lightboxImg.classList.remove("is-visible");
-      lightboxImg.onload = function () {
-        lightboxImg.classList.add("is-visible");
-      };
-      lightboxImg.src = sources[currentIndex];
-      lightboxImg.alt = altPrefix + " " + (currentIndex + 1);
-
-      if (lightboxImg.complete) {
-        lightboxImg.classList.add("is-visible");
-      }
-    }
-
-    function openLightbox(index) {
-      lastFocused = document.activeElement;
-      isOpen = true;
-      showImage(index);
-      lightbox.classList.add("is-open");
-      lightbox.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-      lightbox.querySelector(".jantlar-lightbox__close").focus();
-    }
-
-    function closeLightbox() {
-      isOpen = false;
-      lightbox.classList.remove("is-open");
-      lightbox.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
-      lightboxImg.classList.remove("is-visible");
-      lightboxImg.removeAttribute("src");
-
-      if (lastFocused && typeof lastFocused.focus === "function") {
-        lastFocused.focus();
-      }
-    }
-
-    function goPrev() {
-      showImage(currentIndex - 1);
-    }
-
-    function goNext() {
-      showImage(currentIndex + 1);
-    }
-
-    section.addEventListener("click", function (event) {
-      var item = event.target.closest(".jantlar__item");
-      if (!item || !section.contains(item)) return;
-
-      var index = parseInt(item.getAttribute("data-index"), 10) || 0;
-      openLightbox(index);
-    });
-
-    lightbox.querySelectorAll("[data-lightbox-close]").forEach(function (el) {
-      el.addEventListener("click", closeLightbox);
-    });
-
-    var prevBtn = lightbox.querySelector("[data-lightbox-prev]");
-    var nextBtn = lightbox.querySelector("[data-lightbox-next]");
-
-    if (prevBtn) prevBtn.addEventListener("click", goPrev);
-    if (nextBtn) nextBtn.addEventListener("click", goNext);
-
-    document.addEventListener("keydown", function (event) {
-      if (!isOpen) return;
-
-      if (event.key === "Escape") {
-        closeLightbox();
-        return;
-      }
-
-      if (event.key === "ArrowLeft") {
-        event.preventDefault();
-        goPrev();
-      }
-
-      if (event.key === "ArrowRight") {
-        event.preventDefault();
-        goNext();
-      }
-    });
-  }
-
-  function initAllLightboxes() {
-    var lightboxSections = [
-      { section: "jantlar", lightbox: "jantlarLightbox", img: "jantlarLightboxImg", alt: "Jant görseli" },
-      { section: "lastikler", lightbox: "lastiklerLightbox", img: "lastiklerLightboxImg", alt: "Lastik görseli" },
-      { section: "uygulamalar", lightbox: "jantApplicationsLightbox", img: "jantApplicationsLightboxImg", alt: "Jant uygulaması" },
-      { section: "lastik-applications", lightbox: "lastikApplicationsLightbox", img: "lastikApplicationsLightboxImg", alt: "Lastik uygulaması" },
-      { section: "home-applications", lightbox: "homeApplicationsLightbox", img: "homeApplicationsLightboxImg", alt: "Uygulama görseli" }
-    ];
-
-    lightboxSections.forEach(function (cfg) {
-      initGalleryLightbox(cfg.section, cfg.lightbox, cfg.img, cfg.alt);
-    });
-  }
-
   /* Reveal — layout anında görünür, IO kullanılmaz */
   function initRevealAnimations() {
     document.querySelectorAll("[data-reveal], [data-reveal-child]").forEach(function (el) {
@@ -354,7 +214,6 @@
   }
 
   ensureBootstrapIcons();
-  initAllLightboxes();
   initRevealAnimations();
   initInstagramLinks();
 
@@ -409,23 +268,21 @@
       values.forEach(animateValue);
     }
 
-    if (!("IntersectionObserver" in window)) {
-      startCounters();
-      return;
+    function isStatsVisible() {
+      var rect = statsSection.getBoundingClientRect();
+      return rect.top < window.innerHeight * 0.85 && rect.bottom > 0;
     }
 
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        startCounters();
-        observer.disconnect();
-      });
-    }, {
-      threshold: 0.25,
-      rootMargin: "0px 0px -5% 0px"
-    });
+    function checkStatsVisibility() {
+      if (!isStatsVisible()) return;
+      startCounters();
+      window.removeEventListener("scroll", checkStatsVisibility);
+      window.removeEventListener("resize", checkStatsVisibility);
+    }
 
-    observer.observe(statsSection);
+    window.addEventListener("scroll", checkStatsVisibility, { passive: true });
+    window.addEventListener("resize", checkStatsVisibility, { passive: true });
+    checkStatsVisibility();
   })();
 
   /* Floating action buttons (Phone & WhatsApp) */

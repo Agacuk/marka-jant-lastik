@@ -1592,7 +1592,8 @@ body.is-mobile-nav-open .site-header__logo {
 @media (max-width: 1024px) {
   :root {
     --hero-watermark-width: clamp(220px, 40vw, 360px);
-    --hero-watermark-top: clamp(84px, 10vh, 116px);
+    --hero-watermark-top: clamp(72px, 8.5vh, 104px);
+    --hero-watermark-opacity: 0.0225;
     --hero-cards-col: 1fr;
   }
 
@@ -1600,11 +1601,90 @@ body.is-mobile-nav-open .site-header__logo {
     min-height: clamp(540px, 86svh, 840px);
   }
 
+  .hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 0, 0, 0.78) 32%,
+        rgba(0, 0, 0, 0.84) 62%,
+        rgba(0, 0, 0, 0.88) 100%
+      ),
+      linear-gradient(
+        108deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.72) 42%,
+        rgba(0, 0, 0, 0.86) 100%
+      ),
+      radial-gradient(
+        ellipse 90% 70% at 50% 28%,
+        rgba(0, 0, 0, 0.2) 0%,
+        transparent 72%
+      );
+  }
+
   .hero__container {
     grid-template-columns: 1fr;
     gap: 36px;
     padding-top: calc(var(--site-header-height) + clamp(28px, 5vh, 48px));
     padding-bottom: clamp(68px, 9vh, 92px);
+  }
+
+  .hero__content {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .hero__content::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: clamp(-12px, -2vw, -4px);
+    bottom: -10px;
+    left: clamp(-12px, -2vw, -4px);
+    z-index: -1;
+    border-radius: 22px;
+    background:
+      radial-gradient(
+        ellipse 115% 95% at 0% 18%,
+        rgba(0, 0, 0, 0.44) 0%,
+        rgba(0, 0, 0, 0.26) 48%,
+        transparent 76%
+      ),
+      linear-gradient(
+        168deg,
+        rgba(0, 0, 0, 0.36) 0%,
+        rgba(0, 0, 0, 0.16) 58%,
+        transparent 100%
+      );
+    pointer-events: none;
+  }
+
+  .hero__eyebrow {
+    color: rgba(255, 255, 255, 0.58);
+  }
+
+  .hero__title {
+    text-shadow:
+      0 2px 22px rgba(0, 0, 0, 0.52),
+      0 1px 4px rgba(0, 0, 0, 0.38);
+  }
+
+  .hero__desc {
+    color: rgba(255, 255, 255, 0.82);
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.42);
+  }
+
+  .hero__btn--primary {
+    box-shadow:
+      0 6px 24px rgba(31, 79, 255, 0.34),
+      0 2px 10px rgba(0, 0, 0, 0.28);
+  }
+
+  .hero__btn--ghost {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.34);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
   }
 
   .hero__cards {
@@ -1635,14 +1715,71 @@ body.is-mobile-nav-open .site-header__logo {
 @media (max-width: 768px) {
   :root {
     --hero-watermark-width: min(48vw, 220px);
-    --hero-watermark-top: clamp(88px, 11vh, 108px);
-    --hero-watermark-opacity: 0.04;
+    --hero-watermark-top: clamp(64px, 7.5vh, 92px);
+    --hero-watermark-opacity: 0.0225;
     --hero-title-size: clamp(32px, 8.2vw, 44px);
     --hero-desc-max: 100%;
   }
 
   .hero {
     min-height: clamp(520px, 92svh, 780px);
+  }
+
+  .hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.74) 0%,
+        rgba(0, 0, 0, 0.82) 38%,
+        rgba(0, 0, 0, 0.86) 68%,
+        rgba(0, 0, 0, 0.88) 100%
+      ),
+      linear-gradient(
+        108deg,
+        rgba(0, 0, 0, 0.84) 0%,
+        rgba(0, 0, 0, 0.74) 45%,
+        rgba(0, 0, 0, 0.88) 100%
+      );
+  }
+
+  .hero__content::before {
+    top: -12px;
+    right: -10px;
+    bottom: -8px;
+    left: -10px;
+    border-radius: 18px;
+    background:
+      radial-gradient(
+        ellipse 120% 100% at 0% 16%,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        transparent 78%
+      ),
+      linear-gradient(
+        168deg,
+        rgba(0, 0, 0, 0.42) 0%,
+        rgba(0, 0, 0, 0.2) 55%,
+        transparent 100%
+      );
+  }
+
+  .hero__eyebrow {
+    color: rgba(255, 255, 255, 0.62);
+  }
+
+  .hero__desc {
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .hero__btn--primary {
+    box-shadow:
+      0 8px 28px rgba(31, 79, 255, 0.38),
+      0 3px 12px rgba(0, 0, 0, 0.32);
+  }
+
+  .hero__btn--ghost {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.38);
   }
 
   .hero__container {

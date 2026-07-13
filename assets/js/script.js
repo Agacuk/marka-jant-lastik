@@ -192,7 +192,7 @@
   /* ========================================================================
      Unified Gallery System
      Yeni görsel eklemek için sadece ilgili klasöre dosya ekleyin.
-     Dosya adları: {prefix}001.jpg, {prefix}002.jpg, ... (sıralı, 3 haneli)
+     Dosya adları: {prefix}001.webp, {prefix}002.webp, ... (sıralı, 3 haneli)
      ======================================================================== */
   const instagramUrl = "https://www.instagram.com/markajantlastik";
   const GALLERY_PER_PAGE = 8;
@@ -219,7 +219,7 @@
 
   function buildGalleryPath(folder, prefix, number) {
     var normalizedFolder = folder.charAt(folder.length - 1) === "/" ? folder : folder + "/";
-    return normalizedFolder + prefix + padImageNumber(number) + ".jpg";
+    return normalizedFolder + prefix + padImageNumber(number) + ".webp";
   }
 
   function probeImageCount(folder, prefix) {

@@ -601,7 +601,7 @@
   /* Reveal animations */
   function initRevealAnimations() {
     var autoRevealSections = document.querySelectorAll(
-      "section.services, section.showroom-vitrin, section.showcase, section.jantlar, section.page-hero, section.service-hero, section.service-content, section.service-features, section.faq, section.contact, section.faq-cta, section.service-cta"
+      "section.services, section.showcase, section.jantlar, section.page-hero, section.service-hero, section.service-content, section.service-features, section.faq, section.contact, section.faq-cta, section.service-cta"
     );
 
     autoRevealSections.forEach(function (section) {

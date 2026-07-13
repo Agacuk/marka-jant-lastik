@@ -1,7 +1,7 @@
 /**
- * Marka Jant Lastik — Production Gallery Engine
+ * Marka Jant Lastik — Production Gallery Engine V3
+ * Tek PhotoSwipe 5 motoru; tüm galeriler ortak.
  * Layout anında tam render; IntersectionObserver yalnızca img lazy-load için.
- * PhotoSwipe 5 lightbox — tüm galeri sayfalarında ortak.
  */
 import PhotoSwipeLightbox from "../vendor/photoswipe/photoswipe-lightbox.esm.js";
 import PhotoSwipe from "../vendor/photoswipe/photoswipe.esm.js";
@@ -10,17 +10,13 @@ const GALLERY_PER_PAGE = 8;
 const IMAGE_IO_ROOT_MARGIN = "280px 0px";
 const IMAGE_IO_THRESHOLD = 0.01;
 const DEFAULT_IMAGE_SIZE = 800;
+const SHOWCASE_JANT_COUNT = 4;
 
 const GALLERY_MANIFEST = {
   jantlar: {
     folder: "assets/images/jantlar/",
     prefix: "jant-",
     total: 31
-  },
-  lastikler: {
-    folder: "assets/images/lastikler/",
-    prefix: "lastik-",
-    total: 18
   },
   jantApplications: {
     folder: "assets/images/uygulamalar/jant/",
@@ -36,6 +32,11 @@ const GALLERY_MANIFEST = {
     folder: "assets/images/uygulamalar/ana-sayfa/",
     prefix: "uygulama-",
     total: 8
+  },
+  featuredJant: {
+    folder: "assets/images/jantlar/",
+    prefix: "jant-",
+    total: SHOWCASE_JANT_COUNT
   }
 };
 
@@ -43,7 +44,8 @@ const GALLERY_ID_MAP = {
   jantlar: "jantlar",
   "jant-applications": "jantApplications",
   "lastik-applications": "lastikApplications",
-  "home-applications": "homeApplications"
+  "home-applications": "homeApplications",
+  "featured-jant": "featuredJant"
 };
 
 const HOVER_ICON_SVG =
@@ -67,6 +69,12 @@ const photoSwipeLightbox = new PhotoSwipeLightbox({
   showHideAnimationType: "zoom"
 });
 
+photoSwipeLightbox.addFilter("contentErrorElement", (el) => {
+  el.classList.add("pswp__error-msg--mjl");
+  el.textContent = "Görsel yüklenemedi";
+  return el;
+});
+
 photoSwipeLightbox.init();
 
 /* ── Utilities ─────────────────────────────────────────────────────────── */
@@ -80,21 +88,38 @@ function buildGalleryPath(folder, prefix, number) {
   return normalizedFolder + prefix + padImageNumber(number) + ".webp";
 }
 
+function toAbsoluteUrl(path) {
+  if (!path) return path;
+  if (/^https?:\/\//i.test(path) || path.startsWith("data:")) return path;
+  try {
+    return new URL(path, window.location.href).href;
+  } catch {
+    return path;
+  }
+}
+
 function resolveManifest(galleryId) {
   const manifestKey = GALLERY_ID_MAP[galleryId];
   return manifestKey ? GALLERY_MANIFEST[manifestKey] : null;
 }
 
+function getCardImage(card) {
+  return card?.querySelector("img.jantlar__img") || null;
+}
+
 function resolveImageSrc(state, index) {
   const manifestSrc = buildGalleryPath(state.folder, state.prefix, index + 1);
   const card = state.cards[index];
-  const img = card?.querySelector("img.jantlar__img");
+  const img = getCardImage(card);
 
-  if (img?.src && img.dataset.lazyHydrated === "true" && img.classList.contains("is-loaded")) {
-    return img.src;
+  if (img?.src && img.dataset.lazyHydrated === "true") {
+    const resolved = img.currentSrc || img.src;
+    if (resolved && !resolved.endsWith(window.location.pathname)) {
+      return toAbsoluteUrl(resolved);
+    }
   }
 
-  return manifestSrc;
+  return toAbsoluteUrl(manifestSrc);
 }
 
 function buildPhotoSwipeDataSource(state) {
@@ -102,19 +127,34 @@ function buildPhotoSwipeDataSource(state) {
 
   for (let i = 0; i < state.total; i++) {
     const card = state.cards[i];
-    const img = card?.querySelector("img.jantlar__img");
+    const img = getCardImage(card);
     const width = img?.naturalWidth > 0 ? img.naturalWidth : DEFAULT_IMAGE_SIZE;
     const height = img?.naturalHeight > 0 ? img.naturalHeight : DEFAULT_IMAGE_SIZE;
+    const src = resolveImageSrc(state, i);
 
-    items.push({
-      src: resolveImageSrc(state, i),
+    const item = {
+      src,
       width,
       height,
       alt: state.altPrefix + " " + (i + 1)
-    });
+    };
+
+    if (img?.src && img.classList.contains("is-loaded")) {
+      item.msrc = toAbsoluteUrl(img.currentSrc || img.src);
+    }
+
+    items.push(item);
   }
 
   return items;
+}
+
+function openPhotoSwipe(state, index) {
+  const dataSource = buildPhotoSwipeDataSource(state);
+  if (!dataSource.length) return;
+
+  const safeIndex = Math.max(0, Math.min(index, dataSource.length - 1));
+  photoSwipeLightbox.loadAndOpen(safeIndex, dataSource);
 }
 
 /* ── Image fallback (event delegation) ───────────────────────────────── */
@@ -207,7 +247,7 @@ function hydrateLazyImage(img) {
   if (!src) return;
 
   img.dataset.lazyHydrated = "true";
-  img.src = src;
+  img.src = toAbsoluteUrl(src);
   bindImageFallback(img);
 }
 
@@ -261,6 +301,7 @@ function createGalleryCard(index, src, altPrefix, variant, concealed) {
     button.classList.add("jantlar__item--concealed");
   }
   button.dataset.index = String(index);
+  button.dataset.pswpSrc = src;
   button.setAttribute("aria-label", altPrefix + " görseli " + (index + 1) + ", büyüt");
 
   const media = document.createElement("div");
@@ -287,14 +328,26 @@ function createGalleryCard(index, src, altPrefix, variant, concealed) {
   return button;
 }
 
-function createShowcaseCard(src, label) {
+function createShowcaseCard(index, src, label, altPrefix) {
   const card = document.createElement("article");
   card.className = "showcase__card";
+  card.dataset.index = String(index);
+  card.dataset.pswpSrc = src;
+  card.dataset.galleryTrigger = "true";
+  card.setAttribute("role", "button");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", altPrefix + " görseli " + (index + 1) + ", büyüt");
 
   const media = document.createElement("div");
   media.className = "showcase__media";
   media.appendChild(createGalleryPlaceholder());
   media.appendChild(createLazyImage(src));
+
+  const hover = document.createElement("span");
+  hover.className = "jantlar__hover";
+  hover.setAttribute("aria-hidden", "true");
+  hover.innerHTML = HOVER_ICON_SVG;
+  media.appendChild(hover);
 
   const labelEl = document.createElement("span");
   labelEl.className = "showcase__label";
@@ -306,21 +359,47 @@ function createShowcaseCard(src, label) {
   return card;
 }
 
-/* ── PhotoSwipe ──────────────────────────────────────────────────────── */
+/* ── PhotoSwipe — ortak tıklama motoru ───────────────────────────────── */
 
-function initPhotoSwipeForGrid(state) {
+function getClickedCard(event, state) {
+  if (state.variant === "showcase") {
+    return event.target.closest(".showcase__card[data-gallery-trigger]");
+  }
+  return event.target.closest(".jantlar__item:not(.instagram-card)");
+}
+
+function initPhotoSwipeForState(state) {
   if (state.variant === "instagram" || state.grid.dataset.pswpBound === "true") return;
   state.grid.dataset.pswpBound = "true";
 
   state.grid.addEventListener("click", (event) => {
-    const item = event.target.closest(".jantlar__item:not(.instagram-card)");
+    const item = getClickedCard(event, state);
     if (!item || !state.grid.contains(item)) return;
 
+    event.preventDefault();
     const index = parseInt(item.dataset.index, 10) || 0;
-    photoSwipeLightbox.loadAndOpen(index, {
-      dataSource: buildPhotoSwipeDataSource(state)
-    });
+    openPhotoSwipe(state, index);
   });
+
+  if (state.variant === "showcase") {
+    state.grid.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const item = event.target.closest(".showcase__card[data-gallery-trigger]");
+      if (!item || !state.grid.contains(item)) return;
+
+      event.preventDefault();
+      const index = parseInt(item.dataset.index, 10) || 0;
+      openPhotoSwipe(state, index);
+    });
+  }
+}
+
+function refreshStateCards(state) {
+  if (state.variant === "showcase") {
+    state.cards = [...state.grid.querySelectorAll(".showcase__card[data-gallery-trigger]")];
+    return;
+  }
+  state.cards = [...state.grid.querySelectorAll(".jantlar__item")];
 }
 
 /* ── Rendering ───────────────────────────────────────────────────────── */
@@ -358,10 +437,10 @@ function renderFullGallery(state) {
   }
 
   state.grid.replaceChildren(fragment);
-  state.cards = [...state.grid.querySelectorAll(".jantlar__item")];
+  refreshStateCards(state);
   observeLazyImagesIn(state.grid);
   updateLoadMoreVisibility(state);
-  initPhotoSwipeForGrid(state);
+  initPhotoSwipeForState(state);
 }
 
 function revealNextBatch(state) {
@@ -430,17 +509,33 @@ function initFeaturedShowcase() {
   const featuredJantGrid = document.querySelector("#featured-jant .showcase__grid");
   if (!featuredJantGrid) return;
 
-  const manifest = GALLERY_MANIFEST.jantlar;
-  const count = Math.min(4, manifest.total);
+  const manifest = GALLERY_MANIFEST.featuredJant;
   const fragment = document.createDocumentFragment();
 
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < manifest.total; i++) {
     const src = buildGalleryPath(manifest.folder, manifest.prefix, i + 1);
-    fragment.appendChild(createShowcaseCard(src, "Jant"));
+    fragment.appendChild(createShowcaseCard(i, src, "Jant", "Jant"));
   }
 
   featuredJantGrid.replaceChildren(fragment);
+
+  const state = {
+    id: "featured-jant",
+    grid: featuredJantGrid,
+    folder: manifest.folder,
+    prefix: manifest.prefix,
+    total: manifest.total,
+    revealed: manifest.total,
+    perPage: manifest.total,
+    altPrefix: "Jant",
+    variant: "showcase",
+    cards: []
+  };
+
+  galleryRegistry.set("featured-jant", state);
+  refreshStateCards(state);
   observeLazyImagesIn(featuredJantGrid);
+  initPhotoSwipeForState(state);
 }
 
 function initGalleries() {
@@ -458,13 +553,18 @@ initGalleries();
 window.MJLGallery = {
   getState: (galleryId) => galleryRegistry.get(galleryId),
   buildPath: buildGalleryPath,
+  open: (galleryId, index) => {
+    const state = galleryRegistry.get(galleryId);
+    if (!state) return;
+    openPhotoSwipe(state, index || 0);
+  },
   getSources: (galleryId) => {
     const state = galleryRegistry.get(galleryId);
     if (!state) return [];
 
     const sources = [];
     for (let i = 0; i < state.total; i++) {
-      sources.push(buildGalleryPath(state.folder, state.prefix, i + 1));
+      sources.push(toAbsoluteUrl(buildGalleryPath(state.folder, state.prefix, i + 1)));
     }
     return sources;
   },
@@ -472,6 +572,7 @@ window.MJLGallery = {
     jantlar: "jantlar",
     uygulamalar: "jant-applications",
     "lastik-applications": "lastik-applications",
-    "home-applications": "home-applications"
+    "home-applications": "home-applications",
+    "featured-jant": "featured-jant"
   }
 };

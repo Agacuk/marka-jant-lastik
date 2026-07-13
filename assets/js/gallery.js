@@ -1,12 +1,12 @@
 /**
  * Marka Jant Lastik — Production Gallery Engine
- * Manifest tabanlı, probe yok, IntersectionObserver ile lazy image hydration.
+ * Layout anında tam render; IntersectionObserver yalnızca img lazy-load için.
  */
 (function () {
   "use strict";
 
   const GALLERY_PER_PAGE = 8;
-  const IMAGE_IO_ROOT_MARGIN = "240px 0px";
+  const IMAGE_IO_ROOT_MARGIN = "280px 0px";
   const IMAGE_IO_THRESHOLD = 0.01;
 
   const GALLERY_MANIFEST = {
@@ -54,7 +54,7 @@
   const galleryRegistry = new Map();
   const loadMoreWrapCache = new Map();
 
-  let imageObserver = null;
+  let lazyImageObserver = null;
   let imageFallbackBound = false;
 
   /* ── Utilities ─────────────────────────────────────────────────────────── */
@@ -66,14 +66,6 @@
   function buildGalleryPath(folder, prefix, number) {
     const normalizedFolder = folder.endsWith("/") ? folder : folder + "/";
     return normalizedFolder + prefix + padImageNumber(number) + ".webp";
-  }
-
-  function runWhenIdle(callback) {
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(callback, { timeout: 1200 });
-    } else {
-      setTimeout(callback, 1);
-    }
   }
 
   function resolveManifest(galleryId) {
@@ -100,7 +92,7 @@
     img.addEventListener("load", () => markImageLoaded(img), { passive: true });
     img.addEventListener("error", () => markImageError(img), { passive: true });
 
-    if (img.complete) {
+    if (img.complete && img.src) {
       if (img.naturalWidth > 0) {
         markImageLoaded(img);
       } else {
@@ -136,17 +128,22 @@
     );
   }
 
-  /* ── IntersectionObserver: lazy image hydration ────────────────────────── */
+  /* ── IntersectionObserver: yalnızca img lazy-load ─────────────────────── */
 
-  function ensureImageObserver() {
-    if (imageObserver || !("IntersectionObserver" in window)) return;
+  function ensureLazyImageObserver() {
+    if (lazyImageObserver) return lazyImageObserver;
 
-    imageObserver = new IntersectionObserver(
+    if (!("IntersectionObserver" in window)) {
+      lazyImageObserver = null;
+      return null;
+    }
+
+    lazyImageObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          hydrateCardImage(entry.target);
-          imageObserver.unobserve(entry.target);
+          hydrateLazyImage(entry.target);
+          lazyImageObserver.unobserve(entry.target);
         });
       },
       {
@@ -154,82 +151,41 @@
         threshold: IMAGE_IO_THRESHOLD
       }
     );
+
+    return lazyImageObserver;
   }
 
-  function observeCardImage(card) {
-    if (!card || card.dataset.imageHydrated === "true") return;
+  function hydrateLazyImage(img) {
+    if (!(img instanceof HTMLImageElement)) return;
+    if (img.dataset.lazyHydrated === "true") return;
 
-    if (imageObserver) {
-      imageObserver.observe(card);
-      return;
-    }
+    const src = img.dataset.src;
+    if (!src) return;
 
-    hydrateCardImage(card);
-  }
-
-  function hydrateCardImage(card) {
-    if (!card || card.dataset.imageHydrated === "true") return;
-
-    const src = card.dataset.src;
-    const media = card.querySelector(".jantlar__media");
-    if (!src || !media) return;
-
-    card.dataset.imageHydrated = "true";
-
-    const img = document.createElement("img");
+    img.dataset.lazyHydrated = "true";
     img.src = src;
-    img.alt = "";
-    img.className = "jantlar__img";
-    img.loading = "lazy";
-    img.decoding = "async";
-    img.width = 800;
-    img.height = 800;
-
-    const overlay = media.querySelector(".jantlar__hover, .instagram-card__overlay");
-    if (overlay) {
-      media.insertBefore(img, overlay);
-    } else {
-      media.appendChild(img);
-    }
-
     bindImageFallback(img);
   }
 
-  function hydrateShowcaseImage(media, src) {
-    if (!media || media.dataset.imageHydrated === "true") return;
-    media.dataset.imageHydrated = "true";
+  function observeLazyImage(img) {
+    if (!img || img.dataset.lazyHydrated === "true") return;
 
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = "";
-    img.className = "jantlar__img";
-    img.loading = "lazy";
-    img.decoding = "async";
-    img.width = 800;
-    img.height = 800;
-    media.appendChild(img);
-    bindImageFallback(img);
-  }
-
-  function observeShowcaseMedia(media, src) {
-    if (!("IntersectionObserver" in window)) {
-      hydrateShowcaseImage(media, src);
+    const observer = ensureLazyImageObserver();
+    if (observer) {
+      observer.observe(img);
       return;
     }
 
-    const showcaseObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          hydrateShowcaseImage(entry.target, entry.target.dataset.src);
-          observer.unobserve(entry.target);
-        });
-      },
-      { rootMargin: IMAGE_IO_ROOT_MARGIN, threshold: IMAGE_IO_THRESHOLD }
-    );
+    hydrateLazyImage(img);
+  }
 
-    media.dataset.src = src;
-    showcaseObserver.observe(media);
+  function observeLazyImagesIn(root) {
+    if (!root) return;
+    root.querySelectorAll("img.jantlar__img[data-src]").forEach(observeLazyImage);
+  }
+
+  function observeAllLazyImages() {
+    document.querySelectorAll("img.jantlar__img[data-src]").forEach(observeLazyImage);
   }
 
   /* ── DOM factories ───────────────────────────────────────────────────── */
@@ -241,18 +197,33 @@
     return placeholder;
   }
 
-  function createGalleryCardShell(index, src, altPrefix, variant) {
+  function createLazyImage(src) {
+    const img = document.createElement("img");
+    img.className = "jantlar__img";
+    img.dataset.src = src;
+    img.alt = "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.width = 800;
+    img.height = 800;
+    return img;
+  }
+
+  function createGalleryCard(index, src, altPrefix, variant, concealed) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = variant === "instagram" ? "jantlar__item instagram-card" : "jantlar__item";
+    if (concealed) {
+      button.classList.add("jantlar__item--concealed");
+      button.setAttribute("hidden", "");
+    }
     button.dataset.index = String(index);
-    button.dataset.src = src;
-    button.dataset.imageHydrated = "false";
     button.setAttribute("aria-label", altPrefix + " görseli " + (index + 1) + ", büyüt");
 
     const media = document.createElement("div");
     media.className = "jantlar__media";
     media.appendChild(createGalleryPlaceholder());
+    media.appendChild(createLazyImage(src));
 
     if (variant === "instagram") {
       const overlay = document.createElement("div");
@@ -273,13 +244,14 @@
     return button;
   }
 
-  function createShowcaseCardShell(src, label) {
+  function createShowcaseCard(src, label) {
     const card = document.createElement("article");
     card.className = "showcase__card";
 
     const media = document.createElement("div");
     media.className = "showcase__media";
     media.appendChild(createGalleryPlaceholder());
+    media.appendChild(createLazyImage(src));
 
     const labelEl = document.createElement("span");
     labelEl.className = "showcase__label";
@@ -288,7 +260,7 @@
     card.appendChild(media);
     card.appendChild(labelEl);
 
-    return { card, media, src };
+    return card;
   }
 
   /* ── Rendering ───────────────────────────────────────────────────────── */
@@ -307,35 +279,43 @@
     const loadMoreWrap = getLoadMoreWrap(state.id);
     if (!loadMoreWrap) return;
 
-    if (state.visible >= state.total) {
+    if (state.revealed >= state.total) {
       loadMoreWrap.classList.add("is-hidden");
     } else {
       loadMoreWrap.classList.remove("is-hidden");
     }
   }
 
-  function renderGalleryBatch(state, fromIndex, batchSize, append) {
-    const end = Math.min(fromIndex + batchSize, state.total);
-    if (!state.grid || fromIndex >= end) return;
-
-    ensureImageObserver();
+  function renderFullGallery(state) {
+    if (!state.grid || !state.total) return;
 
     const fragment = document.createDocumentFragment();
 
-    for (let i = fromIndex; i < end; i++) {
+    for (let i = 0; i < state.total; i++) {
       const src = buildGalleryPath(state.folder, state.prefix, i + 1);
-      const card = createGalleryCardShell(i, src, state.altPrefix, state.variant);
-      fragment.appendChild(card);
-      observeCardImage(card);
+      const concealed = i >= state.revealed;
+      fragment.appendChild(createGalleryCard(i, src, state.altPrefix, state.variant, concealed));
     }
 
-    if (append) {
-      state.grid.appendChild(fragment);
-    } else {
-      state.grid.replaceChildren(fragment);
+    state.grid.replaceChildren(fragment);
+    state.cards = [...state.grid.querySelectorAll(".jantlar__item")];
+    observeLazyImagesIn(state.grid);
+    updateLoadMoreVisibility(state);
+  }
+
+  function revealNextBatch(state) {
+    const nextRevealed = Math.min(state.revealed + state.perPage, state.total);
+    if (nextRevealed === state.revealed) return;
+
+    for (let i = state.revealed; i < nextRevealed; i++) {
+      const card = state.cards[i];
+      if (!card) continue;
+      card.classList.remove("jantlar__item--concealed");
+      card.removeAttribute("hidden");
     }
 
-    state.visible = end;
+    state.revealed = nextRevealed;
+    observeLazyImagesIn(state.grid);
     updateLoadMoreVisibility(state);
   }
 
@@ -349,20 +329,23 @@
       return;
     }
 
+    const perPage = parseInt(grid.getAttribute("data-gallery-per-page"), 10) || GALLERY_PER_PAGE;
+
     const state = {
       id: galleryId,
       grid,
       folder: manifest.folder,
       prefix: manifest.prefix,
       total: manifest.total,
-      visible: 0,
-      perPage: parseInt(grid.getAttribute("data-gallery-per-page"), 10) || GALLERY_PER_PAGE,
+      revealed: Math.min(perPage, manifest.total),
+      perPage,
       altPrefix: grid.getAttribute("data-gallery-alt") || "Görsel",
-      variant: grid.getAttribute("data-gallery-variant") || "gallery"
+      variant: grid.getAttribute("data-gallery-variant") || "gallery",
+      cards: []
     };
 
     galleryRegistry.set(galleryId, state);
-    renderGalleryBatch(state, 0, state.perPage, false);
+    renderFullGallery(state);
   }
 
   function initLoadMoreButtons() {
@@ -378,7 +361,7 @@
         const state = galleryRegistry.get(galleryId);
         if (!state) return;
 
-        renderGalleryBatch(state, state.visible, state.perPage, true);
+        revealNextBatch(state);
       });
     });
   }
@@ -390,58 +373,31 @@
     const manifest = GALLERY_MANIFEST.jantlar;
     const count = Math.min(4, manifest.total);
     const fragment = document.createDocumentFragment();
-    const mediaTargets = [];
 
     for (let i = 0; i < count; i++) {
       const src = buildGalleryPath(manifest.folder, manifest.prefix, i + 1);
-      const shell = createShowcaseCardShell(src, "Jant");
-      fragment.appendChild(shell.card);
-      mediaTargets.push({ media: shell.media, src: shell.src });
+      fragment.appendChild(createShowcaseCard(src, "Jant"));
     }
 
     featuredJantGrid.replaceChildren(fragment);
-
-    mediaTargets.forEach(({ media, src }) => {
-      observeShowcaseMedia(media, src);
-    });
+    observeLazyImagesIn(featuredJantGrid);
   }
 
   function initGalleries() {
     initImageFallbackDelegation();
+    ensureLazyImageObserver();
     initLoadMoreButtons();
 
-    const grids = document.querySelectorAll("[data-gallery-id]");
-    const deferredGrids = [];
-
-    grids.forEach((grid) => {
-      const section = grid.closest("section");
-      const isAboveFold = section && section.classList.contains("jantlar--page");
-
-      if (isAboveFold) {
-        initGallery(grid);
-      } else {
-        deferredGrids.push(grid);
-      }
-    });
-
-    if (deferredGrids.length) {
-      runWhenIdle(() => {
-        deferredGrids.forEach(initGallery);
-      });
-    }
-
-    runWhenIdle(initFeaturedShowcase);
+    document.querySelectorAll("[data-gallery-id]").forEach(initGallery);
+    initFeaturedShowcase();
+    observeAllLazyImages();
   }
 
   function boot() {
     initGalleries();
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", boot, { once: true });
-  } else {
-    boot();
-  }
+  boot();
 
   window.MJLGallery = {
     getState: (galleryId) => galleryRegistry.get(galleryId),
@@ -451,7 +407,7 @@
       if (!state) return [];
 
       const sources = [];
-      for (let i = 0; i < state.visible; i++) {
+      for (let i = 0; i < state.total; i++) {
         sources.push(buildGalleryPath(state.folder, state.prefix, i + 1));
       }
       return sources;

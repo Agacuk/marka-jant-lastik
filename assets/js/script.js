@@ -329,51 +329,10 @@
     });
   }
 
-  /* Reveal animations */
+  /* Reveal — layout anında görünür, IO kullanılmaz */
   function initRevealAnimations() {
-    var autoRevealSections = document.querySelectorAll(
-      "section.services, section.showcase, section.jantlar, section.page-hero, section.service-hero, section.service-content, section.service-features, section.faq, section.contact, section.faq-cta, section.service-cta"
-    );
-
-    autoRevealSections.forEach(function (section) {
-      if (!section.hasAttribute("data-reveal")) {
-        section.setAttribute("data-reveal", "");
-      }
-    });
-
-    var revealElements = document.querySelectorAll("[data-reveal], [data-reveal-child]");
-    if (!revealElements.length) return;
-
-    if (!("IntersectionObserver" in window)) {
-      revealElements.forEach(function (el) {
-        el.classList.add("is-revealed");
-      });
-      return;
-    }
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-
-        var el = entry.target;
-        var delay = parseInt(el.getAttribute("data-reveal-delay"), 10) || 0;
-
-        setTimeout(function () {
-          el.classList.add("is-revealed");
-        }, delay);
-
-        observer.unobserve(el);
-      });
-    }, {
-      threshold: 0.12,
-      rootMargin: "0px 0px -40px 0px"
-    });
-
-    revealElements.forEach(function (el, index) {
-      if (!el.hasAttribute("data-reveal-delay") && el.hasAttribute("data-reveal-child")) {
-        el.setAttribute("data-reveal-delay", String((index % 8) * 80));
-      }
-      observer.observe(el);
+    document.querySelectorAll("[data-reveal], [data-reveal-child]").forEach(function (el) {
+      el.classList.add("is-revealed");
     });
   }
 

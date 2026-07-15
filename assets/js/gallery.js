@@ -12,11 +12,18 @@ const IMAGE_IO_THRESHOLD = 0.01;
 const DEFAULT_IMAGE_SIZE = 800;
 const SHOWCASE_JANT_COUNT = 4;
 
+/** Premium-first display order (file numbers); filenames unchanged. */
+const JANTLAR_DISPLAY_ORDER = [
+  16, 14, 25, 19, 30, 12, 23, 31, 6, 27, 21, 3, 1, 17, 24, 28, 4, 15, 9, 20, 26, 29, 11,
+  10, 13, 7, 5, 22, 8, 18, 2
+];
+
 const GALLERY_MANIFEST = {
   jantlar: {
     folder: "assets/images/jantlar/",
     prefix: "jant-",
-    total: 31
+    total: 31,
+    order: JANTLAR_DISPLAY_ORDER
   },
   jantApplications: {
     folder: "assets/images/uygulamalar/jant/",
@@ -36,7 +43,8 @@ const GALLERY_MANIFEST = {
   featuredJant: {
     folder: "assets/images/jantlar/",
     prefix: "jant-",
-    total: SHOWCASE_JANT_COUNT
+    total: SHOWCASE_JANT_COUNT,
+    order: JANTLAR_DISPLAY_ORDER.slice(0, SHOWCASE_JANT_COUNT)
   }
 };
 
@@ -88,6 +96,21 @@ function buildGalleryPath(folder, prefix, number) {
   return normalizedFolder + prefix + padImageNumber(number) + ".webp";
 }
 
+function resolveGalleryFileNumber(state, displayIndex) {
+  if (Array.isArray(state.order) && state.order.length > displayIndex) {
+    return state.order[displayIndex];
+  }
+  return displayIndex + 1;
+}
+
+function buildGalleryPathForState(state, displayIndex) {
+  return buildGalleryPath(
+    state.folder,
+    state.prefix,
+    resolveGalleryFileNumber(state, displayIndex)
+  );
+}
+
 function toAbsoluteUrl(path) {
   if (!path) return path;
   if (/^https?:\/\//i.test(path) || path.startsWith("data:")) return path;
@@ -108,7 +131,7 @@ function getCardImage(card) {
 }
 
 function resolveImageSrc(state, index) {
-  const manifestSrc = buildGalleryPath(state.folder, state.prefix, index + 1);
+  const manifestSrc = buildGalleryPathForState(state, index);
   const card = state.cards[index];
   const img = getCardImage(card);
 
@@ -426,7 +449,7 @@ function renderFullGallery(state) {
   const fragment = document.createDocumentFragment();
 
   for (let i = 0; i < state.total; i++) {
-    const src = buildGalleryPath(state.folder, state.prefix, i + 1);
+    const src = buildGalleryPathForState(state, i);
     const concealed = i >= state.revealed;
     fragment.appendChild(createGalleryCard(i, src, state.altPrefix, state.variant, concealed));
   }
@@ -471,6 +494,7 @@ function initGallery(grid) {
     folder: manifest.folder,
     prefix: manifest.prefix,
     total: manifest.total,
+    order: manifest.order,
     revealed: Math.min(perPage, manifest.total),
     perPage,
     altPrefix: grid.getAttribute("data-gallery-alt") || "Görsel",
@@ -507,25 +531,26 @@ function initFeaturedShowcase() {
   const manifest = GALLERY_MANIFEST.featuredJant;
   const fragment = document.createDocumentFragment();
 
-  for (let i = 0; i < manifest.total; i++) {
-    const src = buildGalleryPath(manifest.folder, manifest.prefix, i + 1);
-    fragment.appendChild(createShowcaseCard(i, src, "Jant"));
-  }
-
-  featuredJantGrid.replaceChildren(fragment);
-
   const state = {
     id: "featured-jant",
     grid: featuredJantGrid,
     folder: manifest.folder,
     prefix: manifest.prefix,
     total: manifest.total,
+    order: manifest.order,
     revealed: manifest.total,
     perPage: manifest.total,
     altPrefix: "Jant",
     variant: "showcase",
     cards: []
   };
+
+  for (let i = 0; i < manifest.total; i++) {
+    const src = buildGalleryPathForState(state, i);
+    fragment.appendChild(createShowcaseCard(i, src, "Jant"));
+  }
+
+  featuredJantGrid.replaceChildren(fragment);
 
   galleryRegistry.set("featured-jant", state);
   refreshStateCards(state);
@@ -559,7 +584,7 @@ window.MJLGallery = {
 
     const sources = [];
     for (let i = 0; i < state.total; i++) {
-      sources.push(toAbsoluteUrl(buildGalleryPath(state.folder, state.prefix, i + 1)));
+      sources.push(toAbsoluteUrl(buildGalleryPathForState(state, i)));
     }
     return sources;
   },

@@ -50,7 +50,7 @@ const PAGE_META = {
     title: "Lastik Değişimi & Montaj | Marka Jant Lastik",
     description:
       "Hızlı ve güvenli lastik değişimi ve montaj hizmeti. Uzman ekip, modern ekipman ve garantili işçilik.",
-    og_image: "assets/images/services/service-lastik-degisimi.jpg",
+    og_image: "assets/images/services/service-lastik-degisimi.webp",
   },
   "jant-onarim.html": {
     active: "services",
@@ -58,7 +58,7 @@ const PAGE_META = {
     title: "Jant Onarım & Düzeltme | Marka Jant Lastik",
     description:
       "Hasarlı jantlarınızı profesyonel ekipmanlarla onarıyoruz. Bükülme, çizik ve korozyon düzeltme hizmetleri.",
-    og_image: "assets/images/services/service-jant-onarim.jpg",
+    og_image: "assets/images/services/service-jant-onarim.webp",
   },
   "lastik-oteli.html": {
     active: "services",
@@ -66,7 +66,7 @@ const PAGE_META = {
     title: "Lastik Oteli | Marka Jant Lastik",
     description:
       "Sezon dışı lastiklerinizi güvenli koşullarda muhafaza ediyoruz. Etiketli ve kontrollü depolama hizmeti.",
-    og_image: "assets/images/services/service-lastik-oteli.jpg",
+    og_image: "assets/images/services/service-lastik-oteli.webp",
   },
   "balans.html": {
     active: "services",
@@ -74,7 +74,7 @@ const PAGE_META = {
     title: "Balans | Marka Jant Lastik",
     description:
       "Hassas balans ayarı ile titreşimi azaltın, konforlu ve güvenli sürüş deneyimi yaşayın.",
-    og_image: "assets/images/services/service-balans.jpg",
+    og_image: "assets/images/services/service-balans.webp",
   },
   "sss.html": {
     active: "sss",
@@ -93,10 +93,10 @@ const PAGE_META = {
 };
 
 const SERVICE_IMAGES = {
-  "lastik-degisimi.html": "assets/images/services/service-lastik-degisimi.jpg",
-  "jant-onarim.html": "assets/images/services/service-jant-onarim.jpg",
-  "lastik-oteli.html": "assets/images/services/service-lastik-oteli.jpg",
-  "balans.html": "assets/images/services/service-balans.jpg",
+  "lastik-degisimi.html": "assets/images/services/service-lastik-degisimi.webp",
+  "jant-onarim.html": "assets/images/services/service-jant-onarim.webp",
+  "lastik-oteli.html": "assets/images/services/service-lastik-oteli.webp",
+  "balans.html": "assets/images/services/service-balans.webp",
 };
 
 const SOCIAL_SVG = {

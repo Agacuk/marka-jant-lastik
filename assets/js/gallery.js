@@ -328,7 +328,7 @@ function createGalleryCard(index, src, altPrefix, variant, concealed) {
   return button;
 }
 
-function createShowcaseCard(index, src, label, altPrefix) {
+function createShowcaseCard(index, src, altPrefix) {
   const card = document.createElement("article");
   card.className = "showcase__card";
   card.dataset.index = String(index);
@@ -349,12 +349,7 @@ function createShowcaseCard(index, src, label, altPrefix) {
   hover.innerHTML = HOVER_ICON_SVG;
   media.appendChild(hover);
 
-  const labelEl = document.createElement("span");
-  labelEl.className = "showcase__label";
-  labelEl.textContent = label;
-
   card.appendChild(media);
-  card.appendChild(labelEl);
 
   return card;
 }
@@ -514,7 +509,7 @@ function initFeaturedShowcase() {
 
   for (let i = 0; i < manifest.total; i++) {
     const src = buildGalleryPath(manifest.folder, manifest.prefix, i + 1);
-    fragment.appendChild(createShowcaseCard(i, src, "Jant", "Jant"));
+    fragment.appendChild(createShowcaseCard(i, src, "Jant"));
   }
 
   featuredJantGrid.replaceChildren(fragment);

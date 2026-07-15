@@ -189,6 +189,10 @@
       color: #3f6dff;
     }
 
+    .contact__info-item .contact-links {
+      gap: 8px;
+    }
+
     .contact__map {
       position: relative;
       aspect-ratio: 16 / 11;
@@ -351,6 +355,7 @@
         </button>
       </div>
     </div>
+
     <nav class="mobile-nav" id="mobileMenu" aria-hidden="true">
       <div class="mobile-nav__overlay" data-mobile-nav-close></div>
       <div class="mobile-nav__panel">
@@ -381,6 +386,8 @@
         </ul>
       </div>
     </nav>
+  </header>
+
   </header>
 
   </header>
@@ -426,11 +433,17 @@
           <ul class="contact__info-list">
             <li class="contact__info-item">
               <span class="contact__info-label">Telefon</span>
-              <a href="tel:+905449483197" class="contact__info-value">+90 (544) 948 31 97</a>
+              <div class="contact-links">
+                <a href="tel:+905449483197" class="contact__info-value">+90 (544) 948 31 97</a>
+                <a href="tel:+905446620356" class="contact__info-value">+90 544 662 03 56</a>
+              </div>
             </li>
             <li class="contact__info-item">
               <span class="contact__info-label">WhatsApp</span>
-              <a href="https://wa.me/905449483197" class="contact__info-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+              <div class="contact-links">
+                <a href="https://wa.me/905449483197" class="contact__info-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+                <a href="https://wa.me/905446620356" class="contact__info-value" target="_blank" rel="noopener noreferrer">+90 544 662 03 56</a>
+              </div>
             </li>
             <li class="contact__info-item">
               <span class="contact__info-label">Mail</span>
@@ -441,7 +454,7 @@
               <span class="contact__info-value">Yenimahalle, 7. Sk. No:11, 55080 Canik/Samsun</span>
             </li>
           </ul>
-          <div class="contact__map" aria-label="Google Maps">
+                    <div class="contact__map" aria-label="Google Maps">
             <iframe
               src="https://www.google.com/maps?q=Yenimahalle,+7.+Sk.+No:11,+55080+Canik/Samsun&hl=tr&z=16&output=embed"
               title="Marka Jant Lastik konumu"
@@ -506,13 +519,19 @@
         <div class="site-footer__col">
           <h3 class="site-footer__heading">İletişim</h3>
           <ul class="site-footer__contact">
-            <li>
+                        <li>
               <span class="site-footer__contact-label">Telefon</span>
-              <a href="tel:+905449483197" class="site-footer__contact-value">+90 (544) 948 31 97</a>
+              <div class="contact-links">
+                <a href="tel:+905449483197" class="site-footer__contact-value">+90 (544) 948 31 97</a>
+                <a href="tel:+905446620356" class="site-footer__contact-value">+90 544 662 03 56</a>
+              </div>
             </li>
-            <li>
+                        <li>
               <span class="site-footer__contact-label">WhatsApp</span>
-              <a href="https://wa.me/905449483197" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+              <div class="contact-links">
+                <a href="https://wa.me/905449483197" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+                <a href="https://wa.me/905446620356" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 544 662 03 56</a>
+              </div>
             </li>
             <li>
               <span class="site-footer__contact-label">E-Posta</span>
@@ -535,6 +554,8 @@
         <p class="site-footer__credit">Designed &amp; Developed by Kanal Ajans</p>
       </div>
     </div>
+  </footer>
+
   </footer>
 
   </footer>

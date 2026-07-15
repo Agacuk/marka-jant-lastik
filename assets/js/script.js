@@ -327,10 +327,33 @@
     var group = document.createElement("div");
     group.className = "fab-group";
 
-    var phoneLink = document.createElement("a");
-    phoneLink.className = "fab fab--phone";
-    phoneLink.href = "tel:+905449483197";
-    phoneLink.setAttribute("aria-label", "Hemen ara");
+    var phoneWrap = document.createElement("div");
+    phoneWrap.className = "fab-phone-wrap";
+
+    var phoneMenu = document.createElement("div");
+    phoneMenu.className = "fab-phone-menu";
+    phoneMenu.id = "fabPhoneMenu";
+
+    var phoneNumbers = [
+      { href: "tel:+905449483197", label: "+90 (544) 948 31 97" },
+      { href: "tel:+905446620356", label: "+90 544 662 03 56" }
+    ];
+
+    phoneNumbers.forEach(function (entry) {
+      var phoneOption = document.createElement("a");
+      phoneOption.className = "fab-phone-menu__link";
+      phoneOption.href = entry.href;
+      phoneOption.textContent = entry.label;
+      phoneOption.setAttribute("aria-label", "Ara: " + entry.label);
+      phoneMenu.appendChild(phoneOption);
+    });
+
+    var phoneToggle = document.createElement("button");
+    phoneToggle.type = "button";
+    phoneToggle.className = "fab fab--phone";
+    phoneToggle.setAttribute("aria-label", "Telefon numaraları");
+    phoneToggle.setAttribute("aria-expanded", "false");
+    phoneToggle.setAttribute("aria-controls", "fabPhoneMenu");
 
     var phoneTooltip = document.createElement("span");
     phoneTooltip.className = "fab__tooltip";
@@ -340,8 +363,23 @@
     phoneIcon.className = "bi bi-telephone-fill fab__icon";
     phoneIcon.setAttribute("aria-hidden", "true");
 
-    phoneLink.appendChild(phoneTooltip);
-    phoneLink.appendChild(phoneIcon);
+    phoneToggle.appendChild(phoneTooltip);
+    phoneToggle.appendChild(phoneIcon);
+
+    phoneToggle.addEventListener("click", function () {
+      var isOpen = phoneMenu.classList.toggle("is-open");
+      phoneToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!phoneWrap.contains(event.target)) {
+        phoneMenu.classList.remove("is-open");
+        phoneToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    phoneWrap.appendChild(phoneMenu);
+    phoneWrap.appendChild(phoneToggle);
 
     var whatsappLink = document.createElement("a");
     whatsappLink.className = "fab fab--whatsapp";
@@ -361,7 +399,7 @@
     whatsappLink.appendChild(whatsappTooltip);
     whatsappLink.appendChild(whatsappIcon);
 
-    group.appendChild(phoneLink);
+    group.appendChild(phoneWrap);
     group.appendChild(whatsappLink);
     document.body.appendChild(group);
   }

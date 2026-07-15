@@ -6,7 +6,10 @@ const ROOT = path.resolve(__dirname, "..");
 const CONTACT = {
   phone_display: "+90 (544) 948 31 97",
   phone_tel: "+905449483197",
+  phone2_display: "+90 544 662 03 56",
+  phone2_tel: "+905446620356",
   whatsapp: "https://wa.me/905449483197",
+  whatsapp2: "https://wa.me/905446620356",
   email: "markajantlastikkurumsal@gmail.com",
   address: "Yenimahalle, 7. Sk. No:11, 55080 Canik/Samsun",
   maps_url:
@@ -109,6 +112,64 @@ const SOCIAL_SVG = {
 
 function linkClass(base, pageKey, target) {
   return pageKey === target ? `${base} ${base}--active` : base;
+}
+
+function buildFooterPhoneItem() {
+  return `            <li>
+              <span class="site-footer__contact-label">Telefon</span>
+              <div class="contact-links">
+                <a href="tel:${CONTACT.phone_tel}" class="site-footer__contact-value">${CONTACT.phone_display}</a>
+                <a href="tel:${CONTACT.phone2_tel}" class="site-footer__contact-value">${CONTACT.phone2_display}</a>
+              </div>
+            </li>`;
+}
+
+function buildFooterWhatsappItem() {
+  return `            <li>
+              <span class="site-footer__contact-label">WhatsApp</span>
+              <div class="contact-links">
+                <a href="${CONTACT.whatsapp}" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">${CONTACT.phone_display}</a>
+                <a href="${CONTACT.whatsapp2}" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">${CONTACT.phone2_display}</a>
+              </div>
+            </li>`;
+}
+
+function buildContactInfoList() {
+  return `            <li class="contact__info-item">
+              <span class="contact__info-label">Telefon</span>
+              <div class="contact-links">
+                <a href="tel:${CONTACT.phone_tel}" class="contact__info-value">${CONTACT.phone_display}</a>
+                <a href="tel:${CONTACT.phone2_tel}" class="contact__info-value">${CONTACT.phone2_display}</a>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-label">WhatsApp</span>
+              <div class="contact-links">
+                <a href="${CONTACT.whatsapp}" class="contact__info-value" target="_blank" rel="noopener noreferrer">${CONTACT.phone_display}</a>
+                <a href="${CONTACT.whatsapp2}" class="contact__info-value" target="_blank" rel="noopener noreferrer">${CONTACT.phone2_display}</a>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-label">Mail</span>
+              <a href="mailto:${CONTACT.email}" class="contact__info-value">${CONTACT.email}</a>
+            </li>
+            <li class="contact__info-item">
+              <span class="contact__info-label">Adres</span>
+              <span class="contact__info-value">${CONTACT.address}</span>
+            </li>`;
+}
+
+function buildPremiumCtaActions() {
+  return `        <div class="premium-cta__actions premium-cta__actions--dual">
+          <div class="contact-links contact-links--cta">
+            <a href="${CONTACT.whatsapp}" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp · ${CONTACT.phone_display}</a>
+            <a href="${CONTACT.whatsapp2}" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp · ${CONTACT.phone2_display}</a>
+          </div>
+          <div class="contact-links contact-links--cta">
+            <a href="tel:${CONTACT.phone_tel}" class="hero__btn hero__btn--ghost">${CONTACT.phone_display}</a>
+            <a href="tel:${CONTACT.phone2_tel}" class="hero__btn hero__btn--ghost">${CONTACT.phone2_display}</a>
+          </div>
+        </div>`;
 }
 
 function buildSocialLinks(mobile = false) {
@@ -283,14 +344,8 @@ function buildFooter() {
         <div class="site-footer__col">
           <h3 class="site-footer__heading">İletişim</h3>
           <ul class="site-footer__contact">
-            <li>
-              <span class="site-footer__contact-label">Telefon</span>
-              <a href="tel:${CONTACT.phone_tel}" class="site-footer__contact-value">${CONTACT.phone_display}</a>
-            </li>
-            <li>
-              <span class="site-footer__contact-label">WhatsApp</span>
-              <a href="${CONTACT.whatsapp}" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">${CONTACT.phone_display}</a>
-            </li>
+            ${buildFooterPhoneItem()}
+            ${buildFooterWhatsappItem()}
             <li>
               <span class="site-footer__contact-label">E-Posta</span>
               <a href="mailto:${CONTACT.email}" class="site-footer__contact-value">${CONTACT.email}</a>
@@ -373,22 +428,7 @@ function processFile(filename) {
   }
 
   if (filename === "iletisim.html") {
-    const contactInfo = `            <li class="contact__info-item">
-              <span class="contact__info-label">Telefon</span>
-              <a href="tel:${CONTACT.phone_tel}" class="contact__info-value">${CONTACT.phone_display}</a>
-            </li>
-            <li class="contact__info-item">
-              <span class="contact__info-label">WhatsApp</span>
-              <a href="${CONTACT.whatsapp}" class="contact__info-value" target="_blank" rel="noopener noreferrer">${CONTACT.phone_display}</a>
-            </li>
-            <li class="contact__info-item">
-              <span class="contact__info-label">Mail</span>
-              <a href="mailto:${CONTACT.email}" class="contact__info-value">${CONTACT.email}</a>
-            </li>
-            <li class="contact__info-item">
-              <span class="contact__info-label">Adres</span>
-              <span class="contact__info-value">${CONTACT.address}</span>
-            </li>`;
+    const contactInfo = buildContactInfoList();
     content = content.replace(
       /<ul class="contact__info-list">[\s\S]*?<\/ul>/,
       `<ul class="contact__info-list">\n${contactInfo}\n          </ul>`
@@ -405,6 +445,13 @@ function processFile(filename) {
     content = content.replace(/<div class="contact__map"[\s\S]*?<\/div>/, mapBlock);
     content = content.replace('placeholder="+90 (000) 000 00 00"', `placeholder="${CONTACT.phone_display}"`);
     content = content.replace('placeholder="ornek@email.com"', `placeholder="${CONTACT.email}"`);
+  }
+
+  if (filename === "index.html" || filename === "lastikler.html") {
+    content = content.replace(
+      /<div class="premium-cta__actions">[\s\S]*?<\/div>/,
+      buildPremiumCtaActions()
+    );
   }
 
   fs.writeFileSync(filePath, content, "utf8");

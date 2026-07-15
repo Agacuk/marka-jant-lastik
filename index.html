@@ -11,11 +11,11 @@
   <meta property="og:title" content="Marka Jant Lastik | Premium Jant & Lastik Merkezi Samsun">
   <meta property="og:description" content="Samsun Canik'te premium jant, lastik ve profesyonel servis hizmetleri. Lastik değişimi, jant onarım, lastik oteli ve balans.">
   <meta property="og:url" content="https://markajantlastik.com/index.html">
-  <meta property="og:image" content="https://markajantlastik.com/assets/images/hero/hero-store.webp">
+  <meta property="og:image" content="https://markajantlastik.com/assets/images/hero/hero-store.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Marka Jant Lastik | Premium Jant & Lastik Merkezi Samsun">
   <meta name="twitter:description" content="Samsun Canik'te premium jant, lastik ve profesyonel servis hizmetleri. Lastik değişimi, jant onarım, lastik oteli ve balans.">
-  <meta name="twitter:image" content="https://markajantlastik.com/assets/images/hero/hero-store.webp">
+  <meta name="twitter:image" content="https://markajantlastik.com/assets/images/hero/hero-store.jpg">
   <title>Marka Jant Lastik | Premium Jant &amp; Lastik Merkezi Samsun</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,10 +51,7 @@
     }
 
     .showcase__card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
+      display: block;
     }
 
     .showcase__media {
@@ -85,14 +82,6 @@
 
     .showcase__card:hover .jantlar__img.is-loaded {
       transform: scale(1.05);
-    }
-
-    .showcase__label {
-      color: rgba(255, 255, 255, 0.75);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
     }
 
     .showcase__cta {
@@ -130,7 +119,7 @@
           src="assets/images/logo-white.png"
           alt="Marka Jant Lastik"
           width="auto"
-          height="84"
+          height="68"
           decoding="async"
         >
       </a>
@@ -188,6 +177,7 @@
         </button>
       </div>
     </div>
+
     <nav class="mobile-nav" id="mobileMenu" aria-hidden="true">
       <div class="mobile-nav__overlay" data-mobile-nav-close></div>
       <div class="mobile-nav__panel">
@@ -218,6 +208,8 @@
         </ul>
       </div>
     </nav>
+  </header>
+
   </header>
 
   <section class="hero" id="hero">
@@ -494,9 +486,15 @@
       <div class="premium-cta__box" data-reveal-child>
         <h2 class="premium-cta__title">Aracınız İçin Premium Jant &amp; Lastik Çözümleri</h2>
         <p class="premium-cta__desc">Uzman ekibimiz aracınıza en uygun jant ve lastik seçiminde size yardımcı olur.</p>
-        <div class="premium-cta__actions">
-          <a href="https://wa.me/905449483197" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a href="tel:+905449483197" class="hero__btn hero__btn--ghost">Telefon</a>
+        <div class="premium-cta__actions premium-cta__actions--dual">
+          <div class="contact-links contact-links--cta">
+            <a href="https://wa.me/905449483197" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp · +90 (544) 948 31 97</a>
+            <a href="https://wa.me/905446620356" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp · +90 544 662 03 56</a>
+          </div>
+          <div class="contact-links contact-links--cta">
+            <a href="tel:+905449483197" class="hero__btn hero__btn--ghost">+90 (544) 948 31 97</a>
+            <a href="tel:+905446620356" class="hero__btn hero__btn--ghost">+90 544 662 03 56</a>
+          </div>
         </div>
       </div>
     </div>
@@ -552,13 +550,19 @@
         <div class="site-footer__col">
           <h3 class="site-footer__heading">İletişim</h3>
           <ul class="site-footer__contact">
-            <li>
+                        <li>
               <span class="site-footer__contact-label">Telefon</span>
-              <a href="tel:+905449483197" class="site-footer__contact-value">+90 (544) 948 31 97</a>
+              <div class="contact-links">
+                <a href="tel:+905449483197" class="site-footer__contact-value">+90 (544) 948 31 97</a>
+                <a href="tel:+905446620356" class="site-footer__contact-value">+90 544 662 03 56</a>
+              </div>
             </li>
-            <li>
+                        <li>
               <span class="site-footer__contact-label">WhatsApp</span>
-              <a href="https://wa.me/905449483197" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+              <div class="contact-links">
+                <a href="https://wa.me/905449483197" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 (544) 948 31 97</a>
+                <a href="https://wa.me/905446620356" class="site-footer__contact-value" target="_blank" rel="noopener noreferrer">+90 544 662 03 56</a>
+              </div>
             </li>
             <li>
               <span class="site-footer__contact-label">E-Posta</span>
@@ -581,8 +585,6 @@
         <p class="site-footer__credit">Designed &amp; Developed by Kanal Ajans</p>
       </div>
     </div>
-  </footer>
-
   </footer>
 
   <script type="module" src="assets/js/gallery.js"></script>

@@ -3009,13 +3009,13 @@ a.site-footer__contact-value:hover {
 
 .fab-group {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
+  right: max(24px, env(safe-area-inset-right, 0px));
+  bottom: max(24px, env(safe-area-inset-bottom, 0px));
   z-index: 9999;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .fab {
@@ -3060,13 +3060,18 @@ a.site-footer__contact-value:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 64px;
+  flex-shrink: 0;
 }
 
 .fab-phone-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -3116,6 +3121,7 @@ button.fab {
 }
 
 .fab--whatsapp {
+  flex-shrink: 0;
   background-color: #25d366;
   box-shadow:
     0 15px 40px rgba(37, 211, 102, 0.35),
@@ -3159,9 +3165,13 @@ button.fab {
 
 @media (max-width: 768px) {
   .fab-group {
-    right: 18px;
-    bottom: 18px;
+    right: max(18px, env(safe-area-inset-right, 0px));
+    bottom: max(18px, env(safe-area-inset-bottom, 0px));
     gap: 12px;
+  }
+
+  .fab-phone-wrap {
+    width: 58px;
   }
 
   .fab {

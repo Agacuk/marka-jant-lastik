@@ -28,7 +28,7 @@ const PAGE_META = {
     title: "Marka Jant Lastik | Premium Jant & Lastik Merkezi Samsun",
     description:
       "Samsun Canik'te premium jant, lastik ve profesyonel servis hizmetleri. Lastik değişimi, jant onarım, lastik oteli ve balans.",
-    og_image: "assets/images/hero/hero-store.jpg",
+    og_image: "assets/images/hero/hero-premium.webp",
   },
   "jantlar.html": {
     active: "jantlar",
@@ -42,7 +42,7 @@ const PAGE_META = {
     title: "Lastikler | Marka Jant Lastik",
     description:
       "Yaz, kış ve dört mevsim lastik çözümleri. Bridgestone, Michelin, Continental ve daha fazlası Marka Jant Lastik'te.",
-    og_image: "assets/images/hero/hero-store.jpg",
+    og_image: "assets/images/hero/hero-store.webp",
   },
   "lastik-degisimi.html": {
     active: "services",
@@ -81,14 +81,14 @@ const PAGE_META = {
     title: "Sıkça Sorulan Sorular | Marka Jant Lastik",
     description:
       "Jant, lastik ve servis hizmetlerimiz hakkında sıkça sorulan sorular ve cevapları.",
-    og_image: "assets/images/hero/hero-store.jpg",
+    og_image: "assets/images/hero/hero-store.webp",
   },
   "iletisim.html": {
     active: "iletisim",
     title: "İletişim | Marka Jant Lastik",
     description:
       "Marka Jant Lastik ile iletişime geçin. Telefon, WhatsApp, e-posta ve adres bilgilerimiz.",
-    og_image: "assets/images/hero/hero-store.jpg",
+    og_image: "assets/images/hero/hero-store.webp",
   },
 };
 

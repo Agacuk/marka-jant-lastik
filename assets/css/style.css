@@ -1089,6 +1089,12 @@ body.is-mobile-nav-open .site-header__logo {
   background-color: #08080a;
 }
 
+.hero__media-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__media-img {
   display: block;
   width: 100%;
@@ -1598,10 +1604,19 @@ body.is-mobile-nav-open .site-header__logo {
 
   .hero__container {
     align-items: flex-end;
+    justify-content: flex-start;
     padding:
       calc(var(--site-header-height) + clamp(20px, 4vh, 32px))
       clamp(20px, 5vw, 28px)
       clamp(56px, 9vh, 72px);
+  }
+
+  .hero__media-img {
+    object-position: center 78%;
+  }
+
+  .hero__content {
+    max-width: 100%;
   }
 
   .hero__title {

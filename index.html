@@ -24,7 +24,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/vendor/photoswipe/photoswipe.css">
-  <link rel="preload" as="image" href="assets/images/hero/hero-premium.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero/hero-premium-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero/hero-premium.webp" media="(min-width: 769px)" fetchpriority="high">
   <style>
     .showcase {
       padding: clamp(72px, 7vw, 92px) 0;
@@ -216,16 +217,23 @@
 
   <section class="hero" id="hero">
     <div class="hero__media" aria-hidden="true">
-      <img
-        src="assets/images/hero/hero-premium.webp"
-        alt=""
-        class="hero__media-img"
-        width="1920"
-        height="1080"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async"
-      >
+      <picture class="hero__media-picture">
+        <source
+          media="(max-width: 768px)"
+          srcset="assets/images/hero/hero-premium-mobile.webp"
+          type="image/webp"
+        >
+        <img
+          src="assets/images/hero/hero-premium.webp"
+          alt=""
+          class="hero__media-img"
+          width="1920"
+          height="1080"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </picture>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
 

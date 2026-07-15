@@ -217,7 +217,7 @@ function buildHeader(meta) {
     <div class="site-header__container">
       <a href="index.html" class="site-header__logo" aria-label="Ana sayfa">
         <img
-          src="assets/images/logo-white.png"
+          src="assets/images/logo-white.webp"
           alt="Marka Jant Lastik"
           width="auto"
           height="68"
@@ -270,7 +270,7 @@ ${buildSocialLinks(false)}
       <div class="mobile-nav__overlay" data-mobile-nav-close></div>
       <div class="mobile-nav__panel">
         <a href="index.html" class="mobile-nav__logo" aria-label="Ana sayfa">
-          <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="160" height="48" decoding="async">
+          <img src="assets/images/logo-white.webp" alt="Marka Jant Lastik" width="160" height="48" decoding="async">
         </a>
         <ul class="mobile-nav__menu">
           <li><a href="index.html" class="${linkClass("mobile-nav__link", active, "home")}">Ana Sayfa</a></li>
@@ -306,7 +306,7 @@ function buildFooter() {
       <div class="site-footer__grid">
         <div class="site-footer__col site-footer__col--brand">
           <a href="index.html" class="site-footer__logo" aria-label="Ana sayfa">
-            <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="auto" height="56" decoding="async">
+            <img src="assets/images/logo-white.webp" alt="Marka Jant Lastik" width="auto" height="56" decoding="async">
           </a>
           <p class="site-footer__desc">Premium jant, lastik ve profesyonel servis çözümleriyle aracınıza değer katıyoruz.</p>
           <div class="site-footer__social">
@@ -370,10 +370,16 @@ function buildFooter() {
   </footer>`;
 }
 
+function buildHeadLinks() {
+  return `  <link rel="icon" href="assets/images/logo-white.webp" type="image/webp">
+  <link rel="manifest" href="manifest.json">`;
+}
+
 function buildSeoHead(filename, meta) {
   const canonical = `${SITE_BASE}/${filename}`;
   const ogImage = `${SITE_BASE}/${meta.og_image}`;
-  return `  <meta name="description" content="${meta.description}">
+  return `${buildHeadLinks()}
+  <meta name="description" content="${meta.description}">
   <link rel="canonical" href="${canonical}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">

@@ -17,7 +17,7 @@ function Mobile-NavHtml($home, $jantlar, $lastikler, $servicesBtn, $degisim, $on
       <div class="mobile-nav__overlay" data-mobile-nav-close></div>
       <div class="mobile-nav__panel">
         <a href="index.html" class="mobile-nav__logo" aria-label="Ana sayfa">
-          <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="160" height="48" decoding="async">
+          <img src="assets/images/logo-white.webp" alt="Marka Jant Lastik" width="160" height="48" decoding="async">
         </a>
         <ul class="mobile-nav__menu">
           <li><a href="index.html" class="mobile-nav__link$homeCls">Ana Sayfa</a></li>

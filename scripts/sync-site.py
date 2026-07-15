@@ -154,7 +154,7 @@ def build_header(meta: dict) -> str:
     <div class="site-header__container">
       <a href="index.html" class="site-header__logo" aria-label="Ana sayfa">
         <img
-          src="assets/images/logo-white.png"
+          src="assets/images/logo-white.webp"
           alt="Marka Jant Lastik"
           width="auto"
           height="68"
@@ -245,7 +245,7 @@ def build_footer() -> str:
       <div class="site-footer__grid">
         <div class="site-footer__col site-footer__col--brand">
           <a href="index.html" class="site-footer__logo" aria-label="Ana sayfa">
-            <img src="assets/images/logo-white.png" alt="Marka Jant Lastik" width="auto" height="56" decoding="async">
+            <img src="assets/images/logo-white.webp" alt="Marka Jant Lastik" width="auto" height="56" decoding="async">
           </a>
           <p class="site-footer__desc">Premium jant, lastik ve profesyonel servis çözümleriyle aracınıza değer katıyoruz.</p>
           <div class="site-footer__social">

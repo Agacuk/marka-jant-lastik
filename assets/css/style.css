@@ -1249,11 +1249,14 @@ body.is-mobile-nav-open .site-header__brand {
    -------------------------------------------------------------------------- */
 
 .hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: var(--hero-content-max);
 }
 
 .hero__title {
-  margin: 0 0 22px;
+  margin: 0 0 clamp(16px, 2vw, 20px);
   color: #ffffff;
   font-size: var(--hero-title-size);
   font-weight: 700;
@@ -1262,7 +1265,7 @@ body.is-mobile-nav-open .site-header__brand {
 }
 
 .hero__desc {
-  margin: 0 0 32px;
+  margin: 0 0 clamp(28px, 3vw, 32px);
   max-width: var(--hero-desc-max);
   color: rgba(255, 255, 255, 0.72);
   font-size: clamp(15px, 1.55vw, 17px);
@@ -1503,28 +1506,17 @@ body.is-mobile-nav-open .site-header__brand {
 .hero.is-loaded .hero__animate--1 { opacity: 1; transform: translateY(0); transition-delay: 0.08s; }
 .hero.is-loaded .hero__animate--2 { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
 .hero.is-loaded .hero__animate--3 { opacity: 1; transform: translateY(0); transition-delay: 0.32s; }
+.hero.is-loaded .hero__animate--4 { opacity: 1; transform: translateY(0); transition-delay: 0.44s; }
 
-/* Hero Highlights (below hero)
+/* Hero Highlights (inside hero)
    -------------------------------------------------------------------------- */
-
-.hero-highlights {
-  position: relative;
-  z-index: 2;
-  background: #090909;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.hero-highlights__container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: clamp(24px, 3.5vw, 36px) clamp(24px, 4.5vw, 64px);
-}
 
 .hero-highlights__list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(16px, 2.5vw, 28px);
-  margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 16px);
+  width: min(100%, 520px);
+  margin: 0 0 clamp(28px, 3.2vw, 36px);
   padding: 0;
   list-style: none;
 }
@@ -1538,6 +1530,20 @@ body.is-mobile-nav-open .site-header__brand {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition:
+    background-color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-highlights__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(31, 79, 255, 0.28);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px);
 }
 
 .hero-highlights__icon {
@@ -1567,10 +1573,6 @@ body.is-mobile-nav-open .site-header__brand {
   :root {
     --hero-title-size: clamp(32px, 5.2vw, 48px);
     --hero-desc-max: 420px;
-  }
-
-  .hero-highlights__list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1619,17 +1621,22 @@ body.is-mobile-nav-open .site-header__brand {
   }
 
   .hero__content {
-    max-width: min(52vw, 17rem);
-    transform: translateY(-12px);
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+
+  .hero-highlights__list {
+    width: 100%;
+    gap: 12px;
+    margin-bottom: clamp(28px, 4vw, 36px);
   }
 
   .hero__title {
-    margin-bottom: 14px;
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
   }
 
   .hero__desc {
-    margin-bottom: 20px;
     font-size: clamp(14px, 3.8vw, 16px);
     text-shadow: 0 1px 10px rgba(0, 0, 0, 0.42);
   }
@@ -1647,15 +1654,6 @@ body.is-mobile-nav-open .site-header__brand {
   .hero__btn {
     width: 100%;
     min-width: 0;
-  }
-
-  .hero-highlights__container {
-    padding: clamp(20px, 4vw, 28px) clamp(20px, 5vw, 28px);
-  }
-
-  .hero-highlights__list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
   }
 
   .hero-highlights__item {
@@ -1685,10 +1683,6 @@ body.is-mobile-nav-open .site-header__brand {
     min-height: 84svh;
     min-height: 84dvh;
   }
-
-  .hero__content {
-    max-width: min(100%, 18rem);
-  }
 }
 
 @media (max-width: 393px) {
@@ -1702,14 +1696,6 @@ body.is-mobile-nav-open .site-header__brand {
   .hero {
     min-height: 82svh;
     min-height: 82dvh;
-  }
-
-  .hero__content {
-    max-width: min(58vw, 100%);
-  }
-
-  .hero-highlights__list {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -3873,6 +3859,10 @@ a.site-footer__contact-value:hover {
 
   .hero__btn:hover,
   .hero__btn:active {
+    transform: none;
+  }
+
+  .hero-highlights__item:hover {
     transform: none;
   }
 }

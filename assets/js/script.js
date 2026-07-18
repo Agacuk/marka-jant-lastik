@@ -76,6 +76,7 @@
   function handleKeydown(event) {
     if (event.key === "Escape") {
       if (isMenuOpen) {
+        event.preventDefault();
         closeMenu();
         toggle.focus();
         return;
@@ -148,10 +149,13 @@
   if (toggle && mobileMenu) {
     toggle.addEventListener("click", toggleMenu);
 
-    var overlay = mobileMenu.querySelector("[data-mobile-nav-close]");
-    if (overlay) {
-      overlay.addEventListener("click", closeMenu);
-    }
+    var closeTriggers = mobileMenu.querySelectorAll("[data-mobile-nav-close]");
+    closeTriggers.forEach(function (trigger) {
+      trigger.addEventListener("click", function (event) {
+        event.preventDefault();
+        closeMenu();
+      });
+    });
 
     var mobileLinks = mobileMenu.querySelectorAll(".mobile-nav__link, .mobile-nav__sublink");
     mobileLinks.forEach(function (link) {

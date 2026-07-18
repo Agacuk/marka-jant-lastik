@@ -270,7 +270,7 @@ function buildHeader(meta) {
 ${buildSocialLinks(false)}
         <a href="bayi.html" class="${dealerBtnCls}">Bayi Portalı</a>
         <a href="iletisim.html" class="site-header__btn">Bilgi Al</a>
-        <a href="bayi.html" class="site-header__btn site-header__btn--dealer-mobile">Bayi</a>
+        <a href="bayi.html" class="site-header__btn site-header__btn--dealer-mobile">Bayi Girişi</a>
         <button
           class="site-header__toggle"
           type="button"
@@ -288,6 +288,14 @@ ${buildSocialLinks(false)}
     <nav class="mobile-nav" id="mobileMenu" aria-hidden="true">
       <div class="mobile-nav__overlay" data-mobile-nav-close></div>
       <div class="mobile-nav__panel">
+        <button
+          type="button"
+          class="mobile-nav__close"
+          data-mobile-nav-close
+          aria-label="Menüyü kapat"
+        >
+          <span class="mobile-nav__close-icon" aria-hidden="true">&times;</span>
+        </button>
         <a href="index.html" class="mobile-nav__logo" aria-label="Ana sayfa">
           <img src="assets/images/logo-white.webp" alt="Marka Jant Lastik" width="160" height="48" decoding="async">
         </a>

@@ -778,6 +778,45 @@ body {
   transform: scale(1.02);
 }
 
+.site-header__btn--dealer {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.22),
+    0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.site-header__btn--dealer:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(31, 79, 255, 0.22) 0%,
+    rgba(31, 79, 255, 0.1) 100%
+  );
+  border-color: rgba(31, 79, 255, 0.35);
+  box-shadow:
+    0 6px 24px rgba(31, 79, 255, 0.28),
+    0 1px 0 rgba(255, 255, 255, 0.12) inset;
+}
+
+.site-header__btn--dealer.site-header__btn--active {
+  background: rgba(31, 79, 255, 0.18);
+  border-color: rgba(31, 79, 255, 0.4);
+}
+
+.site-header__btn--dealer-mobile {
+  display: none;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
 /* Hamburger Toggle
    -------------------------------------------------------------------------- */
 
@@ -1066,8 +1105,12 @@ body.is-mobile-nav-open .site-header__brand {
   }
 
   .site-header__social,
-  .site-header__btn:not(.site-header__btn--mobile) {
+  .site-header__btn:not(.site-header__btn--mobile):not(.site-header__btn--dealer-mobile) {
     display: none;
+  }
+
+  .site-header__btn--dealer-mobile {
+    display: inline-flex;
   }
 
   .site-header__toggle {

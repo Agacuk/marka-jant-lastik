@@ -90,6 +90,13 @@ const PAGE_META = {
       "Marka Jant Lastik ile iletişime geçin. Telefon, WhatsApp, e-posta ve adres bilgilerimiz.",
     og_image: "assets/images/hero/hero-store.webp",
   },
+  "bayi.html": {
+    active: "bayi",
+    title: "Bayi Portalı | Marka Jant Lastik",
+    description:
+      "Marka Jant Lastik yetkili bayi ağına katılın. Bayi başvurusu, giriş ve bayi sorgulama işlemlerinizi tek noktadan yönetin.",
+    og_image: "assets/images/hero/hero-store.webp",
+  },
 };
 
 const SERVICE_IMAGES = {
@@ -212,6 +219,10 @@ function buildHeader(meta) {
     active === "services"
       ? "mobile-nav__accordion-btn mobile-nav__link--active"
       : "mobile-nav__accordion-btn";
+  const dealerBtnCls =
+    active === "bayi"
+      ? "site-header__btn site-header__btn--dealer site-header__btn--active"
+      : "site-header__btn site-header__btn--dealer";
 
   return `  <header class="site-header" id="siteHeader">
     <div class="site-header__container">
@@ -257,7 +268,9 @@ function buildHeader(meta) {
 
       <div class="site-header__actions">
 ${buildSocialLinks(false)}
+        <a href="bayi.html" class="${dealerBtnCls}">Bayi Portalı</a>
         <a href="iletisim.html" class="site-header__btn">Bilgi Al</a>
+        <a href="bayi.html" class="site-header__btn site-header__btn--dealer-mobile">Bayi</a>
         <button
           class="site-header__toggle"
           type="button"

@@ -530,10 +530,12 @@ body {
   color: rgba(255, 255, 255, 0.86);
   font-family: "Montserrat", sans-serif;
   font-size: clamp(10px, 1.05vw, 13px);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.12;
   letter-spacing: 0.05em;
   white-space: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .site-header__tagline-line {
@@ -1234,7 +1236,16 @@ body.is-mobile-nav-open .site-header__brand {
   }
 
   .site-header__tagline {
-    display: none;
+    display: flex;
+    font-size: clamp(7.5px, 2.1vw, 10px);
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .site-header__tagline-mark {
+    letter-spacing: 0.04em;
   }
 
   .site-header__actions {
@@ -1263,6 +1274,11 @@ body.is-mobile-nav-open .site-header__brand {
     height: clamp(44px, 12.5vw, 52px);
   }
 
+  .site-header__tagline {
+    font-size: clamp(7px, 1.95vw, 9px);
+    letter-spacing: 0.025em;
+  }
+
   .site-header__social-link {
     width: 30px;
     height: 30px;
@@ -1287,7 +1303,12 @@ body.is-mobile-nav-open .site-header__brand {
   }
 
   .site-header__logo img {
-    height: 42px;
+    height: 38px;
+  }
+
+  .site-header__tagline {
+    font-size: 7px;
+    letter-spacing: 0.02em;
   }
 
   .site-header__social {

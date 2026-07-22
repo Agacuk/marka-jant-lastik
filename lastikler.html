@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/tire-brand-showcase.css">
   <link rel="stylesheet" href="assets/vendor/photoswipe/photoswipe.css">
   <style>
     .page-hero {
@@ -120,7 +121,7 @@
     }
   </style>
 </head>
-<body>
+<body class="tire-brands-page">
 
   <header class="site-header" id="siteHeader">
     <div class="site-header__container">
@@ -238,12 +239,6 @@
 
   </header>
 
-  </header>
-
-  </header>
-
-  </header>
-
   <section class="page-hero">
     <div class="page-hero__container">
       <h1 class="jantlar__title">Lastikler</h1>
@@ -258,16 +253,7 @@
         <p class="jantlar__subtitle">Dünya çapında güvenilen premium lastik markalarıyla çalışıyoruz.</p>
       </header>
 
-      <div class="brands__grid">
-        <div class="brands__card" data-reveal-child><span class="brands__name">MICHELIN</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">CONTINENTAL</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">HANKOOK</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">KUMHO</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">LASSA</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">BRIDGESTONE</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">STARMAX</span></div>
-        <div class="brands__card" data-reveal-child><span class="brands__name">GOODYEAR</span></div>
-      </div>
+      <div class="brands__grid" id="tyreBrandsGrid" aria-label="Lastik markaları"></div>
 
       <p class="brands__note" data-reveal-child>Ana markalar ve alt ürünleri de mevcuttur.</p>
     </div>
@@ -444,14 +430,35 @@
     </div>
   </footer>
 
-  </footer>
+  <div class="tire-modal" id="tireBrandModal" hidden aria-hidden="true" role="dialog" aria-labelledby="tireModalBrandName" aria-modal="true">
+    <div class="tire-modal__overlay" data-tire-modal-close></div>
+    <div class="tire-modal__dialog">
+      <div class="tire-modal__watermark" id="tireModalWatermark" aria-hidden="true"></div>
+      <button type="button" class="tire-modal__close" data-tire-modal-close aria-label="Kapat">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <header class="tire-modal__header">
+        <div class="tire-modal__brand-logo" id="tireModalBrandLogo"></div>
+        <div class="tire-modal__brand-info">
+          <h2 class="tire-modal__brand-name" id="tireModalBrandName"></h2>
+          <p class="tire-modal__brand-desc" id="tireModalBrandDesc"></p>
+        </div>
+      </header>
+      <div class="tire-modal__toolbar">
+        <div class="tire-modal__filters" id="tireModalFilters" role="group" aria-label="Ürün filtreleri"></div>
+        <div class="tire-modal__search">
+          <label class="visually-hidden" for="tireModalSearch">Ürün Ara</label>
+          <input type="search" class="tire-modal__search-input" id="tireModalSearch" placeholder="Ürün Ara" autocomplete="off">
+        </div>
+      </div>
+      <div class="tire-modal__body">
+        <div class="tire-modal__grid" id="tireModalProducts"></div>
+      </div>
+    </div>
+  </div>
 
-  </footer>
-
-  </footer>
-
-  </footer>
-
+  <script src="assets/js/tire-brands-data.js"></script>
+  <script src="assets/js/tire-brand-showcase.js"></script>
   <script type="module" src="assets/js/gallery.js"></script>
   <script src="assets/js/script.js" defer></script>
 </body>

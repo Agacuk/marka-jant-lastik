@@ -74,7 +74,7 @@
       brandName +
       " " +
       productName +
-      " lastiği hakkında teklif almak istiyorum.";
+      " lastiği hakkında bilgi almak istiyorum.";
     return catalog.whatsappUrl + "?text=" + encodeURIComponent(message);
   }
 
@@ -83,27 +83,23 @@
 
     container.innerHTML = catalog.brands
       .map(function (brand) {
-        var logoHtml = brand.logo
-          ? '<span class="brands__logo"><img src="' +
-            escapeHtml(brand.logo) +
-            '" alt="' +
-            escapeHtml(brand.name) +
-            '" loading="lazy" decoding="async"></span>'
-          : "";
+        if (!brand.logo) return "";
 
         return (
-          '<button type="button" class="brands__card" data-tire-brand="' +
+          '<button type="button" class="brands__card brands__card--logo-only" data-tire-brand="' +
           escapeHtml(brand.id) +
           '" data-reveal-child aria-label="' +
           escapeHtml(brand.name) +
           " ürünlerini görüntüle" +
           '">' +
-          logoHtml +
-          '<span class="brands__name">' +
-          escapeHtml(brand.displayName || brand.name.toUpperCase()) +
+          '<span class="brands__logo">' +
+          '<img src="' +
+          escapeHtml(brand.logo) +
+          '" alt="" loading="lazy" decoding="async">' +
           "</span></button>"
         );
       })
+      .filter(Boolean)
       .join("");
 
     container.querySelectorAll("[data-reveal-child]").forEach(function (el) {
@@ -181,6 +177,10 @@
           .join("");
 
         var whatsappUrl = buildWhatsAppUrl(product.name, activeBrand.name);
+        var quoteUrl =
+          catalog.contactUrl +
+          "?urun=" +
+          encodeURIComponent(activeBrand.name + " " + product.name);
 
         return (
           '<article class="tire-product">' +
@@ -206,11 +206,12 @@
           "</div>" +
           '<div class="tire-product__actions">' +
           '<a href="' +
-          escapeHtml(catalog.contactUrl) +
-          '" class="hero__btn hero__btn--ghost">Bilgi Al</a>' +
+          escapeHtml(quoteUrl) +
+          '" class="hero__btn hero__btn--primary">Teklif Al</a>' +
           '<a href="' +
           escapeHtml(whatsappUrl) +
-          '" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp ile Teklif Al</a>' +
+          '" class="hero__btn hero__btn--whatsapp" target="_blank" rel="noopener noreferrer">' +
+          '<i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp\'tan Bilgi Al</a>' +
           "</div>" +
           "</div>" +
           "</article>"
@@ -232,22 +233,15 @@
     brandNameEl.textContent = brand.name;
     brandDescEl.textContent = brand.description;
 
-    if (brand.logo) {
-      brandLogoEl.className = "tire-modal__brand-logo";
-      brandLogoEl.innerHTML =
-        '<img src="' +
-        escapeHtml(brand.logo) +
-        '" alt="' +
-        escapeHtml(brand.name) +
-        '" decoding="async">';
-      watermarkEl.style.backgroundImage = 'url("' + brand.logo + '")';
-      watermarkEl.hidden = false;
-    } else {
-      brandLogoEl.className = "tire-modal__brand-logo tire-modal__brand-logo--text";
-      brandLogoEl.textContent = brand.displayName || brand.name.toUpperCase();
-      watermarkEl.style.backgroundImage = "none";
-      watermarkEl.hidden = true;
-    }
+    brandLogoEl.className = "tire-modal__brand-logo";
+    brandLogoEl.innerHTML =
+      '<img src="' +
+      escapeHtml(brand.logo) +
+      '" alt="' +
+      escapeHtml(brand.name) +
+      '" decoding="async">';
+    watermarkEl.style.backgroundImage = 'url("' + brand.logo + '")';
+    watermarkEl.hidden = false;
   }
 
   function openModal(brandId) {

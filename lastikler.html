@@ -440,16 +440,17 @@
       <header class="tire-modal__header">
         <div class="tire-modal__brand-logo" id="tireModalBrandLogo"></div>
         <div class="tire-modal__brand-info">
-          <h2 class="tire-modal__brand-name" id="tireModalBrandName"></h2>
+          <h2 class="tire-modal__brand-name visually-hidden" id="tireModalBrandName"></h2>
           <p class="tire-modal__brand-desc" id="tireModalBrandDesc"></p>
+          <div class="tire-modal__divider" aria-hidden="true"></div>
         </div>
       </header>
       <div class="tire-modal__toolbar">
-        <div class="tire-modal__filters" id="tireModalFilters" role="group" aria-label="Ürün filtreleri"></div>
-        <div class="tire-modal__search">
+        <div class="tire-modal__search tire-modal__search--top">
           <label class="visually-hidden" for="tireModalSearch">Ürün Ara</label>
           <input type="search" class="tire-modal__search-input" id="tireModalSearch" placeholder="Ürün Ara" autocomplete="off">
         </div>
+        <div class="tire-modal__filters" id="tireModalFilters" role="group" aria-label="Ürün filtreleri"></div>
       </div>
       <div class="tire-modal__body">
         <div class="tire-modal__grid" id="tireModalProducts"></div>

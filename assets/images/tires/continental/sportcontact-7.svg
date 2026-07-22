@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" fill="none">
+  <defs>
+    <linearGradient id="bg-sportcontact-7" x1="0" y1="0" x2="480" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16161e"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <radialGradient id="spot-sportcontact-7" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="hsl(75, 35%, 22%)" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="hsl(75, 20%, 8%)" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rubber-sportcontact-7" x1="120" y1="160" x2="360" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a2a34"/>
+      <stop offset="45%" stop-color="#1a1a22"/>
+      <stop offset="100%" stop-color="#121218"/>
+    </linearGradient>
+    <linearGradient id="shine-sportcontact-7" x1="160" y1="140" x2="300" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" fill="url(#bg-sportcontact-7)"/>
+  <rect width="480" height="480" fill="url(#spot-sportcontact-7)"/>
+  <ellipse cx="240" cy="248" rx="168" ry="108" fill="#08080c" opacity="0.55"/>
+  <ellipse cx="240" cy="228" rx="156" ry="96" fill="url(#rubber-sportcontact-7)" stroke="#2e2e3a" stroke-width="2"/>
+  <ellipse cx="240" cy="228" rx="132" ry="80" fill="none" stroke="hsl(75, 22%, 32%)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 58 228 Q 240 194 422 228" fill="none" stroke="hsl(75, 12%, 22%)" stroke-width="2.5" opacity="0.85"/>
+  <path d="M 78 228 Q 240 194 402 228" fill="none" stroke="hsl(75, 12%, 22%)" stroke-width="2.5" opacity="0.85"/>
+  <path d="M 98 228 Q 240 194 382 228" fill="none" stroke="hsl(75, 12%, 22%)" stroke-width="2.5" opacity="0.85"/>
+  <path d="M 118 228 Q 240 194 362 228" fill="none" stroke="hsl(75, 12%, 22%)" stroke-width="2.5" opacity="0.85"/>
+  <path d="M 138 228 Q 240 194 342 228" fill="none" stroke="hsl(75, 12%, 22%)" stroke-width="2.5" opacity="0.85"/>
+  <line x1="328.0" y1="228.0" x2="388.0" y2="228.0" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="302.2" y1="264.8" x2="344.7" y2="290.2" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="240.0" y1="280.0" x2="240.0" y2="316.0" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="177.8" y1="264.8" x2="135.3" y2="290.2" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="152.0" y1="228.0" x2="92.0" y2="228.0" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="177.8" y1="191.2" x2="135.3" y2="165.8" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="240.0" y1="176.0" x2="240.0" y2="140.0" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="302.2" y1="191.2" x2="344.7" y2="165.8" stroke="hsl(75, 18%, 28%)" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="240" cy="228" rx="72" ry="44" fill="#0e0e14" stroke="#333340" stroke-width="2"/>
+  <ellipse cx="240" cy="228" rx="48" ry="28" fill="#181820" stroke="hsl(75, 30%, 38%)" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="240" cy="228" rx="156" ry="96" fill="url(#shine-sportcontact-7)"/>
+  <text x="240" y="392" fill="rgba(255,255,255,0.42)" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="0.06em">SportContact 7</text>
+</svg>

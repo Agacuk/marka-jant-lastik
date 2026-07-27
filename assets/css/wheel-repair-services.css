@@ -1,0 +1,400 @@
+/* ==========================================================================
+   WHEEL REPAIR SUB-SERVICES — Hub grid & detail pages
+   ========================================================================== */
+
+.wheel-repair-hub {
+  padding: clamp(48px, 6vw, 72px) 0 clamp(64px, 8vw, 88px);
+  background-color: #090909;
+}
+
+.wheel-repair-hub__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(14px, 3.2vw, 22px);
+}
+
+@media (min-width: 769px) {
+  .wheel-repair-hub__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 2.2vw, 24px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .wheel-repair-hub__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.wheel-repair-hub__card .wheel-repair-hub__icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(9, 9, 9, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  pointer-events: none;
+  transition: transform 320ms ease, background-color 320ms ease;
+}
+
+.wheel-repair-hub__card:hover .wheel-repair-hub__icon {
+  transform: scale(1.06);
+  background: rgba(31, 79, 255, 0.22);
+}
+
+/* ── Breadcrumb ── */
+.service-breadcrumb {
+  padding: calc(88px + 16px) clamp(20px, 4vw, 64px) 0;
+  background: #090909;
+}
+
+.service-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.service-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.service-breadcrumb__item a {
+  color: rgba(255, 255, 255, 0.68);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.service-breadcrumb__item a:hover {
+  color: #ffffff;
+}
+
+.service-breadcrumb__item:not(:last-child)::after {
+  content: "›";
+  margin-left: 4px;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.service-breadcrumb__item[aria-current="page"] {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* ── Detail hero ── */
+.service-detail-hero {
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  padding: clamp(24px, 4vw, 40px) clamp(32px, 4.5vw, 64px) clamp(40px, 5vw, 56px);
+  background-color: #090909;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.service-detail-hero__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(32px, 4vw, 64px);
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.service-detail-hero__media .services__card-media {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+.service-detail-hero__title {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: clamp(28px, 3.8vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.service-detail-hero__desc {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ── Detail sections ── */
+.service-detail {
+  padding: clamp(48px, 6vw, 72px) 0;
+  background: #090909;
+}
+
+.service-detail__section {
+  margin-bottom: clamp(36px, 5vw, 52px);
+}
+
+.service-detail__section:last-child {
+  margin-bottom: 0;
+}
+
+.service-detail__heading {
+  margin: 0 0 clamp(16px, 2vw, 20px);
+  color: #ffffff;
+  font-size: clamp(22px, 2.6vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.service-detail__text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: clamp(15px, 1.55vw, 17px);
+  line-height: 1.75;
+}
+
+.service-detail__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.service-detail__list li {
+  position: relative;
+  padding-left: 22px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.65;
+}
+
+.service-detail__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.85);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.35);
+}
+
+.service-detail__duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  background: rgba(59, 130, 246, 0.08);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.service-detail__faq {
+  display: grid;
+  gap: 10px;
+}
+
+.service-detail__faq-item {
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.service-detail__faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.service-detail__faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-detail__faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  color: rgba(59, 130, 246, 0.9);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.service-detail__faq-item[open] summary::after {
+  content: "−";
+}
+
+.service-detail__faq-item p {
+  margin: 0;
+  padding: 0 18px 16px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* ── Gallery ── */
+.service-detail-gallery {
+  padding: 0 0 clamp(48px, 6vw, 72px);
+  background: #090909;
+}
+
+.service-detail-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.8vw, 16px);
+}
+
+.service-detail-gallery__item {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #121218;
+}
+
+.service-detail-gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.service-detail-gallery__item:hover img {
+  transform: scale(1.04);
+}
+
+/* ── CTA ── */
+.service-detail-cta {
+  padding: clamp(48px, 6vw, 72px) 0 clamp(72px, 9vw, 100px);
+  background: #090909;
+  text-align: center;
+}
+
+.service-detail-cta__box {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.015) 100%
+  );
+}
+
+.service-detail-cta__title {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: clamp(22px, 2.8vw, 28px);
+  font-weight: 700;
+}
+
+.service-detail-cta__desc {
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.service-detail-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.service-detail-cta__actions .hero__btn {
+  min-width: min(100%, 220px);
+}
+
+.hero__btn--whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.2);
+}
+
+.hero__btn--whatsapp:hover {
+  background: linear-gradient(135deg, #2ee676 0%, #17a589 100%);
+  border-color: rgba(37, 211, 102, 0.55);
+}
+
+@media (max-width: 1024px) {
+  .service-detail-hero__container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail-hero__media {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .service-detail-gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .service-breadcrumb {
+    padding-top: calc(88px + 8px);
+  }
+
+  .service-detail-hero {
+    min-height: auto;
+    padding: clamp(16px, 4vw, 24px) clamp(20px, 5vw, 28px) clamp(28px, 5vw, 36px);
+  }
+
+  .service-detail-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail-cta__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wheel-repair-hub__card .wheel-repair-hub__icon,
+  .service-detail-gallery__item img {
+    transition: none;
+  }
+}

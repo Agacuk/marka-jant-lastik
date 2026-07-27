@@ -21,8 +21,10 @@
   <title>Jant Onarım &amp; Düzeltme | Marka Jant Lastik</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/wheel-repair-services.css">
   <style>
     .service-hero {
       display: flex;
@@ -123,7 +125,7 @@
     }
   </style>
 </head>
-<body>
+<body class="wheel-repair-hub-page">
 
   <header class="site-header" id="siteHeader">
     <div class="site-header__container">
@@ -239,14 +241,6 @@
     </nav>
   </header>
 
-  </header>
-
-  </header>
-
-  </header>
-
-  </header>
-
   <section class="service-hero">
     <div class="service-hero__container">
       <div class="service-hero__content">
@@ -267,6 +261,16 @@
           >
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="services wheel-repair-hub" id="alt-hizmetler" aria-labelledby="wheelRepairHubTitle">
+    <div class="services__container">
+      <header class="services__header">
+        <h2 class="services__title" id="wheelRepairHubTitle">Alt Hizmetlerimiz</h2>
+        <p class="services__subtitle">Jant onarım ve restorasyon süreçlerimizi detaylı inceleyin.</p>
+      </header>
+      <div class="services__grid wheel-repair-hub__grid" id="wheelRepairHubGrid"></div>
     </div>
   </section>
 
@@ -425,14 +429,8 @@
     </div>
   </footer>
 
-  </footer>
-
-  </footer>
-
-  </footer>
-
-  </footer>
-
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/wheel-repair-services-data.js"></script>
+  <script src="assets/js/wheel-repair-hub.js"></script>
+  <script src="assets/js/script.js" defer></script>
 </body>
 </html>

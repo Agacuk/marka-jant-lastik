@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none">
+  <rect width="480" height="360" fill="#101018"/>
+  <rect x="24" y="24" width="432" height="312" rx="16" fill="#16161e" stroke="#2a3144" stroke-width="1"/>
+  <ellipse cx="240" cy="168" rx="96" ry="58" fill="#0e0e14" stroke="hsl(55, 30%, 38%)" stroke-width="1.5"/>
+  <text x="240" y="300" fill="rgba(255,255,255,0.42)" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Jant Kumlama · 4</text>
+</svg>

@@ -1,6 +1,6 @@
 /**
  * Lastik Marka Vitrini — Statik katalog verisi
- * Görsel yolları: assets/images/tires/{marka}/{urun-id}.svg
+ * Görsel yolları: assets/images/tires/{marka}/{urun-id}.{svg|webp}
  * Gelecekte TireBrandAPI.getBrands() ile backend'den değiştirilebilir.
  */
 (function (global) {
@@ -8,18 +8,18 @@
 
   var PLACEHOLDER = "assets/images/tires/placeholder.svg";
 
-  function tireImage(brandId, productId) {
-    return "assets/images/tires/" + brandId + "/" + productId + ".svg";
+  function tireImage(brandId, productId, ext) {
+    return "assets/images/tires/" + brandId + "/" + productId + "." + (ext || "svg");
   }
 
-  function product(brandId, id, name, category, description, tags) {
+  function product(brandId, id, name, category, description, tags, imageExt) {
     return {
       id: id,
       name: name,
       category: category,
       description: description,
       tags: tags,
-      image: tireImage(brandId, id),
+      image: tireImage(brandId, id, imageExt),
     };
   }
 
@@ -52,12 +52,12 @@
         description:
           "Michelin'in binek, SUV, performans ve ticari araçlar için geliştirdiği premium lastik çözümleri.",
         products: [
-          product("michelin", "pilot-sport-5", "Pilot Sport 5", "Performans Lastik", "Islak ve kuru zeminde üstün yol tutuş sunan ultra performans lastiği.", ["yaz", "performans"]),
-          product("michelin", "primacy-5", "Primacy 5", "Konfor Lastiği", "Sessiz sürüş ve uzun ömür için optimize edilmiş premium tur lastiği.", ["yaz"]),
-          product("michelin", "crossclimate-2", "CrossClimate 2", "4 Mevsim Lastik", "Yıl boyunca güvenli performans sunan çok mevsimli lastik teknolojisi.", ["4-mevsim"]),
-          product("michelin", "latitude-sport-3", "Latitude Sport 3", "SUV Lastiği", "SUV ve crossover modeller için dengeli tutuş ve konfor.", ["suv", "yaz"]),
-          product("michelin", "pilot-alpin", "Pilot Alpin", "Kış Lastiği", "Karlı ve buzlu yollarda güvenli sürüş için kış performansı.", ["kis", "performans"]),
-          product("michelin", "e-primacy", "e.Primacy", "EV Lastiği", "Elektrikli araçlar için düşük yuvarlanma direnci ve yüksek menzil verimliliği.", ["ev", "yaz"]),
+          product("michelin", "pilot-sport-5", "Pilot Sport 5", "Performans Lastik", "Islak ve kuru zeminde üstün yol tutuş sunan ultra performans lastiği.", ["yaz", "performans"], "webp"),
+          product("michelin", "primacy-5", "Primacy 5", "Konfor Lastiği", "Sessiz sürüş ve uzun ömür için optimize edilmiş premium tur lastiği.", ["yaz"], "webp"),
+          product("michelin", "crossclimate-2", "CrossClimate 2", "4 Mevsim Lastik", "Yıl boyunca güvenli performans sunan çok mevsimli lastik teknolojisi.", ["4-mevsim"], "webp"),
+          product("michelin", "latitude-sport-3", "Latitude Sport 3", "SUV Lastiği", "SUV ve crossover modeller için dengeli tutuş ve konfor.", ["suv", "yaz"], "webp"),
+          product("michelin", "pilot-alpin", "Pilot Alpin", "Kış Lastiği", "Karlı ve buzlu yollarda güvenli sürüş için kış performansı.", ["kis", "performans"], "webp"),
+          product("michelin", "e-primacy", "e.Primacy", "EV Lastiği", "Elektrikli araçlar için düşük yuvarlanma direnci ve yüksek menzil verimliliği.", ["ev", "yaz"], "webp"),
         ],
       },
       {

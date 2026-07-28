@@ -76,7 +76,7 @@
       {
         id: "pirelli",
         name: "Pirelli",
-        logo: "assets/images/brands/brand-pirelli.svg",
+        logo: "assets/images/brands/brand-pirelli.png",
         description:
           "Pirelli'nin performans, SUV ve premium segment araçlar için geliştirdiği lastik teknolojileri.",
         products: [
@@ -102,7 +102,7 @@
       {
         id: "bridgestone",
         name: "Bridgestone",
-        logo: "assets/images/brands/brand-bridgestone.svg",
+        logo: "assets/images/brands/brand-bridgestone.png",
         description:
           "Bridgestone'un performans, konfor ve SUV segmentlerinde sunduğu global lastik teknolojileri.",
         products: [
@@ -115,7 +115,7 @@
       {
         id: "lassa",
         name: "Lassa",
-        logo: "assets/images/brands/brand-lassa.svg",
+        logo: "assets/images/brands/brand-lassa.png",
         description:
           "Lassa'nın binek, SUV ve ticari segmentlerde sunduğu yerli üretim güvenilir lastik çözümleri.",
         products: [
@@ -154,7 +154,7 @@
       {
         id: "kumho",
         name: "Kumho",
-        logo: "assets/images/brands/brand-kumho.svg",
+        logo: "assets/images/brands/brand-kumho.png",
         description:
           "Kumho'nun performans, konfor ve SUV segmentlerinde sunduğu teknoloji odaklı lastik çözümleri.",
         products: [
@@ -168,7 +168,7 @@
       {
         id: "nexen",
         name: "Nexen",
-        logo: "assets/images/brands/brand-nexen.svg",
+        logo: "assets/images/brands/brand-nexen.png",
         description:
           "Nexen'in binek ve SUV segmentlerinde sunduğu performans ve konfor odaklı lastik portföyü.",
         products: [
@@ -182,7 +182,7 @@
       {
         id: "yokohama",
         name: "Yokohama",
-        logo: "assets/images/brands/brand-yokohama.svg",
+        logo: "assets/images/brands/brand-yokohama.png",
         description:
           "Yokohama'nın performans, SUV ve dört mevsim segmentlerinde sunduğu Japon mühendislik lastikleri.",
         products: [
@@ -196,7 +196,7 @@
       {
         id: "bfgoodrich",
         name: "BFGoodrich",
-        logo: "assets/images/brands/brand-bfgoodrich.svg",
+        logo: "assets/images/brands/brand-bfgoodrich.png",
         description:
           "BFGoodrich'in performans, arazi ve SUV segmentlerinde sunduğu dayanıklı lastik teknolojileri.",
         products: [

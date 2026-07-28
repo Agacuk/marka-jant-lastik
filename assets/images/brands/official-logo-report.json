@@ -1,0 +1,123 @@
+{
+  "svg": [
+    "michelin",
+    "continental",
+    "goodyear",
+    "hankook"
+  ],
+  "darkLight": [
+    "pirelli",
+    "bridgestone",
+    "lassa",
+    "kumho",
+    "nexen",
+    "yokohama",
+    "bfgoodrich"
+  ],
+  "notFound": [
+    "petlas",
+    "starmaxx"
+  ],
+  "manual": [
+    "lassa"
+  ],
+  "details": {
+    "michelin": {
+      "file": "brand-michelin.svg",
+      "source": "michelinman.com",
+      "url": "https://www.michelinman.com/public/themes/michelin-commercial/assets/images/logos/svg/logo-brand-color.svg",
+      "format": "svg",
+      "theme": null,
+      "whiteBox": false
+    },
+    "continental": {
+      "file": "brand-continental.svg",
+      "source": "continental-tires.com (official footer SVG, orange on transparent)",
+      "url": "https://www.continental-tires.com/content/experience-fragments/conti-tires-cms/ww/en/site/footer/master/_jcr_content/root/container_bottom/image.coreimg.svg/1676361234567/continental-logo.svg",
+      "format": "svg",
+      "theme": null,
+      "whiteBox": false
+    },
+    "goodyear": {
+      "file": "brand-goodyear.svg",
+      "source": "goodyear.com (official dark theme)",
+      "url": "https://www.goodyear.com/_next/static/media/primary-dark-brand-logo.2bpgmlh3ffhwu.svg",
+      "format": "svg",
+      "theme": "dark",
+      "whiteBox": false
+    },
+    "pirelli": {
+      "file": "brand-pirelli.png",
+      "source": "pirelli.com binaries CDN",
+      "url": "https://binaries.pirelli.com/common/Logo_Pirelli150.png",
+      "format": "png",
+      "theme": null,
+      "whiteBox": false
+    },
+    "bridgestone": {
+      "file": "brand-bridgestone.png",
+      "source": "bridgestone.com (official corporate site asset)",
+      "url": "https://www.bridgestone.com/bwsc/assets/img/common/logo_header_en_m.png",
+      "format": "png",
+      "theme": null,
+      "whiteBox": false
+    },
+    "lassa": {
+      "file": "brand-lassa.png",
+      "source": "lassa.com.tr",
+      "url": "https://www.lassa.com.tr/Dosyalar/content/lassa_logo_og.png",
+      "format": "png",
+      "theme": null,
+      "whiteBox": false,
+      "note": "Resmi PNG; şeffaflık / koyu zemin uyumu manuel kontrol önerilir"
+    },
+    "petlas": {
+      "status": "placeholder",
+      "reason": "Resmi logo URL doğrulanamadı (site 403 veya asset bulunamadı)"
+    },
+    "hankook": {
+      "file": "brand-hankook.svg",
+      "source": "hankooktire.com asset CDN (official white logo)",
+      "url": "https://asset.hankooktire.com/content/dam/hankooktire/local/svg/logo-white.svg",
+      "format": "svg",
+      "theme": "dark",
+      "whiteBox": false
+    },
+    "kumho": {
+      "file": "brand-kumho.png",
+      "source": "kumhotireusa.com",
+      "url": "https://kumhotireusa.com/kumho-logo.png",
+      "format": "png",
+      "theme": null,
+      "whiteBox": false
+    },
+    "nexen": {
+      "file": "brand-nexen.png",
+      "source": "nexentire.com",
+      "url": "https://www.nexentire.com/international/assets/images/common/logo.png",
+      "format": "png",
+      "theme": null,
+      "whiteBox": false
+    },
+    "yokohama": {
+      "file": "brand-yokohama.png",
+      "source": "yokohamatire.com official S3 (white logo)",
+      "url": "https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png",
+      "format": "png",
+      "theme": "dark",
+      "whiteBox": false
+    },
+    "bfgoodrich": {
+      "file": "brand-bfgoodrich.png",
+      "source": "bfgoodrich.co.uk (official site CDN)",
+      "url": "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/bqaijdrrn46bzb2yhe2isecm-f99zw1xls1vqokk8yiyv2g5i-66f971b8-db1f-4f26-8c65-23c6ab210c3f.full.png",
+      "format": "png",
+      "theme": null,
+      "whiteBox": false
+    },
+    "starmaxx": {
+      "status": "placeholder",
+      "reason": "Resmi logo URL doğrulanamadı (site 403 veya asset bulunamadı)"
+    }
+  }
+}

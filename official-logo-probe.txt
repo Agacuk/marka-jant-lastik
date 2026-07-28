@@ -1,0 +1,158 @@
+﻿=== DIRECT CANDIDATES ===
+hankook-white 200 8213 SVG svg/logo-white.svg
+hankook-logo 404 503 text/html;charset=utf-8 logo/logo.svg
+michelin-dam 404 917774 text/html brand/logo-michelin.svg
+continental-dam 404 87698 text/html;charset=utf-8 images/continental-logo-white.svg
+goodyear-dam 404 97505 text/html;charset=utf-8 logos/goodyear-logo.svg
+pirelli-dam 404 2714 text/html logo/pirelli-logo.svg
+bridgestone-dam 404 36030 text/html images/bridgestone-logo-white.svg
+yokohama-img 404 146104 text/html; charset=utf-8 images/yokohama-logo.svg
+nexen-assets 200 37461 text/html; charset=UTF-8 common/logo.svg
+kumho-logo 404 92200 text/html;charset=UTF-8 common/logo_w.svg
+bfg-dam 404 236 text/html; charset=iso-8859-1 images/bfgoodrich-logo.svg
+lassa-assets 404 2632 text/html Images/logo-white.svg
+petlas-storage 403 4545 text/html; charset=UTF-8 media/logo.svg
+starmaxx-storage 404 449 text/html; charset=UTF-8 media/logo.svg
+
+=== PAGE SCRAPE ===
+
+#michelin
+ page 200 https://www.michelin.com/en/
+   https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/clsspql4n0xok12hn3kum2cex-logo-mediaday-2024-500ko.max.pn
+ page 200 https://www.michelinman.com/
+   https://www.michelinman.com/public/themes/michelin-commercial/assets/images/logos/svg/logo-brand-color.svg
+
+#goodyear
+ page 200 https://www.goodyear.eu/en_gb/consumer.html
+   https://www.goodyear.eu/content/experience-fragments/goodyear/ecommerce/header/header/en_gb/_jcr_content/root/container/header/logo.coreimg%7B.width%7D.png/1764
+   https://www.goodyear.eu/content/experience-fragments/goodyear/ecommerce/header/header/en_gb/_jcr_content/root/container/header/logo.coreimg.png/1764318717192/go
+   https://www.goodyear.eu/content/dam/goodyear/consumer/common/navigation/fulda-logo.png
+   https://www.goodyear.eu/content/dam/goodyear/consumer/common/navigation/sava-logo.png
+   https://www.goodyear.eu/content/dam/goodyear/consumer/common/navigation/myway-logo.png
+   https://www.goodyear.eu/content/dam/goodyear/consumer/common/navigation/goodyear-logo-transparent.png
+ page 200 https://www.goodyear.com/
+   https://www.goodyear.com/images/brandlogo.png
+   https://www.goodyear.com/en-us/images/Logo.png
+   https://www.goodyear.com/_next/static/media/primary-dark-brand-logo.2bpgmlh3ffhwu.svg
+   https://www.goodyear.com/_next/static/media/secondary-dark-brand-logo.0t22ogc04rfmp.svg
+
+#continental
+ page 200 https://www.continental-tires.com/
+   https://www.continental-tires.com/content/dam/conti-tires-cms/continental/brand/basics/Continental_Logo_large.svg
+   https://www.continental-tires.com/content/dam/conti-tires-cms/sample-content/sample-images/logo_smaller.svg
+   https://www.continental-tires.com/content/experience-fragments/conti-tires-cms/ww/en/site/footer/master/_jcr_content/root/container_bottom/image.coreimg%7B.widt
+   https://www.continental-tires.com/content/experience-fragments/conti-tires-cms/ww/en/site/footer/master/_jcr_content/root/container_bottom/image.coreimg.svg/167
+ page 200 https://www.continental.com/en/
+
+#pirelli
+ page 404 https://www.pirelli.com/tires/en-ww/car
+ page 200 https://www.pirelli.com/global/en-ww/homepage/
+   https://www.pirelli.com/global/en-ww/assets/images/pirelli-logo.png
+   https://binaries.pirelli.com/common/Logo_Pirelli150.png
+   https://binaries.pirelli.com/common/racing-logo.png
+
+#bridgestone
+ page 404 https://www.bridgestone.com/en-us
+   https://www.bridgestone.com/etc/images/logos/bridgestone-logo-set-en.svg
+   https://www.bridgestone.com/etc/images/detail/icon_x-logo_darkgray.svg
+ page 200 https://tires.bridgestone.com/en-us/index
+
+#hankook
+ page 200 https://www.hankooktire.com/global/en/home.html
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-base/resources/img/common/logo-up.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/global/svg/logo.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/global/svg/gl_imagelist_logo_technology-in-motion.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/common/bi-logo/dynapro/global/home/tab-logo.svg)}.ghbs__item.ghbs__item-dynapro:hover,.ghbs__item.ghbs__it
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-base/resources/img/common/logo.svg
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-global/resources/img/main/weather-flex/tab-logo.svg
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-global/resources/img/main/weather-flex/tab-logo-hov.svg
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-global/resources/img/main/ion/tab-logo.svg
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-global/resources/img/main/ion/tab-logo-hov.svg
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-global/resources/img/main/ventus/tab-logo.svg
+   https://www.hankooktire.com/etc.clientlibs/hankooktire/clientlibs/clientlib-global/resources/img/main/ventus/tab-logo-hov.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/common/bi-logo/dynapro/global/home/tab-logo.svg
+ page 200 https://www.hankooktire.com/uk/en/home.html
+   https://www.hankooktire.com/content/dam/hankooktire/local/img/main/main-key-visual/pc/logo.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/main-key-visual/pc/logo.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/local/svg/logo-white.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/eu/Logo.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/logo/5logo-ventus.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/common/bi-logo/dynapro/ourbrand_dynapro.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/logo/5logo-kinergy.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/eu/logo-winter.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/logo/5logo-vantra_home_new.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/logo/5logo-smart_new.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/common/bi-logo/dynapro/BI_Dynapro_AT2Xtreme.svg
+   https://asset.hankooktire.com/content/dam/hankooktire/common/bi-logo/dynapro/BI_Dynapro_HPX.svg
+
+#kumho
+ page 200 https://kumhotireusa.com/
+   https://kumhotireusa.com/kumho-logo.png
+   https://kumhotireusa.com/tires/assets/crugen-ev-hp71/Logo-crugen-ev-hp71-White.png
+   https://kumhotireusa.com/tires/assets/majesty-9-ev-ta91/Logo-majesty-9-ev-ta91-White.png
+   https://kumhotireusa.com/tires/assets/solus-ev-ta31/Logo-solus-ev-ta31-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-sport/Logo-ecsta-sport-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-sport-s/Logo-ecsta-sport-s-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-sport-as/Logo-ecsta-sport-as-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-v730/Logo-ecsta-v730-White.png
+   https://kumhotireusa.com/tires/assets/solus-4s-ha32-suv/Logo-solus-4s-ha32-suv-White.png
+   https://kumhotireusa.com/tires/assets/crugen-hp71/Logo-crugen-hp71-White.png
+   https://kumhotireusa.com/tires/assets/crugen-ht51/Logo-crugen-ht51-White.png
+   https://kumhotireusa.com/tires/assets/road-venture-ht/Logo-road-venture-ht-White.png
+ page 200 https://kumhotireusa.com/
+   https://kumhotireusa.com/kumho-logo.png
+   https://kumhotireusa.com/tires/assets/crugen-ev-hp71/Logo-crugen-ev-hp71-White.png
+   https://kumhotireusa.com/tires/assets/majesty-9-ev-ta91/Logo-majesty-9-ev-ta91-White.png
+   https://kumhotireusa.com/tires/assets/solus-ev-ta31/Logo-solus-ev-ta31-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-sport/Logo-ecsta-sport-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-sport-s/Logo-ecsta-sport-s-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-sport-as/Logo-ecsta-sport-as-White.png
+   https://kumhotireusa.com/tires/assets/ecsta-v730/Logo-ecsta-v730-White.png
+   https://kumhotireusa.com/tires/assets/solus-4s-ha32-suv/Logo-solus-4s-ha32-suv-White.png
+   https://kumhotireusa.com/tires/assets/crugen-hp71/Logo-crugen-hp71-White.png
+   https://kumhotireusa.com/tires/assets/crugen-ht51/Logo-crugen-ht51-White.png
+   https://kumhotireusa.com/tires/assets/road-venture-ht/Logo-road-venture-ht-White.png
+
+#nexen
+ page 200 https://www.nexentire.com/international/
+   https://www.nexentire.com/international/assets/images/main.v2/recommend_logo_01.png
+   https://www.nexentire.com/international/assets/images/main.v2/recommend_logo_02_240529.png
+   https://www.nexentire.com/international/assets/images/main.v2/recommend_logo_03.png
+   https://www.nexentire.com/international/assets/images/main.v2/footer_logo.png
+ page 200 https://www.nexentire.com/
+   https://www.nexentire.com/international/assets/images/common/logo.png
+   https://www.nexentire.com/international/assets/images/main.v2/footer_logo.png
+
+#yokohama
+ page 200 https://www.yokohama.eu/
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/03/Header-Logo.png.webp
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/03/Header-Logo-300x43.png.webp
+   https://www.yokohama.eu/wp-content/uploads/2025/03/Header-Logo-1.png
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/03/Header-Logo-1-300x43.png.webp
+   https://www.yokohama.eu/wp-content/uploads/2025/05/Logo.png
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/04/size-brand.png.webp
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/04/size-brand-300x249.png.webp
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/04/size-brand-1024x849.png.webp
+   https://www.yokohama.eu/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/04/size-brand-768x637.png.webp
+   https://yokohama.demo.mybeautifuldomain.com/wp-content/uploads/2025/06/Header-Logo.png
+ page 200 https://www.yokohamatire.com/
+   https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+   https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+
+#bfgoodrich
+ page 200 https://www.bfgoodrich.com/
+ page 200 https://www.bfgoodrich.co.uk/
+
+#lassa
+ page 200 https://www.lassa.com.tr/
+   https://www.lassa.com.tr//Dosyalar/content/lassa_logo_og.png
+   https://www.lassa.com.tr/Dosyalar/content/lassa_logo_og.png
+ page 404 https://www.lassa.com.tr/en
+
+#petlas
+ page 403 https://www.petlas.com/en/
+ page 403 https://www.petlas.com/
+
+#starmaxx
+ page 403 https://www.starmaxx.com/en/
+ page 403 https://www.starmaxx.com/

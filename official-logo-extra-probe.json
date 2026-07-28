@@ -1,0 +1,119 @@
+[
+  {
+    "name": "bfg-goodyear-dam",
+    "url": "https://www.goodyear.eu/content/dam/goodyear/consumer/common/navigation/bfgoodrich-logo-transparent.png",
+    "status": 404,
+    "type": "text/html;charset=utf-8",
+    "len": 97505,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "bfg-goodyear-us",
+    "url": "https://www.goodyear.com/content/dam/goodyear/consumer/common/navigation/bfgoodrich-logo-transparent.png",
+    "status": 500,
+    "type": "text/html; charset=utf-8",
+    "len": 143229,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "bfg-site",
+    "url": "https://www.bfgoodrich.com/content/dam/bfgoodrich/consumer/common/navigation/bfgoodrich-logo.png",
+    "status": 404,
+    "type": "text/html; charset=iso-8859-1",
+    "len": 236,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "bfg-site-svg",
+    "url": "https://www.bfgoodrich.com/etc/designs/bfgoodrich/clientlibs/common/images/logo.svg",
+    "status": 404,
+    "type": "text/html; charset=iso-8859-1",
+    "len": 236,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "petlas-tr",
+    "url": "https://www.petlas.com.tr/Content/images/logo.svg",
+    "status": 404,
+    "type": "text/html",
+    "len": 1245,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "petlas-tr-png",
+    "url": "https://www.petlas.com.tr/Content/images/logo.png",
+    "status": 404,
+    "type": "text/html",
+    "len": 1245,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "petlas-en",
+    "url": "https://www.petlas.com/Content/images/logo.svg",
+    "status": 403,
+    "type": "text/html; charset=UTF-8",
+    "len": 4545,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "starmaxx-tr",
+    "url": "https://www.starmaxx.com.tr/Content/images/logo.svg",
+    "status": 404,
+    "type": "text/html",
+    "len": 1245,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "starmaxx-en",
+    "url": "https://www.starmaxx.com/Content/images/logo.svg",
+    "status": 404,
+    "type": "text/html; charset=UTF-8",
+    "len": 449,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "pirelli-svg",
+    "url": "https://www.pirelli.com/global/en-ww/assets/images/pirelli-logo.svg",
+    "status": 404,
+    "type": "text/html; charset=UTF-8",
+    "len": 95473,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "continental-white",
+    "url": "https://www.continental-tires.com/content/dam/conti-tires-cms/continental/brand/basics/Continental_Logo_white.svg",
+    "status": 404,
+    "type": "text/html;charset=utf-8",
+    "len": 87698,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "kumho-global",
+    "url": "https://www.kumhotire.com/common/logo_w.svg",
+    "status": 404,
+    "type": "text/html;charset=UTF-8",
+    "len": 92025,
+    "isSvg": false,
+    "whiteBox": null
+  },
+  {
+    "name": "michelin-white",
+    "url": "https://www.michelinman.com/public/themes/michelin-commercial/assets/images/logos/svg/logo-brand-white.svg",
+    "status": 404,
+    "type": "text/html",
+    "len": 860521,
+    "isSvg": false,
+    "whiteBox": null
+  }
+]

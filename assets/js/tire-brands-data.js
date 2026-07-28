@@ -141,7 +141,7 @@
       {
         id: "hankook",
         name: "Hankook",
-        logo: "assets/images/brands/brand-hankook.svg",
+        logo: "assets/images/brands/brand-hankook.png",
         description:
           "Hankook'un performans, SUV ve dört mevsim segmentlerinde sunduğu global lastik teknolojileri.",
         products: [

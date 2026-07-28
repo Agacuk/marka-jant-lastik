@@ -196,7 +196,7 @@
       {
         id: "bfgoodrich",
         name: "BFGoodrich",
-        logo: "assets/images/brands/brand-bfgoodrich.png",
+        logo: "assets/images/brands/brand-bfgoodrich.svg",
         description:
           "BFGoodrich'in performans, arazi ve SUV segmentlerinde sunduğu dayanıklı lastik teknolojileri.",
         products: [

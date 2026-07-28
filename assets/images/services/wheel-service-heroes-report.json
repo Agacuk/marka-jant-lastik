@@ -1,0 +1,50 @@
+[
+  {
+    "id": "jant-boyama",
+    "status": "ok",
+    "bytes": 30068,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-boyama\\hero.webp"
+  },
+  {
+    "id": "jant-kaynagi",
+    "status": "ok",
+    "bytes": 68800,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-kaynagi\\hero.webp"
+  },
+  {
+    "id": "cnc-diamond-cut",
+    "status": "ok",
+    "bytes": 38162,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\cnc-diamond-cut\\hero.webp"
+  },
+  {
+    "id": "jant-duzeltme",
+    "status": "ok",
+    "bytes": 44268,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-duzeltme\\hero.webp"
+  },
+  {
+    "id": "jant-tornalama",
+    "status": "ok",
+    "bytes": 28146,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-tornalama\\hero.webp"
+  },
+  {
+    "id": "jant-kumlama",
+    "status": "ok",
+    "bytes": 92438,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-kumlama\\hero.webp"
+  },
+  {
+    "id": "jant-polisaj",
+    "status": "ok",
+    "bytes": 22778,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-polisaj\\hero.webp"
+  },
+  {
+    "id": "diger-hizmetler",
+    "status": "ok",
+    "bytes": 35020,
+    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\diger-hizmetler\\hero.webp"
+  }
+]

@@ -31,7 +31,7 @@
           "Solma, çizik veya renk değişimi yaşayan jantlarınız için premium elektrostatik ve fırın boya uygulamaları.",
         metaDescription:
           "Samsun'da profesyonel jant boyama hizmeti. Elektrostatik ve fırın boya uygulamaları ile jantlarınıza fabrika çıkışı görünüm.",
-        heroImage: "assets/images/services/jant-boyama/hero.svg",
+        heroImage: "assets/images/services/jant-boyama/hero.webp",
         whatIs:
           "Jant boyama; hasarlı, solmuş veya estetik açıdan yıpranmış jant yüzeylerinin özel hazırlık süreçlerinden geçirilerek yeniden boyanmasıdır. Marka Jant Lastik'te alüminyum ve alaşımlı jantlarda dayanıklı, homojen ve uzun ömürlü boya katmanları uygulanır.",
         howItWorks: [
@@ -81,7 +81,7 @@
           "Kırık, çatlak veya yapısal hasar görmüş jantlarda güvenli ve profesyonel TIG/argon kaynak çözümleri.",
         metaDescription:
           "Kırık ve çatlak jant kaynağı hizmeti. Profesyonel TIG kaynak ile jant yapısal bütünlüğünü güvenle restore ediyoruz.",
-        heroImage: "assets/images/services/jant-kaynagi/hero.svg",
+        heroImage: "assets/images/services/jant-kaynagi/hero.webp",
         whatIs:
           "Jant kaynağı, çatlak veya kırık bölgelerin özel alüminyum kaynak teknikleriyle onarılmasıdır. Doğru ısı kontrolü ve malzeme uyumu ile jantın güvenli sürüşe uygun hale getirilmesi hedeflenir.",
         howItWorks: [
@@ -131,7 +131,7 @@
           "Diamond cut jantlarda CNC destekli hassas tornalama ile orijinal parlak yüzey yenileme.",
         metaDescription:
           "CNC diamond cut jant yenileme. Orijinal parlak yüzeyi hassas CNC tornalama ile profesyonelce restore ediyoruz.",
-        heroImage: "assets/images/services/cnc-diamond-cut/hero.svg",
+        heroImage: "assets/images/services/cnc-diamond-cut/hero.webp",
         whatIs:
           "CNC Diamond Cut; parlak yüzeyli jantlarda torna benzeri kesim teknolojisiyle alüminyum yüzeyin yeniden işlenmesidir. Çizilmiş veya matlaşmış diamond cut bölgeleri orijinal görünüme kavuşturulur.",
         howItWorks: [
@@ -181,7 +181,7 @@
           "Bükülmüş, eğilmiş veya darbe almış jantlarda profesyonel düzeltme ve balans öncesi hazırlık.",
         metaDescription:
           "Eğilmiş jant düzeltme hizmeti. Darbe almış jantları hassas ekipmanlarla güvenli şekilde düzeltiyoruz.",
-        heroImage: "assets/images/services/jant-duzeltme/hero.svg",
+        heroImage: "assets/images/services/jant-duzeltme/hero.webp",
         whatIs:
           "Jant düzeltme; çarpma veya kaldırım darbesi sonucu eğilen jantların özel pres ve düzeltme makineleriyle şekillendirilmesidir. Amaç, jant geometrisini güvenli sürüşe uygun hale getirmektir.",
         howItWorks: [
@@ -231,7 +231,7 @@
           "Jant yüzeylerinde hassas tornalama ile düzeltme, profil yenileme ve boya öncesi hazırlık.",
         metaDescription:
           "Profesyonel jant tornalama hizmeti. Yüzey düzeltme ve hassas tornalama ile jantlarınızı yeniliyoruz.",
-        heroImage: "assets/images/services/jant-tornalama/hero.svg",
+        heroImage: "assets/images/services/jant-tornalama/hero.webp",
         whatIs:
           "Jant tornalama; jant yüzeyinde biriken kaplama artıkları, pürüzler veya hasarlı bölgelerin torna tezgâhında işlenerek düzeltilmesidir. Özellikle diamond cut öncesi/sonrası ve restorasyon süreçlerinde kullanılır.",
         howItWorks: [
@@ -281,7 +281,7 @@
           "Eski boya, pas ve kaplama kalıntılarını gideren profesyonel kumlama ile boya öncesi yüzey hazırlığı.",
         metaDescription:
           "Jant kumlama hizmeti. Boya öncesi profesyonel yüzey hazırlığı ile uzun ömürlü ve homojen boya sonucu.",
-        heroImage: "assets/images/services/jant-kumlama/hero.svg",
+        heroImage: "assets/images/services/jant-kumlama/hero.webp",
         whatIs:
           "Jant kumlama; yüksek basınçlı aşındırıcı malzeme ile jant yüzeyinin temizlenmesi ve boya tutunmasına uygun hale getirilmesidir. Eski boya, korozyon ve kir tabakaları etkili şekilde giderilir.",
         howItWorks: [
@@ -331,7 +331,7 @@
           "Matlaşmış veya çizilmiş jant yüzeylerine parlaklık kazandıran profesyonel polisaj uygulamaları.",
         metaDescription:
           "Jant polisaj hizmeti. Çizik giderme ve parlak yüzey restorasyonu ile jantlarınıza premium görünüm.",
-        heroImage: "assets/images/services/jant-polisaj/hero.svg",
+        heroImage: "assets/images/services/jant-polisaj/hero.webp",
         whatIs:
           "Jant polisaj; jant yüzeyindeki hafif çizik, matlık ve oksidasyon tabakasının aşamalı polisaj pedleri ve bileşiklerle giderilerek parlaklığın geri kazandırılmasıdır.",
         howItWorks: [
@@ -381,7 +381,7 @@
           "Standart hizmetlerin ötesinde; özel restorasyon, kaplama, onarım ve danışmanlık çözümleri.",
         metaDescription:
           "Özel jant onarım ve restorasyon hizmetleri. Boya, kaynak, CNC, düzeltme ve daha fazlası tek çatı altında.",
-        heroImage: "assets/images/services/diger-hizmetler/hero.svg",
+        heroImage: "assets/images/services/diger-hizmetler/hero.webp",
         whatIs:
           "Diğer hizmetler kapsamında; standart onarım süreçlerinin dışında kalan özel talepler, restorasyon projeleri, kaplama alternatifleri ve kapsamlı jant yenileme paketleri sunulur.",
         howItWorks: [

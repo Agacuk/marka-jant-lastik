@@ -108,9 +108,11 @@
           " ürünlerini görüntüle" +
           '">' +
           '<span class="brands__logo">' +
-          '<img src="' +
+          '<img class="brand-logo logo-' +
+          escapeHtml(brand.id) +
+          '" src="' +
           escapeHtml(brand.logo) +
-          '" alt="" loading="lazy" decoding="async">' +
+          '" alt="" loading="lazy" decoding="async" width="148" height="48">' +
           "</span></button>"
         );
       })
@@ -250,11 +252,13 @@
 
     brandLogoEl.className = "tire-modal__brand-logo";
     brandLogoEl.innerHTML =
-      '<img src="' +
+      '<img class="brand-logo logo-' +
+      escapeHtml(brand.id) +
+      '" src="' +
       escapeHtml(brand.logo) +
       '" alt="' +
       escapeHtml(brand.name) +
-      '" decoding="async">';
+      '" decoding="async" width="148" height="48">';
     watermarkEl.style.backgroundImage = 'url("' + brand.logo + '")';
     watermarkEl.hidden = false;
   }

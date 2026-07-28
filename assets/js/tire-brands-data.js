@@ -115,7 +115,7 @@
       {
         id: "lassa",
         name: "Lassa",
-        logo: "assets/images/brands/lassa-seeklogo.svg",
+        logo: "assets/images/brands/brand-lassa.svg",
         description:
           "Lassa'nın binek, SUV ve ticari segmentlerde sunduğu yerli üretim güvenilir lastik çözümleri.",
         products: [

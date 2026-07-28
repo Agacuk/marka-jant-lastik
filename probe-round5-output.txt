@@ -1,0 +1,118 @@
+﻿undefined thoro /upload/product/th_1717481531823_2434203986727100054.png?v=
+
+YOKO advan-sport-v105 200 https://www.yokohamatire.com/advan-tires
+  https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YOKOHAMA_ADVAN_FAMILY_NO_LOGOS_CQ30.webm
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceguard.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Yokohama-ADVAN-Sport-EV-tire.webp
+
+YOKO advan-db-v552 404 https://www.yokohamatire.com/tires/advan-db-v552-2
+  https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceguard.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+
+YOKO blu-earth 404 https://www.yokohamatire.com/tires/blu-earth-es32-2
+  https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceguard.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+
+YOKO geolandar 404 https://www.yokohamatire.com/tires/geolandar-g058-2
+  https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceguard.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+
+YOKO iceguard 200 https://www.yokohamatire.com/tires/iceguard-ig53
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_1200x630_crop_center-center_82_none/Yokohama-iceGUARD-iG53-Tire-Logo.webp?mtime=1731107460
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_800x418_crop_center-center_82_none/Yokohama-iceGUARD-iG53-Tire-Logo.webp?mtime=1731107460
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-LRG-_IGEGUARD-IG53-WHT.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/winter-traction-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Ice-traction-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Fuel-efficiency-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Super-handling-wht_2020-10-26-152459.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Winter-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceGUARD-iG53-3QL-Web.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceGUARD-iG53-Tread-Web.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceGUARD-iG53-Sidewall-Web.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_1200x630_crop_center-center_82_none/Yokohama-iceGUARD-iG53-Tire-Logo.webp?mtime=1731107460\
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_800x418_crop_center-center_82_none/Yokohama-iceGUARD-iG53-Tire-Logo.webp?mtime=1731107460\
+  https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceguard.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Yokohama-iceGUARD-iG53-Tire-Logo.webp
+
+YOKO advan-v107 200 https://www.yokohamatire.com/tires/advan-sport-v107
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_1200x630_crop_center-center_82_none/Yokohama-ADVAN-Sport-V107-Tire-Logo.webp?mtime=1731104480
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_800x418_crop_center-center_82_none/Yokohama-ADVAN-Sport-V107-Tire-Logo.webp?mtime=1731104480
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-SPORT-V107_ADVAN-SPORT-V107-WHT.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Ultimate-grip-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Super-handling-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Long-tread-life-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Quieter-Ride-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Summer-tire-wht.svg
+  https://ytc-bm.s3.us-east-2.amazonaws.com/2205_YTC_CONS_ADVAN-Sport-V107-Image_3QL-Web.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-_Sidewall.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-_Tread.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/EXCEED-ADVAN-SPORT-V107-Hero-Image.webp);background-size:cover;background-position:center
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-size-and-specs.webp);background-size:cover;background-position:center
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_1200x630_crop_center-center_82_none/Yokohama-ADVAN-Sport-V107-Tire-Logo.webp?mtime=1731104480\
+  https://ytc-bm.s3.us-east-2.amazonaws.com/_800x418_crop_center-center_82_none/Yokohama-ADVAN-Sport-V107-Tire-Logo.webp?mtime=1731104480\
+  https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/iceguard.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/bluearthlogo.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/YK-Logo-Wht.png
+  https://ytc-bm.s3.us-east-2.amazonaws.com/EXCEED-ADVAN-SPORT-V107-Hero-Image.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-size-and-specs.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/421200211-2208_ytc_cons-advan-sport-v107-tire.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-advanced-tread-design.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-countour-profile.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/WEB-ADVAN-Sport-V107-silent-sipe-technology.webp
+  https://ytc-bm.s3.us-east-2.amazonaws.com/Yokohama-ADVAN-Sport-V107-Tire-Logo.webp
+
+GY 404 goodyear-ultragrip-performance-3.html
+
+GY 404 goodyear-ultragrip-performance.html
+
+GY 200 goodyear-ultragrip-performance-3-2025.html
+  content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/goodyear-ultragrip-performance-3-tyre.jpg
+  content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/goodyear-ultragrip-performance-3-winter-car.jpg
+  content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/goodyear-ultragrip-performance-3-smooth-drive.jpg
+  content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/ev_ready_ultragrip_performance-3-600x360px.jpg
+  content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/goodyear-ultragrip-performance-3-side-full.jpg
+  content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/ultragrip-performance-3-auto-bild-2025-en.jpg
+
+GY 200 ultragrip-performance-3.html
+
+GY 200 ultragrip-performance.html
+node : node:internal/process/promises:394
+At C:\Users\Administrator\AppData\Local\Temp\ps-script-075507a7-d3ef-42aa-9bcc-1849d0ba9fca.ps1:112 char:1
++ node C:\Users\Administrator\Desktop\MARKAJANTYEDEK\scripts\probe-rema ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node:internal/process/promises:394:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+[TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND www.bfgoodrich.eu
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'www.bfgoodrich.eu'
+  }
+}
+
+Node.js v24.18.0

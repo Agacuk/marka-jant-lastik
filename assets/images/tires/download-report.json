@@ -1,0 +1,234 @@
+{
+  "success": [
+    {
+      "brand": "goodyear",
+      "id": "ultragrip-performance",
+      "dest": "assets\\images\\tires\\goodyear\\ultragrip-performance.webp",
+      "bytes": 24344,
+      "sourceUrl": "https://www.goodyear.eu/content/dam/goodyear/consumer/common/why-goodyear/ultragrip-performance-3/goodyear-ultragrip-performance-3-tyre.jpg"
+    },
+    {
+      "brand": "lassa",
+      "id": "revola",
+      "dest": "assets\\images\\tires\\lassa\\revola.webp",
+      "bytes": 10680,
+      "sourceUrl": "http://medias89k-ete3a4c6hxdufvhh.a03.azurefd.net/sys-master-hybris-image-prod/images/270x270/R01_1-1704802724631.jpg"
+    },
+    {
+      "brand": "kumho",
+      "id": "ecsta-ps71",
+      "dest": "assets\\images\\tires\\kumho\\ecsta-ps71.webp",
+      "bytes": 48248,
+      "sourceUrl": "https://www.kumhotire.com/upload/product/PS71_30_DEGREE.png"
+    },
+    {
+      "brand": "kumho",
+      "id": "solus-4s",
+      "dest": "assets\\images\\tires\\kumho\\solus-4s.webp",
+      "bytes": 42930,
+      "sourceUrl": "https://www.kumhotire.com/upload/product/HA32_30_DEGREE.png"
+    },
+    {
+      "brand": "kumho",
+      "id": "wintercraft",
+      "dest": "assets\\images\\tires\\kumho\\wintercraft.webp",
+      "bytes": 51818,
+      "sourceUrl": "https://www.kumhotire.com/upload/product/WP71_30_DEGREE.png"
+    },
+    {
+      "brand": "kumho",
+      "id": "crugen-premium",
+      "dest": "assets\\images\\tires\\kumho\\crugen-premium.webp",
+      "bytes": 54412,
+      "sourceUrl": "https://www.kumhotire.com/upload/product/HP71_30_DEGREE.png"
+    },
+    {
+      "brand": "kumho",
+      "id": "ecowing",
+      "dest": "assets\\images\\tires\\kumho\\ecowing.webp",
+      "bytes": 34272,
+      "sourceUrl": "https://www.kumhotire.com/upload/product/ES31_30_DEGREE.png"
+    },
+    {
+      "brand": "yokohama",
+      "id": "advan-sport-v105",
+      "dest": "assets\\images\\tires\\yokohama\\advan-sport-v105.webp",
+      "bytes": 9222,
+      "sourceUrl": "https://ytc-bm.s3.us-east-2.amazonaws.com/RS2300_1008_YTC_CONS_0810_YTC_CONS_ADVAN-0K.webp"
+    },
+    {
+      "brand": "yokohama",
+      "id": "geolandar",
+      "dest": "assets\\images\\tires\\yokohama\\geolandar.webp",
+      "bytes": 9612,
+      "sourceUrl": "https://ytc-bm.s3.us-east-2.amazonaws.com/Geolandar-White.png"
+    },
+    {
+      "brand": "yokohama",
+      "id": "iceguard",
+      "dest": "assets\\images\\tires\\yokohama\\iceguard.webp",
+      "bytes": 45192,
+      "sourceUrl": "https://ytc-bm.s3.us-east-2.amazonaws.com/iceGUARD-iG53-3QL-Web.webp"
+    },
+    {
+      "brand": "bfgoodrich",
+      "id": "advantage-touring",
+      "dest": "assets\\images\\tires\\bfgoodrich\\advantage-touring.webp",
+      "bytes": 71950,
+      "sourceUrl": "https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4xgjqib1gz7srjo/4w-1601_3528701443621_tire_bfgoodrich_advantage-2_225-slash-45-r19-92w_a_main_1-30_nopad.webp"
+    }
+  ],
+  "failed": [],
+  "skipped": [
+    {
+      "brand": "michelin",
+      "id": "crossclimate-2",
+      "reason": "Already present"
+    },
+    {
+      "brand": "michelin",
+      "id": "e-primacy",
+      "reason": "Already present"
+    },
+    {
+      "brand": "michelin",
+      "id": "latitude-sport-3",
+      "reason": "Already present"
+    },
+    {
+      "brand": "michelin",
+      "id": "pilot-alpin",
+      "reason": "Already present"
+    },
+    {
+      "brand": "michelin",
+      "id": "pilot-sport-5",
+      "reason": "Already present"
+    },
+    {
+      "brand": "michelin",
+      "id": "primacy-5",
+      "reason": "Already present"
+    },
+    {
+      "brand": "continental",
+      "id": "premiumcontact-7",
+      "reason": "Already present"
+    },
+    {
+      "brand": "continental",
+      "id": "sportcontact-7",
+      "reason": "Already present"
+    },
+    {
+      "brand": "continental",
+      "id": "ecocontact-6",
+      "reason": "Already present"
+    },
+    {
+      "brand": "continental",
+      "id": "allseasoncontact",
+      "reason": "Already present"
+    },
+    {
+      "brand": "pirelli",
+      "id": "p-zero",
+      "reason": "Already present"
+    },
+    {
+      "brand": "pirelli",
+      "id": "cinturato-p7",
+      "reason": "Already present"
+    },
+    {
+      "brand": "pirelli",
+      "id": "scorpion-verde",
+      "reason": "Already present"
+    },
+    {
+      "brand": "pirelli",
+      "id": "powergy",
+      "reason": "Already present"
+    },
+    {
+      "brand": "goodyear",
+      "id": "eagle-f1-asymmetric",
+      "reason": "Already present"
+    },
+    {
+      "brand": "goodyear",
+      "id": "efficientgrip-performance",
+      "reason": "Already present"
+    },
+    {
+      "brand": "goodyear",
+      "id": "vector-4seasons-gen3",
+      "reason": "Already present"
+    },
+    {
+      "brand": "bridgestone",
+      "id": "potenza-sport",
+      "reason": "Already present"
+    },
+    {
+      "brand": "bridgestone",
+      "id": "turanza-t005",
+      "reason": "Already present"
+    },
+    {
+      "brand": "bridgestone",
+      "id": "blizzak-lm005",
+      "reason": "Already present"
+    },
+    {
+      "brand": "bridgestone",
+      "id": "alenza-001",
+      "reason": "Already present"
+    },
+    {
+      "brand": "hankook",
+      "id": "ventus-s1-evo3",
+      "reason": "Already present"
+    },
+    {
+      "brand": "hankook",
+      "id": "kinergy-4s2",
+      "reason": "Already present"
+    },
+    {
+      "brand": "hankook",
+      "id": "dynapro",
+      "reason": "Already present"
+    },
+    {
+      "brand": "hankook",
+      "id": "winter-icept",
+      "reason": "Already present"
+    },
+    {
+      "brand": "nexen",
+      "id": "nfera-sport",
+      "reason": "Already present"
+    },
+    {
+      "brand": "nexen",
+      "id": "nblue-4season",
+      "reason": "Already present"
+    },
+    {
+      "brand": "nexen",
+      "id": "winguard-winspike",
+      "reason": "Already present"
+    },
+    {
+      "brand": "nexen",
+      "id": "roadian-gtx",
+      "reason": "Already present"
+    },
+    {
+      "brand": "bfgoodrich",
+      "id": "all-terrain-ko2",
+      "reason": "Already present"
+    }
+  ]
+}

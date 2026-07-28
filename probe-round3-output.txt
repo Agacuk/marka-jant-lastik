@@ -1,0 +1,31 @@
+﻿Kumho 30_DEGREE products: 0
+match PS71 seq=undefined /upload/product/LOGO_PS71.png
+match Winter seq=undefined undefined
+match TA31 seq=undefined undefined
+lassa img http://medias89k-ete3a4c6hxdufvhh.a03.azurefd.net/sys-master-hybris-image-prod/images/800x800/R01_1-1704802724631.jpg 404
+lassa img http://medias89k-ete3a4c6hxdufvhh.a03.azurefd.net/sys-master-hybris-image-prod/images/270x270/R01_1-1704802724631.jpg 200
+
+Lassa desenler imgs: []
+petlas guess https://www.petlas.com.tr/Content/images/products/velox-sport.png 404
+petlas guess https://www.petlas.com.tr/Content/img/products/velox-sport.png 404
+node : node:internal/process/promises:394
+At C:\Users\Administrator\AppData\Local\Temp\ps-script-5e8f1426-688a-4319-9f44-3984ac584a77.ps1:112 char:1
++ node C:\Users\Administrator\Desktop\MARKAJANTYEDEK\scripts\probe-rema ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node:internal/process/promises:394:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+[TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND cdn.petlas.com.tr
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'cdn.petlas.com.tr'
+  }
+}
+
+Node.js v24.18.0

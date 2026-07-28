@@ -1,0 +1,220 @@
+[
+  {
+    "name": "gy-egp",
+    "status": 200,
+    "imgs": [
+      "https://www.goodyear.co.uk/content/dam/common/tires/{{BRAND_NAME}}/consumer/{{DESIGN_CODE}}/{{DESIGN_CODE}}\\u002D{{TYPE}}.jpg.transform/{{TRANSFORMER}}/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-1400/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-1200/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-900/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-900/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-600/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-400/image.jpg"
+    ]
+  },
+  {
+    "name": "gy-v4s",
+    "status": 200,
+    "imgs": [
+      "https://www.goodyear.co.uk/content/dam/common/tires/{{BRAND_NAME}}/consumer/{{DESIGN_CODE}}/{{DESIGN_CODE}}\\u002D{{TYPE}}.jpg.transform/{{TRANSFORMER}}/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-1400/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-1200/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-900/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-900/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-600/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-400/image.jpg"
+    ]
+  },
+  {
+    "name": "gy-ug",
+    "status": 200,
+    "imgs": [
+      "https://www.goodyear.co.uk/content/dam/common/tires/{{BRAND_NAME}}/consumer/{{DESIGN_CODE}}/{{DESIGN_CODE}}\\u002D{{TYPE}}.jpg.transform/{{TRANSFORMER}}/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-1400/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-1200/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-900/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-900/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-600/image.jpg",
+      "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-828x1198px.jpg.transform/rendition-400/image.jpg"
+    ]
+  },
+  {
+    "name": "bs-potenza",
+    "status": 200,
+    "imgs": []
+  },
+  {
+    "name": "bs-turanza",
+    "status": 200,
+    "imgs": []
+  },
+  {
+    "name": "bs-blizzak",
+    "status": 200,
+    "imgs": []
+  },
+  {
+    "name": "bs-alenza",
+    "status": 200,
+    "imgs": []
+  },
+  {
+    "name": "kumho-ps71",
+    "status": 200,
+    "imgs": [
+      "https://www.kumhotire.com/images/common/sns_kumho_tire.jpg",
+      "https://www.kumhotire.com/images/common/p_marshal_tire.png",
+      "https://www.kumhotire.com/images/common/m_marshal_tire.png",
+      "https://www.kumhotire.com/images/common/p_zetum_tire.png",
+      "https://www.kumhotire.com/images/common/m_zetum_tire.png",
+      "https://www.kumhotire.com/images/common/language/img_asia_korea.png",
+      "https://www.kumhotire.com/images/common/language/img_asia_china.png",
+      "https://www.kumhotire.com/images/common/language/img_asia_japan.png"
+    ]
+  },
+  {
+    "name": "kumho-solus",
+    "status": 200,
+    "imgs": [
+      "https://www.kumhotire.com/images/common/sns_kumho_tire.jpg",
+      "https://www.kumhotire.com/images/common/p_marshal_tire.png",
+      "https://www.kumhotire.com/images/common/m_marshal_tire.png",
+      "https://www.kumhotire.com/images/common/p_zetum_tire.png",
+      "https://www.kumhotire.com/images/common/m_zetum_tire.png",
+      "https://www.kumhotire.com/images/common/language/img_asia_korea.png",
+      "https://www.kumhotire.com/images/common/language/img_asia_china.png",
+      "https://www.kumhotire.com/images/common/language/img_asia_japan.png"
+    ]
+  },
+  {
+    "name": "hk-ventus",
+    "status": 404,
+    "imgs": [
+      "https://www.hankooktire.com/content/dam/hankooktire/global/link_thumb_white.jpg"
+    ]
+  },
+  {
+    "name": "hk-kinergy",
+    "status": 404,
+    "imgs": [
+      "https://www.hankooktire.com/content/dam/hankooktire/global/link_thumb_white.jpg"
+    ]
+  },
+  {
+    "name": "pirelli-pzero",
+    "status": 404,
+    "imgs": [
+      "https://tyre24.pirelli.com/staticfolder/Tyre/websites/assets/images/pirelli_shareimage.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/639/1018/Carta-circolazione-GB-4505533870933.png",
+      "https://tyre-assets-uat.pirelli.com/images/global/292/510/hero-cardbrand-prestige-dsk-4505534900117.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/795/537/hero-cardbrand-prestige-mbl-4505534900204.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/482/257/hero-cardbrand-prestige-tbl-4505534900301.jpg",
+      "https://tyre24.pirelli.com/staticfolder/Tyre/ai-chat/assets/photoHelp.jpg",
+      "https://tyre24.pirelli.com/images/global/445/912/Akira-desktop-4505534513742.jpg",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/404_car_dsk.jpg"
+    ]
+  },
+  {
+    "name": "pirelli-pzero2",
+    "status": 404,
+    "imgs": [
+      "https://tyre24.pirelli.com/staticfolder/Tyre/websites/assets/images/pirelli_shareimage.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/639/1018/Carta-circolazione-GB-4505533870933.png",
+      "https://tyre-assets-uat.pirelli.com/images/global/292/510/hero-cardbrand-prestige-dsk-4505534900117.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/795/537/hero-cardbrand-prestige-mbl-4505534900204.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/482/257/hero-cardbrand-prestige-tbl-4505534900301.jpg",
+      "https://tyre24.pirelli.com/staticfolder/Tyre/ai-chat/assets/photoHelp.jpg",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/podiumCap/PodiumCap_Menu_Dsk.jpg",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/AllSeasonWinner/TopManufacturer2025_EN.png"
+    ]
+  },
+  {
+    "name": "pirelli-pzero3",
+    "status": 404,
+    "imgs": [
+      "https://tyre24.pirelli.com/staticfolder/Tyre/websites/assets/images/pirelli_shareimage.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/639/1018/Carta-circolazione-GB-4505533870933.png",
+      "https://tyre-assets-uat.pirelli.com/images/global/292/510/hero-cardbrand-prestige-dsk-4505534900117.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/795/537/hero-cardbrand-prestige-mbl-4505534900204.jpg",
+      "https://tyre-assets-uat.pirelli.com/images/global/482/257/hero-cardbrand-prestige-tbl-4505534900301.jpg",
+      "https://tyre24.pirelli.com/staticfolder/Tyre/ai-chat/assets/photoHelp.jpg",
+      "https://tyre24.pirelli.com/images/global/445/912/Akira-desktop-4505534513742.jpg",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/404_car_dsk.jpg"
+    ]
+  },
+  {
+    "name": "yoko-advan",
+    "status": 404,
+    "imgs": []
+  },
+  {
+    "name": "yoko-advan2",
+    "status": 404,
+    "imgs": []
+  },
+  {
+    "name": "bfg-ps",
+    "status": 404,
+    "imgs": [
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.max.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.full.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.two-thirds.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.one-half.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.one-third.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.one-sixth.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.full-hd.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.png"
+    ]
+  },
+  {
+    "name": "bfg-at",
+    "status": 200,
+    "imgs": [
+      "https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4q4recz76hfabio/4w-250_3528701242156_tire_bfgoodrich_all-terrain-t-slash-a-ko2_lt-265-slash-70-r17-121-slash-118s-lre_rwl_a_main_1-30_nopad.webp",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.max.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.full.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.two-thirds.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.one-half.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.one-third.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.one-sixth.png",
+      "https://adzktgbqdq.cloudimg.io/https://dgaddcosprod.blob.core.windows.net/cxf-multisite/p1cvdey47wu05u3uupp264bk/attachments/zfgufx4wcoqlguhl8bafanhx-ts-ref-tyre-4w-step-full.full-hd.png"
+    ]
+  },
+  {
+    "name": "lassa-revola",
+    "status": 404,
+    "imgs": []
+  },
+  {
+    "name": "lassa-revola2",
+    "status": 404,
+    "imgs": []
+  },
+  {
+    "name": "petlas-velox",
+    "status": 403,
+    "imgs": []
+  },
+  {
+    "name": "starmaxx-x1",
+    "status": 403,
+    "imgs": []
+  },
+  {
+    "name": "nexen-nfera",
+    "status": 200,
+    "imgs": [
+      "https://www.nexentire.com/assets/images/popup/close.png",
+      "https://www.nexentire.com/assets/images/main.v2/search_ico.png",
+      "https://www.nexentire.com/assets/images/main.v2/category_01_off.jpg",
+      "https://www.nexentire.com/assets/images/main.v2/category_02_off.jpg",
+      "https://www.nexentire.com/assets/images/main.v2/category_03_off.jpg",
+      "https://www.nexentire.com/assets/images/main.v2/category_04_off.jpg",
+      "https://www.nexentire.com/assets/images/main.v2/category_01_on.jpg",
+      "https://www.nexentire.com/assets/images/main.v2/category_02_on.jpg"
+    ]
+  }
+]

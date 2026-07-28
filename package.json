@@ -1,0 +1,24 @@
+{
+  "name": "markajantyedek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agacuk/marka-jant-lastik.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Agacuk/marka-jant-lastik/issues"
+  },
+  "homepage": "https://github.com/Agacuk/marka-jant-lastik#readme",
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

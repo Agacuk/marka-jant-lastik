@@ -1,0 +1,410 @@
+[
+  {
+    "brand": "goodyear",
+    "id": "eagle-f1-asymmetric",
+    "url": "https://www.goodyear.co.uk/en_gb/consumer/products/tyres/eagle-f1-asymmetric-6.html",
+    "base": "https://www.goodyear.co.uk",
+    "status": 200,
+    "img": "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg"
+  },
+  {
+    "brand": "goodyear",
+    "id": "efficientgrip-performance",
+    "url": "https://www.goodyear.co.uk/en_gb/consumer/products/tyres/efficientgrip-performance-2.html",
+    "base": "https://www.goodyear.co.uk",
+    "status": 200,
+    "img": "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg"
+  },
+  {
+    "brand": "goodyear",
+    "id": "vector-4seasons-gen3",
+    "url": "https://www.goodyear.co.uk/en_gb/consumer/products/tyres/vector-4seasons-gen-3.html",
+    "base": "https://www.goodyear.co.uk",
+    "status": 200,
+    "img": "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg"
+  },
+  {
+    "brand": "goodyear",
+    "id": "ultragrip-performance",
+    "url": "https://www.goodyear.co.uk/en_gb/consumer/products/tyres/ultragrip-performance-3.html",
+    "base": "https://www.goodyear.co.uk",
+    "status": 200,
+    "img": "https://www.goodyear.co.uk/content/dam/goodyear/consumer/common/why-goodyear/eagle-f1-asymmetric-6/goodyear-f1-as6-2026-product-2554x1270px.jpg.transform/rendition-3840/image.jpg"
+  },
+  {
+    "brand": "continental",
+    "id": "premiumcontact-7",
+    "url": "https://www.continental-tires.com/products/b2c/car/tires/premiumcontact-7/",
+    "base": "https://www.continental-tires.com",
+    "status": 200,
+    "img": "https://www.continental-tyres.co.uk/adobe/dynamicmedia/deliver/dm-aid--ea8b6659-163b-407d-8037-d0195cd09afa/Continental__PremiumContact_6__ProductPicture__30.webp?preferwebp=true&quality=85&width=600"
+  },
+  {
+    "brand": "continental",
+    "id": "sportcontact-7",
+    "url": "https://www.continental-tires.com/products/b2c/car/tires/sportcontact-7/",
+    "base": "https://www.continental-tires.com",
+    "status": 200,
+    "img": "https://www.continental-tires.com/adobe/dynamicmedia/deliver/dm-aid--9321279b-0736-42d0-83df-db1843800225/Continental__SportContact-7__ProductPicture__0.png.webp?quality=85&preferwebp=true,/adobe/dynamicmedia/deliver/dm-aid--1c115faa-5d1e-42df-8828-f43ebf97581f/Continental__SportContact-7__ProductPicture__90.png.webp?quality=85&preferwebp=true"
+  },
+  {
+    "brand": "continental",
+    "id": "ecocontact-6",
+    "url": "https://www.continental-tires.com/products/b2c/car/tires/ecocontact-6/",
+    "base": "https://www.continental-tires.com",
+    "status": 200,
+    "img": "https://www.continental-tires.com/adobe/dynamicmedia/deliver/dm-aid--2b5b190e-348a-408e-9068-7334a920e4a6/Continental__EcoContact-6__ProductPicture__0.png.webp?quality=85&preferwebp=true,/adobe/dynamicmedia/deliver/dm-aid--97c308d4-4939-4a80-8bc2-7f9458268515/Continental__EcoContact-6__ProductPicture__90.png.webp?quality=85&preferwebp=true"
+  },
+  {
+    "brand": "continental",
+    "id": "allseasoncontact",
+    "url": "https://www.continental-tires.com/products/b2c/car/tires/allseasoncontact-2/",
+    "base": "https://www.continental-tires.com",
+    "status": 200,
+    "img": "https://www.continental-tires.com/adobe/dynamicmedia/deliver/dm-aid--f2d3c987-e851-4273-83d0-3e04fd6ac131/continental__allseasoncontact-2__productpicture__0.png.webp?preferwebp=true&quality=85,/adobe/dynamicmedia/deliver/dm-aid--d04ecf32-62ac-441c-b65f-08e114e63f0c/continental__allseasoncontact-2__productpicture__90.png.webp?preferwebp=true&quality=85"
+  },
+  {
+    "brand": "pirelli",
+    "id": "p-zero",
+    "url": "https://www.pirelli.com/tyres/en-ww/car/catalog/p-zero",
+    "base": "https://www.pirelli.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "pirelli",
+    "id": "cinturato-p7",
+    "url": "https://www.pirelli.com/tyres/en-ww/car/catalog/cinturato-p7-c2",
+    "base": "https://www.pirelli.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "pirelli",
+    "id": "scorpion-verde",
+    "url": "https://www.pirelli.com/tyres/en-ww/car/catalog/scorpion-verde-all-season",
+    "base": "https://www.pirelli.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "pirelli",
+    "id": "powergy",
+    "url": "https://www.pirelli.com/tyres/en-ww/car/catalog/powergy",
+    "base": "https://www.pirelli.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bridgestone",
+    "id": "potenza-sport",
+    "url": "https://www.bridgestone.co.uk/tyres/car-tyres/potenza-sport",
+    "base": "https://www.bridgestone.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bridgestone",
+    "id": "turanza-t005",
+    "url": "https://www.bridgestone.co.uk/tyres/car-tyres/turanza-t005",
+    "base": "https://www.bridgestone.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bridgestone",
+    "id": "blizzak-lm005",
+    "url": "https://www.bridgestone.co.uk/tyres/car-tyres/blizzak-lm-005",
+    "base": "https://www.bridgestone.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bridgestone",
+    "id": "alenza-001",
+    "url": "https://www.bridgestone.co.uk/tyres/car-tyres/alenza-001",
+    "base": "https://www.bridgestone.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "hankook",
+    "id": "ventus-s1-evo3",
+    "url": "https://www.hankooktire.com/global/en/tirelist/ventus-s1-evo3.html",
+    "base": "https://www.hankooktire.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "hankook",
+    "id": "kinergy-4s2",
+    "url": "https://www.hankooktire.com/global/en/tirelist/kinergy-4s2.html",
+    "base": "https://www.hankooktire.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "hankook",
+    "id": "dynapro",
+    "url": "https://www.hankooktire.com/global/en/tirelist/dynapro-hp2.html",
+    "base": "https://www.hankooktire.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "hankook",
+    "id": "winter-icept",
+    "url": "https://www.hankooktire.com/global/en/tirelist/winter-icept-evo3-w330.html",
+    "base": "https://www.hankooktire.com",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "kumho",
+    "id": "ecsta-ps71",
+    "url": "https://www.kumhotire.com/global/passenger/ecsta-ps71/",
+    "base": "https://www.kumhotire.com",
+    "status": 200,
+    "img": null
+  },
+  {
+    "brand": "kumho",
+    "id": "solus-4s",
+    "url": "https://www.kumhotire.com/global/passenger/solus-4s-ha32/",
+    "base": "https://www.kumhotire.com",
+    "status": 200,
+    "img": null
+  },
+  {
+    "brand": "kumho",
+    "id": "wintercraft",
+    "url": "https://www.kumhotire.com/global/passenger/wintercraft-wp52/",
+    "base": "https://www.kumhotire.com",
+    "status": 200,
+    "img": null
+  },
+  {
+    "brand": "kumho",
+    "id": "crugen-premium",
+    "url": "https://www.kumhotire.com/global/passenger/crugen-premium-kl33/",
+    "base": "https://www.kumhotire.com",
+    "status": 200,
+    "img": null
+  },
+  {
+    "brand": "kumho",
+    "id": "ecowing",
+    "url": "https://www.kumhotire.com/global/passenger/ecowing-es31/",
+    "base": "https://www.kumhotire.com",
+    "status": 200,
+    "img": null
+  },
+  {
+    "brand": "nexen",
+    "id": "nfera-sport",
+    "url": "https://www.nexentire.com/international/product/passenger/suv/nfera-sport/",
+    "base": "https://www.nexentire.com",
+    "status": 200,
+    "img": "https://www.nexentire.com/images/og-image-en.jpg"
+  },
+  {
+    "brand": "nexen",
+    "id": "nblue-4season",
+    "url": "https://www.nexentire.com/international/product/passenger/suv/nblue-4season/",
+    "base": "https://www.nexentire.com",
+    "status": 200,
+    "img": "https://www.nexentire.com/images/og-image-en.jpg"
+  },
+  {
+    "brand": "nexen",
+    "id": "winguard-winspike",
+    "url": "https://www.nexentire.com/international/product/passenger/suv/winguard-winspike-3/",
+    "base": "https://www.nexentire.com",
+    "status": 200,
+    "img": "https://www.nexentire.com/images/og-image-en.jpg"
+  },
+  {
+    "brand": "nexen",
+    "id": "roadian-gtx",
+    "url": "https://www.nexentire.com/international/product/passenger/suv/roadian-gtx/",
+    "base": "https://www.nexentire.com",
+    "status": 200,
+    "img": "https://www.nexentire.com/images/og-image-en.jpg"
+  },
+  {
+    "brand": "nexen",
+    "id": "nblue-ev",
+    "url": "https://www.nexentire.com/international/product/passenger/suv/nblue-ev/",
+    "base": "https://www.nexentire.com",
+    "status": 200,
+    "img": "https://www.nexentire.com/images/og-image-en.jpg"
+  },
+  {
+    "brand": "yokohama",
+    "id": "advan-sport-v105",
+    "url": "https://www.yokohama.eu/eu-en/tyres/pattern/advan-sport-v105/",
+    "base": "https://www.yokohama.eu",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "yokohama",
+    "id": "bluearth",
+    "url": "https://www.yokohama.eu/eu-en/tyres/pattern/bluearth-es32/",
+    "base": "https://www.yokohama.eu",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "yokohama",
+    "id": "geolandar",
+    "url": "https://www.yokohama.eu/eu-en/tyres/pattern/geolandar-g055/",
+    "base": "https://www.yokohama.eu",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "yokohama",
+    "id": "iceguard",
+    "url": "https://www.yokohama.eu/eu-en/tyres/pattern/iceguard-ig70/",
+    "base": "https://www.yokohama.eu",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "yokohama",
+    "id": "advan-db-v552",
+    "url": "https://www.yokohama.eu/eu-en/tyres/pattern/advan-db-v552/",
+    "base": "https://www.yokohama.eu",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bfgoodrich",
+    "id": "g-force-pilot-sport",
+    "url": "https://www.bfgoodrich.co.uk/auto/tyres/bfgoodrich-g-force-pilot-sport",
+    "base": "https://www.bfgoodrich.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bfgoodrich",
+    "id": "advantage-touring",
+    "url": "https://www.bfgoodrich.co.uk/auto/tyres/bfgoodrich-advantage-touring",
+    "base": "https://www.bfgoodrich.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "bfgoodrich",
+    "id": "all-terrain-ko2",
+    "url": "https://www.bfgoodrich.co.uk/auto/tyres/bfgoodrich-all-terrain-t-a-ko2",
+    "base": "https://www.bfgoodrich.co.uk",
+    "status": 200,
+    "img": null
+  },
+  {
+    "brand": "bfgoodrich",
+    "id": "g-force-winter",
+    "url": "https://www.bfgoodrich.co.uk/auto/tyres/bfgoodrich-g-force-winter-2",
+    "base": "https://www.bfgoodrich.co.uk",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "lassa",
+    "id": "revola",
+    "url": "https://www.lassa.com.tr/urunler/revola",
+    "base": "https://www.lassa.com.tr",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "lassa",
+    "id": "driveways",
+    "url": "https://www.lassa.com.tr/urunler/driveways",
+    "base": "https://www.lassa.com.tr",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "lassa",
+    "id": "competus",
+    "url": "https://www.lassa.com.tr/urunler/competus-at-2",
+    "base": "https://www.lassa.com.tr",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "lassa",
+    "id": "snoways",
+    "url": "https://www.lassa.com.tr/urunler/snoways-4",
+    "base": "https://www.lassa.com.tr",
+    "status": 404,
+    "img": null
+  },
+  {
+    "brand": "petlas",
+    "id": "velox-sport",
+    "url": "https://www.petlas.com.tr/urun/velox-sport",
+    "base": "https://www.petlas.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "petlas",
+    "id": "explero",
+    "url": "https://www.petlas.com.tr/urun/explero-h-p",
+    "base": "https://www.petlas.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "petlas",
+    "id": "imperium",
+    "url": "https://www.petlas.com.tr/urun/imperium-pt515",
+    "base": "https://www.petlas.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "petlas",
+    "id": "snowmaster",
+    "url": "https://www.petlas.com.tr/urun/snowmaster-w651",
+    "base": "https://www.petlas.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "starmaxx",
+    "id": "starmaxx-x1",
+    "url": "https://www.starmaxx.com.tr/urunler/starmaxx-x1",
+    "base": "https://www.starmaxx.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "starmaxx",
+    "id": "starmaxx-winter",
+    "url": "https://www.starmaxx.com.tr/urunler/starmaxx-winter",
+    "base": "https://www.starmaxx.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "starmaxx",
+    "id": "starmaxx-suv",
+    "url": "https://www.starmaxx.com.tr/urunler/starmaxx-suv",
+    "base": "https://www.starmaxx.com.tr",
+    "status": 403,
+    "img": null
+  },
+  {
+    "brand": "starmaxx",
+    "id": "starmaxx-eco",
+    "url": "https://www.starmaxx.com.tr/urunler/starmaxx-eco",
+    "base": "https://www.starmaxx.com.tr",
+    "status": 403,
+    "img": null
+  }
+]

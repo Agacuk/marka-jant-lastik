@@ -67,10 +67,10 @@
         description:
           "Goodyear'in performans, konfor ve güvenlik odaklı yaz, kış ve dört mevsim lastik portföyü.",
         products: [
-          product("goodyear", "eagle-f1-asymmetric", "Eagle F1 Asymmetric", "Performans Lastik", "Yüksek hız stabilitesi ve keskin viraj tepkisi sunan spor lastik.", ["yaz", "performans"]),
-          product("goodyear", "efficientgrip-performance", "EfficientGrip Performance", "Konfor Lastiği", "Yakıt verimliliği ve ıslak zemin fren mesafesi odaklı premium lastik.", ["yaz"]),
-          product("goodyear", "vector-4seasons-gen3", "Vector 4Seasons Gen-3", "4 Mevsim Lastik", "Dört mevsim boyunca dengeli performans ve dayanıklılık.", ["4-mevsim"]),
-          product("goodyear", "ultragrip-performance", "UltraGrip Performance", "Kış Lastiği", "Soğuk havalarda güçlü tutuş ve kısa fren mesafesi.", ["kis"]),
+          product("goodyear", "eagle-f1-asymmetric", "Eagle F1 Asymmetric", "Performans Lastik", "Yüksek hız stabilitesi ve keskin viraj tepkisi sunan spor lastik.", ["yaz", "performans"], "webp"),
+          product("goodyear", "efficientgrip-performance", "EfficientGrip Performance", "Konfor Lastiği", "Yakıt verimliliği ve ıslak zemin fren mesafesi odaklı premium lastik.", ["yaz"], "webp"),
+          product("goodyear", "vector-4seasons-gen3", "Vector 4Seasons Gen-3", "4 Mevsim Lastik", "Dört mevsim boyunca dengeli performans ve dayanıklılık.", ["4-mevsim"], "webp"),
+          product("goodyear", "ultragrip-performance", "UltraGrip Performance", "Kış Lastiği", "Soğuk havalarda güçlü tutuş ve kısa fren mesafesi.", ["kis"], "webp"),
         ],
       },
       {
@@ -80,10 +80,10 @@
         description:
           "Pirelli'nin performans, SUV ve premium segment araçlar için geliştirdiği lastik teknolojileri.",
         products: [
-          product("pirelli", "p-zero", "P Zero", "Performans Lastik", "Spor otomobiller için maksimum yol tutuş ve hassas direksiyon tepkisi.", ["yaz", "performans"]),
-          product("pirelli", "cinturato-p7", "Cinturato P7", "Konfor Lastiği", "Düşük gürültü seviyesi ve yakıt tasarrufu sunan premium tur lastiği.", ["yaz"]),
-          product("pirelli", "scorpion-verde", "Scorpion Verde", "SUV Lastiği", "SUV modelleri için çevre dostu ve dengeli performans.", ["suv", "yaz"]),
-          product("pirelli", "powergy", "Powergy", "4 Mevsim Lastik", "Günlük kullanımda konfor ve güvenlik odaklı çok yönlü lastik.", ["4-mevsim"]),
+          product("pirelli", "p-zero", "P Zero", "Performans Lastik", "Spor otomobiller için maksimum yol tutuş ve hassas direksiyon tepkisi.", ["yaz", "performans"], "webp"),
+          product("pirelli", "cinturato-p7", "Cinturato P7", "Konfor Lastiği", "Düşük gürültü seviyesi ve yakıt tasarrufu sunan premium tur lastiği.", ["yaz"], "webp"),
+          product("pirelli", "scorpion-verde", "Scorpion Verde", "SUV Lastiği", "SUV modelleri için çevre dostu ve dengeli performans.", ["suv", "yaz"], "webp"),
+          product("pirelli", "powergy", "Powergy", "4 Mevsim Lastik", "Günlük kullanımda konfor ve güvenlik odaklı çok yönlü lastik.", ["4-mevsim"], "webp"),
         ],
       },
       {
@@ -93,10 +93,10 @@
         description:
           "Continental'in binek ve SUV segmentinde güvenlik, konfor ve performans odaklı lastik çözümleri.",
         products: [
-          product("continental", "premiumcontact-7", "PremiumContact 7", "Konfor Lastiği", "Premium sınıf konfor, güvenlik ve ıslak zemin performansı.", ["yaz"]),
-          product("continental", "sportcontact-7", "SportContact 7", "Performans Lastik", "Dinamik sürüş için geliştirilmiş ultra yüksek performans lastiği.", ["yaz", "performans"]),
-          product("continental", "ecocontact-6", "EcoContact 6", "Eco Lastik", "Düşük yuvarlanma direnci ile verimli sürüş deneyimi.", ["yaz", "ev"]),
-          product("continental", "allseasoncontact", "AllSeasonContact", "4 Mevsim Lastik", "Dört mevsim güvenliği sunan çok amaçlı lastik.", ["4-mevsim"]),
+          product("continental", "premiumcontact-7", "PremiumContact 7", "Konfor Lastiği", "Premium sınıf konfor, güvenlik ve ıslak zemin performansı.", ["yaz"], "webp"),
+          product("continental", "sportcontact-7", "SportContact 7", "Performans Lastik", "Dinamik sürüş için geliştirilmiş ultra yüksek performans lastiği.", ["yaz", "performans"], "webp"),
+          product("continental", "ecocontact-6", "EcoContact 6", "Eco Lastik", "Düşük yuvarlanma direnci ile verimli sürüş deneyimi.", ["yaz", "ev"], "webp"),
+          product("continental", "allseasoncontact", "AllSeasonContact", "4 Mevsim Lastik", "Dört mevsim güvenliği sunan çok amaçlı lastik.", ["4-mevsim"], "webp"),
         ],
       },
       {
@@ -106,10 +106,10 @@
         description:
           "Bridgestone'un performans, konfor ve SUV segmentlerinde sunduğu global lastik teknolojileri.",
         products: [
-          product("bridgestone", "potenza-sport", "Potenza Sport", "Performans Lastik", "Sportif sürüş dinamikleri için geliştirilmiş yüksek tutuş lastiği.", ["yaz", "performans"]),
-          product("bridgestone", "turanza-t005", "Turanza T005", "Konfor Lastiği", "Uzun yol konforu ve sessiz kabin deneyimi sunan premium lastik.", ["yaz"]),
-          product("bridgestone", "blizzak-lm005", "Blizzak LM005", "Kış Lastiği", "Kış mevsiminde güvenilir frenleme ve yol tutuş performansı.", ["kis"]),
-          product("bridgestone", "alenza-001", "Alenza 001", "SUV Lastiği", "SUV ve crossover araçlar için premium konfor ve dayanıklılık.", ["suv", "yaz"]),
+          product("bridgestone", "potenza-sport", "Potenza Sport", "Performans Lastik", "Sportif sürüş dinamikleri için geliştirilmiş yüksek tutuş lastiği.", ["yaz", "performans"], "webp"),
+          product("bridgestone", "turanza-t005", "Turanza T005", "Konfor Lastiği", "Uzun yol konforu ve sessiz kabin deneyimi sunan premium lastik.", ["yaz"], "webp"),
+          product("bridgestone", "blizzak-lm005", "Blizzak LM005", "Kış Lastiği", "Kış mevsiminde güvenilir frenleme ve yol tutuş performansı.", ["kis"], "webp"),
+          product("bridgestone", "alenza-001", "Alenza 001", "SUV Lastiği", "SUV ve crossover araçlar için premium konfor ve dayanıklılık.", ["suv", "yaz"], "webp"),
         ],
       },
       {
@@ -119,7 +119,7 @@
         description:
           "Lassa'nın binek, SUV ve ticari segmentlerde sunduğu yerli üretim güvenilir lastik çözümleri.",
         products: [
-          product("lassa", "revola", "Revola", "4 Mevsim Lastik", "Dört mevsim kullanım için dengeli performans sunan lastik.", ["4-mevsim"]),
+          product("lassa", "revola", "Revola", "4 Mevsim Lastik", "Dört mevsim kullanım için dengeli performans sunan lastik.", ["4-mevsim"], "webp"),
           product("lassa", "driveways", "Driveways", "Konfor Lastiği", "Günlük kullanım için ekonomik ve konforlu tur lastiği.", ["yaz"]),
           product("lassa", "competus", "Competus", "SUV Lastiği", "SUV ve hafif ticari araçlar için dayanıklı lastik seçeneği.", ["suv"]),
           product("lassa", "snoways", "Snoways", "Kış Lastiği", "Kış koşullarında güvenli sürüş için özel kış deseni.", ["kis"]),
@@ -145,10 +145,10 @@
         description:
           "Hankook'un performans, SUV ve dört mevsim segmentlerinde sunduğu global lastik teknolojileri.",
         products: [
-          product("hankook", "ventus-s1-evo3", "Ventus S1 evo3", "Performans Lastik", "Yüksek hız stabilitesi ve sportif yol tutuşu.", ["yaz", "performans"]),
-          product("hankook", "kinergy-4s2", "Kinergy 4S2", "4 Mevsim Lastik", "Dört mevsim güvenliği ve konfor odaklı lastik.", ["4-mevsim"]),
-          product("hankook", "dynapro", "Dynapro", "SUV Lastiği", "SUV ve 4x4 araçlar için dayanıklı ve dengeli performans.", ["suv"]),
-          product("hankook", "winter-icept", "Winter i*cept", "Kış Lastiği", "Soğuk havalarda güvenilir tutuş ve frenleme.", ["kis"]),
+          product("hankook", "ventus-s1-evo3", "Ventus S1 evo3", "Performans Lastik", "Yüksek hız stabilitesi ve sportif yol tutuşu.", ["yaz", "performans"], "webp"),
+          product("hankook", "kinergy-4s2", "Kinergy 4S2", "4 Mevsim Lastik", "Dört mevsim güvenliği ve konfor odaklı lastik.", ["4-mevsim"], "webp"),
+          product("hankook", "dynapro", "Dynapro", "SUV Lastiği", "SUV ve 4x4 araçlar için dayanıklı ve dengeli performans.", ["suv"], "webp"),
+          product("hankook", "winter-icept", "Winter i*cept", "Kış Lastiği", "Soğuk havalarda güvenilir tutuş ve frenleme.", ["kis"], "webp"),
         ],
       },
       {
@@ -158,11 +158,11 @@
         description:
           "Kumho'nun performans, konfor ve SUV segmentlerinde sunduğu teknoloji odaklı lastik çözümleri.",
         products: [
-          product("kumho", "ecsta-ps71", "Ecsta PS71", "Performans Lastik", "Sportif sürüş dinamikleri için geliştirilmiş lastik.", ["yaz", "performans"]),
-          product("kumho", "solus-4s", "Solus 4S", "4 Mevsim Lastik", "Dört mevsim kullanım için dengeli performans.", ["4-mevsim"]),
-          product("kumho", "wintercraft", "WinterCraft", "Kış Lastiği", "Kış koşullarında güvenli yol tutuşu.", ["kis"]),
-          product("kumho", "crugen-premium", "Crugen Premium", "SUV Lastiği", "SUV modelleri için konfor ve dayanıklılık.", ["suv", "yaz"]),
-          product("kumho", "ecowing", "Ecowing", "Eco Lastik", "Yakıt verimliliği odaklı çevre dostu lastik.", ["yaz", "ev"]),
+          product("kumho", "ecsta-ps71", "Ecsta PS71", "Performans Lastik", "Sportif sürüş dinamikleri için geliştirilmiş lastik.", ["yaz", "performans"], "webp"),
+          product("kumho", "solus-4s", "Solus 4S", "4 Mevsim Lastik", "Dört mevsim kullanım için dengeli performans.", ["4-mevsim"], "webp"),
+          product("kumho", "wintercraft", "WinterCraft", "Kış Lastiği", "Kış koşullarında güvenli yol tutuşu.", ["kis"], "webp"),
+          product("kumho", "crugen-premium", "Crugen Premium", "SUV Lastiği", "SUV modelleri için konfor ve dayanıklılık.", ["suv", "yaz"], "webp"),
+          product("kumho", "ecowing", "Ecowing", "Eco Lastik", "Yakıt verimliliği odaklı çevre dostu lastik.", ["yaz", "ev"], "webp"),
         ],
       },
       {
@@ -172,10 +172,10 @@
         description:
           "Nexen'in binek ve SUV segmentlerinde sunduğu performans ve konfor odaklı lastik portföyü.",
         products: [
-          product("nexen", "nfera-sport", "N'Fera Sport", "Performans Lastik", "Sportif karakter ve yüksek hız güvenliği.", ["yaz", "performans"]),
-          product("nexen", "nblue-4season", "N'Blue 4Season", "4 Mevsim Lastik", "Yıl boyunca dengeli performans sunan lastik.", ["4-mevsim"]),
-          product("nexen", "winguard-winspike", "Winguard Winspike", "Kış Lastiği", "Karlı yollarda güvenli sürüş için kış lastiği.", ["kis"]),
-          product("nexen", "roadian-gtx", "Roadian GTX", "SUV Lastiği", "SUV ve crossover araçlar için premium konfor.", ["suv"]),
+          product("nexen", "nfera-sport", "N'Fera Sport", "Performans Lastik", "Sportif karakter ve yüksek hız güvenliği.", ["yaz", "performans"], "webp"),
+          product("nexen", "nblue-4season", "N'Blue 4Season", "4 Mevsim Lastik", "Yıl boyunca dengeli performans sunan lastik.", ["4-mevsim"], "webp"),
+          product("nexen", "winguard-winspike", "Winguard Winspike", "Kış Lastiği", "Karlı yollarda güvenli sürüş için kış lastiği.", ["kis"], "webp"),
+          product("nexen", "roadian-gtx", "Roadian GTX", "SUV Lastiği", "SUV ve crossover araçlar için premium konfor.", ["suv"], "webp"),
           product("nexen", "nblue-ev", "N'Blue EV", "EV Lastiği", "Elektrikli araçlar için verimli ve sessiz sürüş.", ["ev", "yaz"]),
         ],
       },
@@ -186,10 +186,10 @@
         description:
           "Yokohama'nın performans, SUV ve dört mevsim segmentlerinde sunduğu Japon mühendislik lastikleri.",
         products: [
-          product("yokohama", "advan-sport-v105", "Advan Sport V105", "Performans Lastik", "Ultra yüksek performans ve hassas direksiyon kontrolü.", ["yaz", "performans"]),
+          product("yokohama", "advan-sport-v105", "Advan Sport V105", "Performans Lastik", "Ultra yüksek performans ve hassas direksiyon kontrolü.", ["yaz", "performans"], "webp"),
           product("yokohama", "bluearth", "BluEarth", "Eco Lastik", "Düşük yuvarlanma direnci ile verimli sürüş.", ["yaz", "ev"]),
-          product("yokohama", "geolandar", "Geolandar", "SUV Lastiği", "SUV ve 4x4 araçlar için çok yönlü performans.", ["suv"]),
-          product("yokohama", "iceguard", "iceGuard", "Kış Lastiği", "Buzlu ve karlı yollarda güvenli kış performansı.", ["kis"]),
+          product("yokohama", "geolandar", "Geolandar", "SUV Lastiği", "SUV ve 4x4 araçlar için çok yönlü performans.", ["suv"], "webp"),
+          product("yokohama", "iceguard", "iceGuard", "Kış Lastiği", "Buzlu ve karlı yollarda güvenli kış performansı.", ["kis"], "webp"),
           product("yokohama", "advan-db-v552", "Advan dB V552", "Konfor Lastiği", "Sessiz sürüş ve konfor odaklı premium tur lastiği.", ["yaz"]),
         ],
       },
@@ -201,8 +201,8 @@
           "BFGoodrich'in performans, arazi ve SUV segmentlerinde sunduğu dayanıklı lastik teknolojileri.",
         products: [
           product("bfgoodrich", "g-force-pilot-sport", "g-Force Pilot Sport", "Performans Lastik", "Sportif sürüş için yüksek tutuş ve stabilite.", ["yaz", "performans"]),
-          product("bfgoodrich", "advantage-touring", "Advantage Touring", "Konfor Lastiği", "Uzun ömür ve konforlu sürüş deneyimi.", ["yaz"]),
-          product("bfgoodrich", "all-terrain-ko2", "All-Terrain T/A KO2", "SUV Lastiği", "Arazi ve şehir kullanımı için dayanıklı SUV lastiği.", ["suv", "4-mevsim"]),
+          product("bfgoodrich", "advantage-touring", "Advantage Touring", "Konfor Lastiği", "Uzun ömür ve konforlu sürüş deneyimi.", ["yaz"], "webp"),
+          product("bfgoodrich", "all-terrain-ko2", "All-Terrain T/A KO2", "SUV Lastiği", "Arazi ve şehir kullanımı için dayanıklı SUV lastiği.", ["suv", "4-mevsim"], "webp"),
           product("bfgoodrich", "g-force-winter", "g-Force Winter", "Kış Lastiği", "Kış koşullarında güvenilir performans.", ["kis"]),
         ],
       },

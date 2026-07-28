@@ -89,9 +89,11 @@ button.brands__card.brands__card--logo-only {
   }
 }
 
+html.is-tire-modal-open,
 body.is-tire-modal-open {
   overflow: hidden;
   touch-action: none;
+  overscroll-behavior: none;
 }
 
 /* ── Modal shell ── */
@@ -115,6 +117,7 @@ body.is-tire-modal-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  overflow: hidden;
 }
 
 .tire-modal__overlay {

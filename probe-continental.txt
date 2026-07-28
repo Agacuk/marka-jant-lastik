@@ -1,0 +1,2726 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>PremiumContact 7 | Continental Tires</title>
+    
+    <meta name="description" content="The Continental PremiumContact 7: Driving safely has never felt better. Enjoy safety and comfort no matter which drive you choose."/>
+    
+
+
+
+    <meta name="template" content="product-detail-page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+
+    
+    
+
+<meta name="content-page-ref" content="n8wG6DhgTmSaqb9_4TObmVYR3Ipp0kcUVTpD5at5yi1rZlhYDJkJUScD2e6C99cHioC0GMuQq8oUuFN_oE6qwrc5OXcOUzWbWhnWBzUzLlaFrS0DYNG499L_mzh1AG-d"/>
+<script defer="defer" type="text/javascript" src="/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js"></script>
+<link rel="canonical" href="https://www.continental-tires.com/products/car/tires/premiumcontact-7/"/>
+
+
+
+    
+
+    
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-base.lc-7981dc8bf979f338e5df17cbb6eaa117-lc.min.css" type="text/css">
+
+
+
+    
+    
+    
+<script src="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"></script>
+<script src="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-analytic.lc-cb014f9a8dcde87481f804b8cb02ab95-lc.min.js"></script>
+
+
+
+
+<meta name="country" content="ww"/>
+<meta name="language" content="en"/>
+<meta name="product-area" content="PLT"/>
+
+<meta data-image-source="default-image" property="cludoImage" content="https://www.continental-tires.com/adobe/dynamicmedia/deliver/dm-aid--10fb6f57-8112-45c0-9ba3-808d80cbde75/continental-tire.png?width=600"/>
+
+<script>
+  window.dataLayerSupporter = {
+    'country': '',
+    'language': 'en',
+    'segment': '',
+    'page_type': 'product-detail-page',
+    'businessUnits': {
+      plt: 'car',
+      mc: 'motorcycle',
+      bc: 'bicycle',
+      tt: 'truck',
+      ttr: 'truck tire retread',
+      cst_ag: 'agriculture',
+      cst_em: 'earthmoving',
+      cst_mh: 'material-handling'
+    },
+    'regionMapping': {
+      global: 'global',
+      europe: 'emea',
+      american: 'americas',
+      asia_australia: 'apac',
+      africa: 'emea'
+    },
+    productArea: 'plt',
+    pageType: 'product-detail-page',
+    pageName: '/ww/en/products/car/tires/premiumcontact-7',
+    pagePath: '/content/conti-tires-cms/ww/en/products/car/tires/premiumcontact-7',
+  }
+
+    const ORIGIN_KEY = 'origin_page_country';
+    if (!sessionStorage.getItem(ORIGIN_KEY)) {
+      sessionStorage.setItem(ORIGIN_KEY, window.dataLayerSupporter.country);
+    }
+
+    const ORIGIN_LOCATION = 'origin_location';
+    if (!sessionStorage.getItem(ORIGIN_LOCATION)) {
+      sessionStorage.setItem(ORIGIN_LOCATION, window.location.origin);
+    }
+
+    window.dataLayer = window.dataLayer || [];
+
+  let queryData = window.location.search
+  .slice(1)
+  .split('&')
+  .map(p => p.split('='))
+  .reduce((obj, [key, value]) => (value ? (obj[key] = decodeURIComponent(value), obj) : obj), {});
+
+  const productArea = window.dataLayerSupporter.productArea;
+  const pageType = window.dataLayerSupporter.pageType;
+  const pageName = window.dataLayerSupporter.pageName;
+  const pagePath = window.dataLayerSupporter.pagePath;
+  const cookie_GA = (c = document.cookie.match(/(?:^|;\s*)_ga=([^;]*)/)) ? c[1] : 'NA';
+
+  if (!window.dataLayerSupporter.country && pageName) {
+    const countryLanguageFromPageName = pageName.split('/', 3).filter(code => code.length);
+    window.dataLayerSupporter.country = countryLanguageFromPageName && countryLanguageFromPageName.length === 2 ? countryLanguageFromPageName[0] : "int";
+  }
+
+  const b2bKeywords = ['b2b', 'truck', 'agriculture', 'earthmoving', 'material-handling', 'port-operations'];
+
+  let dataLayerEvent = {
+    'event': 'page_meta',
+    'original_location': sessionStorage.getItem(ORIGIN_LOCATION) || 'NA',
+    'origin_page_country': sessionStorage.getItem(ORIGIN_KEY) || 'NA',
+    'environment': window.location.hostname.includes('dev') ? 'dev' : window.location.hostname.includes('stage') ? 'stage' : window.location.hostname.includes('author') ? 'NA' : 'prod',
+    'page_country': window.dataLayerSupporter.country,
+    'page_language': window.dataLayerSupporter.language,
+    'page_economic_region': window.dataLayerSupporter.regionMapping[`global`] || 'NA',
+    'business_area': b2bKeywords.some(k => pagePath.includes(k)) ? 'b2b' : 'b2c',
+    'business_unit': window.dataLayerSupporter.businessUnits[productArea] || 'NA',
+    'page_type': pageType.replace(/[-_](.)/g, (_, char) => char.toUpperCase()),
+    'page_name': ['gb', 'it', 'de', 'es', 'br'].includes(window.dataLayerSupporter.country) ? (pageName.split('/').slice(3).join('/') || 'NA') : (pageName || 'NA'),
+    'page_url': window.location.href,
+    'page_referrer': document.referrer || 'NA',
+    'page_age': '187',
+    'page_breadcrumb': 'global (english) > products > car \x26 van > tires > premiumcontact 7',
+    'cookie_GA': cookie_GA,
+  }
+
+  if (pagePath.includes('stories') || pagePath.includes('articles') || pageName.includes('tire-knowledge') || pageName.includes('tyre-knowledge')) {
+    if (!pageName.endsWith('stories') && !pageName.endsWith('articles') && !pageName.endsWith('tire-knowledge') && !pageName.endsWith('tyre-knowledge')) {
+      dataLayerEvent.post_name = pageName.substring(pageName.lastIndexOf('/') + 1) || 'NA';
+    }
+  }
+
+  if (pageType === 'product-detail-page' || pageType === 'product-detail-page1') {
+    dataLayerEvent.tires_name = pagePath.split('/').pop() || 'NA';
+
+    if (queryData.articleID) {
+      dataLayerEvent.tires_id = queryData.articleID || 'NA';
+    }
+
+    if (queryData.season) {
+      dataLayerEvent.tires_season = queryData.season?.toLowerCase() || 'NA';
+    }
+
+    if (JSON.parse(sessionStorage.getItem("active-article"))?.productlinename?.toLowerCase().replaceAll(' ', '-') === pagePath.split('/').pop()) {
+      const activeArticle = JSON.parse(sessionStorage.getItem("active-article"));
+      dataLayerEvent.tires_name = activeArticle?.zmi_mkt_text_long;
+      dataLayerEvent.tires_id = activeArticle?.artNo11Digit;
+      dataLayerEvent.tires_season = activeArticle?.season?.toLowerCase();
+      dataLayerEvent.tires_category = activeArticle?.pogSegment1MappingDTacs?.replace(/[-_](.)/g, (_, char) => char.toUpperCase());
+    }
+
+    const segmentMapping = queryData.pogSegment1MappingDTacs || queryData.pogSegment2MappingDTacs;
+    if (segmentMapping) {
+      dataLayerEvent.tires_category = segmentMapping.replace(/[-_](.)/g, (_, char) => char.toUpperCase());
+    }
+  }
+
+  if (pagePath.includes('search-results') && queryData) {
+    dataLayerEvent.filter = JSON.stringify(queryData).replace(/[{}"]/g, '').replace(/,/g, '|').replace(/:/g, ': ').replaceAll('+', '_').toLowerCase() || 'NA';
+    dataLayerEvent.filter_type = Object.keys(queryData).join('|').replaceAll('+', '_').toLowerCase() || 'NA';
+    dataLayerEvent.filter_value = Object.values(queryData).join('|').replaceAll('+', '_').toLowerCase() || 'NA';
+  }
+
+  if (queryData.searchMode === 'sbv') {
+    dataLayerEvent = analyticHelper.sbvData(dataLayerEvent);
+  }
+
+  if (pageName.includes('stories') || pageName.includes('tire-knowledge') || pageName.includes('tyre-knowledge')) {
+    if (!pageName.endsWith('stories') && !pageName.endsWith('tire-knowledge') && !pageName.endsWith('tyre-knowledge')) {
+      dataLayerEvent.post_category = pageName.substring(pageName.lastIndexOf('/', pageName.lastIndexOf('/') - 1) + 1, pageName.lastIndexOf('/')) || 'NA';
+    }
+  }
+
+  if (queryData.vehicleType && dataLayerSupporter.businessUnits[productArea] !== window.dataLayerSupporter.businessUnits.cst_mh) {
+    dataLayerEvent.category = queryData.vehicleType.toLowerCase();
+  }
+
+  if (dataLayerSupporter.businessUnits[productArea] === window.dataLayerSupporter.businessUnits.cst_mh) {
+    if (queryData.application && !queryData.vehicleType) {
+      dataLayerEvent.category = queryData.application.toLowerCase();
+    }
+    if (queryData.vehicleType && !queryData.application) {
+      dataLayerEvent.category = queryData.vehicleType.toLowerCase();
+    }
+    if (queryData.application && queryData.vehicleType) {
+      dataLayerEvent.category = queryData.application.concat('_'.concat(queryData.vehicleType)).toLowerCase();
+    }
+  }
+</script>
+<!-- Google Tag Manager -->
+<script>
+  var initDtmFunc = function (w, d, s, l) {
+    w[l] = w[l] || [];
+    w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '',
+        i = 'GTM-TR83R2R';
+
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  };
+
+  if (analyticHelper.utils.isPpdPage(dataLayerSupporter.pageType) || analyticHelper.utils.isFindDealerPage(pageName)) {
+    document.addEventListener('product-data-loaded', function () {
+      window.dataLayer.push(analyticHelper.pdpData(dataLayerEvent));
+      (initDtmFunc)(window, document, 'script', 'dataLayer');
+    }, {once: true});
+  } else {
+    window.dataLayer.push(dataLayerEvent);
+    (initDtmFunc)(window, document, 'script', 'dataLayer');
+  }
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<script type="text/javascript" data-cmp-ab="1">
+    window.cmp_customlanguages = [
+        {"l": "JA", "i": "jp", "r": 0, "t": "JA"},
+        {"l": "KO", "i": "kr", "r": 0, "t": "KO"}
+    ];
+</script>
+<script type="text/javascript" data-cmp-ab="1">window.cmp_customlanguages = [{"l":"JA","i":"jp","r":0,"t":"JA"},{"l":"KO","i":"kr","r":0,"t":"KO"},{"l":"UK","i":"uk","r":0,"t":"UK"},{"l":"TR","i":"tr","r":0,"t":"TR"},{"l":"ZH-HANT","i":"zh","r":0,"t":"ZH"}];</script>
+<script type="text/javascript" defer data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/49a2e2ac486f.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="1"></script>
+<meta name="facebook-domain-verification" content="dayn9m9o8bxd9tapw8h458potxjgt2" />
+<script defer src="https://jscloud.net/x/34462/inlinks.js"></script>
+<script type="application/ld+json">
+{ "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Perto Digital Accessibility Widget",
+  "url":"https://pertodigital.com.br",
+  "description":"Widget with various digital accessibility tools.",
+  "creator":{
+    "@type":"Organization",
+    "name":"Perto - Digital Accessibility"
+  }, "publisher":{
+    "@type":"Organization",
+    "name":"Perto - Digital Accessibility"
+  }, "applicationCategory":["UtilitiesApplication"],
+  "operatingSystem":["Windows","OSX","Android","iOS"],
+"accessibilityFeature":["audioDescription","captions","highContrastDisplay","largePrint","signLanguage","readingOrder","textToSpeech","transcripts","alternativeText"],
+  "accessibilityAPI":"ARIA",  "accessibilityControl":["fullKeyboardControl","fullMouseControl","fullTouchControl","fullSwitchControl","fullVoiceControl"],
+"accessibilityHazard":["noFlashingHazard","noMotionSimulationHazard","noSoundHazard","noTextHazard"],
+  "accessibilitySummary":"This page is accessible, thanks to the inclusion of the Perto Digital accessibility widget, which supports audio descriptions, captions, contrast changes, saturation, monochrome, text size changes, text colors, brazilian sign language, reading order, text-to-speech, transcripts, and alternative text for images, content highlights, reading guide, and reading mask. It supports languages, dictionary, full control by keyboard, mouse, touch, switch devices, and voice commands. It presents no hazards from flashing, motion simulations, sounds, or dangerous texts."
+} </script>
+
+    <link rel="icon" href="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-site/resources/images/favicons/favicon.ico"/>
+    <link rel="shortcut icon" href="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-site/resources/images/favicons/favicon.ico"/>
+
+<script type="application/ld+json">
+  {
+  "itemListElement": [
+    {
+      "item": "https://www.continental-tires.com/",
+      "@type": "ListItem",
+      "name": "Global (English)",
+      "position": 1
+    },
+    {
+      "item": "https://www.continental-tires.com/products/",
+      "@type": "ListItem",
+      "name": "Products",
+      "position": 2
+    },
+    {
+      "item": "https://www.continental-tires.com/products/car/",
+      "@type": "ListItem",
+      "name": "Car \u0026 Van",
+      "position": 3
+    },
+    {
+      "item": "https://www.continental-tires.com/products/car/tires/",
+      "@type": "ListItem",
+      "name": "Tires",
+      "position": 4
+    },
+    {
+      "@type": "ListItem",
+      "name": "PremiumContact 7",
+      "position": 5
+    }
+  ],
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList"
+}
+</script>
+
+<meta property="og:title" content="PremiumContact 7"/>
+<meta property="og:description" content="The Continental PremiumContact 7: Driving safely has never felt better. Enjoy safety and comfort no matter which drive you choose."/>
+<meta property="og:image" content="https://www.continental-tires.com/adobe/dynamicmedia/deliver/dm-aid--10fb6f57-8112-45c0-9ba3-808d80cbde75/continental-tire.png?width=600"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.continental-tires.com/products/car/tires/premiumcontact-7/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+    <script async src="https://widget.clic2buy.com/c2b.js?locale=en"></script>
+
+
+    
+    
+    
+
+    
+
+    
+    
+
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-site.lc-50dedb37e036d285356a65a5b64ce3b2-lc.min.css" type="text/css">
+
+
+
+    
+
+    
+    
+</head>
+<body class="product-detail-page page basicpage site  " id="page-0917c1c6ac" data-service-url="https://api.productsearch.continental-tires.com/v1/continental" data-service-key="eln1kj8v4j1GTfrTxIbnr4sbE52nfRSu9DMoltTp" data-product="/content/dam/conti-tires-cms/continental/product-content-fragments/ww/en/products/plt/premiumcontact-7" data-product-area="PLT" data-data-layer-page-name="/ww/en/products/car/tires/premiumcontact-7" data-product-content-fragments-path="/content/dam/conti-tires-cms/continental/product-content-fragments" data-cmp-data-layer-enabled data-tire-search-config="{&#34;tt&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;bc&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;ttr&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;mc&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;plt&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;cst_em&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;cst_ag&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;},&#34;cst_mh&#34;:{&#34;contiseal&#34;:&#34;every&#34;,&#34;ssr&#34;:&#34;every&#34;,&#34;contisilent&#34;:&#34;every&#34;,&#34;pmsf&#34;:&#34;every&#34;,&#34;ms&#34;:&#34;every&#34;,&#34;ev_compatible&#34;:&#34;every&#34;}}">
+<script type="text/javascript" data-cmp-ab="1">window.cmp_customlanguages = [{"l":"JA","i":"jp","r":0,"t":"JA"},{"l":"KO","i":"kr","r":0,"t":"KO"},{"l":"UK","i":"uk","r":0,"t":"UK"},{"l":"TR","i":"tr","r":0,"t":"TR"},{"l":"ZH-HANT","i":"zh","r":0,"t":"ZH"}];</script>
+<script type="text/javascript" defer data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/49a2e2ac486f.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="1"></script>
+<meta name="facebook-domain-verification" content="dayn9m9o8bxd9tapw8h458potxjgt2" />
+<script defer src="https://jscloud.net/x/34462/inlinks.js"></script>
+<script type="application/ld+json">
+{ "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Perto Digital Accessibility Widget",
+  "url":"https://pertodigital.com.br",
+  "description":"Widget with various digital accessibility tools.",
+  "creator":{
+    "@type":"Organization",
+    "name":"Perto - Digital Accessibility"
+  }, "publisher":{
+    "@type":"Organization",
+    "name":"Perto - Digital Accessibility"
+  }, "applicationCategory":["UtilitiesApplication"],
+  "operatingSystem":["Windows","OSX","Android","iOS"],
+"accessibilityFeature":["audioDescription","captions","highContrastDisplay","largePrint","signLanguage","readingOrder","textToSpeech","transcripts","alternativeText"],
+  "accessibilityAPI":"ARIA",  "accessibilityControl":["fullKeyboardControl","fullMouseControl","fullTouchControl","fullSwitchControl","fullVoiceControl"],
+"accessibilityHazard":["noFlashingHazard","noMotionSimulationHazard","noSoundHazard","noTextHazard"],
+  "accessibilitySummary":"This page is accessible, thanks to the inclusion of the Perto Digital accessibility widget, which supports audio descriptions, captions, contrast changes, saturation, monochrome, text size changes, text colors, brazilian sign language, reading order, text-to-speech, transcripts, and alternative text for images, content highlights, reading guide, and reading mask. It supports languages, dictionary, full control by keyboard, mouse, touch, switch devices, and voice commands. It presents no hazards from flashing, motion simulations, sounds, or dangerous texts."
+} </script>
+
+
+    
+
+
+
+
+    
+
+
+
+    
+<div class="root container responsivegrid">
+
+    
+    <div id="container-957af81f10" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="user-guidance aem-GridColumn aem-GridColumn--default--12"><header class="cmp-user-guidance" data-current-page="/content/conti-tires-cms/ww/en/products/car/tires/premiumcontact-7" data-user-country-match-text="You are currently at our &lt;b>{0}&lt;/b> website. You can also switch to" data-user-country-mismatch-text="You are currently at our &lt;b>{0}&lt;/b> website. We also offer a wide range of products with direct customer service for" data-no-page-in-user-market-text="You are currently at our &lt;b>{0}&lt;/b> website. We also offer a wide range of products with direct customer service in many locations worldwide.">
+	<div class="cmp-user-guidance__text hide">
+		You are currently on our <b>Global (English)</b> website. You can also switch to one of our many other locations worldwide.
+	</div>
+	<div class="cmp-user-guidance__buttons hide">
+		<div class="cmp-user-guidance__locations-button">All locations</div>
+		<div class="cmp-user-guidance__close-button"></div>
+	</div>
+</header>
+</div>
+<header class="dynamicexperiencefragment experiencefragment aem-GridColumn aem-GridColumn--default--12"><div id="dynamicexperiencefragment-0fcaf9dbb9" class="cmp-experiencefragment cmp-experiencefragment--">
+
+
+    
+    <div id="container-d74ce136f0" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="navigation-v2 aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-navigation-v2">
+  <div class="cmp-navigation-v2__logo">
+    <a href="/">
+      <img src="/content/dam/conti-tires-cms/continental/brand/basics/Continental_Logo_large.svg" alt="Logo" class="expanded"/>
+      <img src="/content/dam/conti-tires-cms/sample-content/sample-images/logo_smaller.svg" alt="Logo" class="collapsed"/>
+    </a>
+  </div>
+  <div class="cmp-navigation-v2__primary-nav">
+    <ul>
+      <li class="cmp-navigation-v2__primary-nav-item" data-menu="primaryNavItems/item0" data-tablet-up>
+        <div class="icon" style="--icon: url('/content/dam/conti-tires-cms/navigation/icons/tire.svg')"></div>
+        <div class="cmp-navigation-v2__primary-nav-items-link">
+          Find Your Tire
+        </div>
+      </li>
+<li class="cmp-navigation-v2__primary-nav-item" data-tablet-up>
+        <div class="icon" style="--icon: url('/content/dam/conti-tires-cms/navigation/icons/location.svg')"></div>
+        <div class="cmp-navigation-v2__primary-nav-items-link">
+          <a href="/where-to-buy/">Where to buy</a>
+        </div>
+      </li>
+
+      <li data-menu="language-navigation">
+        <button class="cmp-navigation-v2__btn-lang">Global (English)</button>
+      </li>
+      <li class="cludo-feature">
+        <button id="cludo-overlay-trigger">
+          <svg width="20" height="21" viewbox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.83805 15.6225C5.17027 14.4285 4.03994 12.6255 3.69181 10.6042C3.34368 8.58278 3.80578 6.50562 4.97805 4.82248C5.57876 4.01013 6.33467 3.32504 7.20201 2.80687C8.06934 2.2887 9.03085 1.94776 10.0309 1.80378C11.0309 1.65981 12.0495 1.71566 13.0278 1.96811C14.0061 2.22056 14.9246 2.66459 15.73 3.27448C17.3978 4.46851 18.5282 6.27141 18.8763 8.29279C19.2244 10.3142 18.7623 12.3913 17.59 14.0745C16.9898 14.8875 16.2342 15.5732 15.3668 16.0918C14.4995 16.6105 13.5378 16.9517 12.5376 17.0957C11.5373 17.2397 10.5185 17.1836 9.54006 16.9307C8.56166 16.6778 7.64322 16.2331 6.83805 15.6225V15.6225Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+            <path d="M1 19.3485L5.362 14.9805" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </li>
+      <li data-menu="mobile-menu">
+        <button class="cmp-navigation-v2__btn-menu"></button>
+      </li>
+      <li class="primary-nav-close-button">
+        <button class="btn-close"></button>
+      </li>
+    </ul>
+  </div>
+  <div class="cmp-navigation-v2__secondary-nav">
+    <ul>
+      <li data-menu="secondaryNavItems/item0">
+        Products
+      </li>
+<li>
+        <a href="/tire-knowledge/">Tire Knowledge</a>
+      </li>
+<li data-menu="secondaryNavItems/item2">
+        Continental for Business
+      </li>
+<li data-menu="secondaryNavItems/item3">
+        About Us
+      </li>
+<li>
+        <a href="/press/">Press</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div data-menu-overlay="mobile-menu">
+    <ul>
+      <li data-menu="secondaryNavItems/item0">
+        Products
+      </li>
+<li>
+        <a href="/tire-knowledge/">Tire Knowledge</a>
+      </li>
+<li data-menu="secondaryNavItems/item2">
+        Continental for Business
+      </li>
+<li data-menu="secondaryNavItems/item3">
+        About Us
+      </li>
+<li>
+        <a href="/press/">Press</a>
+      </li>
+
+      <li data-menu="primaryNavItems/item0" data-mobile-only>
+        <img class="icon" src="/content/dam/conti-tires-cms/navigation/icons/tire.svg"/>
+        <div>
+          Find Your Tire
+        </div>
+      </li>
+<li data-mobile-only>
+        <img class="icon" src="/content/dam/conti-tires-cms/navigation/icons/location.svg"/>
+        <div>
+          <a href="/where-to-buy/">Where to buy</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <div data-menu-overlay="language-navigation">
+    
+
+  <h2>Select your location</h2>
+  <button class="btn-close"></button>
+
+  <div class="cmp-region-navigation">
+
+    <div class="cmp-region-navigation__region">
+
+      <div class="cmp-region-navigation__region-name">
+        Global
+      </div>
+
+      <ul class="cmp-region-navigation__region-countries">
+        <li class="cmp-region-navigation__region-country selected">
+          <a href="/">Global (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/de/">Global (German)</a>
+        </li>
+      </ul>
+    </div>
+  
+
+    <div class="cmp-region-navigation__region">
+
+      <div class="cmp-region-navigation__region-name">
+        Europe
+      </div>
+
+      <ul class="cmp-region-navigation__region-countries">
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/al/sq/">Albania</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/at/de/">Austria</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/be/nl/">Belgium (Dutch)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/be/fr/">Belgium (French)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ba/bs/">Bosnia (Bosnia)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ba/hr/">Bosnia (Croatian)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ba/sr/">Bosnia (Serbian)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/bg/bg/">Bulgaria</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/hr/hr/">Croatia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/cz/cs/">Czech Republic</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/dk/da/">Denmark</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ee/et/">Estonia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/fi/fi/">Finland</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/fr/fr/">France</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-reifen.de/">Germany</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/gr/el/">Greece</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/hu/hu/">Hungary</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-tyres.co.uk/">Ireland</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/il/en/">Israel (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/il/he/">Israel (Hebrew)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-pneumatici.it/">Italy</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/lv/lv/">Latvia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/lt/lt/">Lithuania</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/mk/mk/">Macedonia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/me/sr/">Montenegro</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/nl/nl/">Netherlands</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/no/nb/">Norway</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/pl/pl/">Poland</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/pt/pt/">Portugal</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ro/ro/">Romania</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/rs/sr/">Serbia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/sk/sk/">Slovakia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/si/sl/">Slovenia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-neumaticos.es/">Spain</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/se/sv/">Sweden</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ch/fr/">Switzerland (French)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ch/de/">Switzerland (German)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/tr/tr/">Turkiye</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ua/uk/">Ukraine</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-tyres.co.uk/">United Kingdom</a>
+        </li>
+      </ul>
+    </div>
+  
+
+    <div class="cmp-region-navigation__region">
+
+      <div class="cmp-region-navigation__region-name">
+        Asia &amp; Australia
+      </div>
+
+      <ul class="cmp-region-navigation__region-countries">
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/kh/en/">Asia Pacific</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/au/en/">Australia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://continental-me.com/landing">Bahrain</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-tires.cn/car">China</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/hk/zh/">Hong Kong (Chinese)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/hk/en/">Hong Kong (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/in/en/">India</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/id/en/">Indonesia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/jp/ja/">Japan</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Jordan</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Kuwait</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Lebanon</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/my/en/">Malaysia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Oman</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://pk.continental-me.com/">Pakistan</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Qatar</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Saudi Arabia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/sg/en/">Singapore</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/kr/ko/">South Korea</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/tw/zh/">Taiwan</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/th/en/">Thailand (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/th/th/">Thailand (Thai)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">UAE</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/vn/vi/">Vietnam</a>
+        </li>
+      </ul>
+    </div>
+  
+
+    <div class="cmp-region-navigation__region">
+
+      <div class="cmp-region-navigation__region-name">
+        America
+      </div>
+
+      <ul class="cmp-region-navigation__region-countries">
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/bo/es/">Andean Region</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ar/es/">Argentina</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.conti.com.br/">Brazil</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ca/en/">Canada (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ca/fr/">Canada (French)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/cl/es/">Chile</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/co/es/">Colombia</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ec/es/">Ecuador</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/mx/es/">Mexico</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/py/es/">Paraguay</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/us/en/">USA &amp; Canada (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/ca/fr/products/truck/">USA &amp; Canada (French)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://continentaltire.com/">USA Car (English)</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/uy/es/">Uruguay</a>
+        </li>
+      </ul>
+    </div>
+  
+
+    <div class="cmp-region-navigation__region">
+
+      <div class="cmp-region-navigation__region-name">
+        Africa
+      </div>
+
+      <ul class="cmp-region-navigation__region-countries">
+        <li class="cmp-region-navigation__region-country ">
+          <a href="https://www.continental-me.com/landing">Egypt</a>
+        </li>
+      
+        <li class="cmp-region-navigation__region-country ">
+          <a href="/za/en/">South Africa</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+
+  <div data-menu-overlay="primaryNavItems/item0" class="icons-layout">
+  
+  <button class="btn-close"></button>
+  
+
+<h6>Choose your vehicle type</h6>
+<ul>
+  <li>
+    <a href="/products/car/product-search/">
+      <div class="image-wrapper PLT"></div>
+      <label>Car &amp; Van</label>
+    </a>
+  </li>
+
+  <li>
+    <a href="/products/motorcycle/product-search/">
+      <div class="image-wrapper MC"></div>
+      <label>Motorcycle</label>
+    </a>
+  </li>
+
+  <li>
+    <a href="/products/bicycle/product-search/">
+      <div class="image-wrapper BC"></div>
+      <label>Bicycle</label>
+    </a>
+  </li>
+
+  <li>
+    <a href="/products/truck/product-search/">
+      <div class="image-wrapper TT"></div>
+      <label>Truck &amp; Bus</label>
+    </a>
+  </li>
+
+  <li>
+    <a href="/products/earthmoving/product-search/">
+      <div class="image-wrapper CST_EM"></div>
+      <label>Earthmoving</label>
+    </a>
+  </li>
+
+  <li>
+    <a href="/products/material-handling/product-search/">
+      <div class="image-wrapper CST_MH"></div>
+      <label>Material Handling Tires</label>
+    </a>
+  </li>
+</ul>
+
+</div><div data-menu-overlay="root/navigation_v2_copy">
+  
+  <button class="btn-close"></button>
+  
+</div>
+
+  <div data-menu-overlay="secondaryNavItems/item0" class="tree-layout">
+  
+  <button class="btn-close"></button>
+  
+
+<div data-menu="mobile-menu" class="mobile-back-btn" data-menu-level="1">Overview</div>
+<a class="overlay-heading" href="/products/" data-menu-level="1">Products</a>
+
+<ul data-menu-level="1">
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/car" data-item-level="1">
+    
+      Car &amp; Van
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle" data-item-level="1">
+    
+      Motorcycle
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/bicycle" data-item-level="1">
+    
+      Bicycle
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/truck" data-item-level="1">
+    
+      Truck &amp; Bus
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/earthmoving" data-item-level="1">
+    
+      Earthmoving
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/material-handling" data-item-level="1">
+    
+      Material Handling
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/products/port-operations" data-item-level="1">
+    
+      Port Operations
+    
+  </li>
+</ul>
+
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/car" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/car/car-van-overview" data-item-level="2">
+        <a href="/products/car/">Car, SUV, Van</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/car/product-search" data-item-level="2">
+        <a href="/products/car/product-search/">Find tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/car/search-results" data-item-level="2">
+        <a href="/products/car/search-results/">Show all tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/car/continental-tire-technologies" data-item-level="2">
+        <a href="/products/car/continental-tire-technologies/">Tire technologies</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/car/dealer-search" data-item-level="2">
+        <a href="/products/car/dealer-search/">Where to buy</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/car/discover" data-item-level="2">
+        <a href="/products/car/discover/">Tire Range</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/motorcycle" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle/redirect-to-motorcycle-home" data-item-level="2">
+        <a href="/products/motorcycle/">Motorcycle</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle/product-search" data-item-level="2">
+        <a href="/products/motorcycle/product-search/">Find tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle/search-results" data-item-level="2">
+        <a href="/products/motorcycle/search-results/">Show all tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle/technologies" data-item-level="2">
+        <a href="/products/motorcycle/technologies/">Motorcycle Technologies</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle/contact" data-item-level="2">
+        <a href="/products/motorcycle/contact/">Contact</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/motorcycle/dealer-search" data-item-level="2">
+        <a href="/products/motorcycle/dealer-search/">Where to buy</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/bicycle" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/redirect-to-bicycle-home" data-item-level="2">
+        <a href="/products/bicycle/">Bicycle</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/search-results" data-item-level="2">
+        <a href="/products/bicycle/search-results/">Show all tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/road-tires" data-item-level="2">
+        <a href="/products/bicycle/road-tires/">Road Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/Terra" data-item-level="2">
+        <a href="/products/bicycle/Terra/">Gravel Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/mtb-tires" data-item-level="2">
+        <a href="/products/bicycle/mtb-tires/">Mountainbike Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/urban-tour-cargo-tires" data-item-level="2">
+        <a href="/products/bicycle/urban-tour-cargo-tires/">Urban, Tour &amp; Cargo Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/e-bike-tires" data-item-level="2">
+        <a href="/products/bicycle/e-bike-tires/">E-Bike Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/Grand-Prix-5000-Range" data-item-level="2">
+        <a href="/products/bicycle/Grand-Prix-5000-Range/">Highlights Road: Grand Prix 5000 Family</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/tpu-tubes" data-item-level="2">
+        <a href="/products/bicycle/tpu-tubes/">TPU Tubes</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/bicycle/Downloads" data-item-level="2">
+        <a href="/products/bicycle/Downloads/">Downloads</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/truck" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/truck/redirect-to-truck-home" data-item-level="2">
+        <a href="/products/truck/">Truck</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/truck/product-search" data-item-level="2">
+        <a href="/products/truck/product-search/">Find tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/truck/search-results" data-item-level="2">
+        <a href="/products/truck/search-results/">Show all tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/truck/contact" data-item-level="2">
+        <a href="/products/truck/contact/">Contact</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/truck/dealer-search" data-item-level="2">
+        <a href="/products/truck/dealer-search/">Where to buy</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/truck/generation-5" data-item-level="2">
+        <a href="/products/truck/generation-5/">Generation 5</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/earthmoving" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/earthmoving/redirect-to-earthmoving-home" data-item-level="2">
+        <a href="/products/earthmoving/">Earthmoving</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/earthmoving/product-search" data-item-level="2">
+        <a href="/products/earthmoving/product-search/">Find tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/earthmoving/search-results" data-item-level="2">
+        <a href="/products/earthmoving/search-results/">Show all tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/earthmoving/contact" data-item-level="2">
+        <a href="/products/earthmoving/contact/">Contact</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/earthmoving/dealer-search" data-item-level="2">
+        <a href="/products/earthmoving/dealer-search/">Dealer Search - Continental Earthmoving Tires</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/material-handling" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/redirect-to-material-handling-home" data-item-level="2">
+        <a href="/products/material-handling/">Material Handling</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/product-search" data-item-level="2">
+        <a href="/products/material-handling/product-search/">Find tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/search-results" data-item-level="2">
+        <a href="/products/material-handling/search-results/">Show all tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/industrial-pneumatic-tires" data-item-level="2">
+        <a href="/products/material-handling/industrial-pneumatic-tires/">Industrial Pneumatic Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/solid-tires" data-item-level="2">
+        <a href="/products/material-handling/solid-tires/">Solid Tires</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/dealer-search" data-item-level="2">
+        <a href="/products/material-handling/dealer-search/">Where to buy</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/material-handling/contact" data-item-level="2">
+        <a href="/products/material-handling/contact/">Contact</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/products/port-operations" data-menu-level="2">
+    <div class="mobile-back-btn">Products</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/port-operations/redirect-to-port-operations" data-item-level="2">
+        <a href="/products/port-operations/">Port Operations</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/port-operations/search-results" data-item-level="2">
+        <a href="/products/port-operations/search-results/">Port Tires Product Search</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/port-operations/port-operation-tires" data-item-level="2">
+        <a href="/products/port-operations/port-operation-tires/">Port Opeartion Tires Portfolio</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/port-operations/from-rail-to-road" data-item-level="2">
+        <a href="/products/port-operations/from-rail-to-road/">From Rail to Road</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/products/port-operations/how-digital-solutions-drive-port-sustainability" data-item-level="2">
+        <a href="/products/port-operations/how-digital-solutions-drive-port-sustainability/">From Dock to Data</a>
+      </li>
+    
+  </ul>
+
+</div><div data-menu-overlay="root/navigation_v2_copy">
+  
+  <button class="btn-close"></button>
+  
+</div><div data-menu-overlay="secondaryNavItems/item2" class="tree-layout">
+  
+  <button class="btn-close"></button>
+  
+
+<div data-menu="mobile-menu" class="mobile-back-btn" data-menu-level="1">Overview</div>
+<a class="overlay-heading" href="/continental-for-business/" data-menu-level="1">Continental for Business</a>
+
+<ul data-menu-level="1">
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect" data-item-level="1">
+    
+      ContiConnect
+    
+  </li>
+
+  <li class="has-children" data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/conti-360" data-item-level="1">
+    
+      Conti360°  Solutions
+    
+  </li>
+
+  <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/contilifecycle" data-item-level="1">
+    <a href="/continental-for-business/contilifecycle/">
+      ContiLifeCycle
+    </a>
+  </li>
+
+  <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/knowledge-base" data-item-level="1">
+    <a href="/continental-for-business/knowledge-base/">
+      Knowledge Base
+    </a>
+  </li>
+
+  <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/customer-stories" data-item-level="1">
+    <a href="/continental-for-business/customer-stories/">
+      Customer Stories
+    </a>
+  </li>
+
+  <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/connect-with-experts" data-item-level="1">
+    <a href="/continental-for-business/connect-with-experts/">
+      Connect with Experts
+    </a>
+  </li>
+</ul>
+
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect" data-menu-level="2">
+    <div class="mobile-back-btn">Continental for Business</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/whitepaper-safety" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/whitepaper-safety/"></a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/conticonnect-lite" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/conticonnect-lite/"> ContiConnect Lite</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/conticonnect-pro" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/conticonnect-pro/">ContiConnect Pro</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/integrated-digital-fleet-management" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/integrated-digital-fleet-management/">Integration</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/conticonnect-tire-management-software" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/conticonnect-tire-management-software/">ContiConnect Software</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/contipressurecheck-at-a-glance" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/contipressurecheck-at-a-glance/">ContiConnect Pressure Check at a Glance</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/ContiConnect/downloads" data-item-level="2">
+        <a href="/continental-for-business/ContiConnect/downloads/"> Downloads</a>
+      </li>
+    
+  </ul>
+
+  <ul class="submenu" data-submenu-path="/content/conti-tires-cms/ww/en/continental-for-business/conti-360" data-menu-level="2">
+    <div class="mobile-back-btn">Continental for Business</div>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/conti-360/tire-and-vehicle-services" data-item-level="2">
+        <a href="/continental-for-business/conti-360/tire-and-vehicle-services/">Tire and Vehicle Services</a>
+      </li>
+    
+      <li data-item-path="/content/conti-tires-cms/ww/en/continental-for-business/conti-360/breakdown-service" data-item-level="2">
+        <a href="/continental-for-business/conti-360/breakdown-service/">Breakdown Service</a>
+      </li>
+    
+  </ul>
+
+  
+
+  
+
+  
+
+  
+
+</div><div data-menu-overlay="secondaryNavItems/item3" class="columns-layout">
+  
+  <button class="btn-close"></button>
+  
+
+<div data-menu="mobile-menu" class="mobile-back-btn">Overview</div>
+<a class="overlay-heading" href="/about-us/">About Us</a>
+
+<div class="overlay-content">
+
+  <ul>
+    <li>
+      <a class="overlay-subheading" href="/about-us/our-company/">Our Company</a>
+    </li>
+    
+      <li>
+        <a href="/about-us/our-company/">Overview</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/our-company/continental-tires/">Continental Tires</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/our-company/research-and-development/">Research and Development</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/our-company/manufacturing/">Tire Manufacturing</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/our-company/our-brand/">Our Brand</a>
+      </li>
+    
+
+  </ul>
+
+  <ul>
+    <li>
+      <a class="overlay-subheading" href="/about-us/sustainability/">Sustainability</a>
+    </li>
+    
+      <li>
+        <a href="/about-us/sustainability/">Overview</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/sustainability/our-ambition/">Our Ambition</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/sustainability/activities-and-initiatives/">Activities and Initiatives</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/sustainability/carbon-neutrality/">Carbon Neutrality</a>
+      </li>
+    
+
+  </ul>
+
+  <ul>
+    <li>
+      <a class="overlay-subheading" href="/about-us/technologies-and-innovations/">Technologies &amp; Innovations</a>
+    </li>
+    
+      <li>
+        <a href="/about-us/technologies-and-innovations/">Overview</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/technologies-and-innovations/electric-mobility/">Electric Mobility</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/technologies-and-innovations/concept-tires/">Concept Tires</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/technologies-and-innovations/technologies-f-passenger-car-tires/">Technologies for Passenger Car Tires </a>
+      </li>
+    
+      <li>
+        <a href="/about-us/technologies-and-innovations/fleet-solutions/">Fleet Solutions</a>
+      </li>
+    
+
+  </ul>
+
+  <ul>
+    <li>
+      <a class="overlay-subheading" href="/about-us/stories/">Stories</a>
+    </li>
+    
+      <li>
+        <a href="/about-us/stories/on-the-way-to-more-sustainable-products/">Sustainable Materials in Tire Production</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/stories/from-racing-tire-to-forklift-tire-through-pyrolysis/">From racing tire to forklift tire </a>
+      </li>
+    
+      <li>
+        <a href="/about-us/stories/90-years-winter-tires/">90 Years of Winter Tires</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/stories/silica-a-filler-with-great-success/">Silica - A Filler with a Great Success Story</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/stories/the-rubber-code/">The Rubber Code</a>
+      </li>
+    
+      <li>
+        <a href="/about-us/stories/Continentals-Research-into-Tire-Wear/">Continental’s Research into Tire Wear </a>
+      </li>
+    
+      <li>
+        <a href="/about-us/stories/tire-treads/">Tire Treads</a>
+      </li>
+    
+
+  </ul>
+
+  <ul>
+    <li>
+      <a class="overlay-subheading" href="/about-us/sponsoring-and-partnerships/"></a>
+    </li>
+    
+
+  </ul>
+
+</div>
+
+</div><div data-menu-overlay="root/navigation_v2_copy">
+  
+  <button class="btn-close"></button>
+  
+</div>
+
+</div>
+
+<div class="cmp-navigation-v2__placeholder"></div>
+
+
+    
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<!-- XF path: /content/experience-fragments/conti-tires-cms/ww/en/site/header/master/jcr:content -->
+
+
+    
+
+</header>
+<main class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-7ffbd76647" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="product-detail-stage-basic under-header aem-GridColumn aem-GridColumn--default--12">
+
+<div>
+
+    <div class="cmp-product-detail-stage-base" data-tire-image="/content/dam/conti-tires-cms/continental/b2c/product-search/continental-tire.png" data-all-icons="{&#34;contiseal&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/contiseal.svg&#34;,&#34;towtruck&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/luggage_trailer.svg&#34;,&#34;zerodegree&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/zerodegree.svg&#34;,&#34;easyHandling&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/easy_handling_2.svg&#34;,&#34;raingrip&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/raingrip.svg&#34;,&#34;cotton_picker&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/cotton_picker.svg&#34;,&#34;harvester&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/harvester.svg&#34;,&#34;radial&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/radial.svg&#34;,&#34;agv&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/agv.svg&#34;,&#34;ssr&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/ssr.svg&#34;,&#34;multigrip&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/multigrip.svg&#34;,&#34;road&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/road.svg&#34;,&#34;checkmark&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/check.svg&#34;,&#34;ground_handling&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/ground_handling.svg&#34;,&#34;intelligent_tires_black&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/intelligent_tires_black.svg&#34;,&#34;ev_compatible&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/EV-checkmark.svg&#34;,&#34;underground_loader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/underground_loader.svg&#34;,&#34;multipurpose_vehicles&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/multipurpose_vehicles.svg&#34;,&#34;passenger_car&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/passenger_car.svg&#34;,&#34;empty_container_handler&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/empty_container_handler.svg&#34;,&#34;smartwayVerified&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/Smartway02.svg&#34;,&#34;underground_adt&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/underground_adt.svg&#34;,&#34;EU_Tire_Label_wet_grip&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/eu-wet-grip.svg&#34;,&#34;handmade_in_germany&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/German-Technology_Square.svg&#34;,&#34;superelastics&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/superelastic.svg&#34;,&#34;gravel&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/gravel.svg&#34;,&#34;compact_loader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/compact_loader.svg&#34;,&#34;AS&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/all_season.svg&#34;,&#34;crossply&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/crossply.svg&#34;,&#34;shuttle&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/shuttle.svg&#34;,&#34;AW&#34;:&#34;&#34;,&#34;coach&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/motorway.svg&#34;,&#34;underground_loader_scoop&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/underground_loader.svg&#34;,&#34;street_sweeper&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/street_sweeper.svg&#34;,&#34;sideloader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/sideloader.svg&#34;,&#34;grader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/grader.svg&#34;,&#34;summer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/summer.svg&#34;,&#34;tractor&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/tractor.svg&#34;,&#34;EU_Tire_Label_rolling_noise&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/eu-noise.svg&#34;,&#34;porttrailer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/porttrailer.svg&#34;,&#34;toploader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/toploader.svg&#34;,&#34;towtractor&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/towtruck.svg&#34;,&#34;presson_bands&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/presson_band.svg&#34;,&#34;luggage_trailer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/luggage_trailer.svg&#34;,&#34;backhoe_loader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/backhoe_loader.svg&#34;,&#34;EU_Tire_Label_fuel_efficiency&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/eu-fuel-efficency.svg&#34;,&#34;tractionskin&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/tractionskin.svg&#34;,&#34;low_platform_trailer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/low_platform_trailer.svg&#34;,&#34;Seasons_all_season&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/all_season.svg&#34;,&#34;grip_limit_feedback&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/grip_limit_feedback.svg&#34;,&#34;pog_winter&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/winter.svg&#34;,&#34;Seasons_all_weather&#34;:&#34;&#34;,&#34;compactor&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/Compactor.svg&#34;,&#34;rdt&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/rdt.svg&#34;,&#34;loader&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/loader.svg&#34;,&#34;skid_steer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/skid_steer.svg&#34;,&#34;engineered_in_germany&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/German-Technology_Square.svg&#34;,&#34;heavy_forklift&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/heavy_forklift.svg&#34;,&#34;whereToFindTireImage&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/product-search/continental-tire.png&#34;,&#34;axle_trailer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/trailer.svg&#34;,&#34;axle_all&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/all.svg&#34;,&#34;mtb&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/mtb.svg&#34;,&#34;mileageplus&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/mileagePlus_2.svg&#34;,&#34;Seasons_winter&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/winter.svg&#34;,&#34;people_2&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/people_2.svg&#34;,&#34;Seasons_summer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/summer.svg&#34;,&#34;axle_steer&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/steer.svg&#34;,&#34;zz_i_tire&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/intelligent_tires_orange.svg&#34;,&#34;snowplow&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/snowplot.svg&#34;,&#34;on_off&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/on_off.svg&#34;,&#34;rubber_tired_gantry_crane&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/rubber_tires_gantry_crane.svg&#34;,&#34;motorway&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/motorway.svg&#34;,&#34;straddle_carrier&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/straddle_carrier.svg&#34;,&#34;adt&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/adt.svg&#34;,&#34;axle_front&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/front.svg&#34;,&#34;intercity&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/regional.svg&#34;,&#34;scaler&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/scaler.svg&#34;,&#34;urban_tour&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/tour_urban.svg&#34;,&#34;offroad&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/offroad.svg&#34;,&#34;EU_Tire_Label_icy_conditions&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/eu-ice-grip.svg&#34;,&#34;retread&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/retread.svg&#34;,&#34;regional&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/regional.svg&#34;,&#34;utility_vehicles&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/utility_vehicles.svg&#34;,&#34;winter&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/winter.svg&#34;,&#34;pog_4x4_light_truck&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/4x4_light_truck.svg&#34;,&#34;retreatedAvailable&#34;:&#34;&#34;,&#34;contisilent&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/contisilent.svg&#34;,&#34;reach_stacker&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/reach_stacker.svg&#34;,&#34;construction&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/Construction.svg&#34;,&#34;placeholder&#34;:&#34;&#34;,&#34;designedForEVs&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/Designed_For_EV.svg&#34;,&#34;goods_2&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/goods_2.svg&#34;,&#34;pushback&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/pushback.svg&#34;,&#34;performance_over_lifetime&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/performance_over_time.svg&#34;,&#34;forklift&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/forklift.svg&#34;,&#34;scraper&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/Scraper.svg&#34;,&#34;urban&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/urban.svg&#34;,&#34;axle_drive&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/drive.svg&#34;,&#34;defaultTireImage&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/dummy/dummy-tire.png&#34;,&#34;EU_Tire_Label_snow_conditions&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/eu-snow-grip.svg&#34;,&#34;van_camper&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/van_camper.svg&#34;,&#34;telehandler&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/telehandler.svg&#34;,&#34;3gCasing&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/3G_Casing.svg&#34;}" data-quality="85" data-renditions-width="320,600,950" data-secondary-product-images="/adobe/dynamicmedia/deliver/dm-aid--22320269-fdec-4e15-9f48-3d0bc2eab584/PremiumContact7_0_degree-AEM.png.webp?preferwebp=true&amp;quality=85,/adobe/dynamicmedia/deliver/dm-aid--4199f9a9-5ea5-4533-9a62-557a0eaa23be/PremiumContact7_90_degree-AEM.png.webp?preferwebp=true&amp;quality=85" data-secondary-product-images-alt="apps,Continental PremiumContact 7,PremiumContact™ 7" data-test-badges="[{&#34;title&#34;:&#34;Auto Zeitung&#34;,&#34;imageRef&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/test-logos/Continental__PremiumContact-7__TestResult__AutoZeitung__052026__EN.png&#34;,&#34;processedImageUrl&#34;:&#34;/adobe/dynamicmedia/deliver/dm-aid--b986c69f-bd5d-498d-ba74-e3e409dd75fe/Continental__PremiumContact-7__TestResult__AutoZeitung__052026__EN.png.webp?preferwebp\u003dtrue\u0026quality\u003d85&#34;,&#34;altText&#34;:&#34;Continental__PremiumContact-7__TestResult__AutoZeitung__052026__EN.png&#34;,&#34;badgeDescription&#34;:&#34;\u003cp\u003eThe \u003cb\u003eAutomotive Clubs ADAC (D) / OEAMTC (A) / TCS (CH)\u0026nbsp;\u003c/b\u003ehave published the \u003cb\u003eSummer Tire Test 2026\u003c/b\u003e on their homepages. Test vehicle was an Audi A4, tested tire size was 225/50 R17 92 W/Y.\u003c/p\u003e\n\u003cp\u003e\u003cb\u003eThe tests were carried out by the Automotive Clubs at the following proving grounds:\u003cbr\u003e\n\u003c/b\u003e- All criteria on wet road, fuel consumption and noise:\u0026nbsp;Contidrom, Jeversen, Germany\u003cbr\u003e\n- Dry handling and braking: Bridgestone, Rome, Italy\u003cbr\u003e\n- Mileage: ADAC wear test around Landsberg am Lech\u0026nbsp;\u003c/p\u003e\n\u003cp\u003e\u003cb\u003eAbout our PremiumContact 7\u003c/b\u003e\u003c/p\u003e\n\u003cp\u003e+ Very well-balanced tire\u003cbr\u003e\n+ Best in driving safety\u003cbr\u003e\n+ Highest score in efficiency\u003cbr\u003e\n+ Highest score in sustainability, good mileage\u003cbr\u003e\n-\u0026nbsp; Only average in noise\u003c/p\u003e\n&#34;,&#34;expirationDate&#34;:&#34;2028-02-28&#34;},{&#34;title&#34;:&#34;ACE&#34;,&#34;imageRef&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/test-logos/Continental__PremiumContact-7__TestResult__ACE__032024__EN.png&#34;,&#34;processedImageUrl&#34;:&#34;/adobe/dynamicmedia/deliver/dm-aid--0693788c-08b1-4374-bcf4-cdc7085ceb0c/Continental__PremiumContact-7__TestResult__ACE__032024__EN.png.webp?preferwebp\u003dtrue\u0026quality\u003d85&#34;,&#34;altText&#34;:&#34;Continental PremiumContact 7 is the ACE Test winner&#34;,&#34;badgeDescription&#34;:&#34;\u003cp\u003eThe\u0026nbsp;\u003cb\u003eGerman ACE\u0026nbsp;\u003c/b\u003e(Auto Club Europa) together with the\u003cb\u003e\u0026nbsp;GTÜ\u0026nbsp;\u003c/b\u003e(Gesellschaft für Technische Überwachung mbH) and\u0026nbsp;\u0026nbsp;\u003cb\u003eARBÖ\u0026nbsp;\u003c/b\u003e(Auto-, Motor- und Radfahrerbund Österreichs) have published their\u0026nbsp;\u003cb\u003eSummer Tire Test 2024\u003c/b\u003e.\u003c/p\u003e\n\u003cp\u003eThe tested tire size was\u0026nbsp;\u003cb\u003e225/45 R17 94 W/Y,\u003c/b\u003e\u0026nbsp;test vehicles were\u0026nbsp;\u003cb\u003eVolkswagen Golf and Opel Astra.\u003c/b\u003e\u003c/p\u003e\n&#34;,&#34;expirationDate&#34;:&#34;&#34;}]">
+        <div class="cmp-product-detail-stage-base__container placeholder" style="background-color: rgb(244, 244, 244);">
+  <div class="cmp-product-detail-stage-base__gradient"></div>
+  <div class="cmp-container cmp-product-detail-stage-base__content">
+    <div class="cmp-product-detail-stage-base__title">
+      <div class="cmp-title "><h1 class="cmp-title__text cmp-title-like-h5">(name of the tire)</h1></div>
+      <div class="cmp-title "><h2 class="cmp-title__text cmp-title-like-h1    ">(tire description)</h2></div>
+    </div>
+    <div class="image">
+      <div class="cmp-image shadow">
+        <div class="alice-carousel">
+          <div>
+            <div class="alice-carousel__wrapper" style="padding-left: 0px; padding-right: 0px;">
+              <ul class="alice-carousel__stage" style="transition: transform; transform: translate3d(0px, 0px, 0px);">
+                <li class="alice-carousel__stage-item __active __target" style="width: 356px;">
+                  <img class="cmp-image__image " src="https://www.continental-tyres.co.uk/adobe/dynamicmedia/deliver/dm-aid--ea8b6659-163b-407d-8037-d0195cd09afa/Continental__PremiumContact_6__ProductPicture__30.webp?preferwebp=true&amp;quality=85&amp;width=600"/>
+                </li>
+                <li class="alice-carousel__stage-item" style="width: 356px;"><img class="cmp-image__image " alt="Product picture PremiumContact 6" src="https://www.continental-tyres.co.uk/adobe/dynamicmedia/deliver/dm-aid--ea8b6659-163b-407d-8037-d0195cd09afa/Continental__PremiumContact_6__ProductPicture__30.webp?preferwebp=true&amp;quality=85&amp;width=600"/>
+                </li>
+                <li class="alice-carousel__stage-item" style="width: 356px;"><img class="cmp-image__image " alt="Product picture PremiumContact 6" src="https://www.continental-tyres.co.uk/adobe/dynamicmedia/deliver/dm-aid--ea8b6659-163b-407d-8037-d0195cd09afa/Continental__PremiumContact_6__ProductPicture__30.webp?preferwebp=true&amp;quality=85&amp;width=600"/>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="alice-carousel__dots">
+            <li class="alice-carousel__dots-item __active __custom"><img alt="" class="alice-carousel__dots-item-image" src="/content/dam/conti-tires-cms/continental/b2c/products/plt/Continental__PremiumContact-6__ProductPicture__30.png"/>
+            </li>
+            <li class="alice-carousel__dots-item __custom"><img alt="" class="alice-carousel__dots-item-image" src="/content/dam/conti-tires-cms/continental/b2c/products/plt/Continental__PremiumContact-6__ProductPicture__0.png"/>
+            </li>
+            <li class="alice-carousel__dots-item __custom"><img alt="" class="alice-carousel__dots-item-image" src="/content/dam/conti-tires-cms/continental/b2c/products/plt/Continental__PremiumContact-6__ProductPicture__90.png"/>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="regular-mode">
+      <div class="fitCheck__container ">
+        <div class="stage-basic-icons--container"><img src="/content/dam/conti-tires-cms/sample-content/icon-samples/Continental_Icons_Final/Vehicles/PLT/passenger_car.svg" alt="Passenger Car" title="Passenger Car" class="stage-basic-icons--icon"/><img src="/content/dam/conti-tires-cms/sample-content/icon-samples/attributes/summer.svg" alt="Summer Tyres" title="Summer Tyres" class="stage-basic-icons--icon"/></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+    
+
+</div>
+<div class="product-detail-page-subline aem-GridColumn aem-GridColumn--default--12"><div class="cmp-product-detail-page-subline"></div>
+</div>
+<div class="benefitsstandard aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--1"><div class="cmp-benefits-standard">
+
+</div>
+</div>
+<div class="container responsivegrid container--normal-width aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-c3f96887e1" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="separator transparent separator-sm aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div id="separator-2452076875" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="video dynamicmedia parbase aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--default--1"><!-- /*
+  Copyright 2016 Adobe Systems Incorporated
+  All Rights Reserved.
+
+  NOTICE:  All information contained herein is, and remains
+  the property of Adobe Systems Incorporated and its suppliers,
+  if any.  The intellectual and technical concepts contained
+  herein are proprietary to Adobe Systems Incorporated and its
+  suppliers and are protected by trade secret or copyright law.
+  Dissemination of this information or reproduction of this material
+  is strictly forbidden unless prior written permission is obtained
+  from Adobe Systems Incorporated.
+*/ -->
+
+<div class="cmp-video-module cmp-video-module--">
+    
+        
+    
+<link rel="stylesheet" href="/etc.clientlibs/dam/components/scene7/dynamicmedia/clientlibs/dynamicmedia.lc-a97e0418f0d0d6fe2eea57c7dc5e8804-lc.min.css" type="text/css">
+<script src="/libs/dam/components/scene7/common/clientlibs/viewer.lc-286d51076949b1908ec34d18f81e6977-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js"></script>
+<script src="/etc.clientlibs/dam/components/scene7/dynamicmedia/clientlibs/dynamicmedia.lc-4f773adfd7a16857b6d1a3370ab17eba-lc.min.js"></script>
+<script src="/libs/dam/components/scene7/common/clientlibs/i18n.lc-b58a29e31169aff220dc1e89391c5572-lc.min.js"></script>
+
+
+
+        <!-- /* Viewer container when there is an asset */ -->
+        <div class="cq-dd-image ">
+            <div id="dynamicmedia_69952206" data-current-page="/content/conti-tires-cms/ww/en/products/car/tires/premiumcontact-7" data-page-locale="en_ww" data-asset-path="conti/221004-PR-Continental-PremiumContact7_Video-AVS" data-asset-name="221004-PR-Continental-PremiumContact7_Video.mp4" data-asset-type="videoavs" data-viewer-type="VideoViewer" data-viewer-path="https://s7g10.scene7.com/s7viewers/" data-imageserver="https://s7g10.scene7.com/is/image/" data-videoserver="https://s7g10.scene7.com/is/content/" data-contenturl="https://s7g10.scene7.com/is/content/" data-config="/conti/Video_social|VIDEO|false" data-wcmdisabled data-dms7 data-title="Continental PremiumContact 7" class="s7dm-dynamic-media  cmp-video-module-asset-wrapper">
+            </div>
+        </div>
+        <!-- /* Placeholder when there is no content */ -->
+        
+    
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container--default aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-8aab2fe866" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="separator transparent separator-sm aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div id="separator-d4bcd3d8b9" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="title title-margin-top-none title-margin--mobile-top-none aem-GridColumn aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;title-46eeaa6146&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;Technical Details&#34;}}" id="title-46eeaa6146" class="cmp-title">
+    <h2 class="cmp-title__text">Technical Details</h2>
+</div>
+
+    
+
+</div>
+<div class="tabs panelcontainer aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--default--1">
+<div id="tabs-804e37a8c0" class="cmp-tabs" data-cmp-is="tabs" data-cmp-data-layer="{&#34;tabs-804e37a8c0&#34;:{&#34;shownItems&#34;:[&#34;tabs-804e37a8c0-item-ae299b1428&#34;],&#34;@type&#34;:&#34;conti-tires-cms/components/tabs&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;}}" data-placeholder-text="false">
+    <ol role="tablist" class="cmp-tabs__tablist" aria-multiselectable="false">
+        
+        <li role="tab" id="tabs-804e37a8c0-item-ae299b1428-tab" class="cmp-tabs__tab cmp-tabs__tab--active" aria-controls="tabs-804e37a8c0-item-ae299b1428-tabpanel" tabindex="0" data-cmp-hook-tabs="tab">Handling</li>
+    
+        
+        <li role="tab" id="tabs-804e37a8c0-item-6bf3707293-tab" class="cmp-tabs__tab" aria-controls="tabs-804e37a8c0-item-6bf3707293-tabpanel" tabindex="-1" data-cmp-hook-tabs="tab">Comfort</li>
+    
+        
+        <li role="tab" id="tabs-804e37a8c0-item-9102b226cf-tab" class="cmp-tabs__tab" aria-controls="tabs-804e37a8c0-item-9102b226cf-tabpanel" tabindex="-1" data-cmp-hook-tabs="tab">Safety</li>
+    
+        
+        <li role="tab" id="tabs-804e37a8c0-item-0514838612-tab" class="cmp-tabs__tab" aria-controls="tabs-804e37a8c0-item-0514838612-tabpanel" tabindex="-1" data-cmp-hook-tabs="tab">EV-compatible </li>
+    
+        
+        <li role="tab" id="tabs-804e37a8c0-item-35bbf2bd97-tab" class="cmp-tabs__tab" aria-controls="tabs-804e37a8c0-item-35bbf2bd97-tabpanel" tabindex="-1" data-cmp-hook-tabs="tab">exPLAINed</li>
+    </ol>
+    <div id="tabs-804e37a8c0-item-ae299b1428-tabpanel" role="tabpanel" aria-labelledby="tabs-804e37a8c0-item-ae299b1428-tab" tabindex="0" class="cmp-tabs__tabpanel cmp-tabs__tabpanel--active" data-cmp-hook-tabs="tabpanel" data-cmp-data-layer="{&#34;tabs-804e37a8c0-item-ae299b1428&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/tabs/item&#34;,&#34;dc:title&#34;:&#34;Handling&#34;}}"><div class="container responsivegrid container--default">
+
+    
+    <div id="container-ae299b1428" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--10 aem-Grid--default--10 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;title-7362394e56&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;Look forward to handling any weather.&#34;}}" id="title-7362394e56" class="cmp-title">
+    <h4 class="cmp-title__text">Look forward to handling any weather.</h4>
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid text-and-image--image-full-height aem-GridColumn aem-GridColumn--default--10"><div class="text-and-image cmp-container">
+  <div class="content-wrapper aem-Grid aem-Grid--12 aem-Grid--default--12">
+    <div class="text
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-data-layer="{&#34;text-81fa762154&#34;:{&#34;@type&#34;:&#34;core/wcm/components/text/v2/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Since weather conditions should never impact your level of safety and driving comfort, we designed a tire that allows precise handling on wet and dry roads. Due to its adaptive pattern technology, this tire can take you anywhere without ever leaving your comfort zone.&lt;/p>\r\n&#34;}}" id="text-81fa762154" class="cmp-text">
+    <p>Since weather conditions should never impact your level of safety and driving comfort, we designed a tire that allows precise handling on wet and dry roads. Due to its adaptive pattern technology, this tire can take you anywhere without ever leaving your comfort zone.</p>
+
+</div>
+
+    
+
+
+    </div>
+    <div class="image
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-is="image" data-cmp-widths="320,480,600,800,1024,1200,1600,2000,2500" data-cmp-src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85{.width}.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif" data-cmp-filereference="/content/dam/conti-tires-cms/continental/b2c/products/plt/additional-product-assets/technical-highlight-images/Continental_PremiumContact7_Technical_Highlights_Safe_handling.gif" id="image-81fa762154" data-cmp-data-layer="{&#34;image-81fa762154&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;PremiumContact 7 - Safe Handling&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;1e5dbf56-6ee2-4126-b5c8-b418631136b8&#34;,&#34;repo:modifyDate&#34;:&#34;2024-01-24T09:51:16Z&#34;,&#34;@type&#34;:&#34;image/gif&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/additional-product-assets/technical-highlight-images/Continental_PremiumContact7_Technical_Highlights_Safe_handling.gif&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    
+        <img src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif" srcset="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.320.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 320w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.480.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 480w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.600.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.800.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 800w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.1024.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 1024w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.1200.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 1200w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.1600.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 1600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.2000.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 2000w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1/text_and_image.coreimg.85.2500.gif/1731581976790/continental-premiumcontact7-technical-highlights-safe-handling.gif 2500w" loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="884" height="884" alt="Continental PremiumContact 7 - Safety"/>
+    
+    <span class="cmp-image__title" itemprop="caption">PremiumContact 7 - Safe Handling</span>
+    
+</div>
+
+    
+
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+</div>
+<div id="tabs-804e37a8c0-item-6bf3707293-tabpanel" role="tabpanel" aria-labelledby="tabs-804e37a8c0-item-6bf3707293-tab" tabindex="0" class="cmp-tabs__tabpanel" data-cmp-hook-tabs="tabpanel" data-cmp-data-layer="{&#34;tabs-804e37a8c0-item-6bf3707293&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/tabs/item&#34;,&#34;dc:title&#34;:&#34;Comfort&#34;}}"><div class="container responsivegrid container--default">
+
+    
+    <div id="container-6bf3707293" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--10 aem-Grid--default--10 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;title-3ffdbb5bf1&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;Comfort meets safety, no matter which drive you choose.&#34;}}" id="title-3ffdbb5bf1" class="cmp-title">
+    <h4 class="cmp-title__text">Comfort meets safety, no matter which drive you choose.</h4>
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid text-and-image--image-full-height aem-GridColumn aem-GridColumn--default--10"><div class="text-and-image cmp-container">
+  <div class="content-wrapper aem-Grid aem-Grid--12 aem-Grid--default--12">
+    <div class="text
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-data-layer="{&#34;text-93026c5e6b&#34;:{&#34;@type&#34;:&#34;core/wcm/components/text/v2/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Whether you want to take your family for a summer road trip in your saloon car or just enjoy driving in your electric hot hatch, the PremiumContact 7 provides outstanding comfort, reliable safety, and improved mileage independent from the vehicle configuration. Because we think that a premium driving experience shouldn’t depend on the type of car you drive.&lt;/p>\r\n&#34;}}" id="text-93026c5e6b" class="cmp-text">
+    <p>Whether you want to take your family for a summer road trip in your saloon car or just enjoy driving in your electric hot hatch, the PremiumContact 7 provides outstanding comfort, reliable safety, and improved mileage independent from the vehicle configuration. Because we think that a premium driving experience shouldn’t depend on the type of car you drive.</p>
+
+</div>
+
+    
+
+
+    </div>
+    <div class="image
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-is="image" data-cmp-widths="320,480,600,800,1024,1200,1600,2000,2500" data-cmp-src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85{.width}.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif" data-cmp-filereference="/content/dam/conti-tires-cms/continental/b2c/products/plt/additional-product-assets/technical-highlight-images/Continental_PremiumContact7_Technical_Highlights_Clustering.gif" id="image-93026c5e6b" data-cmp-data-layer="{&#34;image-93026c5e6b&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;7c4c4801-7977-4031-abf0-6de67d6a1fbf&#34;,&#34;repo:modifyDate&#34;:&#34;2024-01-24T09:51:16Z&#34;,&#34;@type&#34;:&#34;image/gif&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/additional-product-assets/technical-highlight-images/Continental_PremiumContact7_Technical_Highlights_Clustering.gif&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    
+        <img src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif" srcset="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.320.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 320w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.480.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 480w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.600.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.800.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 800w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.1024.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 1024w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.1200.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 1200w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.1600.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 1600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.2000.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 2000w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_2/text_and_image_copy.coreimg.85.2500.gif/1731581976859/continental-premiumcontact7-technical-highlights-clustering.gif 2500w" loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="764" height="764" alt="Continental PremiumContact 7 - Comfort"/>
+    
+    
+    
+</div>
+
+    
+
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+</div>
+<div id="tabs-804e37a8c0-item-9102b226cf-tabpanel" role="tabpanel" aria-labelledby="tabs-804e37a8c0-item-9102b226cf-tab" tabindex="0" class="cmp-tabs__tabpanel" data-cmp-hook-tabs="tabpanel" data-cmp-data-layer="{&#34;tabs-804e37a8c0-item-9102b226cf&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/tabs/item&#34;,&#34;dc:title&#34;:&#34;Safety&#34;}}"><div class="container responsivegrid container--default">
+
+    
+    <div id="container-9102b226cf" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--10 aem-Grid--default--10 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;title-7ee8542ab1&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;No need to warm up first.&#34;}}" id="title-7ee8542ab1" class="cmp-title">
+    <h4 class="cmp-title__text">No need to warm up first.</h4>
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid text-and-image--image-full-height aem-GridColumn aem-GridColumn--default--10"><div class="text-and-image cmp-container">
+  <div class="content-wrapper aem-Grid aem-Grid--12 aem-Grid--default--12">
+    <div class="text
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-data-layer="{&#34;text-2806d93e67&#34;:{&#34;@type&#34;:&#34;core/wcm/components/text/v2/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>‘Every runner needs a proper warm-up first!’ We have all heard that sentence in sport. But every rule has an exception. The new RedChili compound of the PremiumContact 7 makes you skip any heat-up phase and enables safe braking right from the start. Time to experience a tire that is ready before you are.&lt;/p>\r\n&#34;}}" id="text-2806d93e67" class="cmp-text">
+    <p>‘Every runner needs a proper warm-up first!’ We have all heard that sentence in sport. But every rule has an exception. The new RedChili compound of the PremiumContact 7 makes you skip any heat-up phase and enables safe braking right from the start. Time to experience a tire that is ready before you are.</p>
+
+</div>
+
+    
+
+
+    </div>
+    <div class="image
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-is="image" data-cmp-widths="320,480,600,800,1024,1200,1600,2000,2500" data-cmp-src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85{.width}.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif" data-cmp-filereference="/content/dam/conti-tires-cms/continental/b2c/products/plt/additional-product-assets/technical-highlight-images/Continental_PremiumContact7_Technical_Highlights_RedChili.gif" id="image-2806d93e67" data-cmp-data-layer="{&#34;image-2806d93e67&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;a3f7d97b-481c-4b57-adc8-dd1984a1968a&#34;,&#34;repo:modifyDate&#34;:&#34;2024-01-24T09:51:16Z&#34;,&#34;@type&#34;:&#34;image/gif&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/additional-product-assets/technical-highlight-images/Continental_PremiumContact7_Technical_Highlights_RedChili.gif&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    
+        <img src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif" srcset="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.320.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 320w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.480.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 480w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.600.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.800.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 800w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.1024.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 1024w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.1200.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 1200w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.1600.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 1600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.2000.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 2000w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877966487/text_and_image_copy_.coreimg.85.2500.gif/1731581976929/continental-premiumcontact7-technical-highlights-redchili.gif 2500w" loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="876" height="876" alt="Continental PremiumContact 7 - Handling"/>
+    
+    
+    
+</div>
+
+    
+
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+</div>
+<div id="tabs-804e37a8c0-item-0514838612-tabpanel" role="tabpanel" aria-labelledby="tabs-804e37a8c0-item-0514838612-tab" tabindex="0" class="cmp-tabs__tabpanel" data-cmp-hook-tabs="tabpanel" data-cmp-data-layer="{&#34;tabs-804e37a8c0-item-0514838612&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/tabs/item&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;EV-compatible &#34;}}"><div class="container responsivegrid container--default">
+
+    
+    <div id="container-0514838612" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--10 aem-Grid--default--10 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;title-c038cc9318&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;dc:title&#34;:&#34;We make you ready for e-mobility.&#34;}}" id="title-c038cc9318" class="cmp-title">
+    <h4 class="cmp-title__text">We make you ready for e-mobility.</h4>
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid text-and-image--image-full-width aem-GridColumn aem-GridColumn--default--10"><div class="text-and-image cmp-container">
+  <div class="content-wrapper aem-Grid aem-Grid--12 aem-Grid--default--12">
+    <div class="text
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-data-layer="{&#34;text-2b4968886e&#34;:{&#34;@type&#34;:&#34;core/wcm/components/text/v2/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Our EV-compatible symbol confirms that the tire meets the requirements of electric vehicles as well as cars with combustion or hybrid engines.&lt;/p>\r\n&#34;}}" id="text-2b4968886e" class="cmp-text">
+    <p>Our EV-compatible symbol confirms that the tire meets the requirements of electric vehicles as well as cars with combustion or hybrid engines.</p>
+
+</div>
+
+    
+
+
+    </div>
+    <div class="image
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-is="image" data-cmp-widths="320,480,600,800,1024,1200,1600,2000,2500" data-cmp-src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85{.width}.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png" data-cmp-filereference="/content/dam/conti-tires-cms/continental/b2c/technologies/car/EV-Compatible-logo_Electric-Vehicle-Check_Mark.png" id="image-2b4968886e" data-cmp-data-layer="{&#34;image-2b4968886e&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:36Z&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;3cda2e13-e572-4a28-9ade-70251f76f8c8&#34;,&#34;repo:modifyDate&#34;:&#34;2023-01-09T11:02:19Z&#34;,&#34;@type&#34;:&#34;image/png&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/technologies/car/EV-Compatible-logo_Electric-Vehicle-Check_Mark.png&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    
+        <img src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png" srcset="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.320.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 320w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.480.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 480w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.600.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.800.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 800w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.1024.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 1024w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.1200.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 1200w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.1600.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 1600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.2000.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 2000w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container/tabs/item_1683877973204/text_and_image_copy_.coreimg.85.2500.png/1731581976999/ev-compatible-logo-electric-vehicle-check-mark.png 2500w" loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="9009" height="3000" alt="Continental PremiumContact 7 - EV compatible"/>
+    
+    
+    
+</div>
+
+    
+
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+</div>
+<div id="tabs-804e37a8c0-item-35bbf2bd97-tabpanel" role="tabpanel" aria-labelledby="tabs-804e37a8c0-item-35bbf2bd97-tab" tabindex="0" class="cmp-tabs__tabpanel" data-cmp-hook-tabs="tabpanel" data-cmp-data-layer="{&#34;tabs-804e37a8c0-item-35bbf2bd97&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/tabs/item&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;dc:title&#34;:&#34;exPLAINed&#34;}}"><div class="container responsivegrid container--default">
+
+    
+    <div id="container-35bbf2bd97" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--10 aem-Grid--default--10 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;title-035bc04e12&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;dc:title&#34;:&#34;Want to know more?\nDiscover all new product features and benefits.&#34;}}" id="title-035bc04e12" class="cmp-title">
+    <h4 class="cmp-title__text">Want to know more?
+Discover all new product features and benefits.</h4>
+</div>
+
+    
+
+</div>
+<div class="text aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;text-cd523fed38&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>German engineered safety for outstanding comfort.&lt;/p>\r\n&#34;}}" id="text-cd523fed38" class="cmp-text">
+    <p>German engineered safety for outstanding comfort.</p>
+
+</div>
+
+    
+
+</div>
+<div class="embed aem-GridColumn aem-GridColumn--default--10">
+    <div data-cmp-data-layer="{&#34;embed-4961a65a1e&#34;:{&#34;@type&#34;:&#34;core/wcm/components/embed/v2/embed&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;}}" id="conti-embed" class="cmp-embed">
+        
+    
+    
+    <iframe width="200" height="113" src="https://www.youtube.com/embed/Ha0PBT8vHTE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="exPLAINed: The Continental PremiumContact 7"></iframe>
+
+        
+        
+    </div>
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+<div class="separator transparent separator-sm aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-07fe1472ff" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container--normal-width aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-3990f859de" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="title title-margin-top-none title-margin--mobile-top-none aem-GridColumn aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;title-ca1e4b4077&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;dc:title&#34;:&#34;Test results&#34;}}" id="title-ca1e4b4077" class="cmp-title">
+    <h2 class="cmp-title__text">Test results</h2>
+</div>
+
+    
+
+</div>
+<div class="tabs panelcontainer aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--default--1">
+<div id="tabs-6b4284d965" class="cmp-tabs" data-cmp-is="tabs" data-cmp-data-layer="{&#34;tabs-6b4284d965&#34;:{&#34;shownItems&#34;:[&#34;tabs-6b4284d965-item-dc7bb9d4d2&#34;],&#34;@type&#34;:&#34;conti-tires-cms/components/tabs&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;}}" data-placeholder-text="false">
+    <ol role="tablist" class="cmp-tabs__tablist" aria-multiselectable="false">
+        
+        <li role="tab" id="tabs-6b4284d965-item-dc7bb9d4d2-tab" class="cmp-tabs__tab cmp-tabs__tab--active" aria-controls="tabs-6b4284d965-item-dc7bb9d4d2-tabpanel" tabindex="0" data-cmp-hook-tabs="tab">ACE</li>
+    </ol>
+    <div id="tabs-6b4284d965-item-dc7bb9d4d2-tabpanel" role="tabpanel" aria-labelledby="tabs-6b4284d965-item-dc7bb9d4d2-tab" tabindex="0" class="cmp-tabs__tabpanel cmp-tabs__tabpanel--active" data-cmp-hook-tabs="tabpanel" data-cmp-data-layer="{&#34;tabs-6b4284d965-item-dc7bb9d4d2&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/tabs/item&#34;,&#34;dc:title&#34;:&#34;ACE&#34;}}"><div class="container responsivegrid container--default">
+
+    
+    <div id="container-dc7bb9d4d2" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--10 aem-Grid--default--10 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--10">
+<div data-cmp-data-layer="{&#34;title-dc238df34e&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;dc:title&#34;:&#34;Highly recommended, Test winner&#34;}}" id="title-dc238df34e" class="cmp-title">
+    <h4 class="cmp-title__text">Highly recommended, Test winner</h4>
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid text-and-image--image-full-width aem-GridColumn aem-GridColumn--default--10"><div class="text-and-image cmp-container">
+  <div class="content-wrapper aem-Grid aem-Grid--12 aem-Grid--default--12">
+    <div class="text
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-data-layer="{&#34;text-cb56f3a230&#34;:{&#34;@type&#34;:&#34;core/wcm/components/text/v2/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>The &lt;b>German ACE &lt;/b>(Auto Club Europa) together with the&lt;b> GTÜ&amp;nbsp;&lt;/b>(Gesellschaft für Technische Überwachung mbH) and&amp;nbsp;&amp;nbsp;&lt;b>ARBÖ &lt;/b>(Auto-, Motor- und Radfahrerbund Österreichs) have published their &lt;b>Summer Tire Test 2024&lt;/b>.&lt;/p>\r\n&lt;p>The tested tire size was &lt;b>225/45 R17 94 W/Y,&lt;/b> test vehicles were&amp;nbsp;&lt;b>Volkswagen Golf and Opel Astra.&lt;/b>&lt;/p>\r\n&lt;p>The test was conducted by the ACE in&lt;b> cooperation with Pirelli &lt;/b>at the&amp;nbsp;&lt;b>TRIWO proving ground, Pferdsfeld, Germany.&amp;nbsp;&lt;/b>&lt;/p>\r\n&lt;p>&lt;b>About our PremiumContact 7&lt;/b>&lt;/p>\r\n&lt;p>+&amp;nbsp;Best in wet- and dry-braking&lt;br>\r\n&lt;/p>\r\n&lt;p>+ Safest tire of all tested candidates&lt;/p>\r\n&lt;p>+&amp;nbsp;Very good and well-balanced wet handling&lt;/p>\r\n&lt;p>- &amp;nbsp;Worst in exterior noise&lt;/p>\r\n&#34;}}" id="text-cb56f3a230" class="cmp-text">
+    <p>The <b>German ACE </b>(Auto Club Europa) together with the<b> GTÜ </b>(Gesellschaft für Technische Überwachung mbH) and  <b>ARBÖ </b>(Auto-, Motor- und Radfahrerbund Österreichs) have published their <b>Summer Tire Test 2024</b>.</p>
+<p>The tested tire size was <b>225/45 R17 94 W/Y,</b> test vehicles were <b>Volkswagen Golf and Opel Astra.</b></p>
+<p>The test was conducted by the ACE in<b> cooperation with Pirelli </b>at the <b>TRIWO proving ground, Pferdsfeld, Germany. </b></p>
+<p><b>About our PremiumContact 7</b></p>
+<p>&#43; Best in wet- and dry-braking<br />
+</p>
+<p>&#43; Safest tire of all tested candidates</p>
+<p>&#43; Very good and well-balanced wet handling</p>
+<p>-  Worst in exterior noise</p>
+
+</div>
+
+    
+
+
+    </div>
+    <div class="image
+        aem-GridColumn--default--none
+        aem-GridColumn--phone--none
+        aem-GridColumn--phone--12
+        aem-GridColumn
+        aem-GridColumn--default--6
+        aem-GridColumn--offset--phone--0
+        aem-GridColumn--offset--default--0">
+      
+<div data-cmp-is="image" data-cmp-widths="320,480,600,800,1024,1200,1600,2000,2500" data-cmp-src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85{.width}.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png" data-cmp-filereference="/content/dam/conti-tires-cms/continental/b2c/products/plt/test-logos/Continental__PremiumContact-7__TestResult__ACE__032024__EN.png" id="image-cb56f3a230" data-cmp-data-layer="{&#34;image-cb56f3a230&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;0693788c-08b1-4374-bcf4-cdc7085ceb0c&#34;,&#34;repo:modifyDate&#34;:&#34;2024-03-28T14:07:57Z&#34;,&#34;@type&#34;:&#34;image/png&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/b2c/products/plt/test-logos/Continental__PremiumContact-7__TestResult__ACE__032024__EN.png&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    
+        <img src="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png" srcset="/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.320.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 320w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.480.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 480w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.600.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.800.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 800w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.1024.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 1024w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.1200.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 1200w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.1600.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 1600w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.2000.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 2000w,/products/car/tires/premiumcontact-7/_jcr_content/root/container/container_1190467136/tabs_copy/item_1/text_and_image.coreimg.85.2500.png/1731581977319/continental--premiumcontact-7--testresult--ace--032024--en.png 2500w" loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="2500" height="1770" alt="Continental PremiumContact 7 - ACE Test winner"/>
+    
+    
+    
+</div>
+
+    
+
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+<div class="separator transparent separator-sm aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-982101d8d8" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="producttechnologies aem-GridColumn aem-GridColumn--default--12"><div class="cmp-product-technologies">
+</div>
+</div>
+<div class="oe-factory-fit aem-GridColumn aem-GridColumn--default--12"><div>
+
+    <div class="cmp-oe-factory-fit">
+
+    </div>
+</div>
+
+    
+</div>
+<div class="ghost aem-GridColumn aem-GridColumn--default--12">
+
+</div>
+<div class="ghost aem-GridColumn aem-GridColumn--default--12">
+
+</div>
+<div class="product-range aem-GridColumn aem-GridColumn--default--12"><div>
+
+<div class="cmp-product-range" data-rim-size-units="inch" data-checkmark-icon="/content/dam/conti-tires-cms/continental/icons/check.svg" data-icon-ev_compatible="/content/dam/conti-tires-cms/continental/icons/EV-checkmark.svg" data-icon-designed-for-E-Vs="/content/dam/conti-tires-cms/continental/icons/Designed_For_EV.svg" data-show-user-guidance="true" data-guidance-alternative-pages="[{&#34;title&#34;:&#34;Albania&#34;,&#34;url&#34;:&#34;/al/sq/&#34;},{&#34;title&#34;:&#34;Andean Region&#34;,&#34;url&#34;:&#34;/bo/es/&#34;},{&#34;title&#34;:&#34;Argentina&#34;,&#34;url&#34;:&#34;/ar/es/&#34;},{&#34;title&#34;:&#34;Asia Pacific&#34;,&#34;url&#34;:&#34;/kh/en/&#34;},{&#34;title&#34;:&#34;Australia&#34;,&#34;url&#34;:&#34;/au/en/&#34;},{&#34;title&#34;:&#34;Austria&#34;,&#34;url&#34;:&#34;/at/de/&#34;},{&#34;title&#34;:&#34;Belgium (French)&#34;,&#34;url&#34;:&#34;/be/fr/&#34;},{&#34;title&#34;:&#34;Belgium (Dutch)&#34;,&#34;url&#34;:&#34;/be/nl/&#34;},{&#34;title&#34;:&#34;Bosnia (Bosnian)&#34;,&#34;url&#34;:&#34;/ba/bs/&#34;},{&#34;title&#34;:&#34;Bosnia (Croatian)&#34;,&#34;url&#34;:&#34;/ba/hr/&#34;},{&#34;title&#34;:&#34;Bosnia (Serbian)&#34;,&#34;url&#34;:&#34;/ba/sr/&#34;},{&#34;title&#34;:&#34;Brazil&#34;,&#34;url&#34;:&#34;https://www.conti.com.br/&#34;},{&#34;title&#34;:&#34;Bulgaria&#34;,&#34;url&#34;:&#34;/bg/bg/&#34;},{&#34;title&#34;:&#34;Canada (English)&#34;,&#34;url&#34;:&#34;/ca/en/&#34;},{&#34;title&#34;:&#34;Canada (French)&#34;,&#34;url&#34;:&#34;/ca/fr/&#34;},{&#34;title&#34;:&#34;Chile&#34;,&#34;url&#34;:&#34;/cl/es/&#34;},{&#34;title&#34;:&#34;Colombia&#34;,&#34;url&#34;:&#34;/co/es/&#34;},{&#34;title&#34;:&#34;Croatia&#34;,&#34;url&#34;:&#34;/hr/hr/&#34;},{&#34;title&#34;:&#34;Czech Republic&#34;,&#34;url&#34;:&#34;/cz/cs/&#34;},{&#34;title&#34;:&#34;Denmark&#34;,&#34;url&#34;:&#34;/dk/da/&#34;},{&#34;title&#34;:&#34;Ecuador&#34;,&#34;url&#34;:&#34;/ec/es/&#34;},{&#34;title&#34;:&#34;Continental Neumáticos España&#34;,&#34;url&#34;:&#34;https://www.continental-neumaticos.es/&#34;},{&#34;title&#34;:&#34;Estonia &#34;,&#34;url&#34;:&#34;/ee/et/&#34;},{&#34;title&#34;:&#34;Finland&#34;,&#34;url&#34;:&#34;/fi/fi/&#34;},{&#34;title&#34;:&#34;France&#34;,&#34;url&#34;:&#34;/fr/fr/&#34;},{&#34;title&#34;:&#34;Germany&#34;,&#34;url&#34;:&#34;https://www.continental-reifen.de/&#34;},{&#34;title&#34;:&#34;Greece&#34;,&#34;url&#34;:&#34;/gr/el/&#34;},{&#34;title&#34;:&#34;Hong Kong (Chinese)&#34;,&#34;url&#34;:&#34;/hk/zh/&#34;},{&#34;title&#34;:&#34;Hong Kong (English)&#34;,&#34;url&#34;:&#34;/hk/en/&#34;},{&#34;title&#34;:&#34;Hungary&#34;,&#34;url&#34;:&#34;/hu/hu/&#34;},{&#34;title&#34;:&#34;India&#34;,&#34;url&#34;:&#34;/in/en/&#34;},{&#34;title&#34;:&#34;Indonesia&#34;,&#34;url&#34;:&#34;/id/en/&#34;},{&#34;title&#34;:&#34;Israel (English)&#34;,&#34;url&#34;:&#34;/il/en/&#34;},{&#34;title&#34;:&#34;Israel (Hebrew)&#34;,&#34;url&#34;:&#34;/il/he/&#34;},{&#34;title&#34;:&#34;Italian&#34;,&#34;url&#34;:&#34;https://www.continental-pneumatici.it/&#34;},{&#34;title&#34;:&#34;Japan&#34;,&#34;url&#34;:&#34;/jp/ja/&#34;},{&#34;title&#34;:&#34;Latvia&#34;,&#34;url&#34;:&#34;/lv/lv/&#34;},{&#34;title&#34;:&#34;Lithuania&#34;,&#34;url&#34;:&#34;/lt/lt/&#34;},{&#34;title&#34;:&#34;Macedonia&#34;,&#34;url&#34;:&#34;/mk/mk/&#34;},{&#34;title&#34;:&#34;Malaysia&#34;,&#34;url&#34;:&#34;/my/en/&#34;},{&#34;title&#34;:&#34;Mexico&#34;,&#34;url&#34;:&#34;/mx/es/&#34;},{&#34;title&#34;:&#34;Montenegro (Serbian)&#34;,&#34;url&#34;:&#34;/me/sr/&#34;},{&#34;title&#34;:&#34;Netherlands&#34;,&#34;url&#34;:&#34;/nl/nl/&#34;},{&#34;title&#34;:&#34;Norway&#34;,&#34;url&#34;:&#34;/no/nb/&#34;},{&#34;title&#34;:&#34;Paraguay&#34;,&#34;url&#34;:&#34;/py/es/&#34;},{&#34;title&#34;:&#34;Poland&#34;,&#34;url&#34;:&#34;/pl/pl/&#34;},{&#34;title&#34;:&#34;Portugal&#34;,&#34;url&#34;:&#34;/pt/pt/&#34;},{&#34;title&#34;:&#34;Continental Anvelope România&#34;,&#34;url&#34;:&#34;/ro/ro/&#34;},{&#34;title&#34;:&#34;Serbia &#34;,&#34;url&#34;:&#34;/rs/sr/&#34;},{&#34;title&#34;:&#34;Singapore&#34;,&#34;url&#34;:&#34;/sg/en/&#34;},{&#34;title&#34;:&#34;Slovakia&#34;,&#34;url&#34;:&#34;/sk/sk/&#34;},{&#34;title&#34;:&#34;Slovenia&#34;,&#34;url&#34;:&#34;/si/sl/&#34;},{&#34;title&#34;:&#34;South Africa&#34;,&#34;url&#34;:&#34;/za/en/&#34;},{&#34;title&#34;:&#34;콘티넨탈타이어 ㅣ 승용차, EV, SUV, 밴 타이어&#34;,&#34;url&#34;:&#34;/kr/ko/&#34;},{&#34;title&#34;:&#34;Sweden&#34;,&#34;url&#34;:&#34;/se/sv/&#34;},{&#34;title&#34;:&#34;Switzerland (German)&#34;,&#34;url&#34;:&#34;/ch/de/&#34;},{&#34;title&#34;:&#34;Switzerland (French)&#34;,&#34;url&#34;:&#34;/ch/fr/&#34;},{&#34;title&#34;:&#34;Taiwan&#34;,&#34;url&#34;:&#34;/tw/zh/&#34;},{&#34;title&#34;:&#34;Thailand (English)&#34;,&#34;url&#34;:&#34;/th/en/&#34;},{&#34;title&#34;:&#34;Thailand (Thai)&#34;,&#34;url&#34;:&#34;/th/th/&#34;},{&#34;title&#34;:&#34;Türkiye&#34;,&#34;url&#34;:&#34;/tr/tr/&#34;},{&#34;title&#34;:&#34;Ukraine&#34;,&#34;url&#34;:&#34;/ua/uk/&#34;},{&#34;title&#34;:&#34;United Kingdom&#34;,&#34;url&#34;:&#34;https://www.continental-tyres.co.uk/&#34;},{&#34;title&#34;:&#34;Uruguay&#34;,&#34;url&#34;:&#34;/uy/es/&#34;},{&#34;title&#34;:&#34;USA (English)&#34;,&#34;url&#34;:&#34;/us/en/&#34;},{&#34;title&#34;:&#34;USA (French)&#34;,&#34;url&#34;:&#34;/ca/fr/products/truck/&#34;},{&#34;title&#34;:&#34;Vietnam&#34;,&#34;url&#34;:&#34;/vn/vi/&#34;}]" data-guidance-alternative-page-url="/tr/tr/">
+
+    </div>
+</div>
+
+    
+
+</div>
+<div class="dealer-search-teaser teaser aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0"><div id="dealer-search-teaser-21df61cdfd" class="dealer-search-teaser__content-wrapper cmp-teaser cmp-teaser--noimage" data-cmp-data-layer="{&#34;dealer-search-teaser-21df61cdfd&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/dealer-search-teaser&#34;,&#34;repo:modifyDate&#34;:&#34;2024-11-14T10:59:37Z&#34;,&#34;dc:title&#34;:&#34;Where to buy&#34;}}" data-input-placeholder="Enter your city or postcode">
+  
+  <div class="dealer-search-teaser__content">
+    
+    
+
+    
+    <h2 class="cmp-teaser__title">
+        Where to buy
+    </h2>
+
+    
+    
+
+    
+    
+
+    <form action="/products/car/dealer-search/">
+      <div class="dealer-search-teaser__input">
+        <span class="dealer-search-teaser__input-icon"></span>
+        <input class="dealer-search-teaser__input-field" name="search" type="text" placeholder="Enter your city or postcode"/>
+      </div>
+    </form>
+  </div>
+</div>
+
+    
+</div>
+<div class="container responsivegrid container--default aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-48f75827c1" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="separator transparent separator-sm aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-bd429b1112" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-7d43072007" class="cmp-experiencefragment cmp-experiencefragment--plt-product-highlights">
+
+
+    
+    <div id="container-214793c6ca" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid container--default aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-a9d50e8044" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="separator transparent separator-sm aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-4209ea7e78" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="product-highlighting-cards aem-GridColumn aem-GridColumn--default--12"><div class="cmp-product-highlighting-cards">
+
+    <h3 class="cmp-product-highlighting-cards--title">Our tires for summer and allseason</h3>
+
+    <div class="cmp-product-highlighting-cards__slider">
+        <div class="cmp-product-highlighting-cards__slider-controls">
+            <span class="cmp-product-highlighting-cards__slider-prev"></span>
+            <span class="cmp-product-highlighting-cards__slider-next"></span>
+        </div>
+
+        <div class="cmp-product-highlighting-cards__items">
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--a51ceec3-5ea0-462f-a050-fb9e1f597fe3/PremiumContact7_30_degree-AEM.png.webp?preferwebp=true&quality=85&width=480" alt="PremiumContact™ 7"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            <span class="cmp-product-highlighting-cards__product-card--label">Comfortable Rider</span>
+                <h5 class="cmp-product-highlighting-cards__product-card--title">PremiumContact 7</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">Driving safely has never felt better.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/premiumcontact-7/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--93f00ebe-ebb1-4149-b931-c871542b869d/Continental__UltraContact__ProductPicture__30.png.webp?preferwebp=true&quality=85&width=480" alt="Continental__UltraContact__ProductPicture__30.png"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            <span class="cmp-product-highlighting-cards__product-card--label">Durable Performer</span>
+                <h5 class="cmp-product-highlighting-cards__product-card--title">UltraContact</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">Made to endure.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/ultracontact/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--b3fe69ec-259b-4741-bc76-feab12c76bb1/Continental__SportContact-7__ProductPicture__30.png.webp?preferwebp=true&quality=85&width=480" alt="Product picture SportContact 7"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            <span class="cmp-product-highlighting-cards__product-card--label">Sporty Hero</span>
+                <h5 class="cmp-product-highlighting-cards__product-card--title">SportContact  7</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">Stick to your dreams. And to the asphalt.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/sportcontact-7/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--3a2c9086-b705-4f85-8023-c7ddb3dd537f/continental__allseasoncontact-2__productpicture__30.png.webp?preferwebp=true&quality=85&width=480" alt="Continental AllSeasonContact 2 tire"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            <span class="cmp-product-highlighting-cards__product-card--label">All-round Leader</span>
+                <h5 class="cmp-product-highlighting-cards__product-card--title">AllSeasonContact 2</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">You can’t control the weather. But you can be prepared.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/allseasoncontact-2/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--e2d99342-4258-44b1-bc50-c6bde4bd8fdf/continental__ecocontact-7__productpicture__30.png.webp?preferwebp=true&quality=85&width=480" alt="Continental EcoContact 7 car summer tire"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            
+                <h5 class="cmp-product-highlighting-cards__product-card--title">EcoContact 7</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">Trusted by manufacturers. Valued by consumers.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/ecocontact-7/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--d9eb63c6-b8e6-4292-b310-bb44f63738bb/Continental__EcoContact-7-S__ProductPicture__30.png.webp?preferwebp=true&quality=85&width=480" alt="Continental EcoContact 7 S car summer tire"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            
+                <h5 class="cmp-product-highlighting-cards__product-card--title">EcoContact 7 S</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">Trusted by manufacturers. Valued by consumers.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/ecocontact-7-s/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        
+            
+    <div class="cmp-product-highlighting-cards__product-card-wrapper">
+        <div class="cmp-product-highlighting-cards__product-card">
+            <div class="cmp-product-highlighting-cards__product-card--image">
+                <img src="/adobe/dynamicmedia/deliver/dm-aid--9a7725ca-3d5c-4116-b440-d298d29aecee/Continental__CrossContact-H-T__ProductPicture__30.png.webp?preferwebp=true&quality=85&width=480" alt="Continental CrossContact H/T tire"/>
+            </div>
+            <div class="cmp-product-highlighting-cards__product-card--data">
+            
+                <h5 class="cmp-product-highlighting-cards__product-card--title">CrossContact H/T</h5>
+                <p class="cmp-product-highlighting-cards__product-card--description">Made for everyday. Ready for the unexpected.</p>
+                <a class="cmp-product-highlighting-cards__product-card--details-cta" href="https://www.continental-tires.com/products/car/tires/crosscontact-h-t/">View details</a>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <a class="cmp-product-highlighting-cards--button" href="https://www.continental-tires.com/products/car/product-search/">Find your tire</a>
+</div>
+
+
+    
+</div>
+<div class="separator transparent separator-sm aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-d8fc3046aa" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+<div class="separator transparent separator-lg aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-117d437531" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-0e95a881b1" class="cmp-experiencefragment cmp-experiencefragment--contact">
+
+
+    
+    <div id="container-6db22645d3" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="title title-margin-bottom-none title-margin--mobile-bottom-none aem-GridColumn--phone--none aem-GridColumn--phone--10 aem-GridColumn aem-GridColumn--offset--phone--1 aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;title-06c51f1dae&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2023-05-08T14:17:12Z&#34;,&#34;dc:title&#34;:&#34;Still have questions?&#34;}}" id="title-06c51f1dae" class="cmp-title">
+    <h3 class="cmp-title__text">Still have questions?</h3>
+</div>
+
+    
+
+</div>
+<div class="title thin title-margin-top-none title-margin--mobile-top-none aem-GridColumn--phone--none aem-GridColumn--phone--10 aem-GridColumn aem-GridColumn--offset--phone--1 aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;title-42576e7588&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2023-05-08T14:17:12Z&#34;,&#34;dc:title&#34;:&#34;Just ask.&#34;}}" id="title-42576e7588" class="cmp-title">
+    <h3 class="cmp-title__text">Just ask.</h3>
+</div>
+
+    
+
+</div>
+<div class="text aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--10 aem-GridColumn aem-GridColumn--offset--phone--1 aem-GridColumn--default--6 aem-GridColumn--offset--default--3">
+<div data-cmp-data-layer="{&#34;text-71e2aa1a8e&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2024-01-11T08:25:17Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p style=\&#34;text-align: center;\&#34;>We are happy to answer all your questions and support you with our tire expertise.&lt;/p>\r\n&#34;}}" id="text-71e2aa1a8e" class="cmp-text">
+    <p style="	text-align: center;
+">We are happy to answer all your questions and support you with our tire expertise.</p>
+
+</div>
+
+    
+
+</div>
+<div class="button cmp-button--center aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--10 aem-GridColumn aem-GridColumn--offset--default--4 aem-GridColumn--offset--phone--1 aem-GridColumn--default--4">
+<a id="button-97d0521a9e" class="cmp-button" href="/products/car/contact/" data-cmp-clickable data-cmp-data-layer="{&#34;button-97d0521a9e&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/button&#34;,&#34;repo:modifyDate&#34;:&#34;2023-05-08T14:18:23Z&#34;,&#34;dc:title&#34;:&#34;Contact us&#34;,&#34;xdm:linkURL&#34;:&#34;/products/car/contact/&#34;}}">
+    
+    
+
+    <span class="cmp-button__text">Contact us</span>
+</a>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+<div class="separator transparent separator-sm aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-15bb9182d9" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</main>
+<div class="breadcrumb grey-background aem-GridColumn aem-GridColumn--default--12">
+<nav id="breadcrumb-9d5066df0d" class="cmp-breadcrumb" aria-label="Breadcrumb" data-cmp-data-layer="{&#34;breadcrumb-9d5066df0d&#34;:{&#34;@type&#34;:&#34;core/wcm/components/breadcrumb/v2/breadcrumb&#34;}}">
+  <ol class="cmp-breadcrumb__list">
+    <li class="cmp-breadcrumb__item" data-cmp-data-layer="{&#34;breadcrumb-9d5066df0d-item-03ad780586&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/breadcrumb/item&#34;,&#34;repo:modifyDate&#34;:&#34;2023-06-06T11:11:54Z&#34;,&#34;dc:title&#34;:&#34;Products&#34;,&#34;xdm:linkURL&#34;:&#34;/products/&#34;}}">
+      <a href="/products/" class="cmp-breadcrumb__item-link" data-cmp-clickable>
+        <span>Products</span>
+      </a>
+    </li>
+  
+    <li class="cmp-breadcrumb__item" data-cmp-data-layer="{&#34;breadcrumb-9d5066df0d-item-8569ebd710&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/breadcrumb/item&#34;,&#34;repo:modifyDate&#34;:&#34;2026-01-21T08:20:07Z&#34;,&#34;dc:title&#34;:&#34;Car &amp; Van&#34;,&#34;xdm:linkURL&#34;:&#34;/products/car/&#34;}}">
+      <a href="/products/car/" class="cmp-breadcrumb__item-link" data-cmp-clickable>
+        <span>Car &amp; Van</span>
+      </a>
+    </li>
+  </ol>
+</nav>
+
+
+    
+</div>
+<footer class="dynamicexperiencefragment experiencefragment aem-GridColumn aem-GridColumn--default--12"><div id="dynamicexperiencefragment-d2d84ff145" class="cmp-experiencefragment cmp-experiencefragment--">
+
+
+    
+    
+    
+    <div id="footer-wrapper" class="cmp-container">
+        
+        <div class="container responsivegrid container--default">
+
+    
+    
+    
+    <div id="footer-top-section" class="cmp-container">
+        
+        <div class="container responsivegrid container--default">
+
+    
+    
+    
+    <div id="explore-continental" class="cmp-container">
+        
+        <div class="title">
+<div data-cmp-data-layer="{&#34;title-99c9be2196&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;dc:title&#34;:&#34;Explore Continental&#34;}}" id="title-99c9be2196" class="cmp-title">
+    <h3 class="cmp-title__text">Explore Continental</h3>
+</div>
+
+    
+
+</div>
+<div class="text links-arrow">
+<div data-cmp-data-layer="{&#34;text-42eac24697&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2025-09-24T09:07:08Z&#34;,&#34;xdm:text&#34;:&#34;&lt;ul>\r\n&lt;li>&lt;a href=\&#34;https://www.continental.com/en/\&#34; target=\&#34;_blank\&#34; title=\&#34;Continental Corporation\&#34; rel=\&#34;noopener noreferrer\&#34;>Continental Corporation&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;https://www.continental-industry.com/\&#34; target=\&#34;_blank\&#34; title=\&#34;Continental Industry\&#34; rel=\&#34;noopener noreferrer\&#34;>Continental Industry&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;/content/conti-tires-cms/ww/en/about-us.html\&#34; title=\&#34;About Continental\&#34;>Continental Tires&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;https://jobs.continental.com/en/#/\&#34;>Career&lt;/a>&lt;/li>\r\n&lt;/ul>\r\n&#34;}}" id="text-42eac24697" class="cmp-text">
+    <ul><li><a href="https://www.continental.com/en/" target="_blank" title="Continental Corporation" rel="noopener noreferrer">Continental Corporation</a></li><li><a href="https://www.continental-industry.com/" target="_blank" title="Continental Industry" rel="noopener noreferrer">Continental Industry</a></li><li><a href="/about-us/" title="About Continental">Continental Tires</a></li><li><a href="https://jobs.continental.com/en/#/">Career</a></li></ul>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+<div class="separator">
+<div id="section-separator" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="container responsivegrid container--default">
+
+    
+    
+    
+    <div id="follow-us" class="cmp-container">
+        
+        <div class="title">
+<div data-cmp-data-layer="{&#34;title-310ea9a19b&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;dc:title&#34;:&#34;Follow us&#34;}}" id="title-310ea9a19b" class="cmp-title">
+    <h3 class="cmp-title__text">Follow us</h3>
+</div>
+
+    
+
+</div>
+<div class="text">
+<div data-cmp-data-layer="{&#34;text-22232a5c77&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Follow us and join our thriving&lt;br>\r\ncommunity&lt;/p>\r\n&#34;}}" id="text-22232a5c77" class="cmp-text">
+    <p>Follow us and join our thriving<br />
+community</p>
+
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid container--default">
+
+    
+    
+    
+    <div id="social-media" class="cmp-container">
+        
+        <div class="image">
+<div data-cmp-is="image" data-cmp-src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_844440787.coreimg{.width}.svg/1676278974930/instagram.svg" data-cmp-filereference="/content/dam/conti-tires-cms/continental/icons/social-media/instagram.svg" id="image-f722fd8da8" data-cmp-data-layer="{&#34;image-f722fd8da8&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.instagram.com/continental_career/&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;4e0dd4f7-7ba9-490e-8d00-52a733101483&#34;,&#34;repo:modifyDate&#34;:&#34;2021-12-13T22:01:06Z&#34;,&#34;@type&#34;:&#34;image/svg+xml&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/social-media/instagram.svg&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    <a class="cmp-image__link" data-cmp-clickable href="https://www.instagram.com/continental_career/">
+        <img src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_844440787.coreimg.svg/1676278974930/instagram.svg" loading="lazy" class="cmp-image__image" itemprop="contentUrl" alt="Continental Instagram Page"/>
+    </a>
+    
+    
+</div>
+
+    
+
+</div>
+<div class="image">
+<div data-cmp-is="image" data-cmp-src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_844440787_copy.coreimg{.width}.svg/1676278974933/linkedin.svg" data-cmp-filereference="/content/dam/conti-tires-cms/continental/icons/social-media/linkedin.svg" id="image-323331c346" data-cmp-data-layer="{&#34;image-323331c346&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.linkedin.com/company/3534/admin/&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;f8e8221c-7ada-4c80-a035-bf4ffda6760c&#34;,&#34;repo:modifyDate&#34;:&#34;2021-12-13T22:01:06Z&#34;,&#34;@type&#34;:&#34;image/svg+xml&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/social-media/linkedin.svg&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    <a class="cmp-image__link" data-cmp-clickable href="https://www.linkedin.com/company/3534/admin/">
+        <img src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_844440787_copy.coreimg.svg/1676278974933/linkedin.svg" loading="lazy" class="cmp-image__image" itemprop="contentUrl" alt="Continental LinkedIn Page"/>
+    </a>
+    
+    
+</div>
+
+    
+
+</div>
+<div class="image">
+<div data-cmp-is="image" data-cmp-src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image.coreimg{.width}.svg/1676278974937/facebook.svg" data-cmp-filereference="/content/dam/conti-tires-cms/continental/icons/social-media/facebook.svg" id="image-b28f7cc2d0" data-cmp-data-layer="{&#34;image-b28f7cc2d0&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.facebook.com/Continental&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;3a2148aa-be73-442f-9215-7001640ea9b4&#34;,&#34;repo:modifyDate&#34;:&#34;2021-12-13T22:01:06Z&#34;,&#34;@type&#34;:&#34;image/svg+xml&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/social-media/facebook.svg&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    <a class="cmp-image__link" data-cmp-clickable href="https://www.facebook.com/Continental">
+        <img src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image.coreimg.svg/1676278974937/facebook.svg" loading="lazy" class="cmp-image__image" itemprop="contentUrl" alt="Continental Facebook Page"/>
+    </a>
+    
+    
+</div>
+
+    
+
+</div>
+<div class="image">
+<div data-cmp-is="image" data-cmp-src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_844440787_copy_89723606.coreimg{.width}.svg/1693228298941/twitter.svg" data-cmp-filereference="/content/dam/conti-tires-cms/continental/icons/social-media/twitter.svg" id="image-ce84a6414d" data-cmp-data-layer="{&#34;image-ce84a6414d&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:linkURL&#34;:&#34;https://twitter.com/conti_press?fbclid=IwAR00BnlztUSY0-TnpVIzwKz1rMP2AodM95CPp4U8k5FinnsEM-xAaQb5MOo&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;b1cadc96-588b-487d-9848-c2b1689a40b9&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-28T13:11:38Z&#34;,&#34;@type&#34;:&#34;image/svg+xml&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/social-media/twitter.svg&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    <a class="cmp-image__link" data-cmp-clickable href="https://twitter.com/conti_press?fbclid=IwAR00BnlztUSY0-TnpVIzwKz1rMP2AodM95CPp4U8k5FinnsEM-xAaQb5MOo">
+        <img src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_844440787_copy_89723606.coreimg.svg/1693228298941/twitter.svg" loading="lazy" class="cmp-image__image" itemprop="contentUrl" alt="Continental Twitter Page"/>
+    </a>
+    
+    
+</div>
+
+    
+
+</div>
+<div class="image">
+<div data-cmp-is="image" data-cmp-src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_1574117265.coreimg{.width}.svg/1676278974945/youtube.svg" data-cmp-filereference="/content/dam/conti-tires-cms/continental/icons/social-media/youtube.svg" id="image-ab137132fd" data-cmp-data-layer="{&#34;image-ab137132fd&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.youtube.com/continental-reifen&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;6e2144b4-e20c-46a0-923d-98297bbd2ba2&#34;,&#34;repo:modifyDate&#34;:&#34;2021-12-13T22:01:06Z&#34;,&#34;@type&#34;:&#34;image/svg+xml&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/continental/icons/social-media/youtube.svg&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    <a class="cmp-image__link" data-cmp-clickable href="https://www.youtube.com/continental-reifen">
+        <img src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_top/container_follow-us/container/image_1574117265.coreimg.svg/1676278974945/youtube.svg" loading="lazy" class="cmp-image__image" itemprop="contentUrl" alt="Continental Youtube Page"/>
+    </a>
+    
+    
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+
+        
+    </div>
+
+</div>
+
+        
+    </div>
+
+</div>
+<div class="container responsivegrid container--default">
+
+    
+    <div id="footer-bottom-section" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--default--hide aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-bbade8e436&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:text&#34;:&#34;&lt;ul>\r\n&lt;li>&lt;a href=\&#34;#\&#34; target=\&#34;_blank\&#34;>Legal information&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;#\&#34; target=\&#34;_blank\&#34;>Privacy Policy&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;#\&#34; target=\&#34;_blank\&#34;>Cookie Policy&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;#\&#34; target=\&#34;_blank\&#34;>Imprint&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;#\&#34; target=\&#34;_blank\&#34;>Careers&lt;/a>&lt;/li>\r\n&lt;li>&lt;a href=\&#34;#\&#34; target=\&#34;_blank\&#34;>Contact&lt;/a>&lt;/li>\r\n&lt;/ul>\r\n&#34;}}" id="text-bbade8e436" class="cmp-text">
+    <ul><li><a href="#" target="_blank" rel="noopener noreferrer">Legal information</a></li><li><a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li><li><a href="#" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li><li><a href="#" target="_blank" rel="noopener noreferrer">Imprint</a></li><li><a href="#" target="_blank" rel="noopener noreferrer">Careers</a></li><li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li></ul>
+
+</div>
+
+    
+
+</div>
+<div class="image aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--default--0">
+<div data-cmp-is="image" data-cmp-src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_bottom/image.coreimg{.width}.svg/1676278974965/continental-logo-yellow.svg" data-cmp-filereference="/content/dam/conti-tires-cms/sample-content/conti-logo/continental_logo-yellow.svg" id="image-80933576ba" data-cmp-data-layer="{&#34;image-80933576ba&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-13T09:02:54Z&#34;,&#34;xdm:linkURL&#34;:&#34;/&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;a6f6dc81-998e-409c-8ec7-083fc5add80a&#34;,&#34;repo:modifyDate&#34;:&#34;2021-12-13T22:01:07Z&#34;,&#34;@type&#34;:&#34;image/svg+xml&#34;,&#34;repo:path&#34;:&#34;/content/dam/conti-tires-cms/sample-content/conti-logo/continental_logo-yellow.svg&#34;}}}" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    <a class="cmp-image__link" data-cmp-clickable href="/">
+        <img src="/content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/_jcr_content/root/container_bottom/image.coreimg.svg/1676278974965/continental-logo-yellow.svg" loading="lazy" class="cmp-image__image" itemprop="contentUrl" alt="Continental logo"/>
+    </a>
+    
+    
+</div>
+
+    
+
+</div>
+<div class="text links-arrow aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-42e9968eac&#34;:{&#34;@type&#34;:&#34;conti-tires-cms/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2026-02-23T14:42:45Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p style=\&#34;text-align: center;\&#34;>&lt;span class=\&#34;smaller\&#34;>&lt;a href=\&#34;/content/conti-tires-cms/ww/en/legal/integrity-hotline.html\&#34;>Integrity Hotline&lt;/a>&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href=\&#34;/content/conti-tires-cms/ww/en/products/car/contact.html\&#34;>Contact&lt;/a>&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href=\&#34;/content/conti-tires-cms/ww/en/legal/imprint.html\&#34;>Imprint&lt;/a>&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href=\&#34;/content/conti-tires-cms/ww/en/legal/legal-notice.html\&#34;>Terms of Use&lt;/a>&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href=\&#34;/content/conti-tires-cms/ww/en/legal/data-protection.html\&#34;>Privacy Notice&lt;/a>&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href=\&#34;/content/conti-tires-cms/ww/en/legal/social-media-privacy-notice.html\&#34;>Social Media Privacy Notice&lt;/a>&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href=\&#34;/content/conti-tires-cms/ww/en/legal/cookie-policy.html\&#34;>Cookie Policy&lt;/a>&lt;/span>&lt;/p>\r\n&#34;}}" id="text-42e9968eac" class="cmp-text">
+    <p style="	text-align: center;
+"><span class="smaller"><a href="/legal/integrity-hotline/">Integrity Hotline</a>     <a href="/products/car/contact/">Contact</a>     <a href="/legal/imprint/">Imprint</a>     <a href="/legal/legal-notice/">Terms of Use</a>     <a href="/legal/data-protection/">Privacy Notice</a>     <a href="/legal/social-media-privacy-notice/">Social Media Privacy Notice</a>     <a href="/legal/cookie-policy/">Cookie Policy</a></span></p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+        
+    </div>
+
+</div>
+<!-- XF path: /content/experience-fragments/conti-tires-cms/ww/en/site/footer/plt/jcr:content -->
+
+
+    
+
+</footer>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+
+    
+    
+    
+<script src="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-site.lc-13144fc7da2adb083b4d73044eb83680-lc.min.js"></script>
+
+
+
+    
+
+    
+    
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js"></script>
+<script src="/etc.clientlibs/conti-tires-cms/clientlibs/clientlib-base.lc-f54bcc9456cf289fb257b9499b24226e-lc.min.js"></script>
+
+
+
+
+
+
+    
+
+    
+
+    
+    
+
+
+
+    
+    
+
+    
+
+
+</body>
+</html>

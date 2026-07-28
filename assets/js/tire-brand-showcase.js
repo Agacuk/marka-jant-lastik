@@ -14,6 +14,8 @@
   var brandNameEl = null;
   var brandDescEl = null;
   var brandLogoEl = null;
+  var modalDialogEl = null;
+  var modalBodyEl = null;
   var activeBrand = null;
   var activeFilter = "all";
   var searchQuery = "";
@@ -50,18 +52,31 @@
 
   function lockBodyScroll() {
     savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.documentElement.classList.add("is-tire-modal-open");
     document.body.classList.add("is-tire-modal-open");
     document.body.style.top = "-" + savedScrollY + "px";
     document.body.style.position = "fixed";
     document.body.style.width = "100%";
+    document.body.style.left = "0";
+    document.body.style.right = "0";
   }
 
   function unlockBodyScroll() {
+    var restoreY = savedScrollY;
+    document.documentElement.classList.remove("is-tire-modal-open");
     document.body.classList.remove("is-tire-modal-open");
     document.body.style.top = "";
     document.body.style.position = "";
     document.body.style.width = "";
-    window.scrollTo(0, savedScrollY);
+    document.body.style.left = "";
+    document.body.style.right = "";
+    window.scrollTo(0, restoreY);
+  }
+
+  function resetModalScroll() {
+    if (modalBodyEl) modalBodyEl.scrollTop = 0;
+    if (modalDialogEl) modalDialogEl.scrollTop = 0;
+    if (modal) modal.scrollTop = 0;
   }
 
   function getTagLabel(tagId) {
@@ -257,11 +272,21 @@
       renderFilters();
       renderProducts();
 
+      lockBodyScroll();
+
       modal.hidden = false;
       modal.setAttribute("aria-hidden", "false");
       modal.classList.add("is-open");
       isOpen = true;
-      lockBodyScroll();
+
+      resetModalScroll();
+      requestAnimationFrame(function () {
+        resetModalScroll();
+        requestAnimationFrame(function () {
+          resetModalScroll();
+          if (modalBodyEl) modalBodyEl.scrollTop = 0;
+        });
+      });
 
       var closeBtn = modal.querySelector(".tire-modal__close");
       if (closeBtn) closeBtn.focus({ preventScroll: true });
@@ -276,6 +301,7 @@
     modal.classList.remove("is-open");
     isOpen = false;
     activeBrand = null;
+    resetModalScroll();
     unlockBodyScroll();
   }
 
@@ -306,6 +332,7 @@
         activeFilter = btn.getAttribute("data-tire-filter") || "all";
         renderFilters();
         renderProducts();
+        resetModalScroll();
       });
     }
 
@@ -313,6 +340,7 @@
       searchInput.addEventListener("input", function () {
         searchQuery = searchInput.value;
         renderProducts();
+        resetModalScroll();
       });
     }
 
@@ -328,6 +356,8 @@
     if (!document.body.classList.contains("tire-brands-page") || !catalog) return;
 
     modal = $("#tireBrandModal");
+    modalDialogEl = modal ? modal.querySelector(".tire-modal__dialog") : null;
+    modalBodyEl = modal ? modal.querySelector(".tire-modal__body") : null;
     gridEl = $("#tireModalProducts");
     filterContainer = $("#tireModalFilters");
     searchInput = $("#tireModalSearch");

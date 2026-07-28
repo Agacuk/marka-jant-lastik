@@ -427,6 +427,9 @@ body.is-tire-modal-open {
 
 .tire-product__media {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #0e0e14;
@@ -434,9 +437,12 @@ body.is-tire-modal-open {
 
 .tire-product__media img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 88%;
+  height: 88%;
+  max-width: 88%;
+  max-height: 88%;
   object-fit: contain;
+  object-position: center;
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -1,0 +1,53 @@
+{
+  "ok": [
+    {
+      "brand": "starmaxx",
+      "id": "starmaxx-winter",
+      "bytes": 38010,
+      "sourceUrl": "https://images.simpletire.com/images/q_auto/f_auto,q_auto,fl_lossy,h_3840/line-images/19808/19808-sidetread/starmaxx-incurro-w870.png"
+    },
+    {
+      "brand": "yokohama",
+      "id": "advan-sport-v105",
+      "bytes": 57050,
+      "sourceUrl": "https://www.yokohama.com.au/-/media/images/tyres/tyreimages/advan-sport-v105.png?h=800&w=800"
+    },
+    {
+      "brand": "yokohama",
+      "id": "geolandar",
+      "bytes": 75640,
+      "sourceUrl": "https://www.yokohama.com.au/-/media/images/tyres/tyreimages/geolandar-cv-g058.png?h=800&w=800"
+    },
+    {
+      "brand": "hankook",
+      "id": "ventus-s1-evo3",
+      "bytes": 39466,
+      "sourceUrl": "https://asset.hankooktire.com/content/dam/hankooktire/eu/product/tire_list/pcr/K127_normal.png"
+    },
+    {
+      "brand": "hankook",
+      "id": "kinergy-4s2",
+      "bytes": 48182,
+      "sourceUrl": "https://asset.hankooktire.com/content/dam/hankooktire/eu/product/tire_list/pcr/H750_normal.png"
+    },
+    {
+      "brand": "hankook",
+      "id": "dynapro",
+      "bytes": 47550,
+      "sourceUrl": "https://asset.hankooktire.com/content/dam/hankooktire/eu/product/tire_list/suv/RH12_normal.png"
+    },
+    {
+      "brand": "hankook",
+      "id": "winter-icept",
+      "bytes": 56622,
+      "sourceUrl": "https://asset.hankooktire.com/content/dam/hankooktire/eu/product/tire_list/pcr/W330_normal.png"
+    },
+    {
+      "brand": "goodyear",
+      "id": "eagle-f1-asymmetric",
+      "bytes": 74548,
+      "sourceUrl": "https://content.presspage.com/uploads/2368/gyeaglef1a6std.png"
+    }
+  ],
+  "fail": []
+}

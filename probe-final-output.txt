@@ -1,0 +1,24 @@
+﻿
+=== LASSA r01-01-driveways-sport 500 ===
+
+=== LASSA r01-03-competus-at2 500 ===
+
+=== LASSA r01-04-snoways4 500 ===
+node : node:internal/deps/undici/undici:7035
+At C:\Users\Administrator\AppData\Local\Temp\ps-script-c14c0840-e323-4195-bc26-e7eb4101b5b0.ps1:112 char:61
++ ... esktop\MARKAJANTYEDEK; node scripts\probe-final-tires.js 2>&1 | Out-F ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node:internal/deps/undici/undici:7035:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+        return Promise.reject(new TypeError("Body is unusable: Body has already been read"));
+                              ^
+
+TypeError: Body is unusable: Body has already been read
+    at consumeBody (node:internal/deps/undici/undici:7035:31)
+    at _Response.arrayBuffer (node:internal/deps/undici/undici:6978:18)
+    at get (C:\Users\Administrator\Desktop\MARKAJANTYEDEK\scripts\probe-final-tires.js:6:96)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Users\Administrator\Desktop\MARKAJANTYEDEK\scripts\probe-final-tires.js:22:30
+
+Node.js v24.18.0

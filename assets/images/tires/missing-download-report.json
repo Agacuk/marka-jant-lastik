@@ -1,0 +1,72 @@
+{
+  "ok": [
+    {
+      "brand": "lassa",
+      "id": "driveways",
+      "bytes": 36526,
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0251/6146/5961/files/lassa-driveways-sport-plus_b4d24ca1-498f-4cd6-a63c-0f3ff1dd2fe2.jpg"
+    },
+    {
+      "brand": "lassa",
+      "id": "competus",
+      "bytes": 9034,
+      "sourceUrl": "https://admin.lassa.com/Uploads/ERP/a59_1-1764666807613jpg_1.jpg"
+    },
+    {
+      "brand": "lassa",
+      "id": "snoways",
+      "bytes": 23730,
+      "sourceUrl": "https://jaunasriepas.lv/cache/images/051d6dd6931ee83f38781f784eb327d5.jpg"
+    },
+    {
+      "brand": "petlas",
+      "id": "explero",
+      "bytes": 58220,
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-e8i94i2k1a/images/stencil/1280x1280/products/155813/1430239/petlas-explero-pt431-ht-b-baa-2__52292.1712243496.jpg?c=2"
+    },
+    {
+      "brand": "petlas",
+      "id": "imperium",
+      "bytes": 73450,
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-e8i94i2k1a/images/stencil/1280x1280/products/152195/1370993/petlas-imperium-pt515-b-aaa-2__13697.1712246649.jpg?c=2"
+    },
+    {
+      "brand": "petlas",
+      "id": "snowmaster",
+      "bytes": 71150,
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-e8i94i2k1a/images/stencil/1280x1280/products/191369/1564417/petlas-snow-master-2-sport-b-aab-1__02160.1775530718.jpg?c=2"
+    },
+    {
+      "brand": "yokohama",
+      "id": "bluearth",
+      "bytes": 57302,
+      "sourceUrl": "https://www.yokohama.com.au/-/media/images/tyres/tyreimages/bluearth-es-es32.png?h=800&w=800"
+    },
+    {
+      "brand": "yokohama",
+      "id": "advan-db-v552",
+      "bytes": 70868,
+      "sourceUrl": "https://www.yokohama.com.au/-/media/images/tyres/tyreimages/advan-db-v552.png?h=800&w=800"
+    },
+    {
+      "brand": "bfgoodrich",
+      "id": "g-force-pilot-sport",
+      "bytes": 36904,
+      "sourceUrl": "https://images.carid.com/bfgoodrich/bfgoodrich-g-force-sport-comp-2.jpg"
+    },
+    {
+      "brand": "starmaxx",
+      "id": "starmaxx-winter",
+      "bytes": 16356,
+      "sourceUrl": "https://images.simpletire.com/images/mm/starmaxx-incurro-winter-w870-sidetread.jpg"
+    },
+    {
+      "brand": "starmaxx",
+      "id": "starmaxx-eco",
+      "bytes": 56484,
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-e8i94i2k1a/images/stencil/1280x1280/products/194592/1582616/starmaxx-naturen-st542-b-aaa-1__61280.1775517493.jpg?c=2"
+    }
+  ],
+  "fail": [],
+  "skipped": []
+}

@@ -1,0 +1,72 @@
+﻿LASSA HIT {
+  url: 'http://medias89k-ete3a4c6hxdufvhh.a03.azurefd.net/sys-master-hybris-image-prod/images/270x270/R01_1-1704802724631.jpg',
+  status: 200,
+  len: 36367
+}
+LASSA HIT {
+  url: 'http://medias89k-ete3a4c6hxdufvhh.a03.azurefd.net/sys-master-hybris-image-prod/images/270x270/R01_2-1704802724631.jpg',
+  status: 200,
+  len: 46529
+}
+
+SIMPLE petlas-tires/explero-pt431 410
+
+SIMPLE petlas-tires/imperium-pt515 410
+
+SIMPLE petlas-tires/snowmaster-pt935 410
+
+SIMPLE yokohama-tires/advan-db-v552 410
+
+SIMPLE yokohama-tires/bluearth-es32 410
+
+SIMPLE bfgoodrich-tires/g-force-sport-comp-2 410
+
+SIMPLE bfgoodrich-tires/g-force-winter-2 410
+
+SIMPLE starmaxx-tires/naturen-st542 410
+
+SIMPLE starmaxx-tires/incurro-winter-w870 410
+
+SIMPLE lassa-tires/driveways 410
+
+SIMPLE lassa-tires/competus-at2 410
+
+SIMPLE lassa-tires/snoways-4 410
+
+TM petlas-explero-pt431-205-55r16 404 undefined
+
+TM petlas-imperium-pt515-205-55r16 404 undefined
+
+TM petlas-snowmaster-pt935-205-55r16 404 undefined
+
+NEXEN https://www.nexentire.com/international/product/ev/nblue-s.php 200 [
+  '/international/_conf/topbanner/__icsFiles/afieldfile/2026/06/09/NFERA-Primus-UX_top.png',
+  '/international/_conf/topbanner/__icsFiles/afieldfile/2026/01/27/Porshche_Cayenne_top_1.jpg',
+  '/international/main_adm/08/__icsFiles/afieldfile/2025/12/01/577310718_1262974002533980_7571827907917101719_n.jpg',
+  '/international/main_adm/09/__icsFiles/afieldfile/2025/12/01/706008_v2.jpg',
+  '/international/main_adm/07/__icsFiles/afieldfile/2025/12/01/f18ZhQFQWVc.jpg',
+  '/international/main_adm/popup/__icsFiles/afieldfile/2026/06/09/NFERA-Primus-UX_mainPop.png',
+  '/international/main_adm/popup/__icsFiles/afieldfile/2026/05/08/Neksaeng_eng_5_260508.jpg'
+]
+
+NEXEN https://www.nexentire.com/international/product/passenger/nblue-hd-plus.php 200 [
+  '/international/_conf/topbanner/__icsFiles/afieldfile/2026/06/09/NFERA-Primus-UX_top.png',
+  '/international/_conf/topbanner/__icsFiles/afieldfile/2026/01/27/Porshche_Cayenne_top_1.jpg',
+  '/international/product/passenger/__icsFiles/afieldfile/2017/03/03/keyvisual_25.jpg',
+  '/international/product/passenger/__icsFiles/afieldfile/2022/08/03/nblue_hd_plus_view_logo.png',
+  '/international/product/passenger/__icsFiles/afieldfile/2020/12/04/nblue_hd_plus_product.png',
+  '/international/assets/images/product/property/dry_performance.png',
+  '/international/assets/images/product/property/wet_performance.png',
+  '/international/assets/images/product/property/improved_fuel_consumption.png'
+]
+
+NEXEN https://www.nexentire.com/international/product/ev/nfera-sport-ev.php 200 [
+  '/international/_conf/topbanner/__icsFiles/afieldfile/2026/06/09/NFERA-Primus-UX_top.png',
+  '/international/_conf/topbanner/__icsFiles/afieldfile/2026/01/27/Porshche_Cayenne_top_1.jpg',
+  '/international/product/ev/__icsFiles/afieldfile/2024/03/19/keyvisual_4.png',
+  '/international/product/ev/__icsFiles/afieldfile/2024/03/19/view_logo_4.png',
+  '/international/product/ev/__icsFiles/afieldfile/2024/03/19/product_4.png',
+  '/international/product/ev/__icsFiles/artimage/2024/03/19/cent_11/feature_01_1.png',
+  '/international/product/ev/__icsFiles/artimage/2024/03/19/cent_11/feature_02_1.png',
+  '/international/product/ev/__icsFiles/artimage/2024/03/19/cent_11/feature_03_1.png'
+]

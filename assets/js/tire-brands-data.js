@@ -120,9 +120,9 @@
           "Lassa'nın binek, SUV ve ticari segmentlerde sunduğu yerli üretim güvenilir lastik çözümleri.",
         products: [
           product("lassa", "revola", "Revola", "4 Mevsim Lastik", "Dört mevsim kullanım için dengeli performans sunan lastik.", ["4-mevsim"], "webp"),
-          product("lassa", "driveways", "Driveways", "Konfor Lastiği", "Günlük kullanım için ekonomik ve konforlu tur lastiği.", ["yaz"]),
-          product("lassa", "competus", "Competus", "SUV Lastiği", "SUV ve hafif ticari araçlar için dayanıklı lastik seçeneği.", ["suv"]),
-          product("lassa", "snoways", "Snoways", "Kış Lastiği", "Kış koşullarında güvenli sürüş için özel kış deseni.", ["kis"]),
+          product("lassa", "driveways", "Driveways", "Konfor Lastiği", "Günlük kullanım için ekonomik ve konforlu tur lastiği.", ["yaz"], "webp"),
+          product("lassa", "competus", "Competus", "SUV Lastiği", "SUV ve hafif ticari araçlar için dayanıklı lastik seçeneği.", ["suv"], "webp"),
+          product("lassa", "snoways", "Snoways", "Kış Lastiği", "Kış koşullarında güvenli sürüş için özel kış deseni.", ["kis"], "webp"),
         ],
       },
       {
@@ -132,10 +132,10 @@
         description:
           "Petlas'ın binek, SUV ve kış segmentlerinde sunduğu yerli üretim lastik portföyü.",
         products: [
-          product("petlas", "velox-sport", "Velox Sport", "Performans Lastik", "Dinamik sürüş için sportif karakterli lastik.", ["yaz", "performans"]),
-          product("petlas", "explero", "Explero", "SUV Lastiği", "SUV modelleri için güçlü yapı ve dengeli yol tutuşu.", ["suv", "yaz"]),
-          product("petlas", "imperium", "Imperium", "Konfor Lastiği", "Konforlu sürüş ve uzun kilometre ömrü sunan tur lastiği.", ["yaz"]),
-          product("petlas", "snowmaster", "Snowmaster", "Kış Lastiği", "Karlı ve buzlu yollarda güvenli kış performansı.", ["kis"]),
+          product("petlas", "velox-sport", "Velox Sport", "Performans Lastik", "Dinamik sürüş için sportif karakterli lastik.", ["yaz", "performans"], "webp"),
+          product("petlas", "explero", "Explero", "SUV Lastiği", "SUV modelleri için güçlü yapı ve dengeli yol tutuşu.", ["suv", "yaz"], "webp"),
+          product("petlas", "imperium", "Imperium", "Konfor Lastiği", "Konforlu sürüş ve uzun kilometre ömrü sunan tur lastiği.", ["yaz"], "webp"),
+          product("petlas", "snowmaster", "Snowmaster", "Kış Lastiği", "Karlı ve buzlu yollarda güvenli kış performansı.", ["kis"], "webp"),
         ],
       },
       {
@@ -176,7 +176,7 @@
           product("nexen", "nblue-4season", "N'Blue 4Season", "4 Mevsim Lastik", "Yıl boyunca dengeli performans sunan lastik.", ["4-mevsim"], "webp"),
           product("nexen", "winguard-winspike", "Winguard Winspike", "Kış Lastiği", "Karlı yollarda güvenli sürüş için kış lastiği.", ["kis"], "webp"),
           product("nexen", "roadian-gtx", "Roadian GTX", "SUV Lastiği", "SUV ve crossover araçlar için premium konfor.", ["suv"], "webp"),
-          product("nexen", "nblue-ev", "N'Blue EV", "EV Lastiği", "Elektrikli araçlar için verimli ve sessiz sürüş.", ["ev", "yaz"]),
+          product("nexen", "nblue-ev", "N'Blue EV", "EV Lastiği", "Elektrikli araçlar için verimli ve sessiz sürüş.", ["ev", "yaz"], "webp"),
         ],
       },
       {
@@ -187,10 +187,10 @@
           "Yokohama'nın performans, SUV ve dört mevsim segmentlerinde sunduğu Japon mühendislik lastikleri.",
         products: [
           product("yokohama", "advan-sport-v105", "Advan Sport V105", "Performans Lastik", "Ultra yüksek performans ve hassas direksiyon kontrolü.", ["yaz", "performans"], "webp"),
-          product("yokohama", "bluearth", "BluEarth", "Eco Lastik", "Düşük yuvarlanma direnci ile verimli sürüş.", ["yaz", "ev"]),
+          product("yokohama", "bluearth", "BluEarth", "Eco Lastik", "Düşük yuvarlanma direnci ile verimli sürüş.", ["yaz", "ev"], "webp"),
           product("yokohama", "geolandar", "Geolandar", "SUV Lastiği", "SUV ve 4x4 araçlar için çok yönlü performans.", ["suv"], "webp"),
           product("yokohama", "iceguard", "iceGuard", "Kış Lastiği", "Buzlu ve karlı yollarda güvenli kış performansı.", ["kis"], "webp"),
-          product("yokohama", "advan-db-v552", "Advan dB V552", "Konfor Lastiği", "Sessiz sürüş ve konfor odaklı premium tur lastiği.", ["yaz"]),
+          product("yokohama", "advan-db-v552", "Advan dB V552", "Konfor Lastiği", "Sessiz sürüş ve konfor odaklı premium tur lastiği.", ["yaz"], "webp"),
         ],
       },
       {
@@ -200,10 +200,10 @@
         description:
           "BFGoodrich'in performans, arazi ve SUV segmentlerinde sunduğu dayanıklı lastik teknolojileri.",
         products: [
-          product("bfgoodrich", "g-force-pilot-sport", "g-Force Pilot Sport", "Performans Lastik", "Sportif sürüş için yüksek tutuş ve stabilite.", ["yaz", "performans"]),
+          product("bfgoodrich", "g-force-pilot-sport", "g-Force Pilot Sport", "Performans Lastik", "Sportif sürüş için yüksek tutuş ve stabilite.", ["yaz", "performans"], "webp"),
           product("bfgoodrich", "advantage-touring", "Advantage Touring", "Konfor Lastiği", "Uzun ömür ve konforlu sürüş deneyimi.", ["yaz"], "webp"),
           product("bfgoodrich", "all-terrain-ko2", "All-Terrain T/A KO2", "SUV Lastiği", "Arazi ve şehir kullanımı için dayanıklı SUV lastiği.", ["suv", "4-mevsim"], "webp"),
-          product("bfgoodrich", "g-force-winter", "g-Force Winter", "Kış Lastiği", "Kış koşullarında güvenilir performans.", ["kis"]),
+          product("bfgoodrich", "g-force-winter", "g-Force Winter", "Kış Lastiği", "Kış koşullarında güvenilir performans.", ["kis"], "webp"),
         ],
       },
       {
@@ -213,10 +213,10 @@
         description:
           "Starmaxx'ın ekonomik ve güvenilir binek, SUV ve ticari lastik çözümleri.",
         products: [
-          product("starmaxx", "starmaxx-x1", "Starmaxx X1", "Konfor Lastiği", "Günlük kullanım için ekonomik tur lastiği.", ["yaz"]),
-          product("starmaxx", "starmaxx-winter", "Starmaxx Winter", "Kış Lastiği", "Kış mevsiminde güvenli sürüş için kış lastiği.", ["kis"]),
-          product("starmaxx", "starmaxx-suv", "Starmaxx SUV", "SUV Lastiği", "SUV modelleri için dayanıklı lastik seçeneği.", ["suv"]),
-          product("starmaxx", "starmaxx-eco", "Starmaxx Eco", "Eco Lastik", "Yakıt verimliliği odaklı ekonomik lastik.", ["yaz"]),
+          product("starmaxx", "starmaxx-x1", "Starmaxx X1", "Konfor Lastiği", "Günlük kullanım için ekonomik tur lastiği.", ["yaz"], "webp"),
+          product("starmaxx", "starmaxx-winter", "Starmaxx Winter", "Kış Lastiği", "Kış mevsiminde güvenli sürüş için kış lastiği.", ["kis"], "webp"),
+          product("starmaxx", "starmaxx-suv", "Starmaxx SUV", "SUV Lastiği", "SUV modelleri için dayanıklı lastik seçeneği.", ["suv"], "webp"),
+          product("starmaxx", "starmaxx-eco", "Starmaxx Eco", "Eco Lastik", "Yakıt verimliliği odaklı ekonomik lastik.", ["yaz"], "webp"),
         ],
       },
     ],

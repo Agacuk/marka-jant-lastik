@@ -1,0 +1,39 @@
+﻿
+LASSA https://www.lassa.com.tr/lastik/219407-driveways-yaz-20550r16-87w 200
+https://www.lassa.com.tr//Dosyalar/content/competus_at2_video.jpg
+
+LASSA https://www.lassa.com.tr/lastik/219789-driveways-sport-yaz-25540r20-101y 500
+
+LASSA https://www.lassa.com.tr/desen/dww-02-driveways 200
+https://www.lassa.com.tr//Dosyalar/content/competus_at2_video.jpg
+
+BFG https://www.bfgoodrich.co.uk/auto/tyres/bfgoodrich-g-force-sport-comp-2 404 []
+
+BFG https://www.bfgoodrich.co.uk/auto/tyres/bfgoodrich-g-force-winter-2 404 []
+
+BFG https://www.bfgoodrich.co.uk/auto/tyres 200 [
+  'https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4x7ma7misnkcmry/4w-996_3528702987483_tire_bfgoodrich_all-terrain-t-slash-a-ko3_lt-265-slash-70-r17-123-slash-120s_rwl_a_main_1-30_nopad.webp?t=resize&amp;width=200&quot;],&quot;mediaSrc&quot;:[1,[[0,{&quot;media&quot;:[0,&quot;xlarge&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4x7ma7misnkcmry/4w-996_3528702987483_tire_bfgoodrich_all-terrain-t-slash-a-ko3_lt-265-slash-70-r17-123-slash-120s_rwl_a_main_1-30_nopad.webp?t=resize&amp;width=500&quot;]}],[0,{&quot;media&quot;:[0,&quot;medium&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4x7ma7misnkcmry/4w-996_3528702987483_tire_bfgoodrich_all-terrain-t-slash-a-ko3_lt-265-slash-70-r17-123-slash-120s_rwl_a_main_1-30_nopad.webp?t=resize&amp;width=300&quot;]}],[0,{&quot;media&quot;:[0,&quot;small&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4x7ma7misnkcmry/4w-996_3528702987483_tire_bfgoodrich_all-terrain-t-slash-a-ko3_lt-265-slash-70-r17-123-slash-120s_rwl_a_main_1-30_nopad.webp?t=resize&amp;width=400&quot;]}]]],&quot;loading&quot;:[0,&quot;lazy&quot;]}],&quot;name&quot;:[0,{&quot;brand&quot;:[0,&quot;BFGoodrich&quot;],&quot;productName&quot;:[0,&quot;ALL-TERRAIN',
+  'https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4qazic6qcidpa4r/4w-996_tire_bfgoodrich_all-terrain-t-slash-a-ko3_lt_en-gb_features-and-benefits-1_nosignature_landscape_web.webp&quot;],&quot;alt&quot;:[0,&quot;Tyre',
+  'https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4quj4z6fer6eq1c/4w-490_3528708261297_tire_bfgoodrich_trail-terrain-t-slash-a_265-slash-70-r17-115t_owl_a_main_1-30_nopad.webp?t=resize&amp;width=200&quot;],&quot;mediaSrc&quot;:[1,[[0,{&quot;media&quot;:[0,&quot;xlarge&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4quj4z6fer6eq1c/4w-490_3528708261297_tire_bfgoodrich_trail-terrain-t-slash-a_265-slash-70-r17-115t_owl_a_main_1-30_nopad.webp?t=resize&amp;width=500&quot;]}],[0,{&quot;media&quot;:[0,&quot;medium&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4quj4z6fer6eq1c/4w-490_3528708261297_tire_bfgoodrich_trail-terrain-t-slash-a_265-slash-70-r17-115t_owl_a_main_1-30_nopad.webp?t=resize&amp;width=300&quot;]}],[0,{&quot;media&quot;:[0,&quot;small&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4quj4z6fer6eq1c/4w-490_3528708261297_tire_bfgoodrich_trail-terrain-t-slash-a_265-slash-70-r17-115t_owl_a_main_1-30_nopad.webp?t=resize&amp;width=400&quot;]}]]],&quot;loading&quot;:[0,&quot;lazy&quot;]}],&quot;name&quot;:[0,{&quot;brand&quot;:[0,&quot;BFGoodrich&quot;],&quot;productName&quot;:[0,&quot;TRAIL-TERRAIN',
+  'https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4qq5uy6umiby1ye/4w-490_tire_bfgoodrich_trail-terrain-t-slash-a_en-gb_features-and-benefits-1_nosignature_16-slash-9_web.webp&quot;],&quot;alt&quot;:[0,&quot;Tyre',
+  'https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4xgjqib1gz7srjo/4w-1601_3528701443621_tire_bfgoodrich_advantage-2_225-slash-45-r19-92w_a_main_1-30_nopad.webp?t=resize&amp;width=200&quot;],&quot;mediaSrc&quot;:[1,[[0,{&quot;media&quot;:[0,&quot;xlarge&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4xgjqib1gz7srjo/4w-1601_3528701443621_tire_bfgoodrich_advantage-2_225-slash-45-r19-92w_a_main_1-30_nopad.webp?t=resize&amp;width=500&quot;]}],[0,{&quot;media&quot;:[0,&quot;medium&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4xgjqib1gz7srjo/4w-1601_3528701443621_tire_bfgoodrich_advantage-2_225-slash-45-r19-92w_a_main_1-30_nopad.webp?t=resize&amp;width=300&quot;]}],[0,{&quot;media&quot;:[0,&quot;small&quot;],&quot;srcset&quot;:[0,&quot;https://dxm.contentcenter.michelin.com/api/wedia/dam/transform/b98rpyxf61b4xgjqib1gz7srjo/4w-1601_3528701443621_tire_bfgoodrich_advantage-2_225-slash-45-r19-92w_a_main_1-30_nopad.webp?t=resize&amp;width=400&quot;]}]]],&quot;loading&quot;:[0,&quot;lazy&quot;]}],&quot;name&quot;:[0,{&quot;brand&quot;:[0,&quot;BFGoodrich&quot;],&quot;productName&quot;:[0,&quot;ADVANTAGE'
+]
+
+YOKO AU https://www.yokohama.com.au/our-range/tyres/BluEarth%20Es%20ES32 200
+
+YOKO AU https://www.yokohama.com.au/our-range/tyres/Advan%20dB%20V552 200
+
+EPREL label api null
+
+NEXEN links [
+  '/international/product/ev_root/technology/',
+  '/international/product/passenger/nblue-s.php',
+  '/international/product/passenger/nfera-sport-ev.php',
+  '/international/product/passenger/nfera-au7-ev.php',
+  '/international/product/passenger/milecap2-ev.php',
+  '/international/product/passenger/npriz-s-ev.php',
+  '/international/product/passenger/nfera-primus-qx-ev.php',
+  '/international/product/passenger/nblue-4season2.php',
+  '/international/product/passenger/nblue-hd-plus.php',
+  '/international/product/passenger/nblue-4season.php'
+]

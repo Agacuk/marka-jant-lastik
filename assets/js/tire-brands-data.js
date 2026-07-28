@@ -128,7 +128,7 @@
       {
         id: "petlas",
         name: "Petlas",
-        logo: "assets/images/brands/brand-petlas.svg",
+        logo: "assets/images/brands/brand-petlas.png",
         description:
           "Petlas'ın binek, SUV ve kış segmentlerinde sunduğu yerli üretim lastik portföyü.",
         products: [
@@ -209,7 +209,7 @@
       {
         id: "starmaxx",
         name: "Starmaxx",
-        logo: "assets/images/brands/brand-starmaxx.svg",
+        logo: "assets/images/brands/brand-starmaxx.png",
         description:
           "Starmaxx'ın ekonomik ve güvenilir binek, SUV ve ticari lastik çözümleri.",
         products: [

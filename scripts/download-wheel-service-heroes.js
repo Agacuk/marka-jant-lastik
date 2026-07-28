@@ -10,62 +10,75 @@ const UA =
 const WIDTH = 1280;
 const HEIGHT = 800;
 
-/** Dark workshop theme — same color grade on every hero */
+/** Janta yakın çekim, başlığa uygun gerçek onarım süreci görselleri */
 const SERVICES = [
   {
     id: "jant-boyama",
     title: "Jant Boyama",
-    url: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    focus: "attention",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rims_painted_(2967657525).jpg",
+    focus: "centre",
+    note: "Jant sprey boya uygulaması (yakın çekim)",
   },
   {
     id: "jant-kaynagi",
     title: "Jant Kaynağı",
-    url: "https://images.pexels.com/photos/2726452/pexels-photo-2726452.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkehMhoz4edcjV-H_lPAppPhSNVlQHxgdIdTcx8eUMsGmAlaepoDvV8qBQRfxPh3qQJ_SiA_sWDENb0C-ly_KXATdrApqKAq69SxlCFaUnKOzipTPCVMW7M4stPOiCgc93mtgDib-n-K6-/s1600/1471.JPG",
     focus: "centre",
+    note: "Jant kenarı TIG kaynak onarımı",
   },
   {
     id: "cnc-diamond-cut",
     title: "CNC Diamond Cut",
-    url: "https://images.pexels.com/photos/3845485/pexels-photo-3845485.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091647-1024x730.jpg",
     focus: "centre",
+    note: "CNC diamond cut tornalama — jant yüzey kesimi",
   },
   {
     id: "jant-duzeltme",
     title: "Jant Düzeltme",
-    url: "https://images.pexels.com/photos/32208774/pexels-photo-32208774.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://wheelrestore.com/wp-content/uploads/2023/10/wr-install-001.webp",
     focus: "centre",
+    note: "Jant düzeltme makinesinde onarım",
   },
   {
     id: "jant-tornalama",
     title: "Jant Tornalama",
-    url: "https://images.pexels.com/photos/5846270/pexels-photo-5846270.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091643-1024x986.jpg",
     focus: "centre",
+    note: "CNC tornada jant profil tarama / tornalama",
   },
   {
     id: "jant-kumlama",
     title: "Jant Kumlama",
-    url: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://wheelrestore.com/wp-content/uploads/2024/09/wheel-blasting-machine-filtration.webp",
     focus: "centre",
+    note: "Kumlama kabininde jant hazırlığı",
   },
   {
     id: "jant-polisaj",
     title: "Jant Polisaj",
-    url: "https://images.pexels.com/photos/3802517/pexels-photo-3802517.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091646-1024x807.jpg",
     focus: "centre",
+    note: "Parlatılmış jant yüzeyi yakın çekim",
   },
   {
     id: "diger-hizmetler",
     title: "Diğer Hizmetler",
-    url: "https://images.pexels.com/photos/4489708/pexels-photo-4489708.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    url: "https://thewheelmedics.co.uk/wp-content/uploads/2023/02/image12.jpg",
     focus: "centre",
+    note: "Genel jant restorasyon ve onarım",
   },
 ];
 
 async function fetchBuf(url) {
-  const res = await fetch(url, {
-    headers: { "User-Agent": UA, Accept: "image/*,*/*", Referer: "https://www.pexels.com/" },
-  });
+  const headers = {
+    "User-Agent": UA,
+    Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+  };
+  if (url.includes("wheelsclinic.co.uk")) {
+    headers.Referer = "https://www.wheelsclinic.co.uk/";
+  }
+  const res = await fetch(url, { headers, redirect: "follow" });
   if (!res.ok) throw new Error("HTTP " + res.status);
   const buf = Buffer.from(await res.arrayBuffer());
   if (buf.length < 8000) throw new Error("too small (" + buf.length + " bytes)");
@@ -73,14 +86,11 @@ async function fetchBuf(url) {
 }
 
 async function normalizeHero(buf, focus) {
-  const base = sharp(buf).rotate().resize(WIDTH, HEIGHT, {
-    fit: "cover",
-    position: focus || "centre",
-  });
-
-  const graded = await base
-    .modulate({ brightness: 0.78, saturation: 0.62 })
-    .linear(1.08, -18)
+  const graded = await sharp(buf)
+    .rotate()
+    .resize(WIDTH, HEIGHT, { fit: "cover", position: focus || "centre" })
+    .modulate({ brightness: 0.84, saturation: 0.72 })
+    .linear(1.06, -14)
     .toBuffer();
 
   const overlay = Buffer.from(
@@ -88,14 +98,14 @@ async function normalizeHero(buf, focus) {
       <defs>
         <radialGradient id="v" cx="50%" cy="45%" r="75%">
           <stop offset="0%" stop-color="#000" stop-opacity="0"/>
-          <stop offset="100%" stop-color="#09090f" stop-opacity="0.42"/>
+          <stop offset="100%" stop-color="#09090f" stop-opacity="0.35"/>
         </radialGradient>
         <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#14141c" stop-opacity="0.08"/>
-          <stop offset="100%" stop-color="#090909" stop-opacity="0.55"/>
+          <stop offset="0%" stop-color="#14141c" stop-opacity="0.06"/>
+          <stop offset="100%" stop-color="#090909" stop-opacity="0.48"/>
         </linearGradient>
       </defs>
-      <rect width="100%" height="100%" fill="#14141c" fill-opacity="0.12"/>
+      <rect width="100%" height="100%" fill="#14141c" fill-opacity="0.1"/>
       <rect width="100%" height="100%" fill="url(#v)"/>
       <rect width="100%" height="100%" fill="url(#b)"/>
     </svg>`
@@ -103,7 +113,7 @@ async function normalizeHero(buf, focus) {
 
   return sharp(graded)
     .composite([{ input: overlay, blend: "multiply" }])
-    .webp({ quality: 84, effort: 5 })
+    .webp({ quality: 86, effort: 5 })
     .toBuffer();
 }
 
@@ -119,10 +129,16 @@ async function main() {
       const raw = await fetchBuf(service.url);
       const webp = await normalizeHero(raw, service.focus);
       fs.writeFileSync(outPath, webp);
-      report.push({ id: service.id, status: "ok", bytes: webp.length, path: outPath });
+      report.push({
+        id: service.id,
+        status: "ok",
+        bytes: webp.length,
+        note: service.note,
+        source: service.url,
+      });
       console.log("OK  " + service.id + " -> hero.webp (" + webp.length + " bytes)");
     } catch (err) {
-      report.push({ id: service.id, status: "error", error: err.message });
+      report.push({ id: service.id, status: "error", error: err.message, source: service.url });
       console.error("ERR " + service.id + ": " + err.message);
     }
   }

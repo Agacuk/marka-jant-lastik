@@ -2,49 +2,57 @@
   {
     "id": "jant-boyama",
     "status": "ok",
-    "bytes": 30068,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-boyama\\hero.webp"
+    "bytes": 86526,
+    "note": "Jant sprey boya uygulaması (yakın çekim)",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Rims_painted_(2967657525).jpg"
   },
   {
     "id": "jant-kaynagi",
     "status": "ok",
-    "bytes": 68800,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-kaynagi\\hero.webp"
+    "bytes": 66434,
+    "note": "Jant kenarı TIG kaynak onarımı",
+    "source": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkehMhoz4edcjV-H_lPAppPhSNVlQHxgdIdTcx8eUMsGmAlaepoDvV8qBQRfxPh3qQJ_SiA_sWDENb0C-ly_KXATdrApqKAq69SxlCFaUnKOzipTPCVMW7M4stPOiCgc93mtgDib-n-K6-/s1600/1471.JPG"
   },
   {
     "id": "cnc-diamond-cut",
     "status": "ok",
-    "bytes": 38162,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\cnc-diamond-cut\\hero.webp"
+    "bytes": 38918,
+    "note": "CNC diamond cut tornalama — jant yüzey kesimi",
+    "source": "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091647-1024x730.jpg"
   },
   {
     "id": "jant-duzeltme",
     "status": "ok",
-    "bytes": 44268,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-duzeltme\\hero.webp"
+    "bytes": 62444,
+    "note": "Jant düzeltme makinesinde onarım",
+    "source": "https://wheelrestore.com/wp-content/uploads/2023/10/wr-install-001.webp"
   },
   {
     "id": "jant-tornalama",
     "status": "ok",
-    "bytes": 28146,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-tornalama\\hero.webp"
+    "bytes": 30346,
+    "note": "CNC tornada jant profil tarama / tornalama",
+    "source": "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091643-1024x986.jpg"
   },
   {
     "id": "jant-kumlama",
     "status": "ok",
-    "bytes": 92438,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-kumlama\\hero.webp"
+    "bytes": 152330,
+    "note": "Kumlama kabininde jant hazırlığı",
+    "source": "https://wheelrestore.com/wp-content/uploads/2024/09/wheel-blasting-machine-filtration.webp"
   },
   {
     "id": "jant-polisaj",
     "status": "ok",
-    "bytes": 22778,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\jant-polisaj\\hero.webp"
+    "bytes": 44768,
+    "note": "Parlatılmış jant yüzeyi yakın çekim",
+    "source": "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091646-1024x807.jpg"
   },
   {
     "id": "diger-hizmetler",
     "status": "ok",
-    "bytes": 35020,
-    "path": "C:\\Users\\Administrator\\Desktop\\MARKAJANTYEDEK\\assets\\images\\services\\diger-hizmetler\\hero.webp"
+    "bytes": 61678,
+    "note": "Genel jant restorasyon ve onarım",
+    "source": "https://thewheelmedics.co.uk/wp-content/uploads/2023/02/image12.jpg"
   }
 ]

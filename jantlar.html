@@ -27,6 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/used-wheels.css">
   <link rel="stylesheet" href="assets/vendor/photoswipe/photoswipe.css">
   <style>
     .page-hero {
@@ -272,6 +273,34 @@
     </div>
   </section>
 
+  <section class="premium-section used-wheels" id="ikinci-el-jantlar" data-reveal aria-labelledby="used-wheels-title">
+    <div class="premium-section__container">
+      <header class="premium-section__header" data-reveal-child>
+        <p class="used-wheels__badge-line">Premium Seçki</p>
+        <h2 class="jantlar__title" id="used-wheels-title">2. El Jantlar</h2>
+        <p class="jantlar__subtitle">Marka Jant Lastik güvencesiyle temin edilen, özenle seçilmiş ikinci el premium jantlarımızı inceleyin.</p>
+      </header>
+
+      <div class="used-wheels-carousel" data-used-wheels-carousel data-reveal-child>
+        <button type="button" class="used-wheels-carousel__nav used-wheels-carousel__nav--prev" data-used-wheels-prev aria-label="Önceki jantlar">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="used-wheels-carousel__viewport" data-used-wheels-track-viewport tabindex="0" role="region" aria-label="2. el jant galerisi">
+          <div class="used-wheels-carousel__track" data-used-wheels-track role="list"></div>
+        </div>
+        <button type="button" class="used-wheels-carousel__nav used-wheels-carousel__nav--next" data-used-wheels-next aria-label="Sonraki jantlar">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div data-used-wheels-cta data-reveal-child></div>
+    </div>
+  </section>
+
   <section class="premium-section premium-section--alt applications" id="uygulamalar" data-reveal>
     <div class="premium-section__container">
       <header class="premium-section__header" data-reveal-child>
@@ -390,6 +419,8 @@
 
   </footer>
 
+  <script src="assets/js/used-wheels-data.js" defer></script>
+  <script src="assets/js/used-wheels-carousel.js" defer></script>
   <script type="module" src="assets/js/gallery.js"></script>
   <script src="assets/js/script.js" defer></script>
 </body>

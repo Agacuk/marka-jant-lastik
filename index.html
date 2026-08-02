@@ -27,6 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/hero-slider.css">
   <link rel="stylesheet" href="assets/vendor/photoswipe/photoswipe.css">
   <link rel="preload" as="image" href="assets/images/hero/hero-premium-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
   <link rel="preload" as="image" href="assets/images/hero/hero-premium.webp" media="(min-width: 769px)" fetchpriority="high">
@@ -233,32 +234,102 @@
     </nav>
   </header>
 
-  </header>
-
-  </header>
-
   <section class="hero" id="hero">
     <div class="hero__stage">
-      <div class="hero__media" aria-hidden="true">
-        <picture class="hero__media-picture">
-          <source
-            media="(max-width: 768px)"
-            srcset="assets/images/hero/hero-premium-mobile.webp"
-            type="image/webp"
-          >
-          <img
-            src="assets/images/hero/hero-premium.webp"
-            alt=""
-            class="hero__media-img"
-            width="1920"
-            height="1080"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-          >
-        </picture>
+      <div class="hero-slider" data-hero-slider aria-roledescription="carousel" aria-label="Hero galerisi">
+        <div class="hero-slider__track">
+          <div class="hero-slider__slide hero-slider__slide--1 is-active" data-hero-slide="0" aria-hidden="false">
+            <picture class="hero-slider__picture">
+              <source
+                media="(max-width: 768px)"
+                srcset="assets/images/hero/hero-premium-mobile.webp"
+                type="image/webp"
+              >
+              <img
+                src="assets/images/hero/hero-premium.webp"
+                alt=""
+                class="hero-slider__img"
+                data-hero-img
+                width="1920"
+                height="1080"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="hero-slider__slide hero-slider__slide--2" data-hero-slide="1" aria-hidden="true">
+            <picture class="hero-slider__picture">
+              <img
+                data-src="assets/images/jantlar/2. El Jantlar/20 İnç 5x120 BMW Jant Takımı.webp"
+                data-src-mobile="assets/images/jantlar/2. El Jantlar/19 İnç 5x120 BMW Jant Takımı.webp"
+                alt=""
+                class="hero-slider__img"
+                data-hero-img
+                width="1200"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <div class="hero-slider__slide hero-slider__slide--3" data-hero-slide="2" aria-hidden="true">
+            <picture class="hero-slider__picture">
+              <img
+                data-src="assets/images/hero/hero-store.webp"
+                alt=""
+                class="hero-slider__img"
+                data-hero-img
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+        </div>
+
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <button type="button" class="hero-slider__nav hero-slider__nav--prev" data-hero-prev aria-label="Önceki slide">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button type="button" class="hero-slider__nav hero-slider__nav--next" data-hero-next aria-label="Sonraki slide">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="hero-slider__pagination" data-hero-dots role="tablist" aria-label="Slide seçimi"></div>
       </div>
-      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__copy">
+        <div class="hero__copy-panel hero__copy-panel--empty is-active" data-hero-content="0" aria-hidden="false"></div>
+
+        <div class="hero__copy-panel" data-hero-content="1" aria-hidden="true">
+          <div class="hero__content">
+            <h2 class="hero__title hero__animate hero__animate--1">Premium 2. El Jantlar</h2>
+            <p class="hero__desc hero__animate hero__animate--2">Marka Jant Lastik güvencesiyle satışa hazır ikinci el premium jant seçeneklerini inceleyin.</p>
+            <div class="hero__actions hero__animate hero__animate--3">
+              <a href="https://markajantlastik.sahibinden.com/" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">Sahibinden Mağazamız</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__copy-panel" data-hero-content="2" aria-hidden="true">
+          <div class="hero__content">
+            <h2 class="hero__title hero__animate hero__animate--1">Jant ve Lastikte Tüm İhtiyaçlarınız Tek Adreste</h2>
+            <p class="hero__desc hero__animate hero__animate--2">Satış, uygulama, onarım ve profesyonel hizmetler için uzman ekibimizle iletişime geçin.</p>
+            <div class="hero__actions hero__animate hero__animate--3">
+              <a href="iletisim.html" class="hero__btn hero__btn--primary">Hemen İletişime Geç</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="hero__cards">
@@ -593,11 +664,8 @@
     </div>
   </footer>
 
-  </footer>
-
-  </footer>
-
   <script type="module" src="assets/js/gallery.js"></script>
+  <script src="assets/js/hero-slider.js" defer></script>
   <script src="assets/js/script.js" defer></script>
 </body>
 </html>

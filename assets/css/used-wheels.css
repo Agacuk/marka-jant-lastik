@@ -205,26 +205,21 @@
   line-height: 1.35;
 }
 
-.used-wheels-card__specs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+.used-wheels-card__specline {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.used-wheels-card__specs {
+  display: none;
 }
 
 .used-wheels-card__spec {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 9px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  display: none;
 }
 
 .used-wheels-carousel__nav {
@@ -318,183 +313,239 @@
   flex-shrink: 0;
 }
 
-/* Modal */
-.used-wheels-modal {
+/* Lightbox */
+html.uw-lightbox-open {
+  overflow: hidden;
+}
+
+html.uw-lightbox-open body {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.uw-lightbox {
   position: fixed;
   inset: 0;
   z-index: 1200;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(16px, 3vw, 32px);
+  padding: clamp(12px, 2.5vw, 28px);
   opacity: 0;
   visibility: hidden;
   transition: opacity 320ms ease, visibility 320ms ease;
 }
 
-.used-wheels-modal.is-open {
+.uw-lightbox.is-open {
   opacity: 1;
   visibility: visible;
 }
 
-.used-wheels-modal__backdrop {
+.uw-lightbox__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(4, 4, 8, 0.82);
+  background: rgba(4, 6, 12, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
-.used-wheels-modal__dialog {
+.uw-lightbox__shell {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  width: min(1080px, 100%);
-  max-height: min(90vh, 820px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(160deg, #14141c 0%, #0c0c12 100%);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
-  overflow: hidden;
-  transform: translateY(12px) scale(0.985);
-  transition: transform 380ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: min(1180px, 100%);
+  max-height: min(94vh, 920px);
+  display: flex;
+  flex-direction: column;
 }
 
-.used-wheels-modal.is-open .used-wheels-modal__dialog {
-  transform: translateY(0) scale(1);
-}
-
-.used-wheels-modal__close {
+.uw-lightbox__close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: -6px;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(9, 9, 12, 0.82);
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.uw-lightbox__wheel-nav {
+  position: absolute;
+  top: 42%;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
-  background: rgba(9, 9, 9, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(9, 9, 12, 0.84);
   color: #fff;
+  font-size: 28px;
+  line-height: 1;
   cursor: pointer;
+  transition: background-color 250ms ease, border-color 250ms ease;
 }
 
-.used-wheels-modal__gallery {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 320px;
-  padding: clamp(20px, 3vw, 32px);
-  background: #0e0e14;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
+.uw-lightbox__wheel-nav:hover:not(:disabled) {
+  background: rgba(31, 79, 255, 0.28);
+  border-color: rgba(31, 79, 255, 0.45);
 }
 
-.used-wheels-modal__img {
-  width: 100%;
-  height: min(52vh, 480px);
-  object-fit: contain;
-  object-position: center;
-}
-
-.used-wheels-modal__gal-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(9, 9, 9, 0.85);
-  color: #fff;
-  cursor: pointer;
-}
-
-.used-wheels-modal__gal-nav--prev {
-  left: 12px;
-}
-
-.used-wheels-modal__gal-nav--next {
-  right: 12px;
-}
-
-.used-wheels-modal__gal-nav:disabled {
+.uw-lightbox__wheel-nav:disabled {
   opacity: 0.25;
   cursor: not-allowed;
 }
 
-.used-wheels-modal__content {
+.uw-lightbox__wheel-nav--prev {
+  left: -8px;
+}
+
+.uw-lightbox__wheel-nav--next {
+  right: -8px;
+}
+
+.uw-lightbox__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(160deg, #14141c 0%, #0a0a10 100%);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.58);
+  overflow: hidden;
+  max-height: min(94vh, 920px);
+}
+
+.uw-lightbox__media-col {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: clamp(22px, 3vw, 32px);
+  min-width: 0;
+  background: #0b0b11;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.uw-lightbox__stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: clamp(280px, 52vh, 560px);
+  padding: clamp(18px, 2.5vw, 28px);
+  overflow: hidden;
+  touch-action: none;
+}
+
+.uw-lightbox__zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  transition: transform 120ms ease-out;
+  will-change: transform;
+}
+
+.uw-lightbox.is-zoomed .uw-lightbox__zoom {
+  transition: none;
+}
+
+.uw-lightbox__img {
+  max-width: 100%;
+  max-height: min(68vh, 640px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.uw-lightbox__thumbs {
+  display: flex;
+  gap: 8px;
+  padding: 0 clamp(18px, 2.5vw, 28px) 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.uw-lightbox__thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.uw-lightbox__thumb {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+}
+
+.uw-lightbox__thumb.is-active {
+  border-color: rgba(31, 79, 255, 0.55);
+  box-shadow: 0 0 0 1px rgba(31, 79, 255, 0.25);
+}
+
+.uw-lightbox__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.uw-lightbox__info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: clamp(22px, 3vw, 34px);
   overflow-y: auto;
 }
 
-.used-wheels-modal__title {
+.uw-lightbox__title {
   margin: 0;
-  padding-right: 36px;
+  padding-right: 28px;
   color: #fff;
   font-size: clamp(1.25rem, 2.4vw, 1.65rem);
   font-weight: 700;
 }
 
-.used-wheels-modal__specs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.uw-lightbox__specline {
   margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.used-wheels-modal__spec {
-  padding: 6px 12px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.used-wheels-modal__block-title {
-  margin: 0 0 6px;
-  color: rgba(255, 255, 255, 0.48);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.used-wheels-modal__vehicles {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
-.used-wheels-modal__status {
+.uw-lightbox__status {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 12px;
+  padding: 8px 14px;
   border-radius: 999px;
   border: 1px solid rgba(37, 211, 102, 0.28);
   background: rgba(37, 211, 102, 0.08);
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 12px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
   font-weight: 600;
   width: fit-content;
 }
 
-.used-wheels-modal__actions {
+.uw-lightbox__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -502,39 +553,58 @@
   padding-top: 8px;
 }
 
-.used-wheels-modal__actions .hero__btn {
-  min-width: min(100%, 200px);
+.uw-lightbox__actions .hero__btn {
+  min-width: min(100%, 210px);
 }
 
-.used-wheels-modal__phone {
+.uw-lightbox__phone {
   color: #fff;
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.18);
 }
 
-.used-wheels-modal__phone:hover {
+.uw-lightbox__phone:hover {
   background: rgba(31, 79, 255, 0.16);
   border-color: rgba(31, 79, 255, 0.42);
 }
 
+.uw-lightbox .hero__btn--whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+}
+
 @media (max-width: 900px) {
-  .used-wheels-modal__dialog {
+  .uw-lightbox__layout {
     grid-template-columns: 1fr;
     max-height: 92vh;
     overflow-y: auto;
   }
 
-  .used-wheels-modal__gallery {
+  .uw-lightbox__media-col {
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 
-  .used-wheels-carousel__nav--prev {
-    left: 0;
+  .uw-lightbox__stage,
+  .uw-lightbox__thumbs {
+    border-right: none;
   }
 
-  .used-wheels-carousel__nav--next {
-    right: 0;
+  .uw-lightbox__wheel-nav--prev {
+    left: 4px;
+  }
+
+  .uw-lightbox__wheel-nav--next {
+    right: 4px;
+  }
+
+  .uw-lightbox__close {
+    top: 8px;
+    right: 8px;
   }
 }
 
@@ -551,8 +621,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .used-wheels-carousel__viewport,
-  .used-wheels-modal,
-  .used-wheels-modal__dialog,
+  .uw-lightbox,
+  .uw-lightbox__zoom,
   .used-wheels-card__inner,
   .used-wheels-card__media,
   .used-wheels-card__img {

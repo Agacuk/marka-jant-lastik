@@ -206,7 +206,7 @@
     {
       "id": "16-inch-4x108-opel-oem-jant-tak-m",
       "filename": "16 inch 4x108 Opel OEM Jant Takımı.jpg",
-      "title": "Opel OEM",
+      "title": "Opel",
       "specs": [
         {
           "key": "inch",
@@ -234,7 +234,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/16 inch 4x108 Opel OEM Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/16 inch 4x108 Opel OEM Jant Takımı.webp",
-          "alt": "Opel OEM"
+          "alt": "Opel"
         }
       ],
       "status": {
@@ -243,7 +243,7 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Opel%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Opel%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "18-i-n-5x112-oem-mercedes-jant-tak-m",
@@ -290,7 +290,7 @@
     {
       "id": "16-i-n-4x100-opel-oem-jant-tak-m",
       "filename": "16 İnç 4x100 Opel OEM Jant Takımı.jpg",
-      "title": "Opel OEM",
+      "title": "Opel",
       "specs": [
         {
           "key": "inch",
@@ -318,7 +318,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/16 İnç 4x100 Opel OEM Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/16 İnç 4x100 Opel OEM Jant Takımı.webp",
-          "alt": "Opel OEM"
+          "alt": "Opel"
         }
       ],
       "status": {
@@ -327,12 +327,12 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Opel%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Opel%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "16-i-n-5x114-3-renault-oem-jant-tak-m",
       "filename": "16 İnç 5x114.3 Renault OEM Jant Takımı.jpg",
-      "title": "Renault OEM",
+      "title": "Renault",
       "specs": [
         {
           "key": "inch",
@@ -360,7 +360,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/16 İnç 5x114.3 Renault OEM Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/16 İnç 5x114.3 Renault OEM Jant Takımı.webp",
-          "alt": "Renault OEM"
+          "alt": "Renault"
         }
       ],
       "status": {
@@ -369,12 +369,12 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Renault%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Renault%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "15-i-n-5x100-seat-oem-jant-tak-m",
       "filename": "15 İnç 5x100 Seat OEM Jant Takımı.jpg",
-      "title": "Seat OEM",
+      "title": "Seat",
       "specs": [
         {
           "key": "inch",
@@ -402,7 +402,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/15 İnç 5x100 Seat OEM Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/15 İnç 5x100 Seat OEM Jant Takımı.webp",
-          "alt": "Seat OEM"
+          "alt": "Seat"
         }
       ],
       "status": {
@@ -411,12 +411,12 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Seat%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Seat%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "16-i-n-5x114-3-toyota-oem-jant-lastik-tak-m",
       "filename": "16 İnç 5x114.3 Toyota OEM Jant Lastik Takımı.jpg",
-      "title": "Toyota OEM",
+      "title": "Toyota",
       "specs": [
         {
           "key": "inch",
@@ -444,7 +444,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/16 İnç 5x114.3 Toyota OEM Jant Lastik Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/16 İnç 5x114.3 Toyota OEM Jant Lastik Takımı.webp",
-          "alt": "Toyota OEM"
+          "alt": "Toyota"
         }
       ],
       "status": {
@@ -453,12 +453,12 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Toyota%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Toyota%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "16-i-n-5x114-3-honda-oem-jant-tak-m",
       "filename": "16 İnç 5x114.3 Honda OEM Jant Takımı.jpg",
-      "title": "Honda OEM",
+      "title": "Honda",
       "specs": [
         {
           "key": "inch",
@@ -486,7 +486,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/16 İnç 5x114.3 Honda OEM Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/16 İnç 5x114.3 Honda OEM Jant Takımı.webp",
-          "alt": "Honda OEM"
+          "alt": "Honda"
         }
       ],
       "status": {
@@ -495,7 +495,7 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Honda%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Honda%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "18-i-n-5x112-oem-audi-jant-tak-m",
@@ -584,7 +584,7 @@
     {
       "id": "17-i-n-5x112-oem-volkswagen-i-stanbul-jant-tak-m",
       "filename": "17 İnç 5x112 OEM Volkswagen İstanbul Jant Takımı.jpg",
-      "title": "Volkswagen İstanbul",
+      "title": "Volkswagen",
       "specs": [
         {
           "key": "inch",
@@ -612,7 +612,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/17 İnç 5x112 OEM Volkswagen İstanbul Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/17 İnç 5x112 OEM Volkswagen İstanbul Jant Takımı.webp",
-          "alt": "Volkswagen İstanbul"
+          "alt": "Volkswagen"
         }
       ],
       "status": {
@@ -621,7 +621,7 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Volkswagen%20%C4%B0stanbul%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Volkswagen%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "16-i-n-5x112-oem-mercedes-jant-tak-m",
@@ -752,7 +752,7 @@
     {
       "id": "16-i-n-5x98-fiat-oem-jant-tak-m",
       "filename": "16 İnç 5x98 Fiat OEM Jant Takımı.jpg",
-      "title": "Fiat OEM",
+      "title": "Fiat",
       "specs": [
         {
           "key": "inch",
@@ -780,7 +780,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/16 İnç 5x98 Fiat OEM Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/16 İnç 5x98 Fiat OEM Jant Takımı.webp",
-          "alt": "Fiat OEM"
+          "alt": "Fiat"
         }
       ],
       "status": {
@@ -789,7 +789,7 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Fiat%20OEM%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Fiat%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "18-i-n-5x112-mercedes-jant-tak-m",
@@ -908,7 +908,7 @@
     {
       "id": "18-i-n-5x112-seat-fr-jant-tak-m",
       "filename": "18 İnç 5x112 Seat FR Jant Takımı.jpg",
-      "title": "Seat FR",
+      "title": "Seat",
       "specs": [
         {
           "key": "inch",
@@ -932,7 +932,7 @@
         {
           "jpg": "assets/images/jantlar/2. El Jantlar/18 İnç 5x112 Seat FR Jant Takımı.jpg",
           "webp": "assets/images/jantlar/2. El Jantlar/18 İnç 5x112 Seat FR Jant Takımı.webp",
-          "alt": "Seat FR"
+          "alt": "Seat"
         }
       ],
       "status": {
@@ -941,7 +941,7 @@
         "tone": "in-stock"
       },
       "vehicles": [],
-      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Seat%20FR%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      "whatsappUrl": "https://wa.me/905449483197?text=Merhaba%2C%20Seat%20(2.%20el%20jant)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
     },
     {
       "id": "14-i-n-4x100-jant-tak-m",

@@ -28,6 +28,7 @@ const BRAND_TOKENS = [
   "Vossen",
   "Babayaga",
   "BBS",
+  "Crome",
 ];
 
 const FINISH_TIERS = [
@@ -40,6 +41,8 @@ const FINISH_TIERS = [
   { id: 7, label: "Çelik", re: /\b(çelik|celik|\bsteel\b)\b/i },
 ];
 
+const INCH_WORD = "(?:\\u0130n\\u00E7|\\u0130nch|In\\u00E7|Inch|IN\\u00C7|inch|in\\u00E7|INCH)";
+
 function normalizeBase(filename) {
   return filename
     .replace(/\.jpe?g$/i, "")
@@ -48,9 +51,8 @@ function normalizeBase(filename) {
 }
 
 function extractInch(text) {
-  const inchWord = "(?:\\u0130n\\u00E7|\\u0130nch|In\\u00E7|Inch|IN\\u00C7|inch|in\\u00E7|INCH)";
   const m =
-    text.match(new RegExp("\\b(\\d{2})\\s*" + inchWord + "(?=\\s|[.\"]|$)", "i")) ||
+    text.match(new RegExp("\\b(\\d{2})\\s*" + INCH_WORD + "(?=\\s|[.\"]|$)", "i")) ||
     text.match(/\b(1[4-9]|2[0-2])\s+(?=\d{1,2}x\d)/i) ||
     text.match(/\b(1[4-9]|2[0-2])"\b/);
   return m ? m[1] : null;
@@ -69,7 +71,6 @@ function extractEt(text) {
 function extractType(text) {
   if (/\baftermarket\b/i.test(text)) return "Aftermarket";
   if (/\boem\b/i.test(text)) return "OEM";
-  if (/\bforged\b/i.test(text)) return "Forged";
   return null;
 }
 
@@ -83,7 +84,7 @@ function detectTier(text) {
     return { id: 2, label: "Forged" };
   }
 
-  if (/\bjant takım/i.test(text) && !/\boem\b/i.test(text)) {
+  if (/\bjant tak/i.test(text) && !/\boem\b/i.test(text)) {
     return { id: 7, label: "Çelik" };
   }
 
@@ -91,9 +92,8 @@ function detectTier(text) {
 }
 
 function stripTechnicalTokens(text) {
-  const inchWord = "(?:\\u0130n\\u00E7|\\u0130nch|In\\u00E7|Inch|IN\\u00C7|inch|in\\u00E7|INCH)";
   return text
-    .replace(new RegExp("\\b\\d{2}\\s*" + inchWord + "(?=\\s|[.\"]|$)", "gi"), " ")
+    .replace(new RegExp("\\b\\d{2}\\s*" + INCH_WORD + "(?=\\s|[.\"]|$)", "gi"), " ")
     .replace(/\b(1[4-9]|2[0-2])"\b/g, " ")
     .replace(/\b\d{1,2}x\d{2,3}(?:\.\d+)?(?:-\d{2,3})?\b/gi, " ")
     .replace(/\bET\s?\d{1,2}\b/gi, " ")
@@ -104,41 +104,57 @@ function stripTechnicalTokens(text) {
     .trim();
 }
 
-function cleanTitle(title) {
-  return title.replace(/\s+Jant$/i, "").trim();
+function normalizeTitle(raw) {
+  if (!raw) return "";
+  return raw
+    .replace(/\s+(OEM|Aftermarket|Forged)$/i, "")
+    .replace(/^(OEM|Aftermarket)\s+/i, "")
+    .replace(/\s+Jant$/i, "")
+    .replace(/\s+(İstanbul|FR)$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function extractTitle(text) {
-  let working = text;
+  const oemBrand = text.match(
+    new RegExp(
+      "\\bOEM\\s+(" +
+        BRAND_TOKENS.map(function (b) {
+          return b.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        }).join("|") +
+        ")",
+      "i"
+    )
+  );
+  if (oemBrand) return normalizeTitle(oemBrand[1]);
 
-  for (const brand of BRAND_TOKENS.sort(function (a, b) {
+  for (const brand of BRAND_TOKENS.slice().sort(function (a, b) {
     return b.length - a.length;
   })) {
-    const re = new RegExp(brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
-    const m = working.match(re);
-    if (m) {
-      const idx = m.index;
-      const before = working.slice(0, idx).trim();
-      const after = working.slice(idx).trim();
-      const brandPart = after.match(
-        new RegExp(
-          "^(" +
-            brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
-            "(?:\\s+(?!\\d{2}\\b|Jant\\b)[A-ZÇĞİÖŞÜ][\\w-]*)?)",
-          "i"
-        )
-      );
-      if (brandPart) return cleanTitle(brandPart[1].trim());
-      if (before && !/^\d/.test(before)) return cleanTitle(before);
-      return cleanTitle(m[0]);
-    }
+    const re = new RegExp("\\b" + brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+    const m = text.match(re);
+    if (!m) continue;
+
+    const after = text.slice(m.index).trim();
+    const brandPart = after.match(
+      new RegExp(
+        "^(" +
+          brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
+          "(?:\\s+(?!\\d{2}\\b|Jant\\b|OEM\\b|Aftermarket\\b)[A-ZÇĞİÖŞÜa-z][\\w-]*)?)",
+        "i"
+      )
+    );
+    if (brandPart) return normalizeTitle(brandPart[1]);
+    return normalizeTitle(m[0]);
   }
 
-  const cleaned = stripTechnicalTokens(working);
-  if (cleaned && cleaned.length > 1 && !/^\d/.test(cleaned)) return cleanTitle(cleaned);
+  const cleaned = stripTechnicalTokens(text);
+  if (cleaned && cleaned.length > 1 && !/^\d/.test(cleaned)) {
+    return normalizeTitle(cleaned);
+  }
 
-  const generic = working.match(/\b([A-ZÇĞİÖŞÜ][\w-]+)\s+Jant\s+Tak[\u0131iİI]+m[\u0131iİI]*/i);
-  if (generic) return cleanTitle(generic[1].trim());
+  const generic = text.match(/\b([A-ZÇĞİÖŞÜ][\w-]+)\s+Jant\s+Tak[\u0131iİI]+m[\u0131iİI]*/i);
+  if (generic) return normalizeTitle(generic[1]);
 
   return "";
 }
@@ -160,9 +176,7 @@ function parseFilename(filename) {
   const type = extractType(base);
   const tier = detectTier(base);
   const title = extractTitle(base);
-  const parsed = { inch, pcd, et, type, tier, title };
-  const specs = buildSpecs(parsed);
-  const parsedOk = Boolean(title || inch || pcd);
+  const specs = buildSpecs({ inch: inch, pcd: pcd, et: et, type: type });
 
   return {
     filename: filename,
@@ -170,13 +184,8 @@ function parseFilename(filename) {
     specs: specs,
     tier: tier.id,
     tierLabel: tier.label,
-    parsed: parsedOk && Boolean(title),
-    parseDetails: {
-      inch: inch,
-      pcd: pcd,
-      et: et,
-      type: type,
-    },
+    parsed: Boolean(title),
+    parseDetails: { inch: inch, pcd: pcd, et: et, type: type },
   };
 }
 

@@ -1352,25 +1352,14 @@ body.is-mobile-nav-open .site-header__brand {
 }
 
 /* ==========================================================================
-   HERO
+   HERO — shared tokens (index slider layout: hero-slider.css)
    ========================================================================== */
 
-.hero {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-height: 100svh;
-  background: #090909;
+#hero.hero::after {
+  display: none;
 }
 
-.hero__stage {
-  position: relative;
-  flex: 1 1 auto;
-  min-height: 0;
-  width: 100%;
-}
+/* Legacy inner-page hero blocks (unused on index) */
 
 .hero__media {
   position: absolute;
@@ -1391,43 +1380,6 @@ body.is-mobile-nav-open .site-header__brand {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-}
-
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(8, 8, 10, 0.06) 0%,
-    transparent 18%,
-    transparent 72%,
-    rgba(9, 9, 9, 0.42) 88%,
-    rgba(9, 9, 9, 0.88) 100%
-  );
-  pointer-events: none;
-}
-
-.hero__cards {
-  position: relative;
-  z-index: 2;
-  flex-shrink: 0;
-  background: #090909;
-  padding:
-    clamp(18px, 2.5vw, 24px)
-    clamp(24px, 4.5vw, 64px)
-    clamp(22px, 3vw, 32px);
-}
-
-.hero__cards::before {
-  content: "";
-  position: absolute;
-  top: -48px;
-  left: 0;
-  right: 0;
-  height: 48px;
-  background: linear-gradient(to bottom, transparent, #090909);
-  pointer-events: none;
 }
 
 /* Brand Watermark
@@ -1617,16 +1569,8 @@ body.is-mobile-nav-open .site-header__brand {
   padding: 14px 32px;
 }
 
-/* Info Cards
+/* Info Cards (legacy)
    -------------------------------------------------------------------------- */
-
-.hero__cards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--hero-card-gap);
-  padding-top: 0;
-  align-self: center;
-}
 
 .hero__card {
   position: relative;
@@ -1746,9 +1690,7 @@ body.is-mobile-nav-open .site-header__brand {
     transform 650ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero.is-loaded .hero__animate--1 { opacity: 1; transform: translateY(0); transition-delay: 0.08s; }
-
-/* Hero Highlights (below photo)
+/* Hero Highlights
    -------------------------------------------------------------------------- */
 
 .hero-highlights__list {
@@ -1762,6 +1704,7 @@ body.is-mobile-nav-open .site-header__brand {
 }
 
 .hero-highlights__item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1806,27 +1749,8 @@ body.is-mobile-nav-open .site-header__brand {
   line-height: 1.2;
 }
 
-/* Desktop Feature Bar (1024px+)
-   -------------------------------------------------------------------------- */
-
+/* Desktop feature bar base — index overrides in hero-slider.css */
 @media (min-width: 1024px) {
-  .hero__cards {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0;
-    background: transparent;
-    padding: 0 clamp(32px, 4.5vw, 64px);
-  }
-
-  .hero__cards::before {
-    display: none;
-  }
-
   .hero-highlights__list {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1942,51 +1866,6 @@ body.is-mobile-nav-open .site-header__brand {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    display: block;
-    min-height: auto;
-    overflow: hidden;
-    background: #08080a;
-  }
-
-  .hero__stage {
-    flex: none;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 852 / 1846;
-    overflow: hidden;
-  }
-
-  .hero__overlay {
-    background: linear-gradient(
-      180deg,
-      transparent 0%,
-      transparent 68%,
-      rgba(8, 8, 10, 0.12) 100%
-    );
-  }
-
-  .hero__media-img {
-    object-fit: contain;
-    object-position: center top;
-  }
-
-  .hero__cards {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    flex: none;
-    margin-top: 0;
-    background: transparent;
-    padding: 0 clamp(20px, 5vw, 28px);
-  }
-
-  .hero__cards::before {
-    display: none;
-  }
-
   .hero-highlights__list {
     width: min(100%, 520px);
     margin: 0 auto;
@@ -2041,10 +1920,6 @@ body.is-mobile-nav-open .site-header__brand {
     min-height: 50px;
     height: 52px;
     padding: 0 10px;
-  }
-
-  .hero__cards {
-    bottom: clamp(32px, 8vw, 40px);
   }
 }
 

@@ -234,163 +234,143 @@
     </nav>
   </header>
 
-  <section class="hero" id="hero">
-    <div class="hero__stage">
-      <div class="hero-slider" data-hero-slider aria-roledescription="carousel" aria-label="Hero galerisi">
-        <div class="hero-slider__track">
-          <div class="hero-slider__slide hero-slider__slide--1 is-active" data-hero-slide="0" aria-hidden="false">
-            <picture class="hero-slider__picture">
-              <source
-                media="(max-width: 768px)"
-                srcset="assets/images/hero/hero-premium-mobile.webp"
-                type="image/webp"
-              >
-              <img
-                src="assets/images/hero/hero-premium.webp"
-                alt=""
-                class="hero-slider__img"
-                data-hero-img
-                width="1920"
-                height="1080"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
-              >
-            </picture>
-          </div>
+  <section class="hero hero--slide-0" id="hero">
+    <div class="hero__viewport" data-hero-slider aria-roledescription="carousel" aria-label="Hero galerisi">
 
-          <div class="hero-slider__slide hero-slider__slide--2" data-hero-slide="1" aria-hidden="true">
-            <picture class="hero-slider__picture">
-              <source
-                media="(max-width: 768px)"
-                srcset="assets/images/hero/hero-sahibinden-banner-mobile.webp"
-                type="image/webp"
-              >
-              <img
-                data-src="assets/images/hero/hero-sahibinden-banner.webp"
-                data-src-mobile="assets/images/hero/hero-sahibinden-banner-mobile.webp"
-                alt=""
-                class="hero-slider__img"
-                data-hero-img
-                width="1920"
-                height="1080"
-                loading="lazy"
-                decoding="async"
-              >
-            </picture>
-          </div>
-
-          <div class="hero-slider__slide hero-slider__slide--3" data-hero-slide="2" aria-hidden="true">
-            <picture class="hero-slider__picture">
-              <img
-                data-src="assets/images/hero/hero-store.webp"
-                alt=""
-                class="hero-slider__img"
-                data-hero-img
-                width="1920"
-                height="1080"
-                loading="lazy"
-                decoding="async"
-              >
-            </picture>
-          </div>
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-slide hero__bg-slide--1 is-active" data-hero-slide="0">
+          <picture class="hero__bg-picture">
+            <source media="(max-width: 768px)" srcset="assets/images/hero/hero-premium-mobile.webp" type="image/webp">
+            <img
+              src="assets/images/hero/hero-premium.webp"
+              alt=""
+              class="hero__bg-img"
+              data-hero-img
+              width="1920"
+              height="1080"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
         </div>
-
-        <div class="hero__overlay" aria-hidden="true"></div>
-
-        <button type="button" class="hero-slider__nav hero-slider__nav--prev" data-hero-prev aria-label="Önceki slide">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <button type="button" class="hero-slider__nav hero-slider__nav--next" data-hero-next aria-label="Sonraki slide">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-
-        <div class="hero-slider__pagination" data-hero-dots role="tablist" aria-label="Slide seçimi"></div>
-      </div>
-
-      <div class="hero__copy">
-        <div class="hero__copy-panel hero__copy-panel--empty is-active" data-hero-content="0" aria-hidden="false"></div>
-
-        <div class="hero__copy-panel" data-hero-content="1" aria-hidden="true">
-          <div class="hero__content">
-            <h2 class="hero__title hero__animate hero__animate--1">Sahibinden Mağazamız</h2>
-            <p class="hero__desc hero__animate hero__animate--2">Sıfır ve ikinci el jantlar, lastikler ve güncel stoklarımızı Sahibinden mağazamızdan inceleyebilirsiniz.</p>
-            <div class="hero__actions hero__animate hero__animate--3">
-              <a href="https://markajantlastik.sahibinden.com/" class="hero__btn hero__btn--primary" target="_blank" rel="noopener noreferrer">Ürünleri İncele</a>
-            </div>
-          </div>
+        <div class="hero__bg-slide hero__bg-slide--2" data-hero-slide="1">
+          <picture class="hero__bg-picture">
+            <source media="(max-width: 768px)" srcset="assets/images/hero/hero-sahibinden-banner-mobile.webp" type="image/webp">
+            <img
+              data-src="assets/images/hero/hero-sahibinden-banner.webp"
+              data-src-mobile="assets/images/hero/hero-sahibinden-banner-mobile.webp"
+              alt=""
+              class="hero__bg-img"
+              data-hero-img
+              width="1920"
+              height="1080"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
         </div>
-
-        <div class="hero__copy-panel hero__copy-panel--center" data-hero-content="2" aria-hidden="true">
-          <div class="hero__content">
-            <h2 class="hero__title hero__animate hero__animate--1">Jant ve Lastikte Tüm İhtiyaçlarınız Tek Adreste</h2>
-            <p class="hero__desc hero__animate hero__animate--2">Satış, uygulama, onarım ve profesyonel hizmetler için uzman ekibimizle iletişime geçin.</p>
-            <div class="hero__actions hero__animate hero__animate--3">
-              <a href="iletisim.html" class="hero__btn hero__btn--primary">Hemen İletişime Geç</a>
-            </div>
-          </div>
+        <div class="hero__bg-slide hero__bg-slide--3" data-hero-slide="2">
+          <picture class="hero__bg-picture">
+            <source media="(max-width: 768px)" srcset="assets/images/hero/hero-store.webp" type="image/webp">
+            <img
+              data-src="assets/images/hero/hero-store.webp"
+              alt=""
+              class="hero__bg-img"
+              data-hero-img
+              width="1920"
+              height="1080"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
         </div>
       </div>
-    </div>
 
-    <div class="hero__cards">
-      <ul class="hero-highlights__list hero__animate hero__animate--1" aria-label="Premium özellikler">
-        <li class="hero-highlights__item">
-          <span class="hero-highlights__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <circle cx="12" cy="12" r="3.5"/>
-              <line x1="12" y1="2" x2="12" y2="5"/>
-              <line x1="12" y1="19" x2="12" y2="22"/>
-              <line x1="2" y1="12" x2="5" y2="12"/>
-              <line x1="19" y1="12" x2="22" y2="12"/>
-              <line x1="4.93" y1="4.93" x2="7.05" y2="7.05"/>
-              <line x1="16.95" y1="16.95" x2="19.07" y2="19.07"/>
-              <line x1="4.93" y1="19.07" x2="7.05" y2="16.95"/>
-              <line x1="16.95" y1="7.05" x2="19.07" y2="4.93"/>
-            </svg>
-          </span>
-          <span class="hero-highlights__label">Premium Jant</span>
-        </li>
-        <li class="hero-highlights__item">
-          <span class="hero-highlights__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9"/>
-              <circle cx="12" cy="12" r="5.5"/>
-              <path d="M12 3v2.5"/>
-              <path d="M12 18.5V21"/>
-              <path d="M3 12h2.5"/>
-              <path d="M18.5 12H21"/>
-              <path d="M5.5 5.5l1.8 1.8"/>
-              <path d="M16.7 16.7l1.8 1.8"/>
-              <path d="M5.5 18.5l1.8-1.8"/>
-              <path d="M16.7 7.3l1.8-1.8"/>
-            </svg>
-          </span>
-          <span class="hero-highlights__label">Premium Lastik</span>
-        </li>
-        <li class="hero-highlights__item">
-          <span class="hero-highlights__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-            </svg>
-          </span>
-          <span class="hero-highlights__label">Uzman Uygulama</span>
-        </li>
-        <li class="hero-highlights__item">
-          <span class="hero-highlights__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <path d="M9 12l2 2 4-4"/>
-            </svg>
-          </span>
-          <span class="hero-highlights__label">Garantili Hizmet</span>
-        </li>
-      </ul>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__ui">
+        <div class="hero__panels">
+          <article class="hero__panel hero__panel--left is-active" data-hero-content="0" aria-hidden="false">
+            <div class="hero__content">
+              <h1 class="hero__title hero__animate hero__animate--1">Premium Jant &amp; Lastik Çözümleri</h1>
+              <p class="hero__desc hero__animate hero__animate--2">Premium jant, kaliteli lastik, profesyonel montaj ve uzman servis tek noktada.</p>
+              <div class="hero__actions hero__animate hero__animate--3">
+                <a href="jantlar.html" class="hero__btn hero__btn--primary">Jantları İncele</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__panel hero__panel--left" data-hero-content="1" aria-hidden="true">
+            <div class="hero__content">
+              <h2 class="hero__title hero__animate hero__animate--1">Sahibinden Mağazamız</h2>
+              <p class="hero__desc hero__animate hero__animate--2">Sıfır ve ikinci el jantlar, lastikler ve güncel stoklarımızı Sahibinden mağazamızdan inceleyebilirsiniz.</p>
+              <div class="hero__actions hero__animate hero__animate--3">
+                <a href="#" class="hero__btn hero__btn--primary" data-sahibinden-link>Ürünleri İncele</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__panel hero__panel--center" data-hero-content="2" aria-hidden="true">
+            <div class="hero__content">
+              <h2 class="hero__title hero__animate hero__animate--1">Jant ve Lastikte Tüm İhtiyaçlarınız Tek Adreste</h2>
+              <p class="hero__desc hero__animate hero__animate--2">Satış, uygulama, onarım ve profesyonel hizmetler için uzman ekibimizle iletişime geçin.</p>
+              <div class="hero__actions hero__animate hero__animate--3">
+                <a href="iletisim.html" class="hero__btn hero__btn--primary">Hemen İletişime Geç</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero__highlights">
+          <ul class="hero-highlights__list" aria-label="Premium özellikler">
+            <li class="hero-highlights__item">
+              <span class="hero-highlights__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3.5"/>
+                  <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+                  <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+                </svg>
+              </span>
+              <span class="hero-highlights__label">Premium Jant</span>
+            </li>
+            <li class="hero-highlights__item">
+              <span class="hero-highlights__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/>
+                  <path d="M12 3v2.5"/><path d="M12 18.5V21"/><path d="M3 12h2.5"/><path d="M18.5 12H21"/>
+                </svg>
+              </span>
+              <span class="hero-highlights__label">Premium Lastik</span>
+            </li>
+            <li class="hero-highlights__item">
+              <span class="hero-highlights__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </span>
+              <span class="hero-highlights__label">Uzman Uygulama</span>
+            </li>
+            <li class="hero-highlights__item">
+              <span class="hero-highlights__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+                </svg>
+              </span>
+              <span class="hero-highlights__label">Garantili Hizmet</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__dots" data-hero-dots role="tablist" aria-label="Slide seçimi"></div>
+      </div>
+
+      <button type="button" class="hero__arrow hero__arrow--prev" data-hero-prev aria-label="Önceki slide">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="hero__arrow hero__arrow--next" data-hero-next aria-label="Sonraki slide">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
     </div>
   </section>
 

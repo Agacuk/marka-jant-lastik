@@ -65,18 +65,21 @@
 }
 
 .hero__bg-slide--1 {
-  --hero-pos-desktop: center 42%;
-  --hero-pos-mobile: center 18%;
+  --hero-pos-desktop: center 58%;
+  --hero-pos-tablet: center 52%;
+  --hero-pos-mobile: center 44%;
 }
 
 .hero__bg-slide--2 {
-  --hero-pos-desktop: center center;
-  --hero-pos-mobile: center center;
+  --hero-pos-desktop: center 50%;
+  --hero-pos-tablet: center 50%;
+  --hero-pos-mobile: center 48%;
 }
 
 .hero__bg-slide--3 {
-  --hero-pos-desktop: center 36%;
-  --hero-pos-mobile: center 24%;
+  --hero-pos-desktop: center 34%;
+  --hero-pos-tablet: center 30%;
+  --hero-pos-mobile: center 22%;
 }
 
 @keyframes heroKenBurns {
@@ -224,6 +227,7 @@
 .hero__highlights {
   grid-area: highlights;
   pointer-events: auto;
+  align-self: end;
 }
 
 .hero .hero-highlights__list {
@@ -322,6 +326,10 @@
       inset 0 1px 0 rgba(255, 255, 255, 0.05);
   }
 
+  .hero__highlights {
+    padding-bottom: clamp(2px, 0.6vw, 6px);
+  }
+
   .hero .hero-highlights__item {
     justify-content: center;
     height: 100%;
@@ -343,6 +351,11 @@
     transform: translateY(-50%);
   }
 
+  .hero--slide-2 .hero__panels {
+    align-self: stretch;
+    min-height: 100%;
+  }
+
   .hero__panel--center {
     left: 50%;
     bottom: auto;
@@ -353,9 +366,15 @@
   .hero__panel--center.is-active {
     transform: translate(-50%, -50%);
   }
+}
 
-  .hero--slide-2 .hero__panels {
-    align-self: center;
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero__bg-img {
+    object-position: var(--hero-pos-tablet, var(--hero-pos-desktop, center center));
+  }
+
+  .hero__panel .hero__title {
+    font-size: clamp(28px, 4.2vw, 40px);
   }
 }
 
@@ -369,8 +388,14 @@
   }
 
   .hero__ui {
-    gap: 10px;
-    padding-bottom: clamp(14px, 3.5vw, 20px);
+    gap: clamp(8px, 2.5vw, 12px);
+    padding-top: calc(var(--site-header-height) + clamp(22px, 5vw, 36px));
+    padding-bottom: clamp(12px, 3vw, 18px);
+  }
+
+  .hero__panels {
+    align-self: end;
+    padding-top: clamp(72px, 16vw, 108px);
   }
 
   .hero__panel {
@@ -385,6 +410,19 @@
 
   .hero__panel--center.is-active {
     transform: translateY(0);
+  }
+
+  .hero--slide-2 .hero__panels {
+    padding-top: clamp(88px, 20vw, 124px);
+  }
+
+  .hero--slide-2 .hero__panel .hero__title {
+    font-size: clamp(20px, 5.8vw, 28px);
+    line-height: 1.18;
+  }
+
+  .hero--slide-2 .hero__panel .hero__desc {
+    max-width: 34ch;
   }
 
   .hero__panel--center .hero__content {
@@ -412,6 +450,7 @@
 
   .hero .hero-highlights__list {
     gap: 8px;
+    margin-top: clamp(2px, 1vw, 6px);
   }
 
   .hero .hero-highlights__item {

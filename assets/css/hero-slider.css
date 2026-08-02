@@ -71,9 +71,9 @@
 }
 
 .hero__bg-slide--2 {
-  --hero-pos-desktop: center 50%;
-  --hero-pos-tablet: center 50%;
-  --hero-pos-mobile: center 48%;
+  --hero-pos-desktop: center center;
+  --hero-pos-tablet: center center;
+  --hero-pos-mobile: 54% 50%;
 }
 
 .hero__bg-slide--3 {
@@ -108,7 +108,8 @@
 
 .hero--slide-1 .hero__shade {
   background:
-    linear-gradient(90deg, rgba(4, 8, 18, 0.88) 0%, rgba(4, 8, 18, 0.52) 42%, transparent 72%),
+    linear-gradient(90deg, rgba(4, 8, 18, 0.94) 0%, rgba(4, 8, 18, 0.68) 32%, rgba(4, 8, 18, 0.22) 56%, transparent 78%),
+    linear-gradient(180deg, rgba(8, 8, 10, 0.2) 0%, transparent 24%),
     linear-gradient(180deg, transparent 40%, rgba(9, 9, 9, 0.78) 80%, rgba(9, 9, 9, 0.94) 100%);
 }
 

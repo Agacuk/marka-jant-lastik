@@ -208,24 +208,6 @@ function faqItems(faq) {
     .join("\n");
 }
 
-function galleryItems(service) {
-  const items = [];
-  for (let i = 1; i <= service.galleryCount; i += 1) {
-    const file = "gallery-" + String(i).padStart(2, "0") + ".svg";
-    const src = "assets/images/services/" + service.id + "/" + file;
-    items.push(
-      '        <figure class="service-detail-gallery__item">\n' +
-        '          <img src="' +
-        src +
-        '" alt="' +
-        esc(service.title + " uygulama görseli " + i) +
-        '" loading="lazy" decoding="async" width="480" height="360">\n' +
-        "        </figure>"
-    );
-  }
-  return items.join("\n");
-}
-
 function schemaJson(service, catalog) {
   const schema = {
     "@context": "https://schema.org",
@@ -404,15 +386,6 @@ ${listItems(service.whenNeeded)}
 ${faqItems(service.faq)}
         </div>
       </article>
-    </div>
-  </section>
-
-  <section class="service-detail-gallery" aria-labelledby="galleryTitle-${service.id}">
-    <div class="why__container">
-      <h2 class="service-detail__heading" id="galleryTitle-${service.id}">Uygulama Galerisi</h2>
-      <div class="service-detail-gallery__grid">
-${galleryItems(service)}
-      </div>
     </div>
   </section>
 

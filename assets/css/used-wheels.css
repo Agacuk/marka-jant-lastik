@@ -1,33 +1,31 @@
 /* ==========================================================================
-   2. EL JANTLAR — Premium carousel section
+   PREMIUM 2. EL JANTLAR
    ========================================================================== */
 
 .used-wheels {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   background:
-    radial-gradient(ellipse 80% 55% at 50% 0%, rgba(31, 79, 255, 0.07) 0%, transparent 62%),
+    radial-gradient(ellipse 85% 60% at 50% -10%, rgba(31, 79, 255, 0.09) 0%, transparent 58%),
     #090909;
 }
 
-.used-wheels__badge-line {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 14px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(31, 79, 255, 0.28);
-  background: rgba(31, 79, 255, 0.08);
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.used-wheels-carousel {
+  --uw-gap: clamp(14px, 1.6vw, 20px);
+  --uw-visible: 5;
+  position: relative;
+  margin-top: clamp(10px, 1.8vw, 18px);
 }
 
-.used-wheels-carousel {
-  position: relative;
-  margin-top: clamp(8px, 1.5vw, 16px);
+@media (min-width: 1920px) {
+  .used-wheels-carousel {
+    --uw-visible: 6;
+  }
+}
+
+@media (max-width: 767px) {
+  .used-wheels-carousel {
+    --uw-visible: 2.7;
+  }
 }
 
 .used-wheels-carousel__viewport {
@@ -38,7 +36,15 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
-  padding: 8px 2px 18px;
+  padding: 10px 4px 22px;
+  cursor: grab;
+  user-select: none;
+}
+
+.used-wheels-carousel__viewport.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
 }
 
 .used-wheels-carousel__viewport::-webkit-scrollbar {
@@ -56,17 +62,37 @@
 
 .used-wheels-carousel__track {
   display: flex;
-  gap: clamp(14px, 1.8vw, 20px);
+  gap: var(--uw-gap);
   min-height: 100%;
 }
 
 .used-wheels-card {
-  flex: 0 0 calc((100% - (4 * clamp(14px, 1.8vw, 20px))) / 4.5);
+  flex: 0 0 calc((100% - ((var(--uw-visible) - 1) * var(--uw-gap))) / var(--uw-visible));
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
   flex-direction: column;
   min-width: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.used-wheels-card__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 16px;
+  transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.used-wheels-card:hover .used-wheels-card__inner,
+.used-wheels-card:focus-visible .used-wheels-card__inner {
+  transform: translateY(-6px);
 }
 
 .used-wheels-card__media {
@@ -74,25 +100,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: clamp(220px, 28vw, 320px);
-  padding: clamp(14px, 2vw, 22px);
+  height: clamp(230px, 26vw, 300px);
+  padding: clamp(16px, 2vw, 24px);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  background: #121218;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(165deg, #16161e 0%, #101016 100%);
   overflow: hidden;
   transition:
-    transform 450ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 450ms ease;
 }
 
 .used-wheels-card:hover .used-wheels-card__media,
-.used-wheels-card:focus-within .used-wheels-card__media {
-  transform: translateY(-4px);
-  border-color: rgba(31, 79, 255, 0.24);
+.used-wheels-card:focus-visible .used-wheels-card__media {
+  border-color: rgba(31, 79, 255, 0.42);
   box-shadow:
-    0 16px 42px rgba(0, 0, 0, 0.34),
-    0 0 32px rgba(31, 79, 255, 0.1);
+    0 18px 48px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(31, 79, 255, 0.14),
+    0 0 36px rgba(31, 79, 255, 0.16);
+}
+
+.used-wheels-card__status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(9, 9, 9, 0.82);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.used-wheels-card__status--in-stock {
+  border-color: rgba(37, 211, 102, 0.28);
+}
+
+.used-wheels-card__status--reserved {
+  border-color: rgba(255, 193, 7, 0.35);
+}
+
+.used-wheels-card__status--sold {
+  border-color: rgba(255, 255, 255, 0.14);
+  opacity: 0.75;
 }
 
 .used-wheels-card__placeholder {
@@ -126,38 +184,61 @@
 }
 
 .used-wheels-card:hover .used-wheels-card__img.is-loaded,
-.used-wheels-card:focus-within .used-wheels-card__img.is-loaded {
-  transform: scale(1.04);
+.used-wheels-card:focus-visible .used-wheels-card__img.is-loaded {
+  transform: scale(1.05);
 }
 
-.used-wheels-card__badge {
+.used-wheels-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 4px 4px;
+  min-height: 88px;
+}
+
+.used-wheels-card__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+}
+
+.used-wheels-card__specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.used-wheels-card__spec {
   display: inline-flex;
-  align-self: center;
-  margin-top: 12px;
-  padding: 5px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.72);
+  align-items: center;
+  padding: 4px 9px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.68);
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .used-wheels-carousel__nav {
   position: absolute;
-  top: 50%;
+  top: 42%;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  margin-top: -22px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(9, 9, 9, 0.88);
+  background: rgba(9, 9, 9, 0.9);
   color: #ffffff;
   cursor: pointer;
   transition:
@@ -168,8 +249,8 @@
 }
 
 .used-wheels-carousel__nav:hover:not(:disabled) {
-  background: rgba(31, 79, 255, 0.22);
-  border-color: rgba(31, 79, 255, 0.45);
+  background: rgba(31, 79, 255, 0.24);
+  border-color: rgba(31, 79, 255, 0.48);
   transform: scale(1.05);
 }
 
@@ -179,11 +260,11 @@
 }
 
 .used-wheels-carousel__nav--prev {
-  left: -8px;
+  left: -10px;
 }
 
 .used-wheels-carousel__nav--next {
-  right: -8px;
+  right: -10px;
 }
 
 .used-wheels-carousel__nav svg {
@@ -205,7 +286,6 @@
   color: #ffffff;
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
   font-weight: 700;
-  letter-spacing: 0.01em;
 }
 
 .used-wheels-cta__text {
@@ -238,15 +318,215 @@
   flex-shrink: 0;
 }
 
-@media (max-width: 1200px) {
-  .used-wheels-card {
-    flex-basis: calc((100% - (3 * clamp(14px, 1.8vw, 20px))) / 3.5);
-  }
+/* Modal */
+.used-wheels-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 3vw, 32px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 320ms ease, visibility 320ms ease;
+}
+
+.used-wheels-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.used-wheels-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 4, 8, 0.82);
+}
+
+.used-wheels-modal__dialog {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  width: min(1080px, 100%);
+  max-height: min(90vh, 820px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(160deg, #14141c 0%, #0c0c12 100%);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  transform: translateY(12px) scale(0.985);
+  transition: transform 380ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.used-wheels-modal.is-open .used-wheels-modal__dialog {
+  transform: translateY(0) scale(1);
+}
+
+.used-wheels-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(9, 9, 9, 0.75);
+  color: #fff;
+  cursor: pointer;
+}
+
+.used-wheels-modal__gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: clamp(20px, 3vw, 32px);
+  background: #0e0e14;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.used-wheels-modal__img {
+  width: 100%;
+  height: min(52vh, 480px);
+  object-fit: contain;
+  object-position: center;
+}
+
+.used-wheels-modal__gal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(9, 9, 9, 0.85);
+  color: #fff;
+  cursor: pointer;
+}
+
+.used-wheels-modal__gal-nav--prev {
+  left: 12px;
+}
+
+.used-wheels-modal__gal-nav--next {
+  right: 12px;
+}
+
+.used-wheels-modal__gal-nav:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.used-wheels-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: clamp(22px, 3vw, 32px);
+  overflow-y: auto;
+}
+
+.used-wheels-modal__title {
+  margin: 0;
+  padding-right: 36px;
+  color: #fff;
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+  font-weight: 700;
+}
+
+.used-wheels-modal__specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.used-wheels-modal__spec {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.used-wheels-modal__block-title {
+  margin: 0 0 6px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.used-wheels-modal__vehicles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.used-wheels-modal__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  background: rgba(37, 211, 102, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.used-wheels-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.used-wheels-modal__actions .hero__btn {
+  min-width: min(100%, 200px);
+}
+
+.used-wheels-modal__phone {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.used-wheels-modal__phone:hover {
+  background: rgba(31, 79, 255, 0.16);
+  border-color: rgba(31, 79, 255, 0.42);
 }
 
 @media (max-width: 900px) {
-  .used-wheels-card {
-    flex-basis: calc((100% - (2 * clamp(14px, 1.8vw, 20px))) / 2.5);
+  .used-wheels-modal__dialog {
+    grid-template-columns: 1fr;
+    max-height: 92vh;
+    overflow-y: auto;
+  }
+
+  .used-wheels-modal__gallery {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .used-wheels-carousel__nav--prev {
@@ -259,29 +539,23 @@
 }
 
 @media (max-width: 640px) {
-  .used-wheels-card {
-    flex-basis: calc((100% - clamp(14px, 1.8vw, 20px)) / 1.35);
-  }
-
   .used-wheels-card__media {
-    height: clamp(210px, 58vw, 280px);
+    height: clamp(210px, 52vw, 260px);
   }
 
   .used-wheels-carousel__nav {
     width: 38px;
     height: 38px;
-    margin-top: -19px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .used-wheels-carousel__viewport {
-    scroll-behavior: auto;
-  }
-
+  .used-wheels-carousel__viewport,
+  .used-wheels-modal,
+  .used-wheels-modal__dialog,
+  .used-wheels-card__inner,
   .used-wheels-card__media,
-  .used-wheels-card__img,
-  .used-wheels-carousel__nav {
+  .used-wheels-card__img {
     transition: none;
   }
 }

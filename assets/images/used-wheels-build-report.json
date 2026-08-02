@@ -6,150 +6,318 @@
   "totalFound": 24,
   "accepted": 24,
   "rejected": [],
+  "parsedOk": [
+    "14 İnç 4x108 Peugeot-Citroën Jant Takımı.jpg",
+    "15 İnç 5x100 Seat OEM Jant Takımı.jpg",
+    "16 inch 4x108 Opel OEM Jant Takımı.jpg",
+    "16 İnç 4x100 Opel OEM Jant Takımı.jpg",
+    "16 İnç 5x112 OEM Mercedes Jant Takımı.jpg",
+    "16 İnç 5x114.3 Honda OEM Jant Takımı.jpg",
+    "16 İnç 5x114.3 Renault OEM Jant Takımı.jpg",
+    "16 İnç 5x114.3 Toyota OEM Jant Lastik Takımı.jpg",
+    "16 İnç 5x98 Fiat OEM Jant Takımı.jpg",
+    "17 İnç 4x100 Vossen Jant Takımı.jpg",
+    "17 İnç 5x112 OEM Volkswagen İstanbul Jant Takımı.jpg",
+    "17 İnç 5x112 OEM Škoda Jant Takımı.jpg",
+    "17 İnç 5x120 OEM BMW Jant Takımı.jpg",
+    "18 İnch 4x100 Crome Jant Takımı.jpg",
+    "18 İNÇ 5x112 Babayaga.jpg",
+    "18 İNÇ 5x112 Mercedes Jant Takım.jpg",
+    "18 İnç 5x112 OEM Audi Jant Takımı.jpg",
+    "18 İnç 5x112 OEM Mercedes Jant Takımı.jpg",
+    "18 İnç 5x112 Seat FR Jant Takımı.jpg",
+    "18 İnç 5x120 OEM BMW Jant Takımı.jpg",
+    "19 İnç 5x120 BMW Jant Takımı.jpg",
+    "20 İnç 5x120 BMW Jant Takımı.jpg"
+  ],
+  "parsedFail": [
+    {
+      "file": "14 İnç 4x100 Jant Takımı.jpg",
+      "title": "14 İnç 4x100"
+    },
+    {
+      "file": "15 İnç 4x100-108 Jant Takımı.jpg",
+      "title": "15 İnç 4x100-108"
+    }
+  ],
   "sortOrder": [
     {
-      "alt": "18 İnch 4x100 Crome Jant Takımı",
+      "title": "Crome",
+      "filename": "18 İnch 4x100 Crome Jant Takımı.jpg",
       "tier": 1,
-      "tierLabel": "Krom / Forged / Premium",
-      "quality": 482
+      "tierLabel": "Krom",
+      "specs": [
+        "18\"",
+        "4x100"
+      ],
+      "quality": 508
     },
     {
-      "alt": "20 İnç 5x120 BMW Jant Takımı",
-      "tier": 1,
-      "tierLabel": "Krom / Forged / Premium",
-      "quality": 475
+      "title": "BMW",
+      "filename": "20 İnç 5x120 BMW Jant Takımı.jpg",
+      "tier": 2,
+      "tierLabel": "Forged",
+      "specs": [
+        "20\"",
+        "5x120"
+      ],
+      "quality": 487
     },
     {
-      "alt": "19 İnç 5x120 BMW Jant Takımı",
-      "tier": 1,
-      "tierLabel": "Krom / Forged / Premium",
-      "quality": 451
+      "title": "BMW",
+      "filename": "19 İnç 5x120 BMW Jant Takımı.jpg",
+      "tier": 2,
+      "tierLabel": "Forged",
+      "specs": [
+        "19\"",
+        "5x120"
+      ],
+      "quality": 463
     },
     {
-      "alt": "17 İnç 4x100 Vossen Jant Takımı",
-      "tier": 1,
-      "tierLabel": "Krom / Forged / Premium",
-      "quality": 445
+      "title": "Vossen",
+      "filename": "17 İnç 4x100 Vossen Jant Takımı.jpg",
+      "tier": 2,
+      "tierLabel": "Forged",
+      "specs": [
+        "17\"",
+        "4x100"
+      ],
+      "quality": 457
     },
     {
-      "alt": "18 İNÇ 5x112 Babayaga",
-      "tier": 1,
-      "tierLabel": "Krom / Forged / Premium",
-      "quality": 432
+      "title": "Babayaga",
+      "filename": "18 İNÇ 5x112 Babayaga.jpg",
+      "tier": 2,
+      "tierLabel": "Forged",
+      "specs": [
+        "18\"",
+        "5x112"
+      ],
+      "quality": 444
     },
     {
-      "alt": "16 inch 4x108 Opel OEM Jant Takımı",
-      "tier": 5,
+      "title": "Opel OEM",
+      "filename": "16 inch 4x108 Opel OEM Jant Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
-      "quality": 423
+      "specs": [
+        "16\"",
+        "4x108",
+        "OEM"
+      ],
+      "quality": 427
     },
     {
-      "alt": "18 İnç 5x112 OEM Mercedes Jant Takımı",
-      "tier": 5,
+      "title": "Mercedes",
+      "filename": "18 İnç 5x112 OEM Mercedes Jant Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
-      "quality": 405
+      "specs": [
+        "18\"",
+        "5x112",
+        "OEM"
+      ],
+      "quality": 409
     },
     {
-      "alt": "16 İnç 4x100 Opel OEM Jant Takımı",
-      "tier": 5,
+      "title": "Opel OEM",
+      "filename": "16 İnç 4x100 Opel OEM Jant Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
-      "quality": 392
+      "specs": [
+        "16\"",
+        "4x100",
+        "OEM"
+      ],
+      "quality": 396
     },
     {
-      "alt": "16 İnç 5x114.3 Renault OEM Jant Takımı",
-      "tier": 5,
+      "title": "Renault OEM",
+      "filename": "16 İnç 5x114.3 Renault OEM Jant Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
-      "quality": 392
+      "specs": [
+        "16\"",
+        "5x114.3",
+        "OEM"
+      ],
+      "quality": 396
     },
     {
-      "alt": "15 İnç 5x100 Seat OEM Jant Takımı",
-      "tier": 5,
+      "title": "Seat OEM",
+      "filename": "15 İnç 5x100 Seat OEM Jant Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
-      "quality": 386
+      "specs": [
+        "15\"",
+        "5x100",
+        "OEM"
+      ],
+      "quality": 390
     },
     {
-      "alt": "16 İnç 5x114.3 Toyota OEM Jant Lastik Takımı",
-      "tier": 5,
+      "title": "Toyota OEM",
+      "filename": "16 İnç 5x114.3 Toyota OEM Jant Lastik Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
+      "specs": [
+        "16\"",
+        "5x114.3",
+        "OEM"
+      ],
+      "quality": 379
+    },
+    {
+      "title": "Honda OEM",
+      "filename": "16 İnç 5x114.3 Honda OEM Jant Takımı.jpg",
+      "tier": 6,
+      "tierLabel": "Gümüş",
+      "specs": [
+        "16\"",
+        "5x114.3",
+        "OEM"
+      ],
+      "quality": 378
+    },
+    {
+      "title": "Audi",
+      "filename": "18 İnç 5x112 OEM Audi Jant Takımı.jpg",
+      "tier": 6,
+      "tierLabel": "Gümüş",
+      "specs": [
+        "18\"",
+        "5x112",
+        "OEM"
+      ],
       "quality": 375
     },
     {
-      "alt": "16 İnç 5x114.3 Honda OEM Jant Takımı",
-      "tier": 5,
+      "title": "Škoda",
+      "filename": "17 İnç 5x112 OEM Škoda Jant Takımı.jpg",
+      "tier": 6,
       "tierLabel": "Gümüş",
-      "quality": 374
-    },
-    {
-      "alt": "18 İnç 5x112 OEM Audi Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
+      "specs": [
+        "17\"",
+        "5x112",
+        "OEM"
+      ],
       "quality": 371
     },
     {
-      "alt": "17 İnç 5x112 OEM Škoda Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 367
-    },
-    {
-      "alt": "17 İnç 5x112 OEM Volkswagen İstanbul Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 362
-    },
-    {
-      "alt": "16 İnç 5x112 OEM Mercedes Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 361
-    },
-    {
-      "alt": "18 İnç 5x112 Seat FR Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 348
-    },
-    {
-      "alt": "18 İnç 5x120 OEM BMW Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 341
-    },
-    {
-      "alt": "17 İnç 5x120 OEM BMW Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 333
-    },
-    {
-      "alt": "16 İnç 5x98 Fiat OEM Jant Takımı",
-      "tier": 5,
-      "tierLabel": "Gümüş",
-      "quality": 313
-    },
-    {
-      "alt": "18 İNÇ 5x112 Mercedes Jant Takım",
+      "title": "Volkswagen İstanbul",
+      "filename": "17 İnç 5x112 OEM Volkswagen İstanbul Jant Takımı.jpg",
       "tier": 6,
-      "tierLabel": "Çelik Jant",
-      "quality": 387
+      "tierLabel": "Gümüş",
+      "specs": [
+        "17\"",
+        "5x112",
+        "OEM"
+      ],
+      "quality": 366
     },
     {
-      "alt": "14 İnç 4x108 Peugeot-Citroën Jant Takımı",
+      "title": "Mercedes",
+      "filename": "16 İnç 5x112 OEM Mercedes Jant Takımı.jpg",
       "tier": 6,
-      "tierLabel": "Çelik Jant",
-      "quality": 384
+      "tierLabel": "Gümüş",
+      "specs": [
+        "16\"",
+        "5x112",
+        "OEM"
+      ],
+      "quality": 365
     },
     {
-      "alt": "15 İnç 4x100-108 Jant Takımı",
+      "title": "BMW",
+      "filename": "18 İnç 5x120 OEM BMW Jant Takımı.jpg",
       "tier": 6,
-      "tierLabel": "Çelik Jant",
-      "quality": 381
+      "tierLabel": "Gümüş",
+      "specs": [
+        "18\"",
+        "5x120",
+        "OEM"
+      ],
+      "quality": 345
     },
     {
-      "alt": "14 İnç 4x100 Jant Takımı",
+      "title": "BMW",
+      "filename": "17 İnç 5x120 OEM BMW Jant Takımı.jpg",
       "tier": 6,
-      "tierLabel": "Çelik Jant",
-      "quality": 325
+      "tierLabel": "Gümüş",
+      "specs": [
+        "17\"",
+        "5x120",
+        "OEM"
+      ],
+      "quality": 337
+    },
+    {
+      "title": "Fiat OEM",
+      "filename": "16 İnç 5x98 Fiat OEM Jant Takımı.jpg",
+      "tier": 6,
+      "tierLabel": "Gümüş",
+      "specs": [
+        "16\"",
+        "5x98",
+        "OEM"
+      ],
+      "quality": 317
+    },
+    {
+      "title": "Mercedes",
+      "filename": "18 İNÇ 5x112 Mercedes Jant Takım.jpg",
+      "tier": 7,
+      "tierLabel": "Çelik",
+      "specs": [
+        "18\"",
+        "5x112"
+      ],
+      "quality": 389
+    },
+    {
+      "title": "Peugeot-Citroën",
+      "filename": "14 İnç 4x108 Peugeot-Citroën Jant Takımı.jpg",
+      "tier": 7,
+      "tierLabel": "Çelik",
+      "specs": [
+        "14\"",
+        "4x108"
+      ],
+      "quality": 386
+    },
+    {
+      "title": "15 İnç 4x100-108",
+      "filename": "15 İnç 4x100-108 Jant Takımı.jpg",
+      "tier": 7,
+      "tierLabel": "Çelik",
+      "specs": [
+        "15\"",
+        "4x100-108"
+      ],
+      "quality": 383
+    },
+    {
+      "title": "Seat FR",
+      "filename": "18 İnç 5x112 Seat FR Jant Takımı.jpg",
+      "tier": 7,
+      "tierLabel": "Çelik",
+      "specs": [
+        "18\"",
+        "5x112"
+      ],
+      "quality": 338
+    },
+    {
+      "title": "14 İnç 4x100",
+      "filename": "14 İnç 4x100 Jant Takımı.jpg",
+      "tier": 7,
+      "tierLabel": "Çelik",
+      "specs": [
+        "14\"",
+        "4x100"
+      ],
+      "quality": 327
     }
   ]
 }

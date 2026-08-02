@@ -1,6 +1,5 @@
 /**
- * Scans 2. el jant görselleri, kalite kontrolü + kategori sıralaması yapar,
- * WebP türetir ve used-wheels-data.js üretir.
+ * Scans 2. el jant görselleri, dosya adı ayrıştırma, kalite + sıralama, WebP, manifest.
  * Run: node scripts/build-used-wheels-manifest.js
  */
 "use strict";
@@ -8,9 +7,11 @@
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
+const { parseFilename } = require("./used-wheels-filename-parser");
 
 const ROOT = path.join(__dirname, "..");
 const OUT_JS = path.join(ROOT, "assets", "js", "used-wheels-data.js");
+const OVERRIDES = path.join(ROOT, "assets", "js", "used-wheels-overrides.json");
 const REPORT = path.join(ROOT, "assets", "images", "used-wheels-build-report.json");
 
 const SCAN_DIRS = [
@@ -22,88 +23,43 @@ const MIN_WIDTH = 400;
 const MIN_HEIGHT = 400;
 const MIN_BYTES = 20 * 1024;
 
-const TIERS = [
-  {
-    id: 1,
-    label: "Krom / Forged / Premium",
-    test: function (name) {
-      return /krom|chrome|crome|forged|vossen|babayaga|premium|amg|m\s?performance/i.test(name);
-    },
-  },
-  {
-    id: 2,
-    label: "Diamond Cut",
-    test: function (name) {
-      return /diamond[\s-]?cut|diamondcut/i.test(name);
-    },
-  },
-  {
-    id: 3,
-    label: "Parlak Siyah",
-    test: function (name) {
-      return /parlak\s*siyah|matte\s*black|gloss\s*black|\bsiyah\b|\bblack\b/i.test(name);
-    },
-  },
-  {
-    id: 4,
-    label: "Antrasit",
-    test: function (name) {
-      return /antrasit|anthracite|gunmetal|graphite|antrasi/i.test(name);
-    },
-  },
-  {
-    id: 6,
-    label: "Çelik Jant",
-    test: function (name) {
-      return /çelik|celik|\bsteel\b|peugeot|citro[eë]n/i.test(name);
-    },
-  },
-  {
-    id: 5,
-    label: "Gümüş",
-    test: function (name) {
-      return /gümüş|gumus|\bsilver\b|\boem\b|skoda|honda|toyota|renault|seat|fiat|opel|volkswagen|istanbul/i.test(name);
-    },
-  },
-];
-
 function toWebPath(absPath) {
-  return absPath.replace(/\\/g, "/").split("/assets/").pop()
-    ? "assets/" + absPath.replace(/\\/g, "/").split("/assets/").pop()
-    : absPath.replace(/\\/g, "/");
+  const norm = absPath.replace(/\\/g, "/");
+  const idx = norm.indexOf("/assets/");
+  return idx >= 0 ? norm.slice(idx + 1) : norm;
 }
 
-function detectTier(filename) {
-  const base = path.basename(filename, path.extname(filename));
+function slugify(name) {
+  return name
+    .toLowerCase()
+    .replace(/\.jpe?g$/i, "")
+    .replace(/[^a-z0-9]+/gi, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
 
-  const inchMatch = base.match(/(\d{2})\s*(?:İnç|Inch|INÇ|inch)/i);
-  const inch = inchMatch ? Number(inchMatch[1]) : 0;
-  if (inch >= 19 && /bmw|mercedes|audi|porsche|land rover|range rover|amg/i.test(base)) {
-    return { id: 1, label: "Krom / Forged / Premium" };
+function loadOverrides() {
+  if (!fs.existsSync(OVERRIDES)) {
+    return {
+      defaultStatus: { label: "Stokta", icon: "🟢", tone: "in-stock" },
+      phoneUrl: "tel:+905449483197",
+      whatsappBase: "https://wa.me/905449483197",
+      items: {},
+    };
   }
-
-  for (const tier of TIERS) {
-    if (tier.test(base)) return { id: tier.id, label: tier.label };
-  }
-
-  if (/jant takım/i.test(base) && !/oem/i.test(base)) {
-    return { id: 6, label: "Çelik Jant" };
-  }
-
-  return { id: 5, label: "Gümüş" };
+  return JSON.parse(fs.readFileSync(OVERRIDES, "utf8"));
 }
 
 function qualityScore(meta, bytes, tierId) {
   const minDim = Math.min(meta.width, meta.height);
   const megapixels = (meta.width * meta.height) / 1e6;
   const sizeKb = bytes / 1024;
-  const tierBoost = (7 - tierId) * 12;
+  const tierBoost = (8 - tierId) * 14;
   return Math.round(minDim * 0.08 + megapixels * 40 + sizeKb * 0.35 + tierBoost);
 }
 
 function collectJpgFiles() {
   const map = new Map();
-
   SCAN_DIRS.forEach(function (dir) {
     if (!fs.existsSync(dir)) return;
     fs.readdirSync(dir).forEach(function (file) {
@@ -112,11 +68,26 @@ function collectJpgFiles() {
       if (!map.has(file.toLowerCase())) map.set(file.toLowerCase(), abs);
     });
   });
-
   return [...map.values()];
 }
 
-async function analyzeImage(absPath) {
+function fallbackTitle(filename) {
+  const base = path.basename(filename).replace(/\.jpe?g$/i, "").replace(/\s+/g, " ").trim();
+  return base.replace(/\s*Jant\s+Takım.*$/i, "").replace(/\s*Lastik\s+Takım.*$/i, "").trim();
+}
+
+function whatsappForItem(base, title) {
+  return (
+    base +
+    "?text=" +
+    encodeURIComponent(
+      "Merhaba, " + title + " (2. el jant) hakkında bilgi almak istiyorum."
+    )
+  );
+}
+
+async function analyzeImage(absPath, overrides) {
+  const filename = path.basename(absPath);
   const bytes = fs.statSync(absPath).size;
   if (bytes < MIN_BYTES) {
     return { rejected: true, reason: "file too small (" + bytes + " bytes)" };
@@ -139,77 +110,94 @@ async function analyzeImage(absPath) {
     };
   }
 
-  const filename = path.basename(absPath);
-  const tier = detectTier(filename);
+  const parsed = parseFilename(filename);
   const relJpg = toWebPath(absPath);
   const webpAbs = absPath.replace(/\.jpe?g$/i, ".webp");
   let webpPath = null;
 
   try {
-    await sharp(absPath)
-      .rotate()
-      .webp({ quality: 84, effort: 4 })
-      .toFile(webpAbs);
+    await sharp(absPath).rotate().webp({ quality: 84, effort: 4 }).toFile(webpAbs);
     webpPath = toWebPath(webpAbs);
   } catch (_err) {
     webpPath = null;
   }
 
-  const alt = filename.replace(/\.jpe?g$/i, "").replace(/\s+/g, " ").trim();
+  const itemOverride = overrides.items[filename] || overrides.items[parsed.title] || {};
+  const status = itemOverride.status || overrides.defaultStatus;
+  const vehicles = itemOverride.vehicles || [];
+  const extraImages = itemOverride.images || [];
+
+  const images = [
+    { jpg: relJpg, webp: webpPath, alt: parsed.title },
+    ...extraImages,
+  ];
 
   return {
     rejected: false,
     item: {
+      id: slugify(filename),
+      filename: filename,
+      title: parsed.title || fallbackTitle(filename),
+      specs: parsed.specs,
+      tier: parsed.tier,
+      tierLabel: parsed.tierLabel,
+      parsed: parsed.parsed,
+      quality: qualityScore(meta, bytes, parsed.tier),
       jpg: relJpg,
       webp: webpPath,
-      alt: alt,
-      tier: tier.id,
-      tierLabel: tier.label,
-      quality: qualityScore(meta, bytes, tier.id),
       width: meta.width,
       height: meta.height,
       bytes: bytes,
+      images: images,
+      status: status,
+      vehicles: vehicles,
+      whatsappUrl: whatsappForItem(overrides.whatsappBase, parsed.title || fallbackTitle(filename)),
     },
+    parseMeta: parsed,
   };
 }
 
 async function main() {
+  const overrides = loadOverrides();
   const files = collectJpgFiles();
   const accepted = [];
   const rejected = [];
+  const parsedOk = [];
+  const parsedFail = [];
 
   for (const file of files) {
-    const result = await analyzeImage(file);
+    const result = await analyzeImage(file, overrides);
     if (result.rejected) {
       rejected.push({ file: toWebPath(file), reason: result.reason });
+      continue;
+    }
+    accepted.push(result.item);
+    if (result.parseMeta.parsed) {
+      parsedOk.push(result.item.filename);
     } else {
-      accepted.push(result.item);
+      parsedFail.push({ file: result.item.filename, title: result.item.title });
     }
   }
 
   accepted.sort(function (a, b) {
     if (a.tier !== b.tier) return a.tier - b.tier;
     if (b.quality !== a.quality) return b.quality - a.quality;
-    return a.alt.localeCompare(b.alt, "tr");
+    return a.title.localeCompare(b.title, "tr");
   });
+
+  const catalog = {
+    defaultStatus: overrides.defaultStatus,
+    phoneUrl: overrides.phoneUrl,
+    whatsappUrl: whatsappForItem(overrides.whatsappBase, "Premium 2. El Jantlar"),
+    items: accepted,
+  };
 
   const js =
     "/**\n * AUTO-GENERATED — node scripts/build-used-wheels-manifest.js\n */\n" +
     "(function (global) {\n" +
     '  "use strict";\n\n' +
     "  global.UsedWheelsCatalog = " +
-    JSON.stringify(
-      {
-        whatsappUrl:
-          "https://wa.me/905449483197?text=" +
-          encodeURIComponent(
-            "Merhaba, 2. el jantlar hakkında bilgi almak istiyorum."
-          ),
-        items: accepted,
-      },
-      null,
-      2
-    ) +
+    JSON.stringify(catalog, null, 2) +
     ";\n})(window);\n";
 
   fs.writeFileSync(OUT_JS, js, "utf8");
@@ -217,17 +205,21 @@ async function main() {
     REPORT,
     JSON.stringify(
       {
-        scannedDirs: SCAN_DIRS.map(function (d) {
-          return toWebPath(d);
-        }),
+        scannedDirs: SCAN_DIRS.map(toWebPath),
         totalFound: files.length,
         accepted: accepted.length,
         rejected: rejected,
+        parsedOk: parsedOk,
+        parsedFail: parsedFail,
         sortOrder: accepted.map(function (item) {
           return {
-            alt: item.alt,
+            title: item.title,
+            filename: item.filename,
             tier: item.tier,
             tierLabel: item.tierLabel,
+            specs: item.specs.map(function (s) {
+              return s.label;
+            }),
             quality: item.quality,
           };
         }),
@@ -239,13 +231,9 @@ async function main() {
   );
 
   console.log("Accepted: " + accepted.length + " / " + files.length);
+  console.log("Parsed OK: " + parsedOk.length);
+  console.log("Parsed partial/fail: " + parsedFail.length);
   console.log("Written: assets/js/used-wheels-data.js");
-  if (rejected.length) {
-    console.log("Rejected: " + rejected.length);
-    rejected.forEach(function (r) {
-      console.log("  - " + r.file + ": " + r.reason);
-    });
-  }
 }
 
 main().catch(function (err) {

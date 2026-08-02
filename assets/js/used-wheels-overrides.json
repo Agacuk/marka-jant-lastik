@@ -1,0 +1,10 @@
+{
+  "defaultStatus": {
+    "label": "Stokta",
+    "icon": "🟢",
+    "tone": "in-stock"
+  },
+  "phoneUrl": "tel:+905449483197",
+  "whatsappBase": "https://wa.me/905449483197",
+  "items": {}
+}

@@ -2,57 +2,57 @@
   {
     "id": "jant-boyama",
     "status": "ok",
-    "bytes": 86526,
-    "note": "Jant sprey boya uygulaması (yakın çekim)",
-    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Rims_painted_(2967657525).jpg"
+    "bytes": 85402,
+    "note": "Sprey boya kabininde otomotiv parça boyama (Unsplash)",
+    "source": "https://plus.unsplash.com/premium_photo-1661750334379-2f2b4b1f6ef4"
   },
   {
     "id": "jant-kaynagi",
     "status": "ok",
-    "bytes": 66434,
-    "note": "Jant kenarı TIG kaynak onarımı",
-    "source": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkehMhoz4edcjV-H_lPAppPhSNVlQHxgdIdTcx8eUMsGmAlaepoDvV8qBQRfxPh3qQJ_SiA_sWDENb0C-ly_KXATdrApqKAq69SxlCFaUnKOzipTPCVMW7M4stPOiCgc93mtgDib-n-K6-/s1600/1471.JPG"
+    "bytes": 27784,
+    "note": "TIG kaynak işlemi (Wikimedia Commons)",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/TIG_welding.jpg"
   },
   {
     "id": "cnc-diamond-cut",
     "status": "ok",
-    "bytes": 38918,
+    "bytes": 59104,
     "note": "CNC diamond cut tornalama — jant yüzey kesimi",
     "source": "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091647-1024x730.jpg"
   },
   {
     "id": "jant-duzeltme",
     "status": "ok",
-    "bytes": 62444,
-    "note": "Jant düzeltme makinesinde onarım",
+    "bytes": 82308,
+    "note": "Jant düzeltme makinesi / atölye uygulaması",
     "source": "https://wheelrestore.com/wp-content/uploads/2023/10/wr-install-001.webp"
   },
   {
     "id": "jant-tornalama",
     "status": "ok",
-    "bytes": 30346,
-    "note": "CNC tornada jant profil tarama / tornalama",
+    "bytes": 46652,
+    "note": "CNC tornada jant profil işleme",
     "source": "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091643-1024x986.jpg"
   },
   {
     "id": "jant-kumlama",
     "status": "ok",
-    "bytes": 152330,
-    "note": "Kumlama kabininde jant hazırlığı",
-    "source": "https://wheelrestore.com/wp-content/uploads/2024/09/wheel-blasting-machine-filtration.webp"
+    "bytes": 53220,
+    "note": "Kumlama kabini — boya öncesi yüzey hazırlığı (Wikimedia Commons)",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabine_de_sablage_arena.JPG"
   },
   {
     "id": "jant-polisaj",
     "status": "ok",
-    "bytes": 44768,
-    "note": "Parlatılmış jant yüzeyi yakın çekim",
-    "source": "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091646-1024x807.jpg"
+    "bytes": 111254,
+    "note": "Parlatılmış premium jant yakın çekim (Wikimedia Commons)",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaguar_XF_Nevis_(20%22)_alloy_wheel.jpg"
   },
   {
     "id": "diger-hizmetler",
     "status": "ok",
-    "bytes": 61678,
-    "note": "Genel jant restorasyon ve onarım",
-    "source": "https://thewheelmedics.co.uk/wp-content/uploads/2023/02/image12.jpg"
+    "bytes": 117502,
+    "note": "Atölyede lastik/jant onarımı (Pexels — ücretsiz stok)",
+    "source": "https://www.pexels.com/photo/mechanic-repairing-a-tire-in-workshop-32208774/"
   }
 ]

@@ -10,87 +10,132 @@ const UA =
 const WIDTH = 1280;
 const HEIGHT = 800;
 
-/** Janta yakın çekim, başlığa uygun gerçek onarım süreci görselleri */
 const SERVICES = [
   {
     id: "jant-boyama",
     title: "Jant Boyama",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rims_painted_(2967657525).jpg",
-    focus: "centre",
-    note: "Jant sprey boya uygulaması (yakın çekim)",
+    url: "https://plus.unsplash.com/premium_photo-1661750334379-2f2b4b1f6ef4?fm=jpg&q=85&w=1920",
+    focus: [0.5, 0.45],
+    note: "Sprey boya kabininde otomotiv parça boyama (Unsplash)",
   },
   {
     id: "jant-kaynagi",
     title: "Jant Kaynağı",
-    url: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkehMhoz4edcjV-H_lPAppPhSNVlQHxgdIdTcx8eUMsGmAlaepoDvV8qBQRfxPh3qQJ_SiA_sWDENb0C-ly_KXATdrApqKAq69SxlCFaUnKOzipTPCVMW7M4stPOiCgc93mtgDib-n-K6-/s1600/1471.JPG",
-    focus: "centre",
-    note: "Jant kenarı TIG kaynak onarımı",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/TIG_welding.jpg",
+    focus: [0.5, 0.45],
+    note: "TIG kaynak işlemi (Wikimedia Commons)",
   },
   {
     id: "cnc-diamond-cut",
     title: "CNC Diamond Cut",
     url: "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091647-1024x730.jpg",
-    focus: "centre",
+    focus: [0.52, 0.46],
     note: "CNC diamond cut tornalama — jant yüzey kesimi",
   },
   {
     id: "jant-duzeltme",
     title: "Jant Düzeltme",
     url: "https://wheelrestore.com/wp-content/uploads/2023/10/wr-install-001.webp",
-    focus: "centre",
-    note: "Jant düzeltme makinesinde onarım",
+    focus: [0.5, 0.48],
+    note: "Jant düzeltme makinesi / atölye uygulaması",
   },
   {
     id: "jant-tornalama",
     title: "Jant Tornalama",
     url: "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091643-1024x986.jpg",
-    focus: "centre",
-    note: "CNC tornada jant profil tarama / tornalama",
+    focus: [0.55, 0.42],
+    note: "CNC tornada jant profil işleme",
   },
   {
     id: "jant-kumlama",
     title: "Jant Kumlama",
-    url: "https://wheelrestore.com/wp-content/uploads/2024/09/wheel-blasting-machine-filtration.webp",
-    focus: "centre",
-    note: "Kumlama kabininde jant hazırlığı",
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Cabine_de_sablage_arena.JPG",
+    focus: [0.5, 0.5],
+    note: "Kumlama kabini — boya öncesi yüzey hazırlığı (Wikimedia Commons)",
   },
   {
     id: "jant-polisaj",
     title: "Jant Polisaj",
-    url: "https://prestigewheelcentre.co.uk/blog/wp-content/uploads/2013/03/P3091646-1024x807.jpg",
-    focus: "centre",
-    note: "Parlatılmış jant yüzeyi yakın çekim",
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jaguar_XF_Nevis_%2820%22%29_alloy_wheel.jpg",
+    focus: [0.42, 0.52],
+    note: "Parlatılmış premium jant yakın çekim (Wikimedia Commons)",
   },
   {
     id: "diger-hizmetler",
     title: "Diğer Hizmetler",
-    url: "https://thewheelmedics.co.uk/wp-content/uploads/2023/02/image12.jpg",
-    focus: "centre",
-    note: "Genel jant restorasyon ve onarım",
+    url: "https://images.pexels.com/photos/32208774/pexels-photo-32208774.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    focus: [0.5, 0.42],
+    note: "Atölyede lastik/jant onarımı (Pexels)",
   },
 ];
+
+function sleep(ms) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, ms);
+  });
+}
 
 async function fetchBuf(url) {
   const headers = {
     "User-Agent": UA,
     Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
   };
-  if (url.includes("wheelsclinic.co.uk")) {
-    headers.Referer = "https://www.wheelsclinic.co.uk/";
+  if (url.includes("prestigewheelcentre.co.uk") || url.includes("wheelrestore.com")) {
+    headers.Referer = "https://www.google.com/";
   }
-  const res = await fetch(url, { headers, redirect: "follow" });
-  if (!res.ok) throw new Error("HTTP " + res.status);
-  const buf = Buffer.from(await res.arrayBuffer());
-  if (buf.length < 8000) throw new Error("too small (" + buf.length + " bytes)");
-  return buf;
+
+  let lastError = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const res = await fetch(url, { headers, redirect: "follow" });
+      if (res.status === 429) {
+        await sleep(2500 * (attempt + 1));
+        throw new Error("HTTP 429");
+      }
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const buf = Buffer.from(await res.arrayBuffer());
+      if (buf.length < 8000) throw new Error("too small (" + buf.length + " bytes)");
+      return buf;
+    } catch (err) {
+      lastError = err;
+      await sleep(1500 * (attempt + 1));
+    }
+  }
+  throw lastError;
+}
+
+function coverCropRect(w, h, focus) {
+  const targetAspect = WIDTH / HEIGHT;
+  const sourceAspect = w / h;
+  let cropW;
+  let cropH;
+
+  if (sourceAspect > targetAspect) {
+    cropH = h;
+    cropW = Math.round(h * targetAspect);
+  } else {
+    cropW = w;
+    cropH = Math.round(w / targetAspect);
+  }
+
+  const fx = focus && focus[0] != null ? focus[0] : 0.5;
+  const fy = focus && focus[1] != null ? focus[1] : 0.5;
+  const left = Math.round(Math.max(0, Math.min(w - cropW, fx * w - cropW / 2)));
+  const top = Math.round(Math.max(0, Math.min(h - cropH, fy * h - cropH / 2)));
+
+  return { left, top, width: cropW, height: cropH };
 }
 
 async function normalizeHero(buf, focus) {
-  const graded = await sharp(buf)
-    .rotate()
-    .resize(WIDTH, HEIGHT, { fit: "cover", position: focus || "centre" })
-    .modulate({ brightness: 0.84, saturation: 0.72 })
-    .linear(1.06, -14)
+  const rotated = sharp(buf).rotate();
+  const meta = await rotated.metadata();
+  const crop = coverCropRect(meta.width, meta.height, focus);
+
+  const graded = await rotated
+    .extract(crop)
+    .resize(WIDTH, HEIGHT)
+    .modulate({ brightness: 0.9, saturation: 0.88 })
+    .linear(1.04, -8)
     .toBuffer();
 
   const overlay = Buffer.from(
@@ -98,14 +143,13 @@ async function normalizeHero(buf, focus) {
       <defs>
         <radialGradient id="v" cx="50%" cy="45%" r="75%">
           <stop offset="0%" stop-color="#000" stop-opacity="0"/>
-          <stop offset="100%" stop-color="#09090f" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#09090f" stop-opacity="0.22"/>
         </radialGradient>
         <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#14141c" stop-opacity="0.06"/>
-          <stop offset="100%" stop-color="#090909" stop-opacity="0.48"/>
+          <stop offset="0%" stop-color="#14141c" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#090909" stop-opacity="0.38"/>
         </linearGradient>
       </defs>
-      <rect width="100%" height="100%" fill="#14141c" fill-opacity="0.1"/>
       <rect width="100%" height="100%" fill="url(#v)"/>
       <rect width="100%" height="100%" fill="url(#b)"/>
     </svg>`
@@ -113,7 +157,7 @@ async function normalizeHero(buf, focus) {
 
   return sharp(graded)
     .composite([{ input: overlay, blend: "multiply" }])
-    .webp({ quality: 86, effort: 5 })
+    .webp({ quality: 88, effort: 5 })
     .toBuffer();
 }
 
@@ -141,6 +185,8 @@ async function main() {
       report.push({ id: service.id, status: "error", error: err.message, source: service.url });
       console.error("ERR " + service.id + ": " + err.message);
     }
+
+    await sleep(1200);
   }
 
   fs.writeFileSync(

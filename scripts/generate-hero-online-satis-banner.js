@@ -1,5 +1,5 @@
 /**
- * Online Satış hero banner — referans görselin sağ kompozisyonundan üretir
+ * Online Satış hero banner — hero-online-satis-ref.png
  * Run: node scripts/generate-hero-online-satis-banner.js
  */
 "use strict";
@@ -9,17 +9,9 @@ const path = require("path");
 const sharp = require("sharp");
 
 const ROOT = path.join(__dirname, "..");
-const REF = path.join(
-  ROOT,
-  "assets",
-  "images",
-  "hero",
-  "hero-online-satis-ref.jpg"
-);
+const REF = path.join(ROOT, "assets", "images", "hero", "hero-online-satis-ref.png");
 const OUT_DESKTOP = path.join(ROOT, "assets", "images", "hero", "hero-sahibinden-banner.webp");
 const OUT_MOBILE = path.join(ROOT, "assets", "images", "hero", "hero-sahibinden-banner-mobile.webp");
-
-const LEFT_CUT = 0.405;
 
 function coverCropRect(w, h, tw, th, fx, fy) {
   const targetAspect = tw / th;
@@ -41,30 +33,34 @@ function coverCropRect(w, h, tw, th, fx, fy) {
   return { left, top, width: cropW, height: cropH };
 }
 
-async function processHero(buf, tw, th, focus) {
-  const meta = await sharp(buf).metadata();
-  const w = meta.width;
-  const h = meta.height;
+async function processHero(buf, options) {
+  const tw = options.width;
+  const th = options.height;
+  const focus = options.focus;
+  const leftCut = options.leftCut || 0;
 
-  const cropLeft = Math.round(w * LEFT_CUT);
-  const rightBuf = await sharp(buf)
-    .extract({ left: cropLeft, top: 0, width: w - cropLeft, height: h })
+  const meta = await sharp(buf).metadata();
+  const cropLeft = Math.round(meta.width * leftCut);
+  const sliceW = meta.width - cropLeft;
+
+  const sliced = await sharp(buf)
+    .extract({ left: cropLeft, top: 0, width: sliceW, height: meta.height })
     .toBuffer();
 
-  const rm = await sharp(rightBuf).metadata();
-  const region = coverCropRect(rm.width, rm.height, tw, th, focus[0], focus[1]);
+  const sm = await sharp(sliced).metadata();
+  const region = coverCropRect(sm.width, sm.height, tw, th, focus[0], focus[1]);
 
   const overlay = Buffer.from(
     `<svg width="${tw}" height="${th}" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="l" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#06080f" stop-opacity="0.72"/>
-          <stop offset="28%" stop-color="#080a12" stop-opacity="0.28"/>
-          <stop offset="55%" stop-color="#080a12" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#06080f" stop-opacity="0.78"/>
+          <stop offset="24%" stop-color="#080a12" stop-opacity="0.32"/>
+          <stop offset="52%" stop-color="#080a12" stop-opacity="0"/>
         </linearGradient>
         <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#06080f" stop-opacity="0"/>
-          <stop offset="100%" stop-color="#090909" stop-opacity="0.42"/>
+          <stop offset="100%" stop-color="#090909" stop-opacity="0.4"/>
         </linearGradient>
       </defs>
       <rect width="100%" height="100%" fill="url(#l)"/>
@@ -72,7 +68,7 @@ async function processHero(buf, tw, th, focus) {
     </svg>`
   );
 
-  return sharp(rightBuf)
+  return sharp(sliced)
     .extract(region)
     .resize(tw, th)
     .modulate({ brightness: 0.92, saturation: 0.95 })
@@ -88,13 +84,26 @@ async function main() {
   }
 
   const ref = fs.readFileSync(REF);
+  const meta = await sharp(ref).metadata();
 
-  const desktop = await processHero(ref, 1920, 1080, [0.52, 0.5]);
+  const desktop = await processHero(ref, {
+    width: 1920,
+    height: 1080,
+    leftCut: 0,
+    focus: [0.58, 0.5],
+  });
+
+  const mobile = await processHero(ref, {
+    width: 1080,
+    height: 720,
+    leftCut: 0.18,
+    focus: [0.5, 0.52],
+  });
+
   fs.writeFileSync(OUT_DESKTOP, desktop);
-
-  const mobile = await processHero(ref, 1080, 720, [0.56, 0.52]);
   fs.writeFileSync(OUT_MOBILE, mobile);
 
+  console.log("Source:", path.relative(ROOT, REF), meta.width + "x" + meta.height);
   console.log("Written:", path.relative(ROOT, OUT_DESKTOP), "(" + desktop.length + " bytes)");
   console.log("Written:", path.relative(ROOT, OUT_MOBILE), "(" + mobile.length + " bytes)");
 }

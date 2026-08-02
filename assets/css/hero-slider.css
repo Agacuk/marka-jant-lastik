@@ -71,9 +71,9 @@
 }
 
 .hero__bg-slide--2 {
-  --hero-pos-desktop: center center;
-  --hero-pos-tablet: center center;
-  --hero-pos-mobile: 54% 50%;
+  --hero-pos-desktop: 58% center;
+  --hero-pos-tablet: 56% center;
+  --hero-pos-mobile: 52% 50%;
 }
 
 .hero__bg-slide--3 {

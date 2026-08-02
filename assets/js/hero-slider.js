@@ -25,7 +25,7 @@
   var dragMoved = false;
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var INTERVAL = 3000;
-  var TRANSITION = 1050;
+  var TRANSITION = 1100;
 
   function slideImageSrc(img) {
     if (
@@ -103,6 +103,8 @@
     var activePanel = panels[index];
     var hasCopy = activePanel && !activePanel.classList.contains("hero__copy-panel--empty");
     hero.classList.toggle("hero--has-copy", Boolean(hasCopy));
+    hero.classList.remove("hero--slide-0", "hero--slide-1", "hero--slide-2");
+    hero.classList.add("hero--slide-" + index);
 
     if (dotsHost) {
       dotsHost.querySelectorAll("[data-hero-dot]").forEach(function (dot, i) {

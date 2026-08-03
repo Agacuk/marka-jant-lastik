@@ -43,6 +43,7 @@
       suv: "SUV",
       performans: "Performans",
       ev: "EV",
+      tarim: "Tarım",
     },
     brands: [
       {
@@ -211,12 +212,54 @@
         name: "Starmaxx",
         logo: "assets/images/brands/brand-starmaxx.png",
         description:
-          "Starmaxx'ın ekonomik ve güvenilir binek, SUV ve ticari lastik çözümleri.",
+          "Starmaxx'ın ekonomik ve güvenilir binek, SUV, tarım ve ticari lastik çözümleri.",
+        filters: [
+          { id: "all", label: "Tümü" },
+          { id: "yaz", label: "Yaz" },
+          { id: "kis", label: "Kış" },
+          { id: "4-mevsim", label: "4 Mevsim" },
+          { id: "suv", label: "SUV" },
+          { id: "performans", label: "Performance" },
+          { id: "ev", label: "EV" },
+          { id: "tarim", label: "Tarım" },
+        ],
         products: [
-          product("starmaxx", "starmaxx-x1", "Starmaxx X1", "Konfor Lastiği", "Günlük kullanım için ekonomik tur lastiği.", ["yaz"], "webp"),
-          product("starmaxx", "starmaxx-winter", "Starmaxx Winter", "Kış Lastiği", "Kış mevsiminde güvenli sürüş için kış lastiği.", ["kis"], "webp"),
-          product("starmaxx", "starmaxx-suv", "Starmaxx SUV", "SUV Lastiği", "SUV modelleri için dayanıklı lastik seçeneği.", ["suv"], "webp"),
-          product("starmaxx", "starmaxx-eco", "Starmaxx Eco", "Eco Lastik", "Yakıt verimliliği odaklı ekonomik lastik.", ["yaz"], "webp"),
+          product(
+            "starmaxx",
+            "starmaxx-x1",
+            "Starmaxx X1",
+            "4 Mevsim Lastik",
+            "Yıl boyunca güvenli sürüş sağlayan, şehir içi ve şehir dışı kullanım için geliştirilmiş dört mevsim lastiği.",
+            ["4-mevsim"],
+            "webp"
+          ),
+          product(
+            "starmaxx",
+            "starmaxx-winter",
+            "Starmaxx Winter",
+            "Kış Lastiği",
+            "Kış mevsiminde güvenli sürüş için kış lastiği.",
+            ["kis"],
+            "webp"
+          ),
+          product(
+            "starmaxx",
+            "starmaxx-ultraforce-1",
+            "Starmaxx Ultraforce 1",
+            "Tarım Lastiği",
+            "Patpat, traktör ve diğer tarımsal araçlar için yüksek çekiş sağlayan dayanıklı tarım lastiği.",
+            ["tarim"],
+            "webp"
+          ),
+          product(
+            "starmaxx",
+            "starmaxx-eco",
+            "Starmaxx Eco",
+            "Eco Lastik",
+            "Yakıt verimliliği odaklı ekonomik lastik.",
+            ["yaz"],
+            "webp"
+          ),
         ],
       },
     ],

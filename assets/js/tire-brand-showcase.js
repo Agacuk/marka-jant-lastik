@@ -124,10 +124,18 @@
     });
   }
 
-  function renderFilters() {
-    if (!filterContainer || !catalog.filters) return;
+  function getActiveFilters() {
+    if (activeBrand && activeBrand.filters && activeBrand.filters.length) {
+      return activeBrand.filters;
+    }
+    return catalog.filters || [];
+  }
 
-    filterContainer.innerHTML = catalog.filters
+  function renderFilters() {
+    var filters = getActiveFilters();
+    if (!filterContainer || !filters.length) return;
+
+    filterContainer.innerHTML = filters
       .map(function (filter) {
         var activeClass = filter.id === activeFilter ? " is-active" : "";
         return (
